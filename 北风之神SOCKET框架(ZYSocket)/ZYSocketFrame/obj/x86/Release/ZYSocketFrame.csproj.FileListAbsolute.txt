@@ -1,0 +1,11 @@
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\bin\Release\ZYSocketFrame.dll.config
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\bin\Release\ZYSocketFrame.dll
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\bin\Release\ZYSocketFrame.pdb
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\bin\Release\ZYSocketShare.dll
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\bin\Release\ZYSocketShare.pdb
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.dll
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.pdb
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.dll.config
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.dll
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.pdb

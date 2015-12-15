@@ -1,0 +1,11 @@
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\bin\Debug\ZYSocketSSLClient.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\bin\Debug\ZYSocketSSLClient.pdb
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Debug\ZYSocketSSLClient.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Debug\ZYSocketSSLClient.pdb
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Debug\ZYSocketSSLClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Debug\ZYSocketSSLClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Debug\ZYSocketSSLClient.csprojResolveAssemblyReference.cache

@@ -1,0 +1,32 @@
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\ZYSocketClientA\bin\Debug\ZYSocketClientA.pdb
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\ZYSocketClientA\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.pdb
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\ZYSocketClientA\bin\Debug\ZYSocketClientA.dll
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.dll
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\bin\Debug\ZYSocketClientA.dll
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\bin\Debug\ZYSocketClientA.pdb
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.dll
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.pdb
+F:\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\bin\Debug\ZYSocketClientA.dll
+F:\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\bin\Debug\ZYSocketClientA.pdb
+F:\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.dll
+F:\ZYSocketFrame\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.pdb
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\bin\Debug\ZYSocketClientA.dll
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\bin\Debug\ZYSocketClientA.pdb
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.dll
+F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.pdb
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\bin\Debug\ZYSocketClientA.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\bin\Debug\ZYSocketClientA.pdb
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.pdb
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.pdb
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.csprojResolveAssemblyReference.cache

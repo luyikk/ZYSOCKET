@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://blog.csdn.net/luyikk/article/details/6099337</licenseUrl>
+    <projectUrl>http://blog.csdn.net/luyikk/article/details/6099337</projectUrl>   
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>    
+    <copyright>Copyright luyikk 2014</copyright>
+    <tags>ZYSOCKET ZYSOCKETSHARE</tags>
+  </metadata>
+</package>

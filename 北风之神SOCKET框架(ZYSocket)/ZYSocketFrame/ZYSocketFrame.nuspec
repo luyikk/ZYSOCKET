@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://blog.csdn.net/luyikk</licenseUrl>
+    <projectUrl>http://blog.csdn.net/luyikk</projectUrl>  
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>  
+    <copyright>Copyright luyikk 2014</copyright>
+    <tags>SOCKETSERVER Socket.net ZYSOCKET</tags>
+  </metadata>
+</package>

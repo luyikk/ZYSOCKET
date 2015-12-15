@@ -1,0 +1,11 @@
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\bin\Debug\UDPService.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\bin\Debug\UDPService.pdb
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\obj\Debug\UDPService.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\obj\Debug\UDPService.pdb
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\UDPService.dll
+L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\UDPService.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\UDPService.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\UDPService.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\obj\Debug\UDPService.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\obj\Debug\UDPService.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\obj\Debug\UDPService.csprojResolveAssemblyReference.cache
