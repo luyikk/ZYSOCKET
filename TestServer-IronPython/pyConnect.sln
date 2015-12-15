@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pySERVER", "TestConnect\pySERVER.pyproj", "{6BEC850B-1977-4CC7-8AE8-6E362C41F197}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyClient", "pyClient\pyClient.pyproj", "{96B9E0D9-58DB-4D35-BC30-B40E485731F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BEC850B-1977-4CC7-8AE8-6E362C41F197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEC850B-1977-4CC7-8AE8-6E362C41F197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B9E0D9-58DB-4D35-BC30-B40E485731F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B9E0D9-58DB-4D35-BC30-B40E485731F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

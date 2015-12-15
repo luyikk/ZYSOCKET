@@ -1,0 +1,7 @@
+c:\users\administrator\documents\visual studio 2010\Projects\ConsoleApplication7\ConsoleApplication7\bin\Debug\ConsoleApplication7.exe
+c:\users\administrator\documents\visual studio 2010\Projects\ConsoleApplication7\ConsoleApplication7\bin\Debug\ConsoleApplication7.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\ConsoleApplication7\ConsoleApplication7\obj\x86\Debug\ConsoleApplication7.exe
+c:\users\administrator\documents\visual studio 2010\Projects\ConsoleApplication7\ConsoleApplication7\obj\x86\Debug\ConsoleApplication7.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ConsoleApplication7\ConsoleApplication7\obj\x86\Debug\ConsoleApplication7.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例子6-SSL CLIENT\obj\x86\Debug\ConsoleApplication7.exe
+L:\ZYSocketFrame2\例子6-SSL CLIENT\obj\x86\Debug\ConsoleApplication7.pdb

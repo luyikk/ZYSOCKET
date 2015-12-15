@@ -1,0 +1,6 @@
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library\bin\Debug\Polenter.SharpSerializer.XML
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library\bin\Debug\Polenter.SharpSerializer.dll
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library\bin\Debug\Polenter.SharpSerializer.pdb
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library\obj\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library\obj\Debug\Polenter.SharpSerializer.dll
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library\obj\Debug\Polenter.SharpSerializer.pdb

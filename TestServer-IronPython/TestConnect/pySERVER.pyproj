@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6bec850b-1977-4cc7-8ae8-6e362c41f197</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>Run.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
+    <LaunchProvider>IronPython (.NET) launcher</LaunchProvider>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <OutputPath>.</OutputPath>
+    <Name>pySERVER</Name>
+    <RootNamespace>TestConnect</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Run.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ZYSocketFrame, Version=0.4.2.3, Culture=neutral, PublicKeyToken=null">
+      <Name>ZYSocketFrame</Name>
+      <AssemblyName>ZYSocketFrame.dll</AssemblyName>
+      <HintPath>E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ZYSocketShare, Version=0.4.2.2, Culture=neutral, PublicKeyToken=null">
+      <Name>ZYSocketShare</Name>
+      <AssemblyName>ZYSocketShare.dll</AssemblyName>
+      <HintPath>..\..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataOn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Disconnect.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Init.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserInfo.py" />
+    <Compile Include="__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

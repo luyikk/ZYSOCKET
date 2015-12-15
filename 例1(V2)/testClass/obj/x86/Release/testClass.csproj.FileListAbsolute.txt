@@ -1,0 +1,7 @@
+F:\ZYSocketFrame2\例1(V2)\testClass\bin\Release\testClass.dll
+F:\ZYSocketFrame2\例1(V2)\testClass\bin\Release\testClass.pdb
+F:\ZYSocketFrame2\例1(V2)\testClass\bin\Release\ZYSocketShare.dll
+F:\ZYSocketFrame2\例1(V2)\testClass\bin\Release\ZYSocketShare.pdb
+F:\ZYSocketFrame2\例1(V2)\testClass\obj\x86\Release\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\例1(V2)\testClass\obj\x86\Release\testClass.dll
+F:\ZYSocketFrame2\例1(V2)\testClass\obj\x86\Release\testClass.pdb

@@ -1,0 +1,1 @@
+<resources><string name="ServerIP">113.107.234.239</string><string name="ServerPort">6000</string><string name="ServerRegPort">4000</string><string name="MinPort">1000</string><string name="MaxPort">60000</string><string name="ResCount">2</string><string name="MAC">555555555</string></resources>

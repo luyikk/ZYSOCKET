@@ -1,0 +1,147 @@
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.TimeSpanScale 生成存根: 类型是一个值类型。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.BclHelpers 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.BufferExtension 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.BufferPool 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoBeforeSerializationAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoAfterSerializationAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoBeforeDeserializationAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoAfterDeserializationAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.DataFormat 生成存根: 类型是一个值类型。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ExtensibleUtil 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Helpers 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoTypeCode 生成存根: 类型是一个值类型。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ImplicitFields 生成存根: 类型是一个值类型。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.AttributeMap 生成存根: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.BasicList 生成存根: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.MutableList 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.CallbackSet 生成存根: 类型没有系列可见的构造函数。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ISerializerProxy 生成存根: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.MetaType 生成存根: 类型没有系列可见的构造函数。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.RuntimeTypeModel 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.LockContentedEventArgs 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.LockContentedEventHandler 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.SubType 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.TypeFormatEventArgs 生成存根: 类型没有系列可见的构造函数。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.TypeFormatEventHandler 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.NetObjectCache 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.PrefixStyle 生成存根: 类型是一个值类型。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoContractAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoEnumAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoPartialIgnoreAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoIncludeAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.MemberSerializationOptions 生成存根: 类型是一个值类型。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoPartialMemberAttribute 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoReader 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoWriter 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.SerializationContext 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.IProtoSerializer 生成存根: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ProtoDecoratorBase 生成存根: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ArrayDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.BlobSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.BooleanSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ByteSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.UInt16Serializer 生成存根: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.CharSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.DateTimeSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.DecimalSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.DefaultValueDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.DoubleSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.EnumSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.FieldDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.GuidSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ListDecorator 生成存根: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ImmutableCollectionDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.Int16Serializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.Int32Serializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.Int64Serializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.IProtoTypeSerializer 生成存根: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.MemberSpecifiedDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.NetObjectSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.NullDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ParseableSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.PropertyDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SByteSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SingleSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.StringSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SubItemSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SurrogateSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SystemTypeSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.TagDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.TimeSpanSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.TupleSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.TypeSerializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.UInt32Serializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.UInt64Serializer 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.UriDecorator 生成存根: 类型已密封。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.SubItemToken 生成存根: 类型是一个值类型。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.WireType 生成存根: 类型是一个值类型。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.TimeSpanScale 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.BclHelpers+NetObjectOptions 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.IExtension 生成填充码: 类型是一个接口。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.BufferPool 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.DataFormat 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.IExtensible 生成填充码: 类型是一个接口。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ExtensibleUtil 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Helpers 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ProtoTypeCode 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.ImplicitFields 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.AttributeMap 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.BasicList 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.MutableList 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ISerializerProxy 生成填充码: 类型是一个接口。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.MetaType+AttributeFamily 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.MetaType+Comparer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.TypeModel+CallbackType 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.TypeModel+DeserializeItemsIterator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.TypeModel+DeserializeItemsIterator`1 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.RuntimeTypeModel+BasicType 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.RuntimeTypeModel+Singleton 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.LockContentedEventHandler 生成填充码: 类型是一个委托。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.SubType+Comparer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.TypeFormatEventHandler 生成填充码: 类型是一个委托。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Meta.ValueMember+Comparer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.NetObjectCache 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.PrefixStyle 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.MemberSerializationOptions 生成填充码: 类型是一个枚举。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializer+TypeResolver 生成填充码: 类型是一个委托。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.IProtoSerializer 生成填充码: 类型是一个接口。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ProtoDecoratorBase 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ArrayDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.BlobSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.BooleanSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ByteSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.UInt16Serializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.CharSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.DateTimeSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.DecimalSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.DefaultValueDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.DoubleSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.EnumSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.FieldDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.GuidSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ListDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ImmutableCollectionDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.Int16Serializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.Int32Serializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.Int64Serializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.IProtoTypeSerializer 生成填充码: 类型是一个接口。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.MemberSpecifiedDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.NetObjectSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.NullDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.ParseableSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.PropertyDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SByteSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SingleSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.StringSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SubItemSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SurrogateSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.SystemTypeSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.TagDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.TimeSpanSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.TupleSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.TypeSerializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.UInt32Serializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.UInt64Serializer 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.Serializers.UriDecorator 生成填充码: 类型对 exported or assembly(protobuf-net.2.0.0.668.Fakes) 不可见。
+D:\Test_C#\TestMsgPack\TestMsgPack\Fakes\protobuf-net.fakes : warning : 无法为 ProtoBuf.WireType 生成填充码: 类型是一个枚举。

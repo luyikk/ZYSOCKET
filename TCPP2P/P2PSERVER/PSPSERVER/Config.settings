@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="P2PSERVER" GeneratedClassName="Config">
+  <Profiles />
+  <Settings>
+    <Setting Name="MServerPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">6000</Value>
+    </Setting>
+    <Setting Name="RegServerPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4000</Value>
+    </Setting>
+    <Setting Name="MaxConCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="ServerIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Any</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

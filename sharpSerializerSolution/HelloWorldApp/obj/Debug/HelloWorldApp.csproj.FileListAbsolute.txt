@@ -1,0 +1,12 @@
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\bin\Debug\HelloWorldApp.exe
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\bin\Debug\HelloWorldApp.pdb
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\bin\Debug\Polenter.SharpSerializer.dll
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\bin\Debug\Polenter.SharpSerializer.pdb
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\bin\Debug\Polenter.SharpSerializer.xml
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\obj\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\obj\Debug\HelloWorldApp.Form1.resources
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\obj\Debug\HelloWorldApp.Properties.Resources.resources
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\obj\Debug\HelloWorldApp.exe
+F:\ZYSocketFrame2\sharpSerializerSolution\HelloWorldApp\obj\Debug\HelloWorldApp.pdb

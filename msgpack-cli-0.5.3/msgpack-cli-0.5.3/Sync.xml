@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ProjectSync>
+  <Project Name="MsgPack.Net35" Base="MsgPack">
+    <Preserve Path="Properties\AssemblyInfo.cs" />
+    <Exclude Path="Serialization\AbstractSerializers\SerializerBuilder`3.Tuple.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableCollectionSerializer`2.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableDictionarySerializer`3.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableStackSerializer`2.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\System_Numerics_ComplexMessagePackSerializer.cs" />
+    <Exclude Path="Serialization\ExpressionSerializers\*" />
+    <Exclude Path="Serialization\Metadata\_Type.cs" />
+    <Exclude Path="Serialization\ReflectionSerializers\ReflectionTupleMessagePackSerializer`1.cs" />
+    <Exclude File="*.tt" />
+    <Exclude File="*.ttinclude" />
+    <Preserve Path="Contract.cs" />
+    <Preserve Path="Delegates.tt" />
+    <Preserve Path="Delegates.cs" />
+    <Preserve Path="NetFxCompatibilities.cs" />
+    <Preserve Path="Tuple`n.tt" />
+    <Preserve Path="Tuple`n.cs" />
+    <Exclude Path="TupleItems.cs" />
+  </Project>
+  <Project Name="MsgPack.Net40" Base="MsgPack">
+    <Preserve Path="Properties\AssemblyInfo.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableCollectionSerializer`2.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableDictionarySerializer`3.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableStackSerializer`2.cs" />
+    <Exclude File="*.tt" />
+    <Exclude File="*.ttinclude" />
+  </Project>
+  <!--
+    Note: MsgPack.Xamarin.iOS is created manually now.
+  -->
+  <Project Name="MsgPack.Xamarin.Android" Base="MsgPack.Xamarin.iOS">
+    <Preserve Path="Properties\AssemblyInfo.cs" />
+  </Project>
+  <Project Name="MsgPack.Unity3D" Base="MsgPack.Xamarin.iOS">
+    <Preserve Path="Properties\AssemblyInfo.cs" />
+    <Exclude Path="Serialization\ReflectionSerializers\ReflectionTupleMessagePackSerializer`1.cs" />
+    <Exclude Path="UnsafeNativeMethods.cs" />
+    <Exclude Path="Validation.cs" />
+  </Project>
+  <Project Name="MsgPack.WinRT.Portable" Base="MsgPack">
+    <Preserve Path="Properties\AssemblyInfo.cs" />
+    <Exclude File="*.tt" />
+    <Exclude File="*.ttinclude" />
+    <Preserve Path="WinRTCompatibility.cs" />
+    <Exclude Path="Serialization\AbstractSerializers\ISerializerCodeGenerationContext.cs" />
+    <Exclude Path="Serialization\AbstractSerializers\ISerializerCodeGenerator.cs" />
+    <Exclude Path="Serialization\AbstractSerializers\SerializerFieldKey.cs" />
+    <Exclude Path="Serialization\CodeDomSerializers\*" />
+    <Exclude Path="Serialization\DefaultSerializers\System_Collections_Specialized_NameValueCollectionMessagePackSerializer.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\System_Collections_QueueMessagePackSerializer.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\System_Collections_StackMessagePackSerializer.cs" />
+    <Exclude Path="Serialization\Metadata\_DictionaryEntry.cs" />
+    <Exclude Path="Serialization\Metadata\_IDisposable.cs" />
+    <Exclude Path="Serialization\EmittingSerializers\*" />
+    <Exclude Path="Serialization\IdentifierUtility.cs" />
+    <Exclude Path="Serialization\ISerializerGeneratorConfiguration.cs" />
+    <Exclude Path="Serialization\SerializerAssemblyGenerationConfiguration.cs" />
+    <Exclude Path="Serialization\SerializerCodeGenerationConfiguration.cs" />
+    <Exclude Path="Serialization\SerializerGenerator.cs" />
+    <Exclude Path="Serialization\Reflection\TracingILGenerator.*" />
+    <Exclude Path="Serialization\Tracer.cs" />
+    <Exclude Path="Validation.cs" />
+  </Project>
+  <Project Name="MsgPack.Silverlight.5" Base="MsgPack">
+    <Preserve Path="Properties\AssemblyInfo.cs" />
+    <Exclude File="*.tt" />
+    <Exclude File="*.ttinclude" />
+    <Exclude Path="Serialization\AbstractSerializers\ISerializerCodeGenerationContext.cs" />
+    <Exclude Path="Serialization\AbstractSerializers\ISerializerCodeGenerator.cs" />
+    <Exclude Path="Serialization\CodeDomSerializers\*" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableCollectionSerializer`2.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableDictionarySerializer`3.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\ImmutableStackSerializer`2.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\System_Collections_QueueMessagePackSerializer.cs" />
+    <Exclude Path="Serialization\DefaultSerializers\System_Collections_StackMessagePackSerializer.cs" />
+    <Exclude Path="Serialization\EmittingSerializers\AssemblyBuilderCodeGenerationContext.cs" />
+    <Preserve Path="Serialization\LockRecursionPolicy.cs" />
+    <Preserve Path="Serialization\ReaderWriterLockSlim.cs" />
+    <Exclude Path="Serialization\ISerializerGeneratorConfiguration.cs" />
+    <Exclude Path="Serialization\SerializerAssemblyGenerationConfiguration.cs" />
+    <Exclude Path="Serialization\SerializerCodeGenerationConfiguration.cs" />
+    <Exclude Path="Serialization\SerializerGenerator.cs" />
+    <Preserve Path="Serialization\SourceLevels.cs" />
+    <Preserve Path="Serialization\SourceSwitch.cs" />
+    <Preserve Path="Serialization\TraceEventType.cs" />
+    <Preserve Path="Serialization\TraceSource.cs" />
+    <Include Path="PackerUnpackerExtensions.cs" />
+    <Include Path="ReflectionAbstractions.cs" />
+    <Preserve Path="SilverlightExtensions.cs" />
+    <Include Path="TupleItems.cs" />
+    <Exclude Path="Validation.cs" />
+  </Project>
+  <Project Name="MsgPack.Silverlight.WindowsPhone" Base="MsgPack.WinRT.Portable">
+    <Preserve Path="Properties\AssemblyInfo.cs" />
+    <Preserve Path="Serialization\Metadata\_DictionaryEntry.cs" />
+    <Exclude Path="UnsafeNativeMethods.cs" />
+    <Exclude Path="WinRTCompatibility.cs" />
+  </Project>
+</ProjectSync>

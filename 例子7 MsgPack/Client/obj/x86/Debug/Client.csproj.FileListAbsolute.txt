@@ -1,0 +1,150 @@
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\bin\Debug\Client.exe
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\bin\Debug\Client.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\bin\Debug\ZYSocketClientA.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\bin\Debug\ZYSocketShare.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\bin\Debug\ZYSocketClientA.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\obj\x86\Debug\Client.Form1.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\obj\x86\Debug\Client.LogOn.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\obj\x86\Debug\Client.Properties.Resources.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\obj\x86\Debug\Client.exe
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\obj\x86\Debug\Client.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\bin\Debug\BuffLibrary.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\Client\bin\Debug\BuffLibrary.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\bin\Debug\Client.exe
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\bin\Debug\Client.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\bin\Debug\BuffLibrary.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\bin\Debug\ZYSocketClientA.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\bin\Debug\ZYSocketShare.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\bin\Debug\BuffLibrary.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\bin\Debug\ZYSocketClientA.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.Form1.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.LogOn.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.Properties.Resources.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.exe
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.pdb
+F:\ZYSocketFrame\例2\Client\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.Form1.resources
+F:\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.LogOn.resources
+F:\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.Properties.Resources.resources
+F:\ZYSocketFrame\例2\Client\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+F:\ZYSocketFrame\例2\Client\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+F:\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.exe
+F:\ZYSocketFrame\例2\Client\bin\Debug\Client.exe
+F:\ZYSocketFrame\例2\Client\bin\Debug\Client.pdb
+F:\ZYSocketFrame\例2\Client\bin\Debug\BuffLibrary.dll
+F:\ZYSocketFrame\例2\Client\bin\Debug\ZYSocketClientA.dll
+F:\ZYSocketFrame\例2\Client\bin\Debug\ZYSocketShare.dll
+F:\ZYSocketFrame\例2\Client\bin\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame\例2\Client\bin\Debug\ZYSocketClientA.pdb
+F:\ZYSocketFrame\例2\Client\bin\Debug\ZYSocketShare.pdb
+F:\ZYSocketFrame\例2\Client\obj\x86\Debug\Client.pdb
+F:\ZYSocketFrame2\例2\Client\bin\Debug\Client.exe
+F:\ZYSocketFrame2\例2\Client\bin\Debug\Client.pdb
+F:\ZYSocketFrame2\例2\Client\bin\Debug\BuffLibrary.dll
+F:\ZYSocketFrame2\例2\Client\bin\Debug\ZYSocketClientA.dll
+F:\ZYSocketFrame2\例2\Client\bin\Debug\ZYSocketShare.dll
+F:\ZYSocketFrame2\例2\Client\bin\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame2\例2\Client\bin\Debug\ZYSocketClientA.pdb
+F:\ZYSocketFrame2\例2\Client\bin\Debug\ZYSocketShare.pdb
+F:\ZYSocketFrame2\例2\Client\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\例2\Client\obj\x86\Debug\Client.Form1.resources
+F:\ZYSocketFrame2\例2\Client\obj\x86\Debug\Client.LogOn.resources
+F:\ZYSocketFrame2\例2\Client\obj\x86\Debug\Client.Properties.Resources.resources
+F:\ZYSocketFrame2\例2\Client\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+F:\ZYSocketFrame2\例2\Client\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+F:\ZYSocketFrame2\例2\Client\obj\x86\Debug\Client.exe
+F:\ZYSocketFrame2\例2\Client\obj\x86\Debug\Client.pdb
+F:\ZYSocketFrame2\例2\Client\bin\Debug\Polenter.SharpSerializer.dll
+F:\ZYSocketFrame2\例2\Client\bin\Debug\Polenter.SharpSerializer.pdb
+F:\ZYSocketFrame2\例2\Client\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\Client.exe.config
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\Client.exe
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\Client.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\PACK.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\PACK.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\ZYSocketClientA.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\Polenter.SharpSerializer.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\Client.Form1.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\Client.LogOn.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\Client.Properties.Resources.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\Client.exe
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Client\obj\x86\Debug\Client.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\Client.exe.config
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\Client.exe
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\Client.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\PACK.dll
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\ZYSocketClientA.dll
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\ZYSocketShare.dll
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\PACK.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\ZYSocketClientA.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Client\bin\Debug\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例5-winfrom-server\Client\obj\x86\Debug\Client.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例5-winfrom-server\Client\obj\x86\Debug\Client.Form1.resources
+L:\ZYSocketFrame2\例5-winfrom-server\Client\obj\x86\Debug\Client.LogOn.resources
+L:\ZYSocketFrame2\例5-winfrom-server\Client\obj\x86\Debug\Client.Properties.Resources.resources
+L:\ZYSocketFrame2\例5-winfrom-server\Client\obj\x86\Debug\Client.csproj.GenerateResource.Cache
+L:\ZYSocketFrame2\例5-winfrom-server\Client\obj\x86\Debug\Client.exe
+L:\ZYSocketFrame2\例5-winfrom-server\Client\obj\x86\Debug\Client.pdb
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Client.exe.config
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Client.exe
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Client.pdb
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\MsgPack.dll
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\PACK.dll
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketClientA.dll
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketShare.dll
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\PACK.pdb
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\MsgPack.pdb
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketClientA.pdb
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.Form1.resources
+L:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.LogOn.resources
+L:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.Properties.Resources.resources
+L:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.csproj.GenerateResource.Cache
+L:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.exe
+L:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.pdb
+L:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Client.exe.config
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Client.exe
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Client.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\MsgPack.dll
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\PACK.dll
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketClientA.dll
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\PACK.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\MsgPack.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketClientA.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.Form1.resources
+E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.LogOn.resources
+E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.Properties.Resources.resources
+E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.csproj.GenerateResource.Cache
+E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.exe
+E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.pdb

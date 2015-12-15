@@ -1,0 +1,77 @@
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\bin\Debug\testClass.dll
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\bin\Debug\testClass.pdb
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\obj\x86\Debug\testClass.dll
+c:\users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\obj\x86\Debug\testClass.pdb
+C:\Users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\bin\Debug\ZYSocketClientA.dll
+C:\Users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\bin\Debug\ZYSocketClientA.pdb
+C:\Users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\bin\Debug\ZYSocketShare.dll
+C:\Users\luyikk\documents\visual studio 2010\Projects\ZYSocketFrame\testClass\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\例1\testClass\bin\Debug\testClass.dll
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\例1\testClass\bin\Debug\testClass.pdb
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\例1\testClass\bin\Debug\ZYSocketShare.dll
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\例1\testClass\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\例1\testClass\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\例1\testClass\obj\x86\Debug\testClass.dll
+C:\Users\luyikk\Documents\visual studio 2010\Projects\ZYSocketFrame\例1\testClass\obj\x86\Debug\testClass.pdb
+F:\ZYSocketFrame\例1\testClass\bin\Debug\testClass.dll
+F:\ZYSocketFrame\例1\testClass\bin\Debug\testClass.pdb
+F:\ZYSocketFrame\例1\testClass\bin\Debug\ZYSocketShare.dll
+F:\ZYSocketFrame\例1\testClass\bin\Debug\ZYSocketShare.pdb
+F:\ZYSocketFrame\例1\testClass\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame\例1\testClass\obj\x86\Debug\testClass.dll
+F:\ZYSocketFrame\例1\testClass\obj\x86\Debug\testClass.pdb
+E:\ZYSocketFrame\例1\testClass\bin\Debug\testClass.dll
+E:\ZYSocketFrame\例1\testClass\bin\Debug\testClass.pdb
+E:\ZYSocketFrame\例1\testClass\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame\例1\testClass\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame\例1\testClass\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\ZYSocketFrame\例1\testClass\obj\x86\Debug\testClass.dll
+E:\ZYSocketFrame\例1\testClass\obj\x86\Debug\testClass.pdb
+F:\ZYSocketFrame2\例1\testClass\bin\Debug\testClass.dll
+F:\ZYSocketFrame2\例1\testClass\bin\Debug\testClass.pdb
+F:\ZYSocketFrame2\例1\testClass\bin\Debug\ZYSocketShare.dll
+F:\ZYSocketFrame2\例1\testClass\bin\Debug\ZYSocketShare.pdb
+F:\ZYSocketFrame2\例1\testClass\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\例1\testClass\obj\x86\Debug\testClass.dll
+F:\ZYSocketFrame2\例1\testClass\obj\x86\Debug\testClass.pdb
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\testClass.dll
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\testClass.pdb
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\ZYSocketShare.dll
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\ZYSocketShare.pdb
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass.dll
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass.pdb
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.dll
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.pdb
+F:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\testClass.dll
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\testClass.pdb
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\ZYSocketShare.dll
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass.dll
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass.pdb
+L:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\testClass.dll
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\testClass.pdb
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.pdb
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass.dll
+E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass.pdb
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\testClass.dll
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\testClass.pdb
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerializer.pdb
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.dll
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.pdb

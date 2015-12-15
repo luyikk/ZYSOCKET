@@ -1,0 +1,176 @@
+Release 0.1 - 2011/1/4
+
+  Porting from Message Pack Java 0.3.
+
+  FEATURES
+  * MessagePackObject is implemented.
+  * Packer APIs (Packer class) are implemented.
+  * Buffered Unpacker APIs (Unpacker class) are implemented.
+  * Unbuffered Unpacker APIs (Unpacking class) are implemented.
+
+Release 0.2 - 2012/6/19
+
+  FEATURES
+  * Geneneric Serializer is implemented. (See MessagePackSerializer.Create<T>().)
+  * Redesign basic APIs.
+  * Support Mono, Silverlight, WP 7.1 (experimental).
+  * RPC (See https://github.com/yfakariya/msgpack-rpc-cli/)
+
+Release 0.3 - 2013/1/27
+
+  BREAKING CHANGES
+  * Unpacker.Feed is removed. Use Unpacker.Create(Stream) and feed data to the passing Stream instead of Unpacker.
+  * IUnpackable.UnpackFromMessage now takes Unpacker instead of MessagePackObject to be symmetric as IPackable and improve custom unpacking performance.
+  * Unpacker.Create() is removed because it is completely useless.
+  * Unpacker does not remember interruptted stream state now. So, unpacker throws exception when it reaches end of stream. 
+    Data feeding should be handled on the underlying stream layer like NetworkStream does -- it is not unpacker layer's responsibility.
+
+  FEATURES
+  * Improve protobuf-net compatibility.
+  * Add non-generic overload for MessagePackSerializer.Create().
+  * Add direct read method for primitive types on Unpacker. It enable dramatic performance improvement on deserializer.
+  * Support WinRT (experimental, .NET Fx core only, that is, WinMD is not supported yet).
+  * Add SerialializerGenerator which provides capability to generate pre-built serializer assembly.
+  * Unpacker.ReadItem/UnpackSubtree makes easy to unpack collection as MessagePackObject.
+
+  IMPROVEMENTS
+  * Improve unpacking performance.
+
+  BUG FIXES
+  * Fix 'sparse' declaration (i.e. field ids are not continuous on the objects' MessagePackDataMember attribute) causes deserialization error.
+  * Fix synchronization related error.
+  * Serializers respects IPackable/IUnpackable.
+
+Release 0.3.1 - 2013/5/4
+
+  FEATURES
+  * [issue1] Add byte-array based serialization APIs.
+
+  BUG FIXES
+  * [issue6] Fix deserializing from a map which contains unknown member causes MessageTypeException.
+
+Release 0.3.2 - 2013/6/30
+
+  FEATURES
+  * Support safe deserialization for the stream which contains new types of MsgPack spec.
+    see https://github.com/msgpack/msgpack/blob/master/spec.md for details.
+
+  BUG FIXES
+  * Fix infinite loop for invalid stream which header is Raw and it does not have enough length contents.
+
+Release 0.3.2.1 - 2013/8/17
+
+  BUG FIXES
+  * Fix Unpacker.ReadString/ReadBinary of subtree unpacker leads to subsequent unpacking failure when unpacked value is nil or empty.
+
+Release 0.4 - 2013/10/6
+
+  BREAKING CHANGES
+  * Packer.PackRaw(IEnumerable<byte>) can emit compact binary when the IEnumerable<byte> object also implements ICollection<byte> or ICollection.
+  * There are little issues in corner cases.
+    * Unpacker.Data never returns null even if it is in before head of underlying stream.
+    * MessagePackSerializer<T>.UnpackFrom does not throw exception when unpacker is still in before head of the underlying stream. Note that generated serializer still require that the unpacker is in head of the underlying array or map.
+
+  FEATURES
+  * Support binary types, string8 types, and extension types of MsgPack spec.
+    see https://github.com/msgpack/msgpack/blob/master/spec.md for details.
+  * SerializerGenerator now enable to specify output directory.
+  * Specify default collection types for well-known abstract collection types (IList<T>, IDictionary<TKey,TValue>, etc.).
+
+  BUG FIXES
+  * Fix SerializerGenerator only support one serealizer per assembly.
+  * Fix UTC DateTime serialization is corrupt in Mono.
+  * Fix Boolean? unpacking is not implemented.
+  * Fix bugs of NilImplication.
+
+  NOTE
+  * Nullable<MessagePack> based unpacker API is deprecated because of their poor performance. You should use fast non-nullable APIs instead (properties/methods with 'Data' suffixes).
+  * This version is tested on .NET 4.5 and Mono 2.10.8.1.
+
+Release 0.4.1 - 2013/12/07
+
+  BUG FIXES
+  * Fix Readme code error (issue #20.)
+  * Fix MessagePack.Create<T>() might fail due to type lock synchronization does not coordinate multiple threads (issue #19.)
+  * Fix deserializing as MessagePackObject fails when unpacking data is list or map (issue #13.)
+
+Release 0.4.2 - 2014/3/17
+
+  BUG FIXES
+  * Add API to re-register serializer (issue #24). It allows you to override default(built-in) serializer as you like.
+
+Release 0.4.3 - 2014/3/22
+
+  BUG FIXES
+  * Fix creating serializer for IEnumerable<T> (and not IList<T> nor IDictionary<TKey, TValue>) causes NullReferenceException.
+  * Fix built-in object serializer cannot deserialize array/map correctly.
+  * Fix PackerUnpackerExtensions.Pack<T>() ignore Default serialization context and uses brand-new instance every time.
+
+Release 0.4.4 - 2014/4/13
+
+  BUG FIXES
+  * Fix creating serializer for IDictionary<TKey, TValue> causes NullReferenceException.
+  * Fix serializers' default constructor IL (it is not used in the library, but can be called via reflection).
+
+Release 0.5 - 2014/7/21
+
+  FEATURES
+  * CodeDOM serializer generator, which generates source code for custom serializer. It enables debugger break points, insert your own codes, etc.
+  * Start Xamarin supporting with CodeDOM serializer generator and runtime code generation free Nullable/Enum serializers.
+  * Start Unity supporting with same mechanism as Xamarin support and mpu.exe helper tool.
+  * Support .NET 4.5 including immutable collections support.
+  * Support on-the-fly IEnumerable<T> (such as the result of Enumerable.Range()) packing. Note that unpacking is still unsupported.
+  * Support underlying integral based enum serialization.
+  * Add new PackerUnpackerExtensinos' extension methods for collections and dictionaries to improve overloading stability (predictability).
+  * System.Runtime.Serialization assembly is not required now (pull-request #29).
+  * Non public members annotated with MessagePackMember attribute or DataMemberAttribute are supported now (issue #33).
+
+  BUG FIXES
+  * PackerUnpackerExtensions.Pack(Object) takes long time. (#14)
+  * Fix Readme code error (issue #20. Ported from 0.4 branch.)
+  * Fix MessagePack.Create<T>() might fail due to type lock synchronization does not coordinate multiple threads (issue #19. Ported from 0.4 branch.)
+  * Fix deserializing as MessagePackObject fails when unpacking data is list or map (issue #13. Ported from 0.4 branch.)
+  * Readonly members now silently ignored except they are annotated with MessagePackMember attribute or DataMemberAttribute (pull-request #30, issue#28).
+
+  NOTE
+  * This release unifies .NET build and Mono build for main source codes (testing codes have not been unified yet.)
+  * This release contains reimplementation of serializer generation stack. It might change implementation detail dependant behavior (it usually potential issue).
+
+Release 0.5.1 - 2014/8/9
+
+  FEATURES
+  * Reflection serializer. It enables on-the-fly serializer generation in Xamarin and Unity3D.
+
+  BUG FIXES
+  * Fix concurrency bug in WinRT.
+  * Fix built-in NamedValueCollection serializer generates invalid stream when the values of a key are empty.
+
+  NOTE
+  * This release changes drop for Unity3D from source assets to dll assets (source assets are still available).
+
+Release 0.5.2 - 2014/9/6
+
+  BREAKING CHANGES
+  * MessagePackObjectEqualityComparer does not inherit EqualityComparer<T> now to avoid ExecutionEngineException on iOS.
+
+  FEATURES
+  * Support Windows Phone 8.1 (Both of WinRT & Silverlight) issue #36
+  * Add MessagePackSerializer.Get() for usability.
+
+  BUG FIXES
+  * Fix FILETIME is not available in WinRT
+  * Fix does not work in Unity3D. issue #37
+
+Relase 0.5.3 - 2014/09/15
+
+  BREAKING CHANGES
+  * MessagePackObject from byte[] now always act as binary, not string. It affects only low level API and unpacked from bin8, bin16, bin32 types. Issue #39
+
+  FEATURES
+  * Using new MessagePackMemberAttribute.Name property, you can customize map keys of serialized objects when you use SerializationMethod.Map. Related to issue #38
+
+Relese 1.0 - ???
+
+  BREAKING CHANGES [planed]
+  * APIs marked with [Obsolete] are removed.
+

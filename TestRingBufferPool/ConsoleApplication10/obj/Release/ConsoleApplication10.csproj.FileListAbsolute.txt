@@ -1,0 +1,10 @@
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\bin\Release\ConsoleApplication10.exe
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\bin\Release\ConsoleApplication10.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\bin\Release\ZYSocketShare.dll
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\bin\Release\Polenter.SharpSerializer.dll
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\bin\Release\ZYSocketShare.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\bin\Release\Polenter.SharpSerializer.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\bin\Release\Polenter.SharpSerializer.xml
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\obj\Release\ConsoleApplication10.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\obj\Release\ConsoleApplication10.exe
+c:\users\administrator\documents\visual studio 2015\Projects\ConsoleApplication10\ConsoleApplication10\obj\Release\ConsoleApplication10.pdb

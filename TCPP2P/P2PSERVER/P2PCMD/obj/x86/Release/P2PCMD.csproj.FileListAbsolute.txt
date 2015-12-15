@@ -1,0 +1,10 @@
+F:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\bin\Release\P2PCMD.dll
+F:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\bin\Release\P2PCMD.pdb
+F:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\obj\x86\Release\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\obj\x86\Release\P2PCMD.dll
+F:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\obj\x86\Release\P2PCMD.pdb
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\bin\Release\P2PCMD.dll
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\bin\Release\P2PCMD.pdb
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\obj\x86\Release\ResolveAssemblyReference.cache
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\obj\x86\Release\P2PCMD.dll
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\P2PCMD\obj\x86\Release\P2PCMD.pdb

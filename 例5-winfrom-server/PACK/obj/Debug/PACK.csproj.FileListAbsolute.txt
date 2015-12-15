@@ -1,0 +1,19 @@
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\bin\Debug\PACK.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\bin\Debug\PACK.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\bin\Debug\ZYSocketShare.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\bin\Debug\Polenter.SharpSerializer.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\obj\Debug\PACK.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\PACK\obj\Debug\PACK.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\PACK\bin\Debug\PACK.dll
+L:\ZYSocketFrame2\例5-winfrom-server\PACK\bin\Debug\PACK.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\PACK\obj\Debug\PACK.dll
+L:\ZYSocketFrame2\例5-winfrom-server\PACK\obj\Debug\PACK.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\PACK\obj\Debug\PACK.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例5-winfrom-server\PACK\bin\Debug\PACK.dll
+E:\ZYSocketFrame2\例5-winfrom-server\PACK\bin\Debug\PACK.pdb
+E:\ZYSocketFrame2\例5-winfrom-server\PACK\obj\Debug\PACK.dll
+E:\ZYSocketFrame2\例5-winfrom-server\PACK\obj\Debug\PACK.pdb

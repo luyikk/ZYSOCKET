@@ -1,0 +1,54 @@
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\Server.exe
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\Server.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\PACK.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\ZYSocketFrame.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\ZYSocketShare.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\PACK.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\ZYSocketFrame.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\Polenter.SharpSerializer.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\obj\x86\Debug\Server.Form1.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\obj\x86\Debug\Server.Properties.Resources.resources
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\obj\x86\Debug\Server.exe
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\obj\x86\Debug\Server.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\Server\Server\bin\Debug\Server.exe.config
+F:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Server.exe.config
+F:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.exe
+F:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Server.exe.config
+L:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.exe
+L:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Server.exe
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Server.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\PACK.dll
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\PACK.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.Form1.resources
+L:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.Properties.Resources.resources
+L:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.csproj.GenerateResource.Cache
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\ZYSocketShare.dll
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Server.exe.config
+E:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.exe
+E:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.pdb
+E:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.Form1.resources
+E:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.Properties.Resources.resources
+E:\ZYSocketFrame2\例5-winfrom-server\Server\obj\x86\Debug\Server.csproj.GenerateResource.Cache
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Server.exe
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Server.pdb
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\PACK.dll
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\PACK.pdb
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Polenter.SharpSerializer.pdb
+E:\ZYSocketFrame2\例5-winfrom-server\Server\bin\Debug\Polenter.SharpSerializer.xml

@@ -1,0 +1,15 @@
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\PSPSERVER2.exe.config
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\PSPSERVER2.exe
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\PSPSERVER2.pdb
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\P2PCMD.dll
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\ZYSocketFrame.dll
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\ZYSocketShare.dll
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\Polenter.SharpSerializer.dll
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\ZYSocketFrame.pdb
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\ZYSocketShare.pdb
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\P2PCMD.pdb
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\Polenter.SharpSerializer.pdb
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\bin\Debug\Polenter.SharpSerializer.xml
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\obj\x86\Debug\PSPSERVER2.exe
+U:\ZYSocketFrame2\TCPP2P\P2PSERVER\PSPSERVER2\obj\x86\Debug\PSPSERVER2.pdb

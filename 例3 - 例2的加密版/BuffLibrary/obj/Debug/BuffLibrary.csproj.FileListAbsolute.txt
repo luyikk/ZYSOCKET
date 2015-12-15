@@ -1,0 +1,57 @@
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\BuffLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\BuffLibrary\bin\Debug\BuffLibrary.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\BuffLibrary\bin\Debug\BuffLibrary.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\BuffLibrary\bin\Debug\ZYSocketShare.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\BuffLibrary\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\BuffLibrary\obj\Debug\BuffLibrary.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\test2\BuffLibrary\obj\Debug\BuffLibrary.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\BuffLibrary\bin\Debug\BuffLibrary.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\BuffLibrary\bin\Debug\BuffLibrary.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\BuffLibrary\bin\Debug\ZYSocketShare.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\BuffLibrary\bin\Debug\ZYSocketShare.pdb
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\BuffLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\BuffLibrary\obj\Debug\BuffLibrary.dll
+C:\Users\luyikk\Documents\Visual Studio 2010\Projects\ZYSocketFrame\例2\BuffLibrary\obj\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame\例2\BuffLibrary\bin\Debug\BuffLibrary.dll
+F:\ZYSocketFrame\例2\BuffLibrary\bin\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame\例2\BuffLibrary\bin\Debug\ZYSocketShare.dll
+F:\ZYSocketFrame\例2\BuffLibrary\bin\Debug\ZYSocketShare.pdb
+F:\ZYSocketFrame\例2\BuffLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame\例2\BuffLibrary\obj\Debug\BuffLibrary.dll
+F:\ZYSocketFrame\例2\BuffLibrary\obj\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame\例3 - 例2的加密版\BuffLibrary\bin\Debug\BuffLibrary.dll
+F:\ZYSocketFrame\例3 - 例2的加密版\BuffLibrary\bin\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame\例3 - 例2的加密版\BuffLibrary\bin\Debug\ZYSocketShare.dll
+F:\ZYSocketFrame\例3 - 例2的加密版\BuffLibrary\bin\Debug\ZYSocketShare.pdb
+F:\ZYSocketFrame\例3 - 例2的加密版\BuffLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.dll
+F:\ZYSocketFrame\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\BuffLibrary.dll
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\ZYSocketShare.dll
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\ZYSocketShare.pdb
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.dll
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.pdb
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.dll
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.pdb
+F:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\BuffLibrary.dll
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\BuffLibrary.pdb
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\ZYSocketShare.dll
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.dll
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.pdb
+L:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\BuffLibrary.dll
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\BuffLibrary.pdb
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.pdb
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.dll
+E:\ZYSocketFrame2\例3 - 例2的加密版\BuffLibrary\obj\Debug\BuffLibrary.pdb

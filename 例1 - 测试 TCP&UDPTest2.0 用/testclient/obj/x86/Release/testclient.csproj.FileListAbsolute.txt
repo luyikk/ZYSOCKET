@@ -1,0 +1,14 @@
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\testclient.exe
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\testclient.pdb
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\testClass.dll
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\ZYSocketClientA.dll
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\ZYSocketShare.dll
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\testClass.pdb
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\ZYSocketClientA.pdb
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.exe
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.pdb

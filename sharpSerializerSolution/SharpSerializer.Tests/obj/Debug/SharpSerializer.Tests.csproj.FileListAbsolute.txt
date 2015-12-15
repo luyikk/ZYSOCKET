@@ -1,0 +1,10 @@
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\bin\Debug\SharpSerializer.Tests.dll
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\bin\Debug\SharpSerializer.Tests.pdb
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\bin\Debug\HelloWorldApp.exe
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\bin\Debug\Polenter.SharpSerializer.dll
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\bin\Debug\HelloWorldApp.pdb
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\bin\Debug\Polenter.SharpSerializer.pdb
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\bin\Debug\Polenter.SharpSerializer.xml
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\obj\Debug\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\obj\Debug\SharpSerializer.Tests.dll
+F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Tests\obj\Debug\SharpSerializer.Tests.pdb

@@ -1,0 +1,9 @@
+L:\ZYSocketFrame2\例子6-SSL CLIENT\bin\Debug\ConsoleApplication7.exe
+L:\ZYSocketFrame2\例子6-SSL CLIENT\bin\Debug\ConsoleApplication7.pdb
+L:\ZYSocketFrame2\例子6-SSL CLIENT\bin\Debug\ZYSocketSSLClient.dll
+L:\ZYSocketFrame2\例子6-SSL CLIENT\bin\Debug\ZYSocketSSLClient.pdb
+L:\ZYSocketFrame2\例子6-SSL CLIENT\obj\x86\Debug\SSLCLIENT.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例子6-SSL CLIENT\obj\x86\Debug\ConsoleApplication7.exe
+L:\ZYSocketFrame2\例子6-SSL CLIENT\obj\x86\Debug\ConsoleApplication7.pdb
+E:\ZYSocketFrame2\例子6-SSL CLIENT\obj\x86\Debug\ConsoleApplication7.exe
+E:\ZYSocketFrame2\例子6-SSL CLIENT\obj\x86\Debug\ConsoleApplication7.pdb

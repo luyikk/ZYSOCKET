@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBF9E85A-5948-4376-8BE1-EF4560E67C18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZYSocketClientB">
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientB.dll</HintPath>
+    </Reference>
+    <Reference Include="ZYSocketShare, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DownFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownFile.Designer.cs">
+      <DependentUpon>DownFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogOn.Designer.cs">
+      <DependentUpon>LogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDir.Designer.cs">
+      <DependentUpon>NewDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocketManager.cs" />
+    <Compile Include="SystemICO.cs" />
+    <Compile Include="UpFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpFiles.Designer.cs">
+      <DependentUpon>UpFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinMain.Designer.cs">
+      <DependentUpon>WinMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DownFile.resx">
+      <DependentUpon>DownFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOn.resx">
+      <DependentUpon>LogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDir.resx">
+      <DependentUpon>NewDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpFiles.resx">
+      <DependentUpon>UpFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinMain.resx">
+      <DependentUpon>WinMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PackHandler\PackHandler.csproj">
+      <Project>{36710581-5426-4788-A9C2-C25A6030343A}</Project>
+      <Name>PackHandler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

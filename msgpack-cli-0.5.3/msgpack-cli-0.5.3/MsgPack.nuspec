@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>MsgPack.Cli</id>
+    <title>MessagePack for CLI</title>
+    <version>0.5.3</version>
+    <authors>FUJIWARA, Yusuke</authors>
+    <owners>FUJIWARA, Yusuke</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/msgpack/msgpack-cli</projectUrl>
+    <iconUrl>http://cli.msgpack.org/images/msgpack.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MessagePack is fast, compact, and interoperable binary serialization format.
+This package provides MessagePack serialization/deserialization APIs. This pacakge also supports Mono, Xamarin and Unity3D.</description>
+    <releaseNotes>This release includes: Changing MessagePackObject behavior which is unpacked from new binary typed value. MessagePackMember.Name property to tweak keys of serialized MessagePack maps.</releaseNotes>
+    <copyright>Copyright 2010-2014 FUJIWARA, Yusuke, all rights reserved.</copyright>
+    <tags>Serialization MessagePack MsgPack Formatter Binary Serializer Fast Xamarin Unity3D</tags>
+    <dependencies />
+  </metadata>
+  <files>
+    <file src="bin\**\*.dll" target="lib" exclude="**\System.*;**\Microsoft.*;**\Mono.*" />
+    <file src="bin\**\*.XML" target="lib" exclude="**\System.*;**\Microsoft.*;**\Mono.*" />
+  </files>
+</package>

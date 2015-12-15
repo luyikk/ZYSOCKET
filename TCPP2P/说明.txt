@@ -1,0 +1,41 @@
+P2PCLIENT  基本 DLL 
+P2PSERVER P2P服务器，一般不需要咋改
+P2PFileINFO 用次框架实现的 一款文件共享系统 一个测试程序
+TestClientConsole 教你如何在你的项目中 使用 P2PCLIENT 一个测试程序
+
+此P2P是基于 TCP的，能穿透大多数路由器
+
+原理：  C 同时连接 对方的 连接出的端口号 S 用于同步 C 
+可做项目： 想的到就做的到，比如能做个 在家就能直接访问公司电脑的一款程序，服务器文件同步程序等
+
+
+P2PSERVER P2P服务器 架设方法：
+首先在服务器上 部署 P2PSERVER. Config 文件基本不用修改  当然你也根据需要修改
+MServerPort 为主服务端口
+RegServerPort 为副端口
+MaxConCount 为连接最大数
+ServerIP 为服务IP
+
+
+
+P2PFileINFO 架设方法：
+修改Config文件
+ServerIP 为P2P服务器IP 
+ServerPort 为服务器端口 对于上面的 MServerPort
+ServerRegPort 为服务器符端口 对于上面的 RegServerPort
+MinPort 和 MaxPort 为端口号范围 一般不用改
+ResCount 为 连接次数
+
+ConnentKey 为访问密码
+SharePath 为 共享目录
+
+
+
+TestClientConsole CONFIG:
+ServerIP 为P2P服务器IP 
+ServerPort 为服务器端口 对于上面的 MServerPort
+ServerRegPort 为服务器符端口 对于上面的 RegServerPort
+MinPort 和 MaxPort 为端口号范围 一般不用改
+ResCount 为 连接次数
+
+

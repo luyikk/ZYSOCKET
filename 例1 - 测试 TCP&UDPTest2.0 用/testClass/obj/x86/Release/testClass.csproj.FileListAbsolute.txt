@@ -1,0 +1,30 @@
+L:\ZYSocketFrame2\例1 - test\testClass\bin\Release\testClass.dll
+L:\ZYSocketFrame2\例1 - test\testClass\bin\Release\testClass.pdb
+L:\ZYSocketFrame2\例1 - test\testClass\bin\Release\ZYSocketShare.dll
+L:\ZYSocketFrame2\例1 - test\testClass\bin\Release\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例1 - test\testClass\bin\Release\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例1 - test\testClass\bin\Release\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例1 - test\testClass\bin\Release\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例1 - test\testClass\obj\x86\Release\testClass.dll
+L:\ZYSocketFrame2\例1 - test\testClass\obj\x86\Release\testClass.pdb
+L:\ZYSocketFrame2\例1 - test\testClass\obj\x86\Release\testClass.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\bin\Release\testClass.dll
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\bin\Release\testClass.pdb
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\bin\Release\ZYSocketShare.dll
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\bin\Release\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\bin\Release\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\bin\Release\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\bin\Release\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\obj\x86\Release\testClass.dll
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\obj\x86\Release\testClass.pdb
+L:\ZYSocketFrame2\例1 - TCP&UDPTest2.0\testClass\obj\x86\Release\testClass.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\testClass.dll
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\testClass.pdb
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\ZYSocketShare.dll
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\Polenter.SharpSerializer.dll
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\ZYSocketShare.pdb
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\Polenter.SharpSerializer.pdb
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\Polenter.SharpSerializer.xml
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.csprojResolveAssemblyReference.cache
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.dll
+L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.pdb

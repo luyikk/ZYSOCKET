@@ -1,0 +1,11 @@
+F:\ZYSocketFrame2\例1(V2)\testclient\bin\Release\testclient.exe
+F:\ZYSocketFrame2\例1(V2)\testclient\bin\Release\testclient.pdb
+F:\ZYSocketFrame2\例1(V2)\testclient\bin\Release\testClass.dll
+F:\ZYSocketFrame2\例1(V2)\testclient\bin\Release\ZYSocketClientA.dll
+F:\ZYSocketFrame2\例1(V2)\testclient\bin\Release\ZYSocketShare.dll
+F:\ZYSocketFrame2\例1(V2)\testclient\bin\Release\testClass.pdb
+F:\ZYSocketFrame2\例1(V2)\testclient\bin\Release\ZYSocketClientA.pdb
+F:\ZYSocketFrame2\例1(V2)\testclient\bin\Release\ZYSocketShare.pdb
+F:\ZYSocketFrame2\例1(V2)\testclient\obj\x86\Release\ResolveAssemblyReference.cache
+F:\ZYSocketFrame2\例1(V2)\testclient\obj\x86\Release\testclient.exe
+F:\ZYSocketFrame2\例1(V2)\testclient\obj\x86\Release\testclient.pdb
