@@ -292,6 +292,11 @@ namespace ZYSocket.share
 #endif
                 }
 
+                if (lengt < 0)
+                {
+                    return null;
+                }
+
 
                 byte[] data = new byte[lengt];
 

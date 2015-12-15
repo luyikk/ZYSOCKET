@@ -4,20 +4,26 @@ using System.Text;
 
 namespace ZYSocket.share
 {
-    public class ZYNetRingBufferPoolV2:ZYNetRingBufferPool
+    public class ZYNetRingBufferPoolV2 : ZYNetRingBufferPool
     {
-        public ZYNetRingBufferPoolV2():this(4096)
+        public ZYNetRingBufferPoolV2()
+            : this(4096)
         {
         }
 
-        public ZYNetRingBufferPoolV2(int maxBuffer):base(maxBuffer,4,false)
-        {           
+        public ZYNetRingBufferPoolV2(int maxBuffer)
+            : base(maxBuffer, 4, false)
+        {
         }
 
 
         protected override int GetHeadLengt()
         {
             System.Threading.Monitor.Enter(lockobj);
+
+            if (Length == 0)
+                return 0;
+
             try
             {
                 while (Data[_current] != 0xFF && _length > 0)
@@ -46,8 +52,6 @@ namespace ZYSocket.share
                     return 0;
                 }
 
-                _current++;
-                _length--;
 
                 if (_current > MAXSIZE - 1)
                     _current = 0;
@@ -55,16 +59,18 @@ namespace ZYSocket.share
                 if (_length == 0)
                     return 0;
 
-                byte[] pdata = ReadNoPostion(4);
 
-                if (pdata == null)
-                    return 0;
 
                 uint val;
                 byte lengt;
 
-                if (ReadUInt32(pdata, out val, out lengt))
+                if (ReadUInt32(out val, out lengt))
                 {
+                    if (val < 0)
+                    {
+                        return 0;
+                    }
+
                     return (int)val;
                 }
                 else
@@ -78,13 +84,13 @@ namespace ZYSocket.share
         }
 
 
-        public bool ReadUInt32(byte[] Datas,out uint val, out byte lengt)
+        public bool ReadUInt32(out uint val, out byte lengt)
         {
 
             uint loc3 = 0;
             uint loc1 = 0;
             int loc2 = 0;
-            int r = 0;
+            int r = _current + 1;
             lengt = 0;
             val = 0;
 
@@ -92,10 +98,10 @@ namespace ZYSocket.share
             {
                 lengt++;
 
-                if (r + i >= Datas.Length)
+                if (((r + i) % MAXSIZE) >= Data.Length)
                     return false;
 
-                loc3 = Datas[r + i];
+                loc3 = Data[((r + i) % MAXSIZE)];
                 if (loc2 < 32)
                 {
                     if (loc3 >= 128)
@@ -116,12 +122,52 @@ namespace ZYSocket.share
                         r++;
 
                     }
-                    while (r < Datas.Length && Datas[r] >= 128);
+                    while (r < _length && Data[(r % MAXSIZE)] >= 128);
                     break;
                 }
                 loc2 = loc2 + 7;
             }
             val = loc1;
+            return true;
+        }
+
+        public override bool Read(out byte[] data)
+        {
+            int count = GetHeadLengt();
+
+            if (count < 0)
+            {
+                data = null;
+                return false;
+            }
+
+
+            if (count == 0)
+            {
+                data = null;
+                return false;
+            }
+
+            if (count > MAXSIZE)
+            {
+                Flush();
+                data = null;
+                return false;
+            }
+
+            if (count > _length)
+            {
+                data = null;
+                return false;
+            }
+
+            _current += 1;
+
+            if (Length > 0)
+                Length -= 1;
+
+            data = Read(count);
+
             return true;
         }
     }

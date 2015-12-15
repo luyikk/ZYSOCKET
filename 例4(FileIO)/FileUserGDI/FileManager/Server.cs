@@ -45,10 +45,10 @@ namespace FileManager
 
             BufferFormatV2.ObjFormatType = BuffFormatType.XML;
             ReadBytesV2.ObjFormatType = BuffFormatType.XML;
-            server.BinaryInput = new BinaryInputHandler(BinaryInputHandler); //设置输入代理
+            server.BinaryOffsetInput = new BinaryInputOffsetHandler(BinaryInputHandler); //设置输入代理
             server.Connetions = new ConnectionFilter(ConnectionFilter); //设置连接代理
             server.MessageInput = new MessageInputHandler(MessageInputHandler); //设置 客户端断开
-
+            server.IsOffsetInput = true;
             server.Start(); //启动服务器
 
             this.WindowState = FormWindowState.Minimized;
@@ -198,17 +198,17 @@ namespace FileManager
         /// </summary>
         /// <param name="data">输入数据</param>
         /// <param name="socketAsync">该数据包的通讯SOCKET</param>
-        void BinaryInputHandler(byte[] data, SocketAsyncEventArgs socketAsync)
+        void BinaryInputHandler(byte[] data,int offset,int count, SocketAsyncEventArgs socketAsync)
         {
-            try
-            {
+            //try
+            //{
                 ZYNetRingBufferPoolV2 stream = socketAsync.UserToken as ZYNetRingBufferPoolV2;
 
                 if (stream != null)
                 {
                     //最新的数据包整合类
 
-                    stream.Write(data);
+                    stream.Write(data, offset,count);
 
                     byte[] datax;
                     while (stream.Read(out datax))
@@ -220,7 +220,7 @@ namespace FileManager
                 {
                     UserManager userinfo = socketAsync.UserToken as UserManager;
 
-                    userinfo.Stream.Write(data);
+                    userinfo.Stream.Write(data, offset, count);
 
                     byte[] datax;
                     while (userinfo.Stream.Read(out datax))
@@ -232,12 +232,12 @@ namespace FileManager
 
                 }
 
-            }
-            catch (Exception er)
-            {
-                Console.WriteLine(er.ToString());
-                server.Disconnect(socketAsync.AcceptSocket);
-            }
+            //}
+            //catch (Exception er)
+            //{
+            //    Console.WriteLine(er.ToString());
+            //    server.Disconnect(socketAsync.AcceptSocket);
+            //}
 
 
         }

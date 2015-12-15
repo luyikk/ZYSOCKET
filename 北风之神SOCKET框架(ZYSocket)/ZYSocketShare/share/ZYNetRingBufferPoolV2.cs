@@ -18,6 +18,10 @@ namespace ZYSocket.share
         protected override int GetHeadLengt()
         {
             System.Threading.Monitor.Enter(lockobj);
+
+            if (Length == 0)
+                return 0;
+
             try
             {
                 while (Data[_current] != 0xFF && _length > 0)
@@ -60,6 +64,11 @@ namespace ZYSocket.share
 
                 if (ReadUInt32(out val, out lengt))
                 {
+                    if (val < 0)
+                    {
+                        return 0;
+                    }
+
                     return (int)val;
                 }
                 else
@@ -124,6 +133,13 @@ namespace ZYSocket.share
         {
             int count = GetHeadLengt();
 
+            if (count < 0)
+            {
+                data = null;
+                return false;
+            }
+
+
             if (count == 0)
             {
                 data = null;
@@ -144,6 +160,10 @@ namespace ZYSocket.share
             }
 
             _current += 1;
+
+            if(Length>0)
+                Length -= 1;
+
             data = Read(count);
 
             return true;
