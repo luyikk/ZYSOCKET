@@ -10,13 +10,14 @@ namespace ZYNetRingBufferStream
 {
     class Program
     {
-        static ZYNetRingBufferPoolV2 BufferPool = new ZYNetRingBufferPoolV2(128); //128Bit
+        static ZYNetRingBufferPoolV2 BufferPool = new ZYNetRingBufferPoolV2(4096); //128Bit
         static void Main(string[] args)
         {
           
 
             Task.Factory.StartNew(() =>
             {
+
                 while (true)
                 {
                     byte[] datax;
@@ -25,7 +26,9 @@ namespace ZYNetRingBufferStream
                         DataOn(datax); //打印数据包内容
                     }
 
+
                 }
+
 
             });
 
@@ -38,20 +41,21 @@ namespace ZYNetRingBufferStream
                 byte[] data = buff1.Finish();
 
 
-                byte[] pdata = new byte[1024];
+               // byte[] pdata = new byte[1024];
 
-                Buffer.BlockCopy(data, 0, pdata, 500, data.Length);
+                // Buffer.BlockCopy(data, 0, pdata, 500, data.Length);
 
 
-                //// BufferPool.Write(data);
-                //foreach (var item in data)
-                //{
-                //    BufferPool.Write(new byte[] { item });
-                //}
+                // BufferPool.Write(data);
+                foreach (var item in data)
+                {
+                    BufferPool.Write(new byte[] { item });
+                      
+                }
 
-                BufferPool.Write(pdata, 500, data.Length);
+                // BufferPool.Write(pdata, 500, data.Length);
 
-               System.Threading.Thread.Sleep(1);
+                System.Threading.Thread.Sleep(1);
 
             }
 

@@ -19,11 +19,11 @@ namespace ZYSocket.share
         {
             System.Threading.Monitor.Enter(lockobj);
 
-            if (Length == 0)
-                return 0;
-
+          
             try
             {
+               
+
                 while (Data[_current] != 0xFF && _length > 0)
                 {
                     if (_current < MAXSIZE - 1)
@@ -153,15 +153,19 @@ namespace ZYSocket.share
                 return false;
             }
 
-            if (count > _length)
+           
+
+
+            if (count > _length-1)
             {
+
                 data = null;
                 return false;
             }
 
             _current += 1;
 
-            if(Length>0)
+            if (Length > 0)
                 Length -= 1;
 
             data = Read(count);

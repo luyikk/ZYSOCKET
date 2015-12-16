@@ -1,0 +1,10 @@
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\obj\Release\ConsoleApplication10.exe
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\obj\Release\ConsoleApplication10.pdb
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Release\ConsoleApplication10.exe
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Release\ConsoleApplication10.pdb
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Release\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Release\ZYSocketShare.pdb
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Release\Polenter.SharpSerializer.pdb
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Release\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\obj\Release\TestRingPool.csprojResolveAssemblyReference.cache
