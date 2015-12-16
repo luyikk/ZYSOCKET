@@ -17,7 +17,8 @@ namespace testclient
 
         static void Main(string[] args)
         {
-            
+
+         
 
             client.DataOn += new DataOn(client_DataOn); //数据包进入事件
 
@@ -30,7 +31,7 @@ namespace testclient
                 {
                     Console.ReadLine();
 
-                  
+
 
 
                     testClass.PPo temp = new testClass.PPo();
@@ -40,7 +41,7 @@ namespace testclient
 
                     i++;
 
-                    for (int x= 0; x <=i; x++)
+                    for (int x = 0; x <= i; x++)
                     {
                         temp.guidList.Add(Guid.NewGuid());
                     }
@@ -52,15 +53,15 @@ namespace testclient
                     client.SendTo(BufferFormatV2.FormatFCA(temp));  //讲一个PPO对象发送出去
 
 
-               
+
 
                     BufferFormat buffmat = new BufferFormatV2(1001);
                     buffmat.AddItem(i);
                     buffmat.AddItem("通过组合数据包通讯，GUID is object");
-                    buffmat.AddItem(Guid.NewGuid());                  
+                    buffmat.AddItem(Guid.NewGuid());
                     client.SendTo(buffmat.Finish()); //用组合数据包模拟PPO对象
 
-                 
+
 
                     BufferFormat buffmat2 = new BufferFormatV2(1002);
                     buffmat2.AddItem(i);

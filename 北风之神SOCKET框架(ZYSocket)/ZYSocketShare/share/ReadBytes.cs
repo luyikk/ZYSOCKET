@@ -86,7 +86,8 @@ namespace ZYSocket.share
 
         public ReadBytes()
         {
-                    }
+                    
+        }
 
         public ReadBytes(Byte[] data)
         {

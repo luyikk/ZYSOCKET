@@ -200,8 +200,8 @@ namespace FileManager
         /// <param name="socketAsync">该数据包的通讯SOCKET</param>
         void BinaryInputHandler(byte[] data,int offset,int count, SocketAsyncEventArgs socketAsync)
         {
-            //try
-            //{
+            try
+            {
                 ZYNetRingBufferPoolV2 stream = socketAsync.UserToken as ZYNetRingBufferPoolV2;
 
                 if (stream != null)
@@ -232,12 +232,12 @@ namespace FileManager
 
                 }
 
-            //}
-            //catch (Exception er)
-            //{
-            //    Console.WriteLine(er.ToString());
-            //    server.Disconnect(socketAsync.AcceptSocket);
-            //}
+            }
+            catch (Exception er)
+            {
+                AddLog(er.ToString());
+                server.Disconnect(socketAsync.AcceptSocket);
+            }
 
 
         }

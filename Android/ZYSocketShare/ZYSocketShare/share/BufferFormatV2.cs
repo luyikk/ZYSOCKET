@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace ZYSocket.share
 {
@@ -8,8 +9,10 @@ namespace ZYSocket.share
     {
         public BufferFormatV2(int buffType, FDataExtraHandle dataExtra):base(buffType,dataExtra)
         {
-            buffList.Clear();
-            buffList.AddRange(GetBytes(buffType));
+            stream = new MemoryStream();
+            buffList = new BinaryWriter(stream);
+            buffList.Write(GetBytes(buffType));
+            
             Encode = Encoding.Unicode;
             finish = false;
             this.dataextra = dataExtra;       
@@ -18,8 +21,10 @@ namespace ZYSocket.share
 
         public BufferFormatV2(int buffType):base(buffType)
         {
-            buffList.Clear();
-            buffList.AddRange(GetBytes(buffType));
+            stream = new MemoryStream();
+            buffList = new BinaryWriter(stream);
+
+            buffList.Write(GetBytes(buffType));
             Encode = Encoding.Unicode;
             finish = false;
         }
@@ -44,8 +49,8 @@ namespace ZYSocket.share
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
             byte[] data = SerializeObject(obj);
-            buffList.AddRange(GetBytes(data.Length));
-            buffList.AddRange(data);
+            buffList.Write(GetBytes(data.Length));
+            buffList.Write(data);
         }
 
 
@@ -56,8 +61,8 @@ namespace ZYSocket.share
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
             Byte[] bytes = Encode.GetBytes(data);
-            buffList.AddRange(GetBytes(bytes.Length));
-            buffList.AddRange(bytes);
+            buffList.Write(GetBytes(bytes.Length));
+            buffList.Write(bytes);
         }
 
 
@@ -65,10 +70,9 @@ namespace ZYSocket.share
         {
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
-
-            byte[] ldata = GetBytes(data.Length);
-            buffList.AddRange(ldata);
-            buffList.AddRange(data);
+                      
+            buffList.Write(GetBytes(data.Length));
+            buffList.Write(data);
         }
 
         public override byte[] Finish()
@@ -76,28 +80,33 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
+            byte[] fdata = null;
 
             if (dataextra != null)
             {
-                byte[] fdata = dataextra(buffList.ToArray());
-                buffList.Clear();
-                buffList.AddRange(fdata);
+                fdata = dataextra(stream.ToArray());
+            }
+            else
+            {
+                fdata = stream.ToArray();
             }
 
+            stream.Position = 0;
+            stream.SetLength(0);
 
-         
 
-            int x = buffList.Count;
 
-            if ((buffList.Count+1)<128)
+            int x = fdata.Length;
+
+            if ((fdata.Length + 1) < 128)
             {
                 x += 1;
             }
-            else if ((buffList.Count + 2) < 16384)
+            else if ((fdata.Length + 2) < 16384)
             {
                 x += 2;
             }
-            else if ((buffList.Count + 3) < 2097152)
+            else if ((fdata.Length + 3) < 2097152)
             {
                 x += 3;
             }
@@ -105,28 +114,23 @@ namespace ZYSocket.share
             {
                 x += 4;
             }
-           
 
             byte[] tmp = GetBytes(x);
 
-            int l = buffList.Count + tmp.Length;
+            int l = fdata.Length + tmp.Length;
 
             byte[] data = GetBytes(l);
 
-            for (int i = data.Length - 1; i >= 0; i--)
-            {
-                buffList.Insert(0, data[i]);
-            }
-            buffList.Insert(0, 0xff);
+            buffList.Write((byte)0xFF);
+            buffList.Write(data);
+            buffList.Write(fdata);
 
-            byte[] datap = new byte[buffList.Count];
-
-            buffList.CopyTo(0, datap, 0, datap.Length);
-
-            buffList.Clear();
+            byte[] pdata = stream.ToArray();
+            stream.Close();
+            stream.Dispose();
             finish = true;
-
-            return datap;
+            return pdata;
+          
         }
 
         /// <summary>
@@ -156,61 +160,67 @@ namespace ZYSocket.share
 
                 if (fca != null)
                 {
-                    List<byte> bufflist = new List<byte>();
-                  
-                    bufflist.AddRange(GetBytes(fca.BufferCmdType));
-
-                    byte[] classdata = SerializeObject(o);
-                    bufflist.AddRange(GetBytes(classdata.Length));
-                    bufflist.AddRange(classdata);
-
-                    if (dataExtra != null)
+                    using (MemoryStream stream = new MemoryStream())
                     {
-                        byte[] fdata = dataExtra(bufflist.ToArray());
-                        bufflist.Clear();
-                        bufflist.AddRange(fdata);
+                        BinaryWriter bufflist = new BinaryWriter(stream);
+
+                        bufflist.Write(GetBytes(fca.BufferCmdType));
+
+                        byte[] classdata = SerializeObject(o);
+                        bufflist.Write(GetBytes(classdata.Length));
+                        bufflist.Write(classdata);
+
+
+                        byte[] fdata = null;
+
+                        if (dataExtra != null)
+                        {
+                            fdata = dataExtra(stream.ToArray());
+                        }
+                        else
+                        {
+                            fdata = stream.ToArray();
+                        }
+
+                        stream.Position = 0;
+                        stream.SetLength(0);
+
+
+
+                        int x = fdata.Length;
+
+                        if ((fdata.Length + 1) < 128)
+                        {
+                            x += 1;
+                        }
+                        else if ((fdata.Length + 2) < 16384)
+                        {
+                            x += 2;
+                        }
+                        else if ((fdata.Length + 3) < 2097152)
+                        {
+                            x += 3;
+                        }
+                        else
+                        {
+                            x += 4;
+                        }
+
+                        byte[] tmp = GetBytes(x);
+
+                        int l = fdata.Length + tmp.Length;
+
+                        byte[] data = GetBytes(l);
+
+                        bufflist.Write((byte)0xFF);
+                        bufflist.Write(data);
+                        bufflist.Write(fdata);
+
+                        byte[] pdata = stream.ToArray();
+                        stream.Close();
+                        stream.Dispose();                       
+                        return pdata;
                     }
-
-
-                    int x = bufflist.Count;
-
-                    if ((bufflist.Count + 1) < 128)
-                    {
-                        x += 1;
-                    }
-                    else if ((bufflist.Count + 2) < 16384)
-                    {
-                        x += 2;
-                    }
-                    else if ((bufflist.Count + 3) < 2097152)
-                    {
-                        x += 3;
-                    }
-                    else
-                    {
-                        x += 4;
-                    }                  
-
-                    byte[] tmp = GetBytes(x);
-
-                    int l = bufflist.Count + tmp.Length;
-
-                    byte[] data = GetBytes(l);
-
-                    for (int i = data.Length - 1; i >= 0; i--)
-                    {
-                        bufflist.Insert(0, data[i]);
-                    }
-
-                    bufflist.Insert(0, 0xff);
-
-                    byte[] datap = new byte[bufflist.Count];
-
-                    bufflist.CopyTo(0, datap, 0, datap.Length);
-
-                    bufflist.Clear();
-
-                    return datap;
                 }
             }
 

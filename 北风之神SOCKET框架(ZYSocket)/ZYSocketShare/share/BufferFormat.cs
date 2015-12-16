@@ -10,6 +10,7 @@ using System.Text;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml;
 using System.Xml.Serialization;
+using System.IO;
 
 namespace ZYSocket.share
 {
@@ -57,7 +58,8 @@ namespace ZYSocket.share
         }
 
 
-        protected List<byte> buffList;
+        protected MemoryStream stream;
+        protected System.IO.BinaryWriter buffList;
 
         /// <summary>
         /// 字符串格式化字符编码
@@ -74,9 +76,11 @@ namespace ZYSocket.share
         /// <param name="dataExtra">数据包在格式化完毕后回调方法。（例如加密，压缩等）</param>
         public BufferFormat(int buffType,FDataExtraHandle dataExtra)
         {
-            
-            buffList = new List<byte>();
-            buffList.AddRange(GetSocketBytes(buffType));
+            stream = new MemoryStream();
+            buffList = new BinaryWriter(stream);
+
+            buffList.Write(0);
+            buffList.Write(GetSocketBytes(buffType));
             Encode = Encoding.Unicode;
             finish = false;
             this.dataextra=dataExtra;
@@ -89,9 +93,10 @@ namespace ZYSocket.share
         /// <param name="buffType">包类型</param>
         public BufferFormat(int buffType)
         {
-           
-            buffList = new List<byte>();
-            buffList.AddRange(GetSocketBytes(buffType));
+            stream = new MemoryStream();
+            buffList = new BinaryWriter(stream);
+            buffList.Write(0);
+            buffList.Write(GetSocketBytes(buffType));
             Encode = Encoding.Unicode;
             finish = false;
         }
@@ -110,7 +115,7 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
         #endregion
@@ -125,7 +130,7 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
-            buffList.Add(data);
+             buffList.Write(data);
         }
 
         /// <summary>
@@ -134,7 +139,7 @@ namespace ZYSocket.share
         /// <param name="data"></param>
         public virtual void AddItem(Int16 data)
         {
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
         /// <summary>
@@ -143,7 +148,7 @@ namespace ZYSocket.share
         /// <param name="data"></param>
         public virtual void AddItem(UInt16 data)
         {
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
         /// <summary>
@@ -155,7 +160,7 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
 
@@ -168,7 +173,7 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
         /// <summary>
@@ -180,7 +185,7 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
         /// <summary>
@@ -192,7 +197,7 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
         #endregion
@@ -208,7 +213,7 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
         /// <summary>
@@ -217,7 +222,7 @@ namespace ZYSocket.share
         /// <param name="data"></param>
         public void AddItem(double data)
         {
-            buffList.AddRange(GetSocketBytes(data));
+            buffList.Write(data);
         }
 
         #endregion
@@ -233,10 +238,9 @@ namespace ZYSocket.share
         {
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
-
-            byte[] ldata = GetSocketBytes(data.Length);
-            buffList.AddRange(ldata);
-            buffList.AddRange(data);
+                      
+            buffList.Write(data.Length);
+            buffList.Write(data);
 
         }
 
@@ -254,8 +258,8 @@ namespace ZYSocket.share
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
             Byte[] bytes = Encode.GetBytes(data);
-            buffList.AddRange(GetSocketBytes(bytes.Length));
-            buffList.AddRange(bytes);
+            buffList.Write(bytes.Length);
+            buffList.Write(bytes);
 
         }
 
@@ -289,8 +293,8 @@ namespace ZYSocket.share
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
             byte[] data = SerializeObject(obj);
-            buffList.AddRange(GetSocketBytes(data.Length));
-            buffList.AddRange(data);
+            buffList.Write(data.Length);
+            buffList.Write(data);
         }
 
         #endregion
@@ -322,36 +326,42 @@ namespace ZYSocket.share
 
                 if (fca != null)
                 {
-                    List<byte> bufflist = new List<byte>();
-
-                    bufflist.AddRange(GetSocketBytes(fca.BufferCmdType));
-
-                    byte[] classdata = SerializeObject(o);
-                    bufflist.AddRange(GetSocketBytes(classdata.Length));
-                    bufflist.AddRange(classdata);
-
-                    if (dataExtra != null)
+                    using (MemoryStream stream = new MemoryStream())
                     {
-                        byte[] fdata = dataExtra(bufflist.ToArray());
-                        bufflist.Clear();
-                        bufflist.AddRange(fdata);
+
+                        BinaryWriter bufflist = new BinaryWriter(stream);
+
+                        bufflist.Write(0);
+                        bufflist.Write(fca.BufferCmdType);
+
+                        byte[] classdata = SerializeObject(o);
+                        bufflist.Write(classdata.Length);
+                        bufflist.Write(classdata);
+
+                        if (dataExtra != null)
+                        {
+                            byte[] fdata = dataExtra(stream.ToArray());
+                            stream.Position = 0;
+                            stream.SetLength(0);
+                            bufflist.Write(fdata);
+                        }
+
+
+                        int l = (int)(stream.Length);
+
+                        byte[] data = GetSocketBytes(l);
+
+                        stream.Position = 0;
+
+                        bufflist.Write(data);
+
+
+                        byte[] pdata = stream.ToArray();
+                        stream.Close();
+                        stream.Dispose();
+
+                        return pdata;
                     }
-
-
-                    int l = bufflist.Count + 4;
-                    byte[] data = GetSocketBytes(l);
-                    for (int i = data.Length - 1; i >= 0; i--)
-                    {
-                        bufflist.Insert(0, data[i]);
-                    }
-
-                    byte[] datap = new byte[bufflist.Count];
-
-                    bufflist.CopyTo(0, datap, 0, datap.Length);
-
-                    bufflist.Clear();
-
-                    return datap;
                 }
             }
 
@@ -371,29 +381,29 @@ namespace ZYSocket.share
 
             if (dataextra != null)
             {
-                byte[] fdata = dataextra(buffList.ToArray());
-                buffList.Clear();
-                buffList.AddRange(fdata);
+                byte[] fdata = dataextra(stream.ToArray());
+                stream.Position = 0;
+                stream.SetLength(0);               
+                buffList.Write(fdata);
             }
 
 
-            int l = buffList.Count + 4;
+            int l = (int)(stream.Length);
 
             byte[] data = GetSocketBytes(l);
 
-            for (int i = data.Length - 1; i >= 0; i--)
-            {
-                buffList.Insert(0, data[i]);
-            }
+            stream.Position = 0;
 
-            byte[] datap = new byte[buffList.Count];
+            buffList.Write(data);
+                      
 
-            buffList.CopyTo(0, datap, 0, datap.Length);
+            byte[] pdata= stream.ToArray();
+            stream.Close();
+            stream.Dispose();
 
-            buffList.Clear();
             finish = true;
 
-            return datap;
+            return pdata;
         }
 
 

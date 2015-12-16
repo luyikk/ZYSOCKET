@@ -72,6 +72,6 @@ E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerial
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\ZYSocketShare.pdb
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerializer.pdb
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerializer.xml
-E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.dll
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.pdb
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.csprojResolveAssemblyReference.cache

@@ -29,9 +29,9 @@ namespace testclient
                 {
                     Console.ReadLine();
 
-                    
-                    
-                    testClass.PPo temp = new testClass.PPo(); 
+
+
+                    testClass.PPo temp = new testClass.PPo();
                     temp.Id = 1;
                     temp.Message = "通过对象通讯";
                     temp.guid = new List<Guid>();
@@ -43,7 +43,7 @@ namespace testclient
                     client.SendTo(BufferFormat.FormatFCA(temp));  //讲一个PPO对象发送出去
 
 
-                   // Console.ReadLine();
+                    // Console.ReadLine();
 
                     BufferFormat buffmat = new BufferFormat(1001);
                     buffmat.AddItem(2);

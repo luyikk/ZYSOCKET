@@ -31,12 +31,12 @@ E:\ZYSocketFrame\Android\ZYSocketShare\ZYSocketShare\obj\Debug\android\bin\ZYSoc
 E:\ZYSocketFrame\Android\ZYSocketShare\ZYSocketShare\obj\Debug\res\values\strings.xml
 E:\ZYSocketFrame\Android\ZYSocketShare\ZYSocketShare\obj\Debug\R.cs.flag
 E:\ZYSocketFrame\Android\ZYSocketShare\ZYSocketShare\obj\Debug\uploadflags.txt
+J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\obj\Debug\ZYSocketShare.dll
 J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\bin\Debug\ZYSocketShare.dll
 J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\bin\Debug\ZYSocketShare.pdb
 J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\bin\Debug\ZYSocketShare.dll.mdb
 J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\bin\Debug\ZYSocketShare.ZYSocketShare.apk
 J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\bin\Debug\ZYSocketShare.ZYSocketShare-Signed.apk
-J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\obj\Debug\ZYSocketShare.dll
 J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\obj\Debug\ZYSocketShare.pdb
 J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\obj\Debug\android\bin\ZYSocketShare.ZYSocketShare.apk
 J:\Github\ZYSOCKET\Android\ZYSocketShare\ZYSocketShare\obj\Debug\res\values\strings.xml

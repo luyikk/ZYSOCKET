@@ -38,3 +38,4 @@ E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\Polenter.SharpSerializer.pdb
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\Polenter.SharpSerializer.xml
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\obj\Debug\PACK.dll
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\obj\Debug\PACK.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\PACK\obj\Debug\PACK.csprojResolveAssemblyReference.cache

@@ -332,7 +332,7 @@ namespace ZYSocket.share
                 }
 
                 // 重新计算环形缓冲区头部位置
-                _current = (_current + lengt) % MAXSIZE;
+                Current = (_current + lengt) % MAXSIZE;
                 Length -= lengt;
 
                 return data;
@@ -460,8 +460,8 @@ namespace ZYSocket.share
             System.Threading.Monitor.Enter(lockobj);
             try
             {
-                Data = new byte[MAXSIZE];
-                _current = 0;
+
+                Current = 0;
                 _length = 0;
             }
             finally
@@ -490,6 +490,13 @@ namespace ZYSocket.share
 
             if (count > _length)
             {
+                data = null;
+                return false;
+            }
+
+            if (count < 0)
+            {
+                this.Flush();
                 data = null;
                 return false;
             }
