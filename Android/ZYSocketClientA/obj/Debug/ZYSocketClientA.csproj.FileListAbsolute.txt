@@ -31,3 +31,14 @@ E:\ZYSocketFrame\Android\ZYSocketClientA\obj\Debug\android\bin\ZYSocketClientA.Z
 E:\ZYSocketFrame\Android\ZYSocketClientA\obj\Debug\res\values\strings.xml
 E:\ZYSocketFrame\Android\ZYSocketClientA\obj\Debug\R.cs.flag
 E:\ZYSocketFrame\Android\ZYSocketClientA\obj\Debug\uploadflags.txt
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\bin\Debug\ZYSocketClientA.dll
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\bin\Debug\ZYSocketClientA.pdb
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\bin\Debug\ZYSocketClientA.dll.mdb
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\bin\Debug\ZYSocketClientA.ZYSocketClientA.apk
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\bin\Debug\ZYSocketClientA.ZYSocketClientA-Signed.apk
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\obj\Debug\ZYSocketClientA.dll
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\obj\Debug\ZYSocketClientA.pdb
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\obj\Debug\android\bin\ZYSocketClientA.ZYSocketClientA.apk
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\obj\Debug\res\values\strings.xml
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\obj\Debug\R.cs.flag
+J:\Github\ZYSOCKET\Android\ZYSocketClientA\obj\Debug\uploadflags.txt

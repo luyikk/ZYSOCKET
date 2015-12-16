@@ -4,16 +4,14 @@ using System.Text;
 
 namespace ZYSocket.share
 {
-    public class ZYNetRingBufferPoolV2 : ZYNetRingBufferPool
+    public class ZYNetRingBufferPoolV2:ZYNetRingBufferPool
     {
-        public ZYNetRingBufferPoolV2()
-            : this(4096)
+        public ZYNetRingBufferPoolV2():this(4096)
         {
         }
 
-        public ZYNetRingBufferPoolV2(int maxBuffer)
-            : base(maxBuffer, 4, false)
-        {
+        public ZYNetRingBufferPoolV2(int maxBuffer):base(maxBuffer,4,false)
+        {           
         }
 
 
@@ -21,11 +19,11 @@ namespace ZYSocket.share
         {
             System.Threading.Monitor.Enter(lockobj);
 
-            if (Length == 0)
-                return 0;
-
+          
             try
             {
+               
+
                 while (Data[_current] != 0xFF && _length > 0)
                 {
                     if (_current < MAXSIZE - 1)
@@ -51,7 +49,7 @@ namespace ZYSocket.share
                 {
                     return 0;
                 }
-
+                             
 
                 if (_current > MAXSIZE - 1)
                     _current = 0;
@@ -90,7 +88,7 @@ namespace ZYSocket.share
             uint loc3 = 0;
             uint loc1 = 0;
             int loc2 = 0;
-            int r = _current + 1;
+            int r = _current+1;
             lengt = 0;
             val = 0;
 
@@ -98,7 +96,7 @@ namespace ZYSocket.share
             {
                 lengt++;
 
-                if (((r + i) % MAXSIZE) >= Data.Length)
+                if (((r + i)%MAXSIZE) >= Data.Length)
                     return false;
 
                 loc3 = Data[((r + i) % MAXSIZE)];
@@ -155,8 +153,12 @@ namespace ZYSocket.share
                 return false;
             }
 
-            if (count > _length)
+           
+
+
+            if (count > _length-1)
             {
+
                 data = null;
                 return false;
             }
