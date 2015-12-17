@@ -1,0 +1,12 @@
+J:\Github\protobuf-net-master\protobuf-net\bin\Debug\Licence.txt
+J:\Github\protobuf-net-master\protobuf-net\bin\Debug\protobuf-net.xml
+J:\Github\protobuf-net-master\protobuf-net\bin\Debug\protobuf-net.dll
+J:\Github\protobuf-net-master\protobuf-net\bin\Debug\protobuf-net.pdb
+J:\Github\protobuf-net-master\protobuf-net\obj\Debug\protobuf-net.csprojResolveAssemblyReference.cache
+J:\Github\protobuf-net-master\protobuf-net\obj\Debug\protobuf-net.dll
+J:\Github\protobuf-net-master\protobuf-net\obj\Debug\protobuf-net.pdb
+J:\Github\protobuf-net\bin\Debug\protobuf-net.xml
+J:\Github\protobuf-net\obj\Debug\protobuf-net.dll
+J:\Github\protobuf-net\obj\Debug\protobuf-net.pdb
+J:\Github\protobuf-net\bin\Debug\protobuf-net.dll
+J:\Github\protobuf-net\bin\Debug\protobuf-net.pdb

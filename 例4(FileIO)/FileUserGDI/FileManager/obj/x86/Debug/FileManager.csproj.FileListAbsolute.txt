@@ -52,12 +52,12 @@ E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\FileManager.pdb
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\PackHandler.dll
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\ZYSocketFrame.dll
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\PackHandler.pdb
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\ZYSocketFrame.pdb
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\obj\x86\Debug\FileManager.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\obj\x86\Debug\FileManager.AddUser.resources
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\FileManager\obj\x86\Debug\FileManager.Server.resources

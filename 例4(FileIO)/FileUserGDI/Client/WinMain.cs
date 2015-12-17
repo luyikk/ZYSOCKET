@@ -33,8 +33,8 @@ namespace Client
         private void WinMain_Load(object sender, EventArgs e)
         {
            
-            BufferFormatV2.ObjFormatType = BuffFormatType.XML;
-            ReadBytesV2.ObjFormatType = BuffFormatType.XML;
+            BufferFormatV2.ObjFormatType = BuffFormatType.protobuf;
+            ReadBytesV2.ObjFormatType = BuffFormatType.protobuf;
             
 
             LogOn logon = new LogOn();

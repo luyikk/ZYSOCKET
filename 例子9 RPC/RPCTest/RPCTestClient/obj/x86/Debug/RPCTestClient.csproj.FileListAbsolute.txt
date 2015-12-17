@@ -26,13 +26,12 @@ E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\ZYSocketRPC.dll
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\ZYSocketClientB.dll
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\ZYSocketShare.dll
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\protobuf-net.dll
-E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\Polenter.SharpSerializer.dll
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\MsgPack.pdb
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\ZYSocketRPC.pdb
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\ZYSocketClientB.pdb
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\obj\x86\Debug\RPCTestClient.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\obj\x86\Debug\RPCTestClient.LogOn.resources
 E:\ZYSocketFrame2\例子9 RPC\RPCTest\RPCTestClient\obj\x86\Debug\RPCTestClient.WinMain.resources

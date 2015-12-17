@@ -68,10 +68,10 @@ E:\ZYSocketFrame2\例1 - ZYNetBufferReadStream\testClass\obj\x86\Debug\testClass
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\testClass.dll
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\testClass.pdb
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.dll
 E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.pdb
-E:\ZYSocketFrame2\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.csprojResolveAssemblyReference.cache

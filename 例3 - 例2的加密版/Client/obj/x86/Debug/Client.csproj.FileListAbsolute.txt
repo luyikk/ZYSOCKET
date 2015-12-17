@@ -106,12 +106,12 @@ E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\Client.pdb
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\BuffLibrary.dll
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\ZYSocketClientA.dll
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\BuffLibrary.pdb
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\ZYSocketClientA.pdb
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例3 - 例2的加密版\Client\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\obj\x86\Debug\Client.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\obj\x86\Debug\Client.Form1.resources
 E:\ZYSocketFrame2\例3 - 例2的加密版\Client\obj\x86\Debug\Client.LogOn.resources

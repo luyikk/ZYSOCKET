@@ -1,6 +1,0 @@
-F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library.Silverlight\Bin\Debug\Polenter.SharpSerializer.Silverlight.xml
-F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library.Silverlight\Bin\Debug\Polenter.SharpSerializer.Silverlight.dll
-F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library.Silverlight\Bin\Debug\Polenter.SharpSerializer.Silverlight.pdb
-F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library.Silverlight\obj\Debug\ResolveAssemblyReference.cache
-F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library.Silverlight\obj\Debug\Polenter.SharpSerializer.Silverlight.dll
-F:\ZYSocketFrame2\sharpSerializerSolution\SharpSerializer.Library.Silverlight\obj\Debug\Polenter.SharpSerializer.Silverlight.pdb

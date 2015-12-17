@@ -28,3 +28,13 @@ L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\Polente
 L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.csprojResolveAssemblyReference.cache
 L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.dll
 L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\testClass.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\testClass.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\protobuf-net.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\protobuf-net.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\bin\Release\protobuf-net.xml
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testClass\obj\x86\Release\testClass.pdb

@@ -12,3 +12,17 @@ L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\Polent
 L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.csprojResolveAssemblyReference.cache
 L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.exe
 L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\testclient.exe
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\testclient.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\testClass.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\ZYSocketClientA.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\protobuf-net.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\testClass.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\ZYSocketClientA.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\protobuf-net.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\bin\Release\protobuf-net.xml
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.exe
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\testclient\obj\x86\Release\testclient.pdb

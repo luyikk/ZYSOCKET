@@ -21,7 +21,7 @@ namespace P2PFileInfo
         }
 
 
-        public ZYNetBufferReadStreamV2 Stream { get; set; }
+        public ZYNetRingBufferPoolV2 Stream { get; set; }
 
         public bool IsSuccess { get; set; }
         public bool IsValidate { get; set; }

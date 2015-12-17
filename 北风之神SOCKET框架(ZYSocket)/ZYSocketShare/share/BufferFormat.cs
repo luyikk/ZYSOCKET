@@ -19,12 +19,12 @@ namespace ZYSocket.share
     {
         XML=0,
         Binary=1,
-        SharpSerializerXML=2,
-        SharpSerializerBinary=3,
+     
 #if Net4
         MsgPack=4,
-        protobuf=5,
+
 #endif
+        protobuf = 5,
 
     }
 
@@ -48,13 +48,10 @@ namespace ZYSocket.share
         public static BuffFormatType ObjFormatType { get; set; }
 
         static BufferFormat()
-        {         
+        {       
 
-#if Net4
-            ObjFormatType = BuffFormatType.MsgPack;
-#else
-            ObjFormatType = BuffFormatType.SharpSerializerBinary;
-#endif
+            ObjFormatType = BuffFormatType.protobuf;
+
         }
 
 
@@ -331,19 +328,30 @@ namespace ZYSocket.share
 
                         BinaryWriter bufflist = new BinaryWriter(stream);
 
-                        bufflist.Write(0);
-                        bufflist.Write(fca.BufferCmdType);
-
-                        byte[] classdata = SerializeObject(o);
-                        bufflist.Write(classdata.Length);
-                        bufflist.Write(classdata);
 
                         if (dataExtra != null)
                         {
+
+                            bufflist.Write(fca.BufferCmdType);
+                            byte[] classdata = SerializeObject(o);
+                            bufflist.Write(classdata.Length);
+                            bufflist.Write(classdata);
+
                             byte[] fdata = dataExtra(stream.ToArray());
+
                             stream.Position = 0;
                             stream.SetLength(0);
+                            bufflist.Write(0);
                             bufflist.Write(fdata);
+                        }
+                        else
+                        {
+                            bufflist.Write(0);
+                            bufflist.Write(fca.BufferCmdType);
+                            byte[] classdata = SerializeObject(o);
+                            bufflist.Write(classdata.Length);
+                            bufflist.Write(classdata);
+
                         }
 
 
@@ -477,20 +485,14 @@ namespace ZYSocket.share
                         xmlWriter.Close();
 
                         return Encoding.UTF8.GetBytes(sBuilder.ToString());
-                    }
-                case BuffFormatType.SharpSerializerBinary:
-                    {
-                        return SerializeObjects(pObj, false);
-                    }
-                case BuffFormatType.SharpSerializerXML:
-                    {
-                        return SerializeObjects(pObj, true);
-                    }
+                    }            
 #if Net4
                 case BuffFormatType.MsgPack:
                     {
                         return MsgPack.Serialization.SerializationContext.Default.GetSerializer(pObj.GetType()).PackSingleObject(pObj);
                     }
+             
+#endif
                 case BuffFormatType.protobuf:
                     {
                         using (System.IO.MemoryStream _memory = new System.IO.MemoryStream())
@@ -501,10 +503,15 @@ namespace ZYSocket.share
 
                         }
                     }
-#endif
                 default:
                     {
-                        return SerializeObjects(pObj, false);
+                        using (System.IO.MemoryStream _memory = new System.IO.MemoryStream())
+                        {
+                            ProtoBuf.Meta.RuntimeTypeModel.Default.Serialize(_memory, pObj);
+
+                            return _memory.ToArray();
+
+                        }
                     }
             }
 
@@ -514,16 +521,7 @@ namespace ZYSocket.share
         }
 
 
-         /// <summary>
-        /// 把对象序列化并返回相应的字节
-        /// </summary>
-        /// <param name="pObj">需要序列化的对象</param>
-        /// <returns>byte[]</returns>
-        public static byte[] SerializeObjects(object pObj,bool isXml)
-        {
-            Polenter.Serialization.SharpSerializer serializer = new Polenter.Serialization.SharpSerializer(!isXml);
-            return serializer.Serialize(pObj);
-        }
+
 
         #endregion
 

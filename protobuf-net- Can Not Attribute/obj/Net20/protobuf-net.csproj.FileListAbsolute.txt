@@ -1,0 +1,11 @@
+J:\Github\protobuf-net\bin\Net20\protobuf-net.xml
+J:\Github\protobuf-net\bin\Net20\protobuf-net.dll
+J:\Github\protobuf-net\bin\Net20\protobuf-net.pdb
+J:\Github\protobuf-net\obj\Net20\protobuf-net.dll
+J:\Github\protobuf-net\obj\Net20\protobuf-net.pdb
+J:\Github\protobuf-net\obj\Net20\protobuf-net.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Net20\protobuf-net.xml
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Net20\protobuf-net.dll
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Net20\protobuf-net.pdb
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Net20\protobuf-net.dll
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Net20\protobuf-net.pdb

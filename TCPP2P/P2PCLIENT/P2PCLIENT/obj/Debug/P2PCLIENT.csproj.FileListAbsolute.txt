@@ -19,12 +19,12 @@ E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\P2PCLIENT.pdb
 E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\P2PCMD.dll
 E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\ZYSocketClientB.dll
 E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\P2PCMD.pdb
 E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\ZYSocketClientB.pdb
 E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\Polenter.SharpSerializer.xml
-E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\obj\Debug\P2PCLIENT.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\obj\Debug\P2PCLIENT.dll
 E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\obj\Debug\P2PCLIENT.pdb
+E:\ZYSocketFrame2\TCPP2P\P2PCLIENT\P2PCLIENT\obj\Debug\P2PCLIENT.csprojResolveAssemblyReference.cache

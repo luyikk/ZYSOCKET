@@ -1,0 +1,151 @@
+修复各种BUG。 重写了一份 protobuf-net 有什么用呢，不需要添加 protobuf标签了。
+值得注意的是 加了标签的类 里面的属性 都需要加，不加标签的 什么标签都不要加
+
+
+注意已经删除了 Poienter 类 默认使用  默认使用 protobuf-net 格式化
+
+//----------------------------------------------------------------------------------
+
+使用了 ZYNetRingBufferPool 代替 ZYNetBufferReadStream
+使用了 ZYNetRingBufferPoolV2 代替了 ZYNetBufferReadStreamV2
+
+这2个类是 线程安全的，测试代码 里面有。这2个类基于环形数据缓冲的，你懂的。不懂百度吧~
+
+ZySocketSuper 添加了 public BinaryInputOffsetHandler BinaryOffsetInput { get; set; }
+
+你现在可以 使用偏移量 来把数据包输入到 缓冲池了。 对了 别忘了 把 IsOffsetInput 设置成true 详细看例1
+这样做的好处是可以 少一次copy
+
+ZYSocket.share.ReadBytes and ZYSocket.share.ReadBytesV2 添加了 直接读取函数 比如 int i=read.readInt32() 为了方便嘛
+
+
+UDPService 嘛 目前测试阶段用的比较少。大家有空可以帮忙测测
+
+对了 所有例子 我都改成了 RingBufferPool.
+
+百度网盘下载:http://pan.baidu.com/s/1gegm31D 
+
+
+//---------------------------------------------------------------
+
+添加了.NET 4版本的 ZYSOCKETShare
+
+.NET 4版本的 集成了 MsgPack 以及 Protobuf
+
+例子请看 例子 7 例子8
+
+.NET 4版本添加了 Socket RPC 
+
+例子请看 例子 9
+更相信的双工例子 请看 例子9- RPC 聊天室 双工
+
+
+添加了 CmdToCallManager 用于处理 服务器多Cmd 自动指向函数 来代替 switch
+详细请看 例子10 CmdToCall
+
+
+
+
+
+//------------------------4.2.2-------------------------
+4.2.2 已经出了 修复了一些问题.通知 完全支持MONO 平台. 服务器项目使用.NET 4了.其他的不变,比如CLIENTB 还是.NET 2.0 为了向下兼容嘛 
+
+请大家到 http://luyikk.download.csdn.net/ 去下载 谢谢
+
+同时加入了 NUGET 只不过NUGET没有例子!! 你懂的.
+
+
+
+//------------------------4.2.1-------------------------
+1更新了点小BUG. 包括组包下 特别小的包的错误问题
+2添加了 ZYSocketSSLClient 可以对 SSL 服务器的 访问
+3例5
+4MONO Server
+5添加了 ZYSocketSSLClient 访问工行网站例子
+
+
+
+
+
+//-------------------------4.2-------------------------
+更新了一个 TCPP2P 框架 详细看说明  ZYSocketFrame2\TCPP2P\说明.txt
+
+//--------------------------4.1-----------------------
+1.使用sharpSerializerSolution 序列化，反序列化，提高了性能，（感谢麦上飞提供）注意此组件只能序列化有 无参构造函数的类。所以多使用自定义类！！像DataSet DataTable会失败，如果
+你想序列化这些，请把序列化代码改回去吧。它们在 BufferFormat.cs 和 ReadBytes.cs 里面 很容易找到
+2.修复了一些已知的BUG。
+
+
+
+
+//---------------------4.0(V2)-------------------
+1.添加了一组新的数据包处理类
+ZYSocketShare.share.ZYNetBufferReadStream //此类可代替  ZYSocketShare.share.BuffList
+ZYSocketShare.share.ZYNetBufferReadStreamV2  //此类是 ZYSocketShare.share.ZYNetBufferReadStream 的改进版，优化了int存储方式,数据包容错率等
+ZYSocketShare.share.BufferFormatV2 //此类是 ZYSocketShare.share.BufferFormat 的改进版，优化了int存储方式等
+ZYSocketShare.share.ReadBytesV2 //此类是 ZYSocketShare.share.ReadBytes 的改进版，优化了int存储方式等
+
+注意 如果需要更换为V2数据包处理框架，那么请确保 使用ZYNetBufferReadStreamV2  BufferFormatV2 ReadBytesV2  保持一致的应用。
+
+添加了案例
+1. 例1(V2) 例1的V2例子
+2. 例4(FileIO) 一款使用 V2 数据包处理架构 制作的一个远程文件系统管理程序 注意:初学者请勿轻易修改任何代码，否则可能会影响测试效果
+
+
+  										  by luyikk@126.com
+                                                                                  BLOG:http://blog.csdn.net/luyikk
+                                                                                  QQ:547386448
+
+//-------------------3.2----------------------------------------
+修改了 ReadObject方法,经过测试.出于性能的考虑和使用的方便 内部采用了DataContractSerializer  序列化.
+bool ReadObject(out object obj) 变成了bool ReadObject<T>(out T obj);
+继承与FormatClassAttibutes的数据包类不需要[Serializable]标签了.
+
+修改了服务器端 ZYSocketSuper 类.
+ZYSocketSuper 的构造方法 里面传入IP地址和端口,一直存在错误.我最近才发觉.抱歉各位
+
+
+删除了 例4 代码. 因为我觉得 这简直就是误导人.
+
+代码在数据包缓存还不是很完美,特别是处理大型连续分段数据包上.还有待改进.简单的改进理论是使用NetWorkStream 来代替现有的数据包缓冲区
+由于没时间,这部分交给大家自己研究吧,但是如果不传文件.那已经基本上都够用了.更何况传文件还有其他的方法.
+
+本打算写一份基于OOP概念的框架模型.但是时间太紧了.最近一直在搞C++ 一直没如愿以偿.
+感谢 麦上飞 提供技术支持. 
+                                                                                  by luyikk@126.com
+                                                                                  BLOG:http://blog.csdn.net/luyikk
+                                                                                  QQ:547386448
+
+
+
+
+
+更新历史:
+
+//-------------------3.1----------------------------------------
+
+感谢大家对北风之神SOCKET框架的支持。鼓励。下面是北风之神 3.1的更新内容：
+
+修正BUG:
+	1.ZYSocketSuper 读取 配置文件的最大连接数 读错问题。
+	2.ZYSocketSuper 无法断开客户端的问题。
+	3.BuffList 数据包解析丢失问题。
+	4.例1，例2.客户端断开忘记释放调用SOCKET.CLOSE（）的问题
+
+新增功能
+	1.添加了一个ReadBytes 构造函数，此函数实现了在数据包在读取前需要回调的方法传入。（可以用来解密，解压缩 等功能）
+	2.添加了一个BufferFormat 类的构造，此函数实现了在数据包在生成前需要回调的方法传入。（可以用来加密，压缩 等功能）
+	3.添加了BufferFormat.FormatFCA(object o,FDataExtraHandle dataExtra)静态方法。可以用来在类格式化成数据包的时候进行加密压缩等功能
+	4.添加了ZYSocket.Security 命名空间，里面有传统的AES,DES算法的加解密类
+	5.添加了ZYSocket.Compression命名空间，里面有通过Deflate算法压缩类
+	6.开发了ReadBytes.Data属性，为ReadBytes里面的BYTE[]对象。值得注意的是 ReadBytes.Length为数据包原始长度，如果要得到解压缩后的数据包长度，请访问ReadByte.Data.length
+
+新增代码
+	加解密实例测试 项目:演示了 AES DES 以及Deflate 的使用方法。
+	例3 - 例2的加密版 项目：就是讲例2通过DES 加密进行通讯的例子
+	连接测试工具 项目:很多朋友问我要连接数量测试工具。我一起的真的丢了。找不到了。所以重新写了一个
+	例4 项目：好多人让我写一个发送文件的例子，现在能如愿以偿了
+
+											by luyikk@126.com
+											BLOG:http://blog.csdn.net/luyikk
+											QQ:547386448

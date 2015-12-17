@@ -46,7 +46,7 @@ namespace P2PSERVER
         /// </summary>
         public string Mac { get; set; }
 
-        public ZYNetBufferReadStreamV2 BufferQueue { get; set; }
+        public ZYNetRingBufferPoolV2 BufferQueue { get; set; }
       
 
         public UserInfo()

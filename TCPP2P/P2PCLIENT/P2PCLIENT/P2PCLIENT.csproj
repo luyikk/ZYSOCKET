@@ -44,11 +44,11 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ZYSocketClientB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ZYSocketClientB, Version=0.4.2.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientB.dll</HintPath>
     </Reference>
-    <Reference Include="ZYSocketShare, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="ZYSocketShare, Version=0.4.2.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll</HintPath>
     </Reference>

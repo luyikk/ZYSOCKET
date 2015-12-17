@@ -142,8 +142,7 @@ namespace TestServer
                             {
                                 int id;
                                 string mn;
-                                Guid guid;
-
+                                Guid guid;                              
                                 if (read.ReadInt32(out id) && read.ReadString(out mn) && read.ReadObject<Guid>(out guid))
                                 {
 

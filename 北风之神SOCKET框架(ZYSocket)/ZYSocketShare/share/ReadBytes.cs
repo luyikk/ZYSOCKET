@@ -37,11 +37,9 @@ namespace ZYSocket.share
 
         static ReadBytes()
         {
-#if Net4
-            ObjFormatType = BuffFormatType.MsgPack;
-#else
-            ObjFormatType = BuffFormatType.SharpSerializerBinary;
-#endif
+
+            ObjFormatType = BuffFormatType.protobuf;
+
         }
 
 
@@ -750,19 +748,14 @@ namespace ZYSocket.share
                         }
                         return (T)result;
                     }
-                case BuffFormatType.SharpSerializerXML:
-                    {
-                        return DeserializeObjects<T>(pBytes, true);
-                    }
-                case BuffFormatType.SharpSerializerBinary:
-                    {
-                        return DeserializeObjects<T>(pBytes, false);
-                    }
+           
 #if Net4
                 case BuffFormatType.MsgPack:
                     {
                         return MsgPack.Serialization.SerializationContext.Default.GetSerializer<T>().UnpackSingleObject(pBytes);
-                    }
+                    }             
+
+#endif
                 case BuffFormatType.protobuf:
                     {
                         using (MemoryStream stream = new MemoryStream(pBytes))
@@ -770,10 +763,13 @@ namespace ZYSocket.share
                             return ProtoBuf.Serializer.Deserialize<T>(stream);
                         }
                     }
-
-#endif
                 default:
-                    return DeserializeObjects<T>(pBytes, false);
+                    {
+                        using (MemoryStream stream = new MemoryStream(pBytes))
+                        {
+                            return ProtoBuf.Serializer.Deserialize<T>(stream);
+                        }
+                    }
 
 
             }
@@ -785,29 +781,6 @@ namespace ZYSocket.share
         }
 
 
-        public static T DeserializeObjects<T>(byte[] pBytes,bool isXml)
-        {
-
-            //string xml = Encoding.UTF8.GetString(pBytes);
-
-
-            //Object result = new object();
-            //XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
-            //using (Stream stream = new MemoryStream(Encoding.Unicode.GetBytes(xml)))
-            //{
-            //    XmlReader xmlReader = XmlReader.Create(stream);
-
-            //    result = (T)xmlSerializer.Deserialize(xmlReader);
-
-            //    xmlReader.Close();
-
-            //}
-            //return (T)result;
-
-            Polenter.Serialization.SharpSerializer Serializer = new Polenter.Serialization.SharpSerializer(!isXml);
-            return Serializer.Deserialize<T>(pBytes);
-
-        }
 
 
 

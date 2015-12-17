@@ -42,10 +42,10 @@ L:\ZYSocketFrame2\例2\BuffLibrary\obj\Debug\BuffLibrary.pdb
 E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\BuffLibrary.dll
 E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\BuffLibrary.pdb
 E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\Polenter.SharpSerializer.dll
 E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\Polenter.SharpSerializer.xml
 E:\ZYSocketFrame2\例2\BuffLibrary\obj\Debug\BuffLibrary.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例2\BuffLibrary\obj\Debug\BuffLibrary.dll
 E:\ZYSocketFrame2\例2\BuffLibrary\obj\Debug\BuffLibrary.pdb
+E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例2\BuffLibrary\bin\Debug\protobuf-net.xml

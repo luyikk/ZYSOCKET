@@ -31,11 +31,10 @@ E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\PACK.pdb
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\MsgPack.dll
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\ZYSocketShare.dll
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\protobuf-net.dll
-E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\Polenter.SharpSerializer.dll
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\MsgPack.pdb
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\PACK\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\例子7 MsgPack\PACK\obj\Debug\PACK.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\obj\Debug\PACK.dll
 E:\ZYSocketFrame2\例子7 MsgPack\PACK\obj\Debug\PACK.pdb
-E:\ZYSocketFrame2\例子7 MsgPack\PACK\obj\Debug\PACK.csprojResolveAssemblyReference.cache

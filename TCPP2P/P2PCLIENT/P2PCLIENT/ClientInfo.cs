@@ -39,7 +39,7 @@ namespace P2PCLIENT
         /// <summary>
         /// 数据包缓冲池
         /// </summary>
-        internal  ZYNetBufferReadStreamV2 Bufferlist { get; private set; }
+        internal  ZYNetRingBufferPoolV2 Bufferlist { get; private set; }
 
         /// <summary>
         /// 服务器IP地址
@@ -111,7 +111,7 @@ namespace P2PCLIENT
             ConnUserList = new ConcurrentDictionary<string, ConClient>(); //初始化客户端列表
             ProxyList = new ConcurrentDictionary<string, ConClient>();
             Key = Guid.NewGuid().ToString();//产生唯一标示KEY
-            Bufferlist = new ZYNetBufferReadStreamV2();
+            Bufferlist = new ZYNetRingBufferPoolV2();
             UserMaskList = new ConcurrentQueue<string>();
             BindPort = new Random().Next(bindminPort, bindMaxPort);
             this.Host = host;

@@ -43,8 +43,8 @@ namespace FileManager
         {
             LoadingUser();          
 
-            BufferFormatV2.ObjFormatType = BuffFormatType.XML;
-            ReadBytesV2.ObjFormatType = BuffFormatType.XML;
+            BufferFormatV2.ObjFormatType = BuffFormatType.protobuf;
+            ReadBytesV2.ObjFormatType = BuffFormatType.protobuf;
             server.BinaryOffsetInput = new BinaryInputOffsetHandler(BinaryInputHandler); //设置输入代理
             server.Connetions = new ConnectionFilter(ConnectionFilter); //设置连接代理
             server.MessageInput = new MessageInputHandler(MessageInputHandler); //设置 客户端断开
@@ -366,7 +366,7 @@ namespace FileManager
 
 
                                     FileSystemInfo[] files = dirinfo.GetFileSystemInfos();
-
+                                    dir.FileSystemList = new List<FileSystem>();
                                     foreach (var p in files)
                                     {
                                         FileSystem tmp = new FileSystem()

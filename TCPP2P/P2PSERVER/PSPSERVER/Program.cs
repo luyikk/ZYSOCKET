@@ -49,7 +49,7 @@ namespace P2PSERVER
             UserInfo usertmp = new UserInfo();
             usertmp.Asyn = socketAsync;
             socketAsync.UserToken = usertmp;
-            usertmp.BufferQueue = new ZYNetBufferReadStreamV2();
+            usertmp.BufferQueue = new ZYNetRingBufferPoolV2();
             usertmp.WANIP = ((IPEndPoint)socketAsync.AcceptSocket.RemoteEndPoint).Address.ToString();
 
 

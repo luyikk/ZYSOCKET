@@ -100,7 +100,7 @@ namespace P2PFileInfo
             UserInfo user = new UserInfo();
             user.Client = client;
             user.MainClient = MClient;
-            user.Stream = new ZYSocket.share.ZYNetBufferReadStreamV2(1073741824);
+            user.Stream = new ZYSocket.share.ZYNetRingBufferPoolV2(1073741824);
             client.UserToken = user;
            
             UserList.Add(user);
@@ -127,7 +127,7 @@ namespace P2PFileInfo
                     user = new UserInfo();
                     user.Client = client;
                     user.MainClient = MClient;
-                    user.Stream = new ZYSocket.share.ZYNetBufferReadStreamV2(1073741824);
+                    user.Stream = new ZYSocket.share.ZYNetRingBufferPoolV2(1073741824);
                     client.UserToken = user;
 
                     UserList.Add(user);

@@ -134,13 +134,12 @@ E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\PACK.dll
 E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketClientA.dll
 E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketShare.dll
 E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\protobuf-net.dll
-E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.dll
 E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\PACK.pdb
 E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\MsgPack.pdb
 E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketClientA.pdb
 E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例子7 MsgPack\Client\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.Form1.resources
 E:\ZYSocketFrame2\例子7 MsgPack\Client\obj\x86\Debug\Client.LogOn.resources

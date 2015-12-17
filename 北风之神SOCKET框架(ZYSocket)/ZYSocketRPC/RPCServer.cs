@@ -124,6 +124,13 @@ namespace ZYSocket.RPC.Server
 
                 Type _type = o.GetType();
 
+                if (tmp.Arguments == null)
+                    tmp.Arguments = new List<byte[]>();
+
+                if (tmp.ArgumentsType == null)
+                    tmp.ArgumentsType = new List<string>();
+
+
                 object[] arguments = new object[tmp.Arguments.Count];
 
                 Type[] argumentstype = new Type[tmp.Arguments.Count];

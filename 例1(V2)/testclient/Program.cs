@@ -53,8 +53,7 @@ namespace testclient
                     client.SendTo(BufferFormatV2.FormatFCA(temp));  //讲一个PPO对象发送出去
 
 
-
-
+                 
                     BufferFormat buffmat = new BufferFormatV2(1001);
                     buffmat.AddItem(i);
                     buffmat.AddItem("通过组合数据包通讯，GUID is object");

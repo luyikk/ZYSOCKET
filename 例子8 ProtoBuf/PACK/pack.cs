@@ -17,13 +17,13 @@ namespace PACK
     }
 
 
-    [ProtoContract]
+    //[ProtoContract] //可以不要标签哦
     [FormatClassAttibutes((int)PACKTYPE.LogOn)]
     public class LOGON
     {
-        [ProtoMember(1)]
+       // [ProtoMember(1)]
         public string username { get; set; }
-        [ProtoMember(2)]
+       // [ProtoMember(2)]
         public string password { get; set; }
     }
 

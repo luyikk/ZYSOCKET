@@ -19,8 +19,6 @@ L:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\obj\x86\Debug\Se
 L:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\Server.exe.config
 L:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\Server.exe.config
-E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\obj\x86\Debug\Server.exe
-E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\obj\x86\Debug\Server.pdb
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\Server.exe
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\Server.pdb
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\MsgPack.dll
@@ -29,11 +27,13 @@ E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\ZYSock
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\ZYSocketShare.dll
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\ZYSocketClientB.dll
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\protobuf-net.dll
-E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\Polenter.SharpSerializer.dll
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\MsgPack.pdb
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\ZYSocketFrame.pdb
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\ZYSocketRPC.pdb
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\ZYSocketShare.pdb
 E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\ZYSocketClientB.pdb
-E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\obj\x86\Debug\Server.exe
+E:\ZYSocketFrame2\例子9-2 RPC 聊天室 双工\TalkRPC\Server\obj\x86\Debug\Server.pdb

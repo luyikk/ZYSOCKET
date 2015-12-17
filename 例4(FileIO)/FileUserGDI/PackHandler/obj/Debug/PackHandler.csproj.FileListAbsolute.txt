@@ -29,10 +29,10 @@ L:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\obj\Debug\PackHandler.pdb
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\PackHandler.dll
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\PackHandler.pdb
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\obj\Debug\PackHandler.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\obj\Debug\PackHandler.dll
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\obj\Debug\PackHandler.pdb
-E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\obj\Debug\PackHandler.csprojResolveAssemblyReference.cache

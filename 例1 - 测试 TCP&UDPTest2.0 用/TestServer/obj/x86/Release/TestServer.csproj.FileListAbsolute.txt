@@ -43,5 +43,15 @@ L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\Polent
 L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\Polenter.SharpSerializer.xml
 L:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\x86\Release\TestServer.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\TestServer.exe.config
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\TestServer.exe
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\TestServer.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\testClass.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\protobuf-net.dll
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\testClass.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\protobuf-net.pdb
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\protobuf-net.xml
+E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\x86\Release\TestServer.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\x86\Release\TestServer.exe
 E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\x86\Release\TestServer.pdb

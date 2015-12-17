@@ -77,12 +77,12 @@ E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\testclient.pdb
 E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\testClass.dll
 E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\ZYSocketClientA.dll
 E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\Polenter.SharpSerializer.dll
+E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\testClass.pdb
 E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\ZYSocketClientA.pdb
 E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\Polenter.SharpSerializer.pdb
-E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\Polenter.SharpSerializer.xml
+E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例1(V2)\testclient\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例1(V2)\testclient\obj\x86\Debug\testclient.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例1(V2)\testclient\obj\x86\Debug\testclient.exe
 E:\ZYSocketFrame2\例1(V2)\testclient\obj\x86\Debug\testclient.pdb
