@@ -5,21 +5,23 @@ using System.IO;
 
 namespace ZYSocket.share
 {
-    public class BufferFormatV2:BufferFormat
+    public class BufferFormatV2 : BufferFormat
     {
-        public BufferFormatV2(int buffType, FDataExtraHandle dataExtra):base(buffType,dataExtra)
+        public BufferFormatV2(int buffType, FDataExtraHandle dataExtra)
+            : base(buffType, dataExtra)
         {
             stream = new MemoryStream();
             buffList = new BinaryWriter(stream);
             buffList.Write(GetBytes(buffType));
-            
+
             Encode = Encoding.Unicode;
             finish = false;
-            this.dataextra = dataExtra;       
-        
-        }        
+            this.dataextra = dataExtra;
 
-        public BufferFormatV2(int buffType):base(buffType)
+        }
+
+        public BufferFormatV2(int buffType)
+            : base(buffType)
         {
             stream = new MemoryStream();
             buffList = new BinaryWriter(stream);
@@ -40,7 +42,7 @@ namespace ZYSocket.share
                 }
                 AddItem((byte)(data & 127 | 128));
                 data = data >> 7;
-            }          
+            }
         }
 
         public override void AddItem(object obj)
@@ -70,7 +72,7 @@ namespace ZYSocket.share
         {
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
-                      
+
             buffList.Write(GetBytes(data.Length));
             buffList.Write(data);
         }
@@ -130,7 +132,7 @@ namespace ZYSocket.share
             stream.Dispose();
             finish = true;
             return pdata;
-          
+
         }
 
         /// <summary>
@@ -138,18 +140,18 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
-        public static new  byte[] FormatFCA(object o)
+        public static new byte[] FormatFCA(object o)
         {
             return FormatFCA(o, null);
         }
 
-         /// <summary>
+        /// <summary>
         /// 直接格式化一个带FormatClassAttibutes 标签的类，返回BYTE[]数组，此数组可以直接发送不需要组合所数据包。所以也称为类抽象数据包
-       /// </summary>
-       /// <param name="o"></param>
-       /// <param name="dataExtra">数据加密回调</param>
-       /// <returns></returns>
-        public static new  byte[] FormatFCA(object o, FDataExtraHandle dataExtra)
+        /// </summary>
+        /// <param name="o"></param>
+        /// <param name="dataExtra">数据加密回调</param>
+        /// <returns></returns>
+        public static new byte[] FormatFCA(object o, FDataExtraHandle dataExtra)
         {
             Type otype = o.GetType();
             Attribute[] Attributes = Attribute.GetCustomAttributes(otype);
@@ -218,7 +220,7 @@ namespace ZYSocket.share
 
                         byte[] pdata = stream.ToArray();
                         stream.Close();
-                        stream.Dispose();                       
+                        stream.Dispose();
                         return pdata;
                     }
                 }
@@ -240,7 +242,7 @@ namespace ZYSocket.share
                 }
                 pdata.Add((byte)(data & 127 | 128));
                 data = data >> 7;
-            }          
+            }
         }
     }
 }

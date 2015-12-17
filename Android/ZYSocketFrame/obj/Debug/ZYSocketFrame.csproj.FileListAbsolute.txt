@@ -31,14 +31,3 @@ E:\ZYSocketFrame\Android\ZYSocketFrame\obj\Debug\android\bin\ZYSocketFrame.ZYSoc
 E:\ZYSocketFrame\Android\ZYSocketFrame\obj\Debug\res\values\strings.xml
 E:\ZYSocketFrame\Android\ZYSocketFrame\obj\Debug\R.cs.flag
 E:\ZYSocketFrame\Android\ZYSocketFrame\obj\Debug\uploadflags.txt
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\bin\Debug\ZYSocketFrame.dll
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\bin\Debug\ZYSocketFrame.pdb
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\bin\Debug\ZYSocketFrame.dll.mdb
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\bin\Debug\ZYSocketFrame.ZYSocketFrame.apk
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\bin\Debug\ZYSocketFrame.ZYSocketFrame-Signed.apk
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\obj\Debug\ZYSocketFrame.dll
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\obj\Debug\ZYSocketFrame.pdb
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\obj\Debug\android\bin\ZYSocketFrame.ZYSocketFrame.apk
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\obj\Debug\res\values\strings.xml
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\obj\Debug\R.cs.flag
-J:\Github\ZYSOCKET\Android\ZYSocketFrame\obj\Debug\uploadflags.txt

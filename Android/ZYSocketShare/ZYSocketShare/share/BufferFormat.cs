@@ -17,10 +17,10 @@ namespace ZYSocket.share
 
     public enum BuffFormatType
     {
-        XML=0,
-        Binary=1,
-        SharpSerializerXML=2,
-        SharpSerializerBinary=3,
+        XML = 0,
+        Binary = 1,
+        SharpSerializerXML = 2,
+        SharpSerializerBinary = 3,
 #if Net4
         MsgPack=4,
         protobuf=5,
@@ -70,7 +70,7 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="buffType">包类型</param>
         /// <param name="dataExtra">数据包在格式化完毕后回调方法。（例如加密，压缩等）</param>
-        public BufferFormat(int buffType,FDataExtraHandle dataExtra)
+        public BufferFormat(int buffType, FDataExtraHandle dataExtra)
         {
             stream = new MemoryStream();
             buffList = new BinaryWriter(stream);
@@ -79,7 +79,7 @@ namespace ZYSocket.share
             buffList.Write(GetSocketBytes(buffType));
             Encode = Encoding.Unicode;
             finish = false;
-            this.dataextra=dataExtra;
+            this.dataextra = dataExtra;
         }
 
 
@@ -126,7 +126,7 @@ namespace ZYSocket.share
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
 
-             buffList.Write(data);
+            buffList.Write(data);
         }
 
         /// <summary>
@@ -234,7 +234,7 @@ namespace ZYSocket.share
         {
             if (finish)
                 throw new ObjectDisposedException("BufferFormat", "无法使用已经调用了 Finish 方法的BufferFormat对象");
-                      
+
             buffList.Write(data.Length);
             buffList.Write(data);
 
@@ -300,18 +300,18 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
-        public  static byte[] FormatFCA(object o)
+        public static byte[] FormatFCA(object o)
         {
             return FormatFCA(o, null);
         }
 
-       /// <summary>
+        /// <summary>
         /// 直接格式化一个带FormatClassAttibutes 标签的类，返回BYTE[]数组，此数组可以直接发送不需要组合所数据包。所以也称为类抽象数据包
-       /// </summary>
-       /// <param name="o"></param>
-       /// <param name="dataExtra">数据加密回调</param>
-       /// <returns></returns>
-        public  static byte[] FormatFCA(object o, FDataExtraHandle dataExtra)
+        /// </summary>
+        /// <param name="o"></param>
+        /// <param name="dataExtra">数据加密回调</param>
+        /// <returns></returns>
+        public static byte[] FormatFCA(object o, FDataExtraHandle dataExtra)
         {
             Type otype = o.GetType();
             Attribute[] Attributes = Attribute.GetCustomAttributes(otype);
@@ -379,7 +379,7 @@ namespace ZYSocket.share
             {
                 byte[] fdata = dataextra(stream.ToArray());
                 stream.Position = 0;
-                stream.SetLength(0);               
+                stream.SetLength(0);
                 buffList.Write(fdata);
             }
 
@@ -391,9 +391,9 @@ namespace ZYSocket.share
             stream.Position = 0;
 
             buffList.Write(data);
-                      
 
-            byte[] pdata= stream.ToArray();
+
+            byte[] pdata = stream.ToArray();
             stream.Close();
             stream.Dispose();
 
@@ -524,7 +524,7 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public  static Byte[] GetSocketBytes(UInt64 data)
+        public static Byte[] GetSocketBytes(UInt64 data)
         {
             return BitConverter.GetBytes(data);
         }
@@ -544,7 +544,7 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public  static  Byte[] GetSocketBytes(Char data)
+        public static Byte[] GetSocketBytes(Char data)
         {
             Byte[] bytes = new Byte[] { (Byte)data };
             return bytes;
@@ -555,7 +555,7 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public  static Byte[] GetSocketBytes(Int16 data)
+        public static Byte[] GetSocketBytes(Int16 data)
         {
             return BitConverter.GetBytes(data);
         }
@@ -580,7 +580,7 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public  static Byte[] GetSocketBytes(bool data)
+        public static Byte[] GetSocketBytes(bool data)
         {
             return BitConverter.GetBytes(data);
         }
@@ -592,7 +592,7 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public  static Byte[] GetSocketBytes(float data)
+        public static Byte[] GetSocketBytes(float data)
         {
             return BitConverter.GetBytes(data);
         }
@@ -602,7 +602,7 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public  static Byte[] GetSocketBytes(double data)
+        public static Byte[] GetSocketBytes(double data)
         {
             return BitConverter.GetBytes(data);
         }

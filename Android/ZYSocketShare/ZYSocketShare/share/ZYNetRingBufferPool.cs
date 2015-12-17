@@ -11,7 +11,7 @@ namespace ZYSocket.share
     public class ZYNetRingBufferPool
     {
 
-        
+
 
         protected object lockobj = new object();
         /// <summary>
@@ -59,7 +59,8 @@ namespace ZYSocket.share
         public int Length { get { return _length; } protected set { _length = value; } }
 
 
-        public ZYNetRingBufferPool():this(1024*1024,4,false)
+        public ZYNetRingBufferPool()
+            : this(1024 * 1024, 4, false)
         {
 
         }
@@ -68,7 +69,8 @@ namespace ZYSocket.share
         /// 初始化
         /// </summary>
         /// <param name="MaxSize">内存环大小</param>
-        public ZYNetRingBufferPool(int MaxSize):this(MaxSize,4,false)
+        public ZYNetRingBufferPool(int MaxSize)
+            : this(MaxSize, 4, false)
         {
 
         }
@@ -88,7 +90,8 @@ namespace ZYSocket.share
         /// </summary>
         /// <param name="MaxSize">内存环大小</param>
         /// <param name="hiB">数据包长度占用位数</param>
-        public ZYNetRingBufferPool(int MaxSize, byte hiB):this(MaxSize,hiB,false)
+        public ZYNetRingBufferPool(int MaxSize, byte hiB)
+            : this(MaxSize, hiB, false)
         {
 
         }
@@ -108,14 +111,14 @@ namespace ZYSocket.share
         }
 
 
-         /// <summary>
-         /// 写入数据
-         /// </summary>
-         /// <param name="data">数据</param>
-         /// <param name="offset">偏移</param>
-         /// <param name="count">数量</param>
-         /// <returns></returns>
-        public bool Write(byte[] data,int offset,int count)
+        /// <summary>
+        /// 写入数据
+        /// </summary>
+        /// <param name="data">数据</param>
+        /// <param name="offset">偏移</param>
+        /// <param name="count">数量</param>
+        /// <returns></returns>
+        public bool Write(byte[] data, int offset, int count)
         {
 
             System.Threading.Monitor.Enter(lockobj);
@@ -131,7 +134,7 @@ namespace ZYSocket.share
                 {
                     throw new ArgumentOutOfRangeException("count", "写入数量不能小于0");
                 }
-            
+
 
                 int lengt = count;
 
@@ -182,7 +185,7 @@ namespace ZYSocket.share
                 if (have > 0)
                 {
                     savepos = (_current + Length) % MAXSIZE;
-                    Buffer.BlockCopy(data, offset+(lengt - have), Data, savepos, have);
+                    Buffer.BlockCopy(data, offset + (lengt - have), Data, savepos, have);
                     Length += have;
                 }
 
@@ -221,7 +224,7 @@ namespace ZYSocket.share
 
                 if (Length + data.Length > MAXSIZE)
                 {
-                     return false;
+                    return false;
                 }
 
 
@@ -341,7 +344,7 @@ namespace ZYSocket.share
             {
                 System.Threading.Monitor.Exit(lockobj);
             }
-            
+
         }
 
         /// <summary>
@@ -414,8 +417,8 @@ namespace ZYSocket.share
             {
                 System.Threading.Monitor.Exit(lockobj);
             }
-            
-         
+
+
         }
 
         /// <summary>
@@ -425,10 +428,10 @@ namespace ZYSocket.share
         protected virtual int GetHeadLengt()
         {
             if (Length < Hib)
-            {               
+            {
                 return 0;
             }
-                      
+
 
             int res = 0;
 
@@ -445,7 +448,7 @@ namespace ZYSocket.share
             {
                 for (int i = 0; i < Hib; i++)
                 {
-                    int temp = ((int)Data[(_current+i)%MAXSIZE]) & 0xff;
+                    int temp = ((int)Data[(_current + i) % MAXSIZE]) & 0xff;
                     temp <<= i * 8;
                     res = temp + res;
                 }
@@ -502,7 +505,7 @@ namespace ZYSocket.share
             }
 
 
-            data= Read(count);
+            data = Read(count);
 
             return true;
         }

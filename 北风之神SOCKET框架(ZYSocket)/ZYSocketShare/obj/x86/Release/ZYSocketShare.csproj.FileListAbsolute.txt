@@ -7,3 +7,8 @@ F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Relea
 F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll.config
 F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll
 F:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll.config
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Release\ZYSocketShare.pdb
