@@ -2,3 +2,4 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\UDPService.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\UDPService.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\obj\Release\UDPService.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\obj\Release\UDPService.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\UDPService\obj\Release\UDPService.csprojResolveAssemblyReference.cache

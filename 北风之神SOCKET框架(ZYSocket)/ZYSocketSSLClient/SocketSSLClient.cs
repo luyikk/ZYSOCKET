@@ -190,7 +190,7 @@ namespace ZYSocket.SSLClientB
 
 
             }
-            catch (ObjectDisposedException er)
+            catch (ObjectDisposedException)
             {
 
             }

@@ -250,7 +250,7 @@ namespace ZYSocket.ClientB
 
 
             }
-            catch (ObjectDisposedException er)
+            catch (ObjectDisposedException)
             {
               
             

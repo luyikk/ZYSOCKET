@@ -365,14 +365,15 @@ namespace ZYSocket.share
 
                 }
 
-
                 if (lengt > Length)
                 {
-
                     return null;
-
                 }
 
+                if (lengt < 0)
+                {
+                    return null;
+                }
 
                 byte[] data = new byte[lengt];
 
@@ -391,7 +392,9 @@ namespace ZYSocket.share
                 }
                 else
                 {
-                    if (lengt < 8)
+                    // 消息没有回卷，可以一次拷贝出去
+
+                    if (lengt < 8) //小于8 使用whlie COPY
                     {
                         int num2 = lengt;
                         while (--num2 >= 0)
@@ -401,8 +404,6 @@ namespace ZYSocket.share
                     }
                     else
                     {
-
-                        // 消息没有回卷，可以一次拷贝出去
                         Buffer.BlockCopy(Data, _current, data, 0, lengt);
                     }
                 }

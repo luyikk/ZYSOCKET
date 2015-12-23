@@ -2,3 +2,4 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Release\ZYSocketSSLClient.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Release\ZYSocketSSLClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Release\ZYSocketSSLClient.csprojResolveAssemblyReference.cache

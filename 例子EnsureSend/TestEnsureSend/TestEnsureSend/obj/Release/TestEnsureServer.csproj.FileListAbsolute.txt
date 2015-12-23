@@ -1,0 +1,15 @@
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\TestEnsureSend.exe.config
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\TestEnsureSend.exe
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\TestEnsureSend.pdb
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\ZYSocketFrame.dll
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\MsgPack.dll
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\protobuf-net.dll
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\ZYSocketFrame.pdb
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\ZYSocketShare.pdb
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\MsgPack.pdb
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\protobuf-net.pdb
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\bin\Release\protobuf-net.xml
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\obj\Release\TestEnsureServer.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\obj\Release\TestEnsureSend.exe
+E:\ZYSocketFrame2\EnsureSend-test\TestEnsureSend\TestEnsureSend\obj\Release\TestEnsureSend.pdb

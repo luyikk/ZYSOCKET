@@ -573,6 +573,13 @@ namespace ZYSocket.Server
             
         }
 
+
+        public virtual void Send(IEnsureSend player, byte[] data)
+        {
+            player.EnsureSend(data);
+        }
+
+
         /// <summary>
         /// 同步发送数据包
         /// </summary>
