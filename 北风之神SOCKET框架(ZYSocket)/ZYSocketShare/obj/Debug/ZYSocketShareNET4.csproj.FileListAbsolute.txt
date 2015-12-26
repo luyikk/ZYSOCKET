@@ -9,8 +9,7 @@ L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\bin\Debug\NET
 L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\bin\Debug\NET4\MsgPack.pdb
 L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.dll
 L:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.pdb
-E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShare.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.pdb
-E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShareNET4.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShare.pdb

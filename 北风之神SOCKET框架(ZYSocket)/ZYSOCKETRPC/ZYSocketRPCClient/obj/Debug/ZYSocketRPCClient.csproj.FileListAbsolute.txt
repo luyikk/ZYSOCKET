@@ -1,0 +1,23 @@
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\ZYSocketRPCClient.dll
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\ZYSocketRPCClient.pdb
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\ZYSocketClientB.dll
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\ZYSocketRPC.dll
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\ZYSocketShare.dll
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\MsgPack.dll
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\protobuf-net.dll
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\ZYSocketRPC.pdb
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\ZYSocketClientB.pdb
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\ZYSocketShare.pdb
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\MsgPack.pdb
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\protobuf-net.pdb
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\bin\Debug\protobuf-net.xml
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.dll
+c:\Users\administrator\documents\visual studio 2015\Projects\RPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.pdb
