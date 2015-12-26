@@ -12,8 +12,9 @@ namespace RPCConsoleTest
     {
         DateTime GetClientDateTime();
         long Add(long a, long b);
-
         int RecComputer(int i);
+
+        void ShowMsg(string msg);
     }
 
 
@@ -123,16 +124,37 @@ namespace RPCConsoleTest
 
         public int RecComputer(int i)
         {
-            if (i < 2)
+            if (CheckUser())
+            {
+                if (i < 2)
+                    return i;
+
+                i--;
+
+                var rpc = GetCurrentRPCUser();
+
+                i = rpc.Call<ClientCall, int>(p => p.RecComputer(i));
+
                 return i;
 
-            i--;
+            }
 
+            var x = GetCurrentRPCUser(); //没登入断开连接
+            x.Disconn();
+            return 0;
+
+        }
+
+        public void SendAll(string msg)
+        {
             var rpc = GetCurrentRPCUser();
 
-            i = rpc.Call<ClientCall, int>(p => p.RecComputer(i));
+            string msgx = (rpc.UserToken as UserInfo).UserName + " :" + msg;
 
-            return i;
+            foreach (var item in UserList)
+            {
+                item.CallAsyn<ClientCall>(p => p.ShowMsg(msgx));
+            }
 
         }
 

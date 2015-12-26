@@ -18,15 +18,19 @@ namespace RPCConsoleClient
                 client.OutTime = 2000;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
-                           
 
-                if (client.Call<ServerClass, bool>(p => p.LogOn("my is test", "123123")))
+                Console.WriteLine("input userName:");
+                string user = Console.ReadLine();
+                if (client.Call<ServerClass, bool>(p => p.LogOn(user, "123123")))
                 {
                     Console.WriteLine("LogOn Is OK");
 
                     while (true)
                     {
-                        Console.ReadLine();
+                        string msg= Console.ReadLine();
+
+                        client.Call<ServerClass>(p => p.SendAll(msg));
+
 
                         DateTime time = client.Call<ServerClass, DateTime>(p => p.GetServerTime());
 

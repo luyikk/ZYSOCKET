@@ -14,7 +14,8 @@ namespace RPCConsoleClient
         void OutRandom(out int value);
 
         Data Return(Data ins);
-
         int RecComputer(int i);
+
+        void SendAll(string msg);
     }
 }

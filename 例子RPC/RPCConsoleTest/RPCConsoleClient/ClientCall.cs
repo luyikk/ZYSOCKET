@@ -33,5 +33,10 @@ namespace RPCConsoleClient
             return i;
 
         }
+
+        public void ShowMsg(string msg)
+        {
+            Console.WriteLine(msg);
+        }
     }
 }
