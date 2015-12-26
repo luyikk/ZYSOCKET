@@ -31,6 +31,8 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketRP
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\MsgPack.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\protobuf-net.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\protobuf-net.xml
-E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Debug\RPCConsoleClient.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Debug\RPCConsoleClient.exe
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Debug\RPCConsoleClient.pdb
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\DATA.dll
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\DATA.pdb
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Debug\RPCConsoleClient.csprojResolveAssemblyReference.cache

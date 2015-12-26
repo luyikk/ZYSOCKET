@@ -149,14 +149,11 @@ namespace ZYSocket.RPC.Server
         {
             ReadBytes read;
             int cmd;
-            ZYClient_Result_Return returnvalue;
+          
 
-            if (Service.CallModule(data, user, out read, out cmd, out returnvalue))
+            if (Service.CallModule(data, user, out read, out cmd))
             {
-                if (returnvalue != null)
-                {
-                    Server.Send(user, BufferFormat.FormatFCA(returnvalue));
-                }
+              
             }
             else
             {

@@ -12,7 +12,12 @@ namespace RPCConsoleTest
     {
         DateTime GetClientDateTime();
         long Add(long a, long b);
+
+        int RecComputer(int i);
     }
+
+
+
 
 
     public class ServerClass:RPCObject
@@ -108,7 +113,29 @@ namespace RPCConsoleTest
             Random r = new Random();
             value=r.Next();
         }
-        
+
+        public Data Return(Data ins)
+        {
+            ins.Name += "Ok";
+            return ins;
+        }
+
+
+        public int RecComputer(int i)
+        {
+            if (i < 2)
+                return i;
+
+            i--;
+
+            var rpc = GetCurrentRPCUser();
+
+            i = rpc.Call<ClientCall, int>(p => p.RecComputer(i));
+
+            return i;
+
+        }
+
 
         public override void ClientDisconnect(RPCUserInfo userInfo)
         {

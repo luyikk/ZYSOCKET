@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCConsoleTestServer", "RPC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCConsoleClient", "RPCConsoleClient\RPCConsoleClient.csproj", "{59FBA7DC-8C6B-4EE7-8DB3-C0DE757E08EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATA", "DATA\DATA.csproj", "{4ABEB5E1-61F0-4342-9A61-6C4AC0E3CFBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{59FBA7DC-8C6B-4EE7-8DB3-C0DE757E08EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59FBA7DC-8C6B-4EE7-8DB3-C0DE757E08EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59FBA7DC-8C6B-4EE7-8DB3-C0DE757E08EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABEB5E1-61F0-4342-9A61-6C4AC0E3CFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABEB5E1-61F0-4342-9A61-6C4AC0E3CFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABEB5E1-61F0-4342-9A61-6C4AC0E3CFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABEB5E1-61F0-4342-9A61-6C4AC0E3CFBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

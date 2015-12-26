@@ -273,7 +273,11 @@ namespace ZYSocket.RPC
                 if (wait.WaitOne(OutTime))
                 {
 
-                    ZYClient_Result_Return returnx = ResRetrunDiy[call.Id].ReturnValue;
+                    ResRetrunDiy.TryRemove(call.Id, out var);
+
+                    ZYClient_Result_Return returnx = var.ReturnValue;
+
+                  
 
                     Type type = returnx.ReturnType;
 
@@ -308,6 +312,8 @@ namespace ZYSocket.RPC
                             }
                         }
                     }
+
+                 
 
                     return (Result)returnobj;
 
@@ -422,6 +428,7 @@ namespace ZYSocket.RPC
 
         public bool RunModule(RPCCallPack tmp, out object returnValue)
         {
+           
             returnValue = null;
 
             if (ModuleDiy.ContainsKey(tmp.CallModule))

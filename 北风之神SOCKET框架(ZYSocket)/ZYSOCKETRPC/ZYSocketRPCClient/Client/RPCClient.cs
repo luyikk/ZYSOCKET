@@ -5,6 +5,7 @@ using System.Text;
 using ZYSocket.ClientB;
 using ZYSocket.share;
 using System.Linq.Expressions;
+using System.Runtime.Remoting.Messaging;
 
 namespace ZYSocket.RPC.Client
 {
@@ -21,6 +22,11 @@ namespace ZYSocket.RPC.Client
         public event ClientMessageInputHandler Disconn;
 
         public RPC RPC_Call { get; set; }
+
+        /// <summary>
+        /// 超时时间
+        /// </summary>
+        public int OutTime { get { return RPC_Call.OutTime; } set { RPC_Call.OutTime = value; } }
 
         #region Reg Call
         public void CallAsyn<Mode>(Expression<Action<Mode>> action)
@@ -139,36 +145,39 @@ namespace ZYSocket.RPC.Client
                         break;
                     case 1001000:
                         {
-
-                            RPCCallPack tmp;
-
-                            if (read.ReadObject<RPCCallPack>(out tmp))
-                            {
-                                object returnValue;
-                             
-
-                                if (RPC_Call.RunModule(tmp, out returnValue))
+                            System.Threading.Tasks.Task.Factory.StartNew(() =>
                                 {
-                                    if (tmp.IsNeedReturn)
+                                    RPCCallPack tmp;
+
+                                    if (read.ReadObject<RPCCallPack>(out tmp))
                                     {
-                                        ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                        {
-                                            Id = tmp.Id,
-                                            CallTime = tmp.CallTime,
-                                            Arguments = tmp.Arguments
-                                        };
+                                        object returnValue;
 
-                                        if (returnValue != null)
+                                        CallContext.SetData("Current", this);
+
+                                        if (RPC_Call.RunModule(tmp, out returnValue))
                                         {
-                                            var.Return = MsgPackSerialization.GetMsgPack(returnValue.GetType()).PackSingleObject(returnValue);
-                                            var.ReturnType = returnValue.GetType();
+                                            if (tmp.IsNeedReturn)
+                                            {
+                                                ZYClient_Result_Return var = new ZYClient_Result_Return()
+                                                {
+                                                    Id = tmp.Id,
+                                                    CallTime = tmp.CallTime,
+                                                    Arguments = tmp.Arguments
+                                                };
+
+                                                if (returnValue != null)
+                                                {
+                                                    var.Return = MsgPackSerialization.GetMsgPack(returnValue.GetType()).PackSingleObject(returnValue);
+                                                    var.ReturnType = returnValue.GetType();
+                                                }
+
+                                                Client.Send(BufferFormat.FormatFCA(var));
+                                            }
+
                                         }
-
-                                        Client.Send(BufferFormat.FormatFCA(var));
                                     }
-                                    
-                                }
-                            }
+                                });
                         }
                         break;
                     default:

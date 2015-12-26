@@ -15,8 +15,10 @@ namespace RPCConsoleClient
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 9952))
             {
+                client.OutTime = 2000;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
+                           
 
                 if (client.Call<ServerClass, bool>(p => p.LogOn("my is test", "123123")))
                 {
@@ -34,7 +36,20 @@ namespace RPCConsoleClient
 
                         client.Call<ServerClass>(p => p.OutRandom(out value));
 
-                        Console.Write("Random value is " + value);
+                        Console.WriteLine("Random value is " + value);
+
+                        Data x = new Data()
+                        {
+                           Name="II"
+                        };
+
+                        var v=  client.Call<ServerClass,Data>(p => p.Return(x));
+
+                        Console.WriteLine("Data Name "+v.Name);
+
+                        var l = client.Call<ServerClass, int>(p => p.RecComputer(10)); //这叫递归吗？ 代价太大，深度最好别超过5层 实在没办法记得设置outtime
+
+                        Console.WriteLine("Rec computer value:" + l);
 
                     }
 
