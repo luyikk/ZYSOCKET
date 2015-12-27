@@ -11,6 +11,7 @@ namespace ZYSocket.RPC.Server
 {
     public delegate bool IsCanConnHandler(IPEndPoint ipaddress);
     public delegate void BinaryInputOtherHandler(ReadBytes read, int cmd);
+    public delegate void MsgOutHandler(string msg);
 
     public class RPCServer
     {
@@ -39,6 +40,8 @@ namespace ZYSocket.RPC.Server
         /// 其他数据包 不包含在RPC里面的
         /// </summary>
         public event BinaryInputOtherHandler BinaryInputOther;
+
+        public event MsgOutHandler MsgOut;
 
         public RPCServer()
         {
@@ -102,12 +105,19 @@ namespace ZYSocket.RPC.Server
         {
             RPCUserInfo tmp = new RPCUserInfo(socketAsync);
             tmp.RPC_Call.OutTime = ReadOutTime;
+            tmp.RPC_Call.ErrMsgOut += RPC_Call_ErrMsgOut;
             foreach (var item in RegModule)
             {
                 tmp.RPC_Call.RegModule(item);
             }
 
             return tmp;
+        }
+
+        void RPC_Call_ErrMsgOut(string msg)
+        {
+            if (MsgOut != null)
+                MsgOut(msg);
         }
 
         private bool ConnectionFilter(SocketAsyncEventArgs socketAsync)

@@ -11,6 +11,8 @@ namespace ZYSocket.RPC.Client
 {
     public delegate void ClientOtherBinaryInputHandler(int cmd, ReadBytes read);
 
+    public delegate void MsgOutHandler(string msg);
+
     public class RPCClient
     {
         public SocketClient Client { get; set; }
@@ -20,6 +22,8 @@ namespace ZYSocket.RPC.Client
         public event ClientOtherBinaryInputHandler DataOn;
 
         public event ClientMessageInputHandler Disconn;
+
+        public event MsgOutHandler MsgOut;
 
         public RPC RPC_Call { get; set; }
 
@@ -64,6 +68,13 @@ namespace ZYSocket.RPC.Client
         {
             RPC_Call = new RPC();
             RPC_Call.CallBufferOutSend += RPC_Call_CallBufferOutSend;
+            RPC_Call.ErrMsgOut += RPC_Call_ErrMsgOut;
+        }
+
+        void RPC_Call_ErrMsgOut(string msg)
+        {
+            if (MsgOut != null)
+                MsgOut(msg);
         }
 
         public void RegModule(object o)

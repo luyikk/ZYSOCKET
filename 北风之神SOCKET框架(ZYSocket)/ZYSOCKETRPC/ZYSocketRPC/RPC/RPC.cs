@@ -14,6 +14,8 @@ namespace ZYSocket.RPC
 
     public delegate void CallBufferOutHanlder(byte[] data);
 
+    public delegate void ErrMsgOutHanlder(string msg);
+
     public class RPC
     {
 
@@ -27,7 +29,10 @@ namespace ZYSocket.RPC
 
 
         public event CallBufferOutHanlder CallBufferOutSend;
-        
+        /// <summary>
+        /// 错误输出
+        /// </summary>
+        public event ErrMsgOutHanlder ErrMsgOut;
 
         /// 超时时间
         /// </summary>
@@ -473,8 +478,30 @@ namespace ZYSocket.RPC
                 }
                 else
                 {
+                    string msg = "Not find " + tmp.CallModule + "-> public " + tmp.Method + "(";
+                    int l = 0;
+                    foreach (var item in argumentstype)
+                    {
+                        l++;
+                        msg += item.Name;
+                        if (l < argumentstype.Length)
+                            msg += ",";
+
+                    }
+                    msg += ")";
+
+                    if (ErrMsgOut != null)
+                        ErrMsgOut(msg);
+
                     return false;
                 }
+            }
+            else
+            {
+                string msg = "Not find " + tmp.CallModule;
+
+                if (ErrMsgOut != null)
+                    ErrMsgOut(msg);
             }
 
 
