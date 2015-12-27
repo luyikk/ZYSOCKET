@@ -29,7 +29,7 @@ namespace RPCConsoleClient
                     {
                         string msg= Console.ReadLine();
 
-                        client.Call<ServerClass>(p => p.SendAll(msg));
+                        client.Call<ServerClass>(p =>  p.SendAll(msg));
 
 
                         DateTime time = client.Call<ServerClass, DateTime>(p => p.GetServerTime());

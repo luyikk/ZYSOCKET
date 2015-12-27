@@ -70,7 +70,7 @@ namespace ZYSocket.RPC
     public class RPCCallPack
     {
 
-        public string Id { get; set; }
+        public long Id { get; set; }
 
 
         public DateTime CallTime { get; set; }
@@ -94,7 +94,7 @@ namespace ZYSocket.RPC
     public class ZYClient_Result_Return
     {
 
-        public string Id { get; set; }
+        public long Id { get; set; }
 
 
         public DateTime CallTime { get; set; }

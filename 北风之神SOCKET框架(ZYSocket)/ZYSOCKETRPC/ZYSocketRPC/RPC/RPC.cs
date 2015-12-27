@@ -19,9 +19,9 @@ namespace ZYSocket.RPC
 
         public FormatValueType FormatValue { get; set; }
 
-        public ConcurrentDictionary<string, ResReturn> ResRetrunDiy { get; set; }
+        public ConcurrentDictionary<long, ResReturn> ResRetrunDiy { get; set; }
 
-        public ConcurrentDictionary<string, Action<AsynReturn>> AsynRetrunDiy { get; set; }
+        public ConcurrentDictionary<long, Action<AsynReturn>> AsynRetrunDiy { get; set; }
 
         public ConcurrentDictionary<string, object> ModuleDiy { get; set; }
 
@@ -38,9 +38,9 @@ namespace ZYSocket.RPC
         {
             FormatValue = new FormatValueType();
             OutTime = 800;
-            ResRetrunDiy = new ConcurrentDictionary<string, ResReturn>();
+            ResRetrunDiy = new ConcurrentDictionary<long, ResReturn>();
             ModuleDiy = new ConcurrentDictionary<string, object>();
-            AsynRetrunDiy = new ConcurrentDictionary<string, Action<AsynReturn>>();
+            AsynRetrunDiy = new ConcurrentDictionary<long, Action<AsynReturn>>();
         }
 
         /// <summary>
@@ -109,7 +109,7 @@ namespace ZYSocket.RPC
 
             RPCCallPack call = new RPCCallPack()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = MakeID.GetID(),
                 CallTime = DateTime.Now,
                 CallModule = body.Object.Type.Name,
                 Method = body.Method.Name,
@@ -155,7 +155,7 @@ namespace ZYSocket.RPC
 
             RPCCallPack call = new RPCCallPack()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = MakeID.GetID(),
                 CallTime = DateTime.Now,
                 CallModule = body.Object.Type.Name,
                 Method = body.Method.Name,
@@ -199,7 +199,7 @@ namespace ZYSocket.RPC
 
             RPCCallPack call = new RPCCallPack()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = MakeID.GetID(),
                 CallTime = DateTime.Now,
                 CallModule = body.Object.Type.Name,
                 Method = body.Method.Name,
@@ -247,7 +247,7 @@ namespace ZYSocket.RPC
 
             RPCCallPack call = new RPCCallPack()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = MakeID.GetID(),
                 CallTime = DateTime.Now,
                 CallModule = body.Object.Type.Name,
                 Method = body.Method.Name,
@@ -355,7 +355,7 @@ namespace ZYSocket.RPC
 
             RPCCallPack call = new RPCCallPack()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = MakeID.GetID(),
                 CallTime = DateTime.Now,
                 CallModule = body.Object.Type.Name,
                 Method = body.Method.Name,
