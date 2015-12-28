@@ -53,6 +53,7 @@
     <Compile Include="RPC\MsgPackSerialization.cs" />
     <Compile Include="RPC\RPC.cs" />
     <Compile Include="RPC\RPCCall.cs" />
+    <Compile Include="RPC\ZYProxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ZYSocketShare\ZYSocketShareNET4.csproj">

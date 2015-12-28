@@ -42,6 +42,9 @@
     <Reference Include="ZYSocketClientB">
       <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketClientB.dll</HintPath>
     </Reference>
+    <Reference Include="ZYSocketRPC">
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPC.dll</HintPath>
+    </Reference>
     <Reference Include="ZYSocketRPCClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.dll</HintPath>

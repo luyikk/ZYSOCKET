@@ -9,3 +9,4 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientB.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientB.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientB\obj\Release\ZYSocketClientB.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientB\obj\Release\ZYSocketClientB.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientB\obj\Release\ZYSocketClientB.csprojResolveAssemblyReference.cache

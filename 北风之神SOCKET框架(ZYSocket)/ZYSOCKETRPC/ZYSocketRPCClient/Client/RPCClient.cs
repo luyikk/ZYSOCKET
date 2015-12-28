@@ -77,6 +77,10 @@ namespace ZYSocket.RPC.Client
                 MsgOut(msg);
         }
 
+        public T GetRPC<T>()
+        {
+            return RPC_Call.GetRPC<T>();
+        }
         public void RegModule(object o)
         {
             RPC_Call.RegModule(o);
@@ -85,6 +89,8 @@ namespace ZYSocket.RPC.Client
         {
             if (IsConnect)
                 Client.Send(data);
+            else
+                throw new System.Net.Sockets.SocketException((int)System.Net.Sockets.SocketError.NotConnected);
                      
         }
 

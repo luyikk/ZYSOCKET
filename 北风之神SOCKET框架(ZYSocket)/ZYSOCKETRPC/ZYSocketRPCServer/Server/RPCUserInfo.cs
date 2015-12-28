@@ -31,6 +31,10 @@ namespace ZYSocket.RPC.Server
                 Asyn.AcceptSocket.Disconnect(false);
         }
 
+        public T GetRPC<T>()
+        {
+            return RPC_Call.GetRPC<T>();
+        }
 
         #region Reg Call
 

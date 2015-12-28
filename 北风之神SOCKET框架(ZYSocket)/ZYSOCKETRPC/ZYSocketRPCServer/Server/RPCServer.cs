@@ -103,8 +103,7 @@ namespace ZYSocket.RPC.Server
         /// <returns></returns>
         private RPCUserInfo NewRPCUserInfo(SocketAsyncEventArgs socketAsync)
         {
-            RPCUserInfo tmp = new RPCUserInfo(socketAsync);
-            tmp.RPC_Call.OutTime = ReadOutTime;
+            RPCUserInfo tmp = new RPCUserInfo(socketAsync);         
             tmp.RPC_Call.ErrMsgOut += RPC_Call_ErrMsgOut;
             foreach (var item in RegModule)
             {

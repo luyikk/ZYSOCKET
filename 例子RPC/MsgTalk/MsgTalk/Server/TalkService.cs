@@ -34,7 +34,7 @@ namespace Server
             {
                 foreach (var item in UserList)
                 {
-                    item.CallAsyn<Client>(p => p.UserTalk(item.UserToken.ToString(), msg));
+                    item.CallAsyn<Client>(p => p.UserTalk(GetCurrentRPCUser().UserToken.ToString(), msg));
                 }
             }
         }

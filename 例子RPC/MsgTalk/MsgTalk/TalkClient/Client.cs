@@ -8,7 +8,7 @@ namespace TalkClient
 {
     public class Client:RPCClientObj
     {
-        void UserTalk(string name, string msg)
+       public  void UserTalk(string name, string msg)
         {
             Console.WriteLine(name + " :" + msg);
         }

@@ -1,0 +1,5 @@
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.pdb

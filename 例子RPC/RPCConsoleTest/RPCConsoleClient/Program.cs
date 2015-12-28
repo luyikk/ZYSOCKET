@@ -27,9 +27,9 @@ namespace RPCConsoleClient
 
                     while (true)
                     {
-                        string msg= Console.ReadLine();
+                        string msg = Console.ReadLine();
 
-                        client.Call<ServerClass>(p =>  p.SendAll(msg));
+                        client.Call<ServerClass>(p => p.SendAll(msg));
 
 
                         DateTime time = client.Call<ServerClass, DateTime>(p => p.GetServerTime());
@@ -44,16 +44,18 @@ namespace RPCConsoleClient
 
                         Data x = new Data()
                         {
-                           Name="II"
+                            Name = "II"
                         };
 
-                        var v=  client.Call<ServerClass,Data>(p => p.Return(x));
+                        var v = client.Call<ServerClass, Data>(p => p.Return(x));
 
-                        Console.WriteLine("Data Name "+v.Name);
+                        Console.WriteLine("Data Name " + v.Name);
 
                         var l = client.Call<ServerClass, int>(p => p.RecComputer(10)); //这叫递归吗？ 代价太大，深度最好别超过5层 实在没办法记得设置outtime
 
                         Console.WriteLine("Rec computer value:" + l);
+
+                     
 
                     }
 

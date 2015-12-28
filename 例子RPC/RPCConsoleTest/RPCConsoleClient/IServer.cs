@@ -15,7 +15,9 @@ namespace RPCConsoleClient
 
         Data Return(Data ins);
         int RecComputer(int i);
+        float RecComputer2(float i);
 
         void SendAll(string msg);
+        int Add(int a, int b);
     }
 }
