@@ -35,10 +35,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MsgPack, Version=0.6.0.0, Culture=neutral, PublicKeyToken=a2625990d5dc0167, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\MsgPack.dll</HintPath>
-    </Reference>
     <Reference Include="ParallelExtensionsExtras, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ParallelExtensionsExtras.dll</HintPath>

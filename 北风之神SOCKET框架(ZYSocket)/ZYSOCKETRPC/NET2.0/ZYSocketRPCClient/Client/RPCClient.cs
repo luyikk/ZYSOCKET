@@ -35,7 +35,7 @@ namespace ZYSocket.RPC.Client
         /// <summary>
         /// 是否连接
         /// </summary>
-        protected bool IsConnect { get; set; }
+        public bool IsConnect { get; protected set; }
 
         public RPCClient()
         {
