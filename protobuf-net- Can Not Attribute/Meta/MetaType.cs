@@ -326,6 +326,7 @@ namespace ProtoBuf.Meta
         }
         internal MetaType(RuntimeTypeModel model, Type type, MethodInfo factory)
         {
+           
             this.factory = factory;
             if (model == null) throw new ArgumentNullException("model");
             if (type == null) throw new ArgumentNullException("type");
@@ -409,7 +410,9 @@ namespace ProtoBuf.Meta
             {
                 return new TagDecorator(ProtoBuf.Serializer.ListItemTag, WireType.Variant, false, new EnumSerializer(type, GetEnumMap()));
             }
+
             Type itemType = IgnoreListHandling ? null : TypeModel.GetListItemType(model, type);
+            //Type itemType = TypeModel.GetListItemType(model, type);
             if (itemType != null)
             {
                 if(surrogate != null)
@@ -422,7 +425,11 @@ namespace ProtoBuf.Meta
                 }
                 Type defaultType = null;
                 ResolveListTypes(model, type, ref itemType, ref defaultType);
+
+
                 ValueMember fakeMember = new ValueMember(model, ProtoBuf.Serializer.ListItemTag, type, itemType, defaultType, DataFormat.Default);
+
+
                 return new TypeSerializer(model, type, new int[] { ProtoBuf.Serializer.ListItemTag }, new IProtoSerializer[] { fakeMember.Serializer }, null, true, true, null, constructType, factory);
             }
             if (surrogate != null)

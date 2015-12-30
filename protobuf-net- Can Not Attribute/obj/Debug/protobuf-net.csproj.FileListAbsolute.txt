@@ -10,3 +10,9 @@ J:\Github\protobuf-net\obj\Debug\protobuf-net.dll
 J:\Github\protobuf-net\obj\Debug\protobuf-net.pdb
 J:\Github\protobuf-net\bin\Debug\protobuf-net.dll
 J:\Github\protobuf-net\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.csprojResolveAssemblyReference.cache

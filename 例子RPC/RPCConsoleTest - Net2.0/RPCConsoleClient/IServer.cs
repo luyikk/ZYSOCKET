@@ -18,5 +18,14 @@ namespace RPCConsoleClient
 
         void SendAll(string msg);
         int Add(int a, int b);
+
+        string[] array(string[] data);
+
+        Data[] array(Data[] data);
+
+        float[] array(float[] data);
+
+        int[] array(int[] data);
+       
     }
 }

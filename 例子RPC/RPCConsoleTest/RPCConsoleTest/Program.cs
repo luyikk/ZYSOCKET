@@ -13,8 +13,14 @@ namespace RPCConsoleTest
             RPCServer server = new RPCServer();
             server.RegServiceModule(new ServerClass());
             server.ReadOutTime = 2000; //设置超时时间
+            server.MsgOut += Server_MsgOut;
             server.Start();
             Console.ReadLine();
+        }
+
+        private static void Server_MsgOut(string msg)
+        {
+            Console.WriteLine(msg);
         }
     }
 }

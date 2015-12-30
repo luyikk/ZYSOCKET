@@ -795,7 +795,7 @@ namespace ProtoBuf.Meta
             if (listType == typeof(string) || listType.IsArray
                 || !typeof(IEnumerable).GetTypeInfo().IsAssignableFrom(listTypeInfo)) return null;
 #else
-            if (listType == model.MapType(typeof(string)) || listType.IsArray
+            if (listType == model.MapType(typeof(string))||  listType.IsArray
                 || !model.MapType(typeof(IEnumerable)).IsAssignableFrom(listType)) return null;
 #endif
             

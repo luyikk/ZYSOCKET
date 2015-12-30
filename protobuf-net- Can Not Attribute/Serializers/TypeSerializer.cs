@@ -126,7 +126,7 @@ namespace ProtoBuf.Serializers
 #if WINRT || COREFX
                 return (typeInfo.IsClass || typeInfo.IsInterface) && !typeInfo.IsSealed;
 #else
-                return (forType.IsClass || forType.IsInterface) && !forType.IsSealed;
+                return (forType.IsClass || forType.IsInterface)&& !forType.IsSealed;
 #endif
             }
         }
@@ -310,12 +310,21 @@ namespace ProtoBuf.Serializers
             }
             else if (useConstructor)
             {
-                if (!hasConstructor) TypeModel.ThrowCannotCreateInstance(constructType);
+
+
+                if (!hasConstructor)
+                {
+                    TypeModel.ThrowCannotCreateInstance(constructType);
+
+                }
+
                 obj = Activator.CreateInstance(constructType
 #if !CF && !SILVERLIGHT && !WINRT && !PORTABLE  && !COREFX
                     , true
 #endif
                     );
+
+
             }
             else
             {

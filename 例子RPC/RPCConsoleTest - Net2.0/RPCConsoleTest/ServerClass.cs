@@ -188,6 +188,25 @@ namespace RPCConsoleTest
             return a + b;
         }
 
+        public string[] array(string[] data)
+        {
+            return data;
+        }
+
+        public Data[] array(Data[] data)
+        {
+            return data;
+        }
+
+        public float[] array(float[] data)
+        {
+            return data;
+        }
+
+        public int[] array(int[] data)
+        {
+            return data;
+        }
 
         public override void ClientDisconnect(RPCUserInfo userInfo)
         {

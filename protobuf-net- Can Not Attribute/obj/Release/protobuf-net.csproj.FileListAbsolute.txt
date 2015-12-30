@@ -8,3 +8,4 @@ E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Release\protobuf-net.pdb
 E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Release\protobuf-net.xml
 E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Release\protobuf-net.dll
 E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Release\protobuf-net.pdb
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Release\protobuf-net.csprojResolveAssemblyReference.cache

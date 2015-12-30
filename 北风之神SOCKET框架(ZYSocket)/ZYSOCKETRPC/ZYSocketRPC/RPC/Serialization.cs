@@ -43,47 +43,7 @@ namespace ZYSocket.RPC
         public static object UnpackSingleObject(Type type, byte[] data)
         {
 
-            if (type == typeof(int))
-            {
-                return ReadInt32(data);
-            }
-            else if (type == typeof(uint))
-            {
-                return ReadUInt32(data);
-            }
-            else if (type == typeof(byte))
-            {
-                return ReadByte(data);
-            }
-            else if (type == typeof(short))
-            {
-                return ReadInt16(data);
-            }
-            else if (type == typeof(ushort))
-            {
-                return ReadUint16(data);
-            }
-            else if (type == typeof(long))
-            {
-                return ReadInt64(data);
-            }
-            else if (type == typeof(ulong))
-            {
-                return ReadUInt64(data);
-            }
-            else if (type == typeof(bool))
-            {
-                return ReadBoolean(data);
-            }
-            else if (type == typeof(float))
-            {
-                return ReadFloat(data);
-            }
-            else if (type == typeof(double))
-            {
-                return ReadDouble(data);
-            }
-            else if (type == typeof(string))
+            if (type == typeof(string))
             {
                 return ReadString(data);
             }
@@ -91,8 +51,26 @@ namespace ZYSocket.RPC
             {
                 return data;
             }
+            else if (type.BaseType == typeof(Array))
+            {
+
+
+                List<byte[]> list = (List<byte[]>)ProtoUnpackSingleObject(typeof(List<byte[]>), data);
+
+                Type memberType = type.GetMethod("Get").ReturnType;
+
+                var array= Array.CreateInstance(memberType, list.Count);
+             
+                
+                for (int i = 0; i < list.Count; i++)
+                {
+                    array.SetValue(UnpackSingleObject(memberType, list[i]), i);                    
+                }
+
+                return array;
+            }
             else
-                return ProtoUnpackSingleObject(type,data);
+                return ProtoUnpackSingleObject(type, data);
 
 
         }
@@ -100,53 +78,26 @@ namespace ZYSocket.RPC
         public static byte[] PackSingleObject(Type type, object obj)
         {
 
-            if (type == typeof(int))
-            {
-                return BitConverter.GetBytes((int)obj);
-            }
-            else if (type == typeof(uint))
-            {
-                return BitConverter.GetBytes((uint)obj);
-            }
-            else if (type == typeof(byte))
-            {
-                return BitConverter.GetBytes((byte)obj);
-            }
-            else if (type == typeof(short))
-            {
-                return BitConverter.GetBytes((short)obj);
-            }
-            else if (type == typeof(ushort))
-            {
-                return BitConverter.GetBytes((ushort)obj);
-            }
-            else if (type == typeof(long))
-            {
-                return BitConverter.GetBytes((long)obj);
-            }
-            else if (type == typeof(ulong))
-            {
-                return BitConverter.GetBytes((ulong)obj);
-            }
-            else if (type == typeof(bool))
-            {
-                return BitConverter.GetBytes((bool)obj);
-            }
-            else if (type == typeof(float))
-            {
-                return BitConverter.GetBytes((float)obj);
-            }
-            else if (type == typeof(double))
-            {
-                return BitConverter.GetBytes((double)obj);
-            }
-            else if (type == typeof(string))
+            if (type == typeof(string))
             {
                 return Encoding.UTF8.GetBytes((string)obj);
             }
             else if (type == typeof(byte[]))
             {
                 return (byte[])obj;
+            }   
+            else if (type.BaseType == typeof(Array))
+            {
+                Array array = (Array)obj;
+
+                List<byte[]> arlist = new List<byte[]>(array.Length);
+
+                for (int i = 0; i < array.Length; i++)
+                {
+                    arlist.Add(PackSingleObject(array.GetValue(i).GetType(),array.GetValue(i)));
+                }
+
+                return ProtoBufPackSingleObject(arlist);
             }
             else
                 return ProtoBufPackSingleObject(obj);

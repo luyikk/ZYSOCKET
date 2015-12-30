@@ -189,6 +189,11 @@ namespace RPCConsoleTest
         }
 
 
+        public string[] array(string[] z)
+        {
+            return z;
+        }
+
         public override void ClientDisconnect(RPCUserInfo userInfo)
         {
             if (UserList.Contains(userInfo))

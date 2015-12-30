@@ -14,12 +14,14 @@ namespace RPCConsoleClient
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 9952))
             {
-                client.OutTime = 2000;
+                client.OutTime = 2000000;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
 
                 Console.WriteLine("input userName:");
                 string user = Console.ReadLine();
+
+            
                 if (client.GetRPC<ServerClass>().LogOn(user, "123123"))
                 {
                     Console.WriteLine("LogOn Is OK");
@@ -55,7 +57,14 @@ namespace RPCConsoleClient
                         Console.WriteLine("Rec computer value:" + l);
 
 
+                        var arry = client.GetRPC<ServerClass>().array(new string[] { "123", "321" }); //array
 
+
+                        var arry2 = client.GetRPC<ServerClass>().array(new Data[] { new Data() { Name = "1" }, new Data() { Name = "2" } }); // class array
+
+                        var arry3 = client.GetRPC<ServerClass>().array(new int[] { 123, 321 }); //int array
+
+                        var arry4 = client.GetRPC<ServerClass>().array(new float[] { 123.0f, 321.0f }); //int array
                     }
 
                 }

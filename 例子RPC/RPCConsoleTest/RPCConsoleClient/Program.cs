@@ -15,7 +15,7 @@ namespace RPCConsoleClient
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 9952))
             {
-                client.OutTime = 2000;
+                client.OutTime = 2000000;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
 
@@ -55,7 +55,9 @@ namespace RPCConsoleClient
 
                         Console.WriteLine("Rec computer value:" + l);
 
+                        var server=  client.GetRPC<ServerClass>(); 
 
+                        var ary= server.array(new string[] { "123", "123" }); //Array + string
 
                     }
 
