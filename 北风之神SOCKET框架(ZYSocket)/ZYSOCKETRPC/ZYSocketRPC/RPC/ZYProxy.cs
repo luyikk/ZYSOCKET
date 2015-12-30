@@ -22,9 +22,10 @@ namespace ZYSocket.RPC
             ModuleName = type.Name;
 
         }
-              
+
         public override IMessage Invoke(IMessage reqMsg)
         {
+
             IMethodCallMessage ctorMsg = reqMsg as IMethodCallMessage;
 
             if (Call != null)
@@ -39,25 +40,21 @@ namespace ZYSocket.RPC
                     RPCArgument tmp = new RPCArgument();
                     tmp.RefType = types[i];
                     tmp.type = args[i].GetType();
-                    tmp.Value = MsgPackSerialization.GetMsgPack(tmp.type).PackSingleObject(args[i]);
+                    tmp.Value = Serialization.PackSingleObject(tmp.type, args[i]);
                     arglist.Add(tmp);
                 }
 
                 ReturnValue returnval = Call(ModuleName, ctorMsg.MethodName, arglist);
 
-                if (returnval.Args != null)
-                {
-                    return new ReturnMessage(returnval.returnVal, returnval.Args, returnval.Args.Length, null, ctorMsg);
-                }
-                else
-                {
-                    throw new TimeoutException("out time,Please set the timeout time.");
-                }
+
+                return new ReturnMessage(returnval.returnVal, returnval.Args, returnval.Args == null ? 0 : returnval.Args.Length, null, ctorMsg);
+
 
             }
 
 
             throw new Exception("event not register");
+
         }
 
 

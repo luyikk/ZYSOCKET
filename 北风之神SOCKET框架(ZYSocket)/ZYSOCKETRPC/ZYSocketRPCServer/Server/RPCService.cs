@@ -7,6 +7,9 @@ using System.Net.Sockets;
 using ZYSocket.share;
 using ZYSocket.RPC;
 using System.Runtime.Remoting.Messaging;
+using System.Threading.Tasks.Schedulers;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace ZYSocket.RPC.Server
 {
@@ -14,6 +17,7 @@ namespace ZYSocket.RPC.Server
     {
       
 
+        public event MsgOutHandler MsgOut;
         /// <summary>
         /// 调用模块
         /// </summary>
@@ -43,34 +47,40 @@ namespace ZYSocket.RPC.Server
 
                                System.Threading.Tasks.Task.Factory.StartNew(() =>
                                 {
-
-                                    object returnValue;
-
-                                    CallContext.SetData("Current", e);
-
-                                    if (e.RPC_Call.RunModule(tmp, out returnValue))
+                                    try
                                     {
-                                        if (tmp.IsNeedReturn)
-                                        {
-                                            ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                            {
-                                                Id = tmp.Id,
-                                                CallTime = tmp.CallTime,
-                                                Arguments = tmp.Arguments
-                                            };
+                                        object returnValue;
 
-                                            if (returnValue != null)
+                                        CallContext.SetData("Current", e);
+
+                                        if (e.RPC_Call.RunModule(tmp, out returnValue))
+                                        {
+                                            if (tmp.IsNeedReturn)
                                             {
-                                                var.Return = MsgPackSerialization.GetMsgPack(returnValue.GetType()).PackSingleObject(returnValue);
-                                                var.ReturnType = returnValue.GetType();
+                                                ZYClient_Result_Return var = new ZYClient_Result_Return()
+                                                {
+                                                    Id = tmp.Id,
+                                                    CallTime = tmp.CallTime,
+                                                    Arguments = tmp.Arguments
+                                                };
+
+                                                if (returnValue != null)
+                                                {
+                                                    var.Return = Serialization.PackSingleObject(returnValue.GetType(),returnValue);
+                                                    var.ReturnType = returnValue.GetType();
+                                                }
+
+                                                e.EnsureSend(BufferFormat.FormatFCA(var));
                                             }
 
-                                            e.EnsureSend(BufferFormat.FormatFCA(var));
                                         }
-                                        
                                     }
-                                });
-
+                                    catch (Exception er)
+                                    {
+                                        if (MsgOut != null)
+                                            MsgOut(er.ToString());
+                                    }
+                                }, CancellationToken.None, TaskCreationOptions.None, e.QueueScheduler);
                              
 
                                 return true;

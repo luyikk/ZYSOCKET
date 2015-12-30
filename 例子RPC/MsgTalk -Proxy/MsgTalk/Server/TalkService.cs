@@ -7,6 +7,16 @@ namespace Server
 {
     public class TalkService:RPCObject
     {
+
+
+
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
+
+
+
         List<RPCUserInfo> UserList
         {
             get; set;
@@ -35,11 +45,12 @@ namespace Server
                 foreach (var item in UserList)
                 {
                     item.GetRPC<Client>().UserTalk(GetCurrentRPCUser().UserToken.ToString(), msg);
+                    throw new Exception("dd");
                 }
             }
         }
 
-
+     
 
 
         public override void ClientDisconnect(RPCUserInfo userInfo)

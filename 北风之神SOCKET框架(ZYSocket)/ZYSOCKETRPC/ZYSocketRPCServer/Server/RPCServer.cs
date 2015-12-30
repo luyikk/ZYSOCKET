@@ -77,11 +77,18 @@ namespace ZYSocket.RPC.Server
         {
             RegModule = new List<object>();
             Service = new RPCService();
+            Service.MsgOut += Service_MsgOut;
             Server.BinaryOffsetInput = new BinaryInputOffsetHandler(BinaryInputOffsetHandler);
             Server.Connetions = new ConnectionFilter(ConnectionFilter);
             Server.MessageInput = new MessageInputHandler(MessageInputHandler);
             Server.IsOffsetInput = true;
            
+        }
+
+        void Service_MsgOut(string msg)
+        {
+            if (MsgOut != null)
+                MsgOut(msg);
         }
 
         private void MessageInputHandler(string message, SocketAsyncEventArgs socketAsync, int erorr)

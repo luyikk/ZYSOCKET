@@ -39,6 +39,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\MsgPack.dll</HintPath>
     </Reference>
+    <Reference Include="ParallelExtensionsExtras, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ParallelExtensionsExtras.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,9 +61,9 @@
       <Project>{0429708f-3321-4565-9be4-aea87616d15c}</Project>
       <Name>ZYSocketClientB</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\ZYSocketShare\ZYSocketShareNET4.csproj">
-      <Project>{00c91f5c-5298-4191-b816-3ed473721e88}</Project>
-      <Name>ZYSocketShareNET4</Name>
+    <ProjectReference Include="..\..\ZYSocketShare\ZYSocketShare.csproj">
+      <Project>{462cc05c-ae20-448c-8522-d724b858b685}</Project>
+      <Name>ZYSocketShare</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZYSocketRPC\ZYSocketRPC.csproj">
       <Project>{e7a991d3-31d7-4c24-a4ae-005ed2c8d5cd}</Project>

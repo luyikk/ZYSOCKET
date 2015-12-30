@@ -26,7 +26,7 @@ namespace ZYSocket.RPC
             if (ReturnValue != null)
             {
                 ReturnType = ReturnValue.ReturnType;
-                Return = MsgPackSerialization.GetMsgPack(ReturnType).UnpackSingleObject(ReturnValue.Return);
+                Return = Serialization.UnpackSingleObject(ReturnType,ReturnValue.Return);
 
                 if (ReturnValue.Arguments.Count > 0)
                 {
@@ -35,7 +35,7 @@ namespace ZYSocket.RPC
                         Argument tmp = new Argument()
                         {
                             Type = item.type,
-                            value = MsgPackSerialization.GetMsgPack(item.type).UnpackSingleObject(item.Value)
+                            value = Serialization.UnpackSingleObject(item.type,item.Value)
                         };
                     }
                 }

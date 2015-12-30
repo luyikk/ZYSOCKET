@@ -9,5 +9,7 @@ namespace TalkClient
     {
         bool IsLogIn(string name);
         void SendALL(string msg);
+
+        int Add(int a, int b);
     }
 }

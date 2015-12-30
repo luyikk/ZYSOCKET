@@ -7,11 +7,14 @@ using ZYSocket.RPC;
 using System.Net.Sockets;
 using System.Linq.Expressions;
 using ZYSocket.share;
+using System.Threading.Tasks.Schedulers;
 
 namespace ZYSocket.RPC.Server
 {
     public class RPCUserInfo:ZYEnsureSend
     {
+        public QueuedTaskScheduler QueueScheduler { get; set; }
+
         public RPC RPC_Call { get; set; }
 
         public ZYNetRingBufferPool  Stream { get; set; }
@@ -69,6 +72,7 @@ namespace ZYSocket.RPC.Server
 
         public RPCUserInfo(SocketAsyncEventArgs asyn):base(asyn,1024*64)
         {
+            QueueScheduler = new QueuedTaskScheduler();
             RPC_Call = new RPC();
             RPC_Call.CallBufferOutSend += RPC_OBJ_CallBufferOutSend;
             Stream = new ZYNetRingBufferPool(1024 * 64);//64K

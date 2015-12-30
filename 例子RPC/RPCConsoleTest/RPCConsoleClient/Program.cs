@@ -55,7 +55,7 @@ namespace RPCConsoleClient
 
                         Console.WriteLine("Rec computer value:" + l);
 
-                     
+
 
                     }
 

@@ -6,6 +6,9 @@ using ZYSocket.ClientB;
 using ZYSocket.share;
 using System.Linq.Expressions;
 using System.Runtime.Remoting.Messaging;
+using System.Threading.Tasks.Schedulers;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace ZYSocket.RPC.Client
 {
@@ -16,6 +19,9 @@ namespace ZYSocket.RPC.Client
     public class RPCClient
     {
         public SocketClient Client { get; set; }
+
+        public QueuedTaskScheduler OrderSchedulerRead { get; set; }
+        public QueuedTaskScheduler OrderSchedulerSend { get; set; }
 
         public ZYNetRingBufferPool Stream { get; set; }
 
@@ -66,6 +72,8 @@ namespace ZYSocket.RPC.Client
 
         public RPCClient()
         {
+            OrderSchedulerSend = new QueuedTaskScheduler();
+            OrderSchedulerRead = new QueuedTaskScheduler();
             RPC_Call = new RPC();
             RPC_Call.CallBufferOutSend += RPC_Call_CallBufferOutSend;
             RPC_Call.ErrMsgOut += RPC_Call_ErrMsgOut;
@@ -88,17 +96,23 @@ namespace ZYSocket.RPC.Client
         private void RPC_Call_CallBufferOutSend(byte[] data)
         {
             if (IsConnect)
-                Client.Send(data);
+            {
+                Task.Factory.StartNew((p) =>
+                     {
+                         Client.Send((byte[])p);
+
+                     },data, CancellationToken.None, TaskCreationOptions.None, OrderSchedulerRead);
+            }
             else
                 throw new System.Net.Sockets.SocketException((int)System.Net.Sockets.SocketError.NotConnected);
-                     
+
         }
 
         public bool Connection(string host, int port)
         {
             if (!IsConnect)
             {
-             
+
                 Stream = new ZYNetRingBufferPool(1024 * 1024); //1M
                 Client = new SocketClient();
                 Client.BinaryInput += Client_BinaryInput;
@@ -185,7 +199,7 @@ namespace ZYSocket.RPC.Client
 
                                                 if (returnValue != null)
                                                 {
-                                                    var.Return = MsgPackSerialization.GetMsgPack(returnValue.GetType()).PackSingleObject(returnValue);
+                                                    var.Return = Serialization.PackSingleObject(returnValue.GetType(),returnValue);
                                                     var.ReturnType = returnValue.GetType();
                                                 }
 
@@ -194,13 +208,13 @@ namespace ZYSocket.RPC.Client
 
                                         }
                                     }
-                                });
+                                }, CancellationToken.None, TaskCreationOptions.None, OrderSchedulerRead);
                         }
                         break;
                     default:
                         {
                             if (DataOn != null)
-                                DataOn(cmd,read);
+                                DataOn(cmd, read);
                         }
                         break;
                 }

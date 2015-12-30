@@ -15,3 +15,5 @@ E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\bin\Debug\protobuf-net.pdb
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\obj\Debug\Server.exe
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\obj\Debug\Server.pdb
+E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\bin\Debug\ParallelExtensionsExtras.dll
+E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
