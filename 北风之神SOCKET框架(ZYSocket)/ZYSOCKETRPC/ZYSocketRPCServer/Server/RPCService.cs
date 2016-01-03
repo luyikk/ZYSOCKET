@@ -45,42 +45,47 @@ namespace ZYSocket.RPC.Server
                             if (read.ReadObject<RPCCallPack>(out tmp))
                             {
 
-                               System.Threading.Tasks.Task.Factory.StartNew(() =>
-                                {
-                                    try
-                                    {
-                                        object returnValue;
+                                System.Threading.Tasks.Task.Factory.StartNew(() =>
+                                 {
+                                     object returnValue;
 
-                                        CallContext.SetData("Current", e);
+                                     CallContext.SetData("Current", e);
 
-                                        if (e.RPC_Call.RunModule(tmp, out returnValue))
-                                        {
-                                            if (tmp.IsNeedReturn)
-                                            {
-                                                ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                                {
-                                                    Id = tmp.Id,
-                                                    CallTime = tmp.CallTime,
-                                                    Arguments = tmp.Arguments
-                                                };
+                                     if (e.RPC_Call.RunModule(tmp, out returnValue))
+                                     {
+                                         if (tmp.IsNeedReturn)
+                                         {
+                                             ZYClient_Result_Return var = new ZYClient_Result_Return()
+                                             {
+                                                 Id = tmp.Id,
+                                                 CallTime = tmp.CallTime,
+                                                 Arguments = tmp.Arguments
+                                             };
 
-                                                if (returnValue != null)
-                                                {
-                                                    var.Return = Serialization.PackSingleObject(returnValue.GetType(),returnValue);
-                                                    var.ReturnType = returnValue.GetType();
-                                                }
+                                             if (returnValue != null)
+                                             {
+                                                 var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
+                                                 var.ReturnType = returnValue.GetType();
+                                             }
 
-                                                e.EnsureSend(BufferFormat.FormatFCA(var));
-                                            }
+                                             e.EnsureSend(BufferFormat.FormatFCA(var));
+                                         }
 
-                                        }
-                                    }
-                                    catch (Exception er)
-                                    {
-                                        if (MsgOut != null)
-                                            MsgOut(er.ToString());
-                                    }
-                                }, CancellationToken.None, TaskCreationOptions.None, e.QueueScheduler);
+                                     }
+
+                                 }, CancellationToken.None, TaskCreationOptions.None, e.QueueScheduler).ContinueWith(p =>
+                                     {
+                                         try
+                                         {
+                                             p.Wait();
+                                         }
+                                         catch (Exception er)
+                                         {
+                                             if (MsgOut != null)
+                                                 MsgOut(er.ToString());
+                                         }
+
+                                     });
                              
 
                                 return true;

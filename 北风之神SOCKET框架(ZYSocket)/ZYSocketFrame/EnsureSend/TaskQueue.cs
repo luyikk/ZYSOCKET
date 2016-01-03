@@ -13,6 +13,12 @@ namespace ZYSocket.EnsureSend
 
         static TaskQueue()
         {
+            TaskScheduler.UnobservedTaskException += (s, e) =>
+            {
+                //设置所有未觉察异常被觉察
+                e.SetObserved();
+            };
+
             StopExcption = new ConcurrentBag<Type>();
         }
 
@@ -80,6 +86,11 @@ namespace ZYSocket.EnsureSend
             if (RunTask.Status == TaskStatus.Created)
             {
                 RunTask.Start();
+                RunTask.ContinueWith(task =>
+                {
+                    var ae = task.Exception;
+
+                }, TaskContinuationOptions.OnlyOnFaulted);
             }
             else if (RunTask.Status == TaskStatus.RanToCompletion)
             {

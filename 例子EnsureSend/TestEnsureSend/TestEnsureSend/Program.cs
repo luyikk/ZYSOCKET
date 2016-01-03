@@ -19,7 +19,7 @@ namespace TestEnsureSend
             server.MessageInput = new MessageInputHandler(MessageInputHandler); //设置 客户端断开
             server.IsOffsetInput = true;
             server.Start(); //启动服务器
-
+            
             Console.ReadLine();
         }
 

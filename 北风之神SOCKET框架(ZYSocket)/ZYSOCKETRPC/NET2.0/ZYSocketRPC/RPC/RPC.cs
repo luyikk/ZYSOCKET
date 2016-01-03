@@ -76,7 +76,17 @@ namespace ZYSocket.RPC
 
                 ThreadPool.QueueUserWorkItem((o) =>
                     {
-                        callback((AsynReturn)o);
+                        try
+                        {
+                            callback((AsynReturn)o);
+                        }
+                        catch (Exception er)
+                        {
+                            if (ErrMsgOut != null)
+                                ErrMsgOut(er.ToString());
+                        }
+
+                       
                     }, asynRet);
             }
             else if (ReturnValueDiy.ContainsKey(val.Id))

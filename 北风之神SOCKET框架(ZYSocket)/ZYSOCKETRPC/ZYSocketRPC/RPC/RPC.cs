@@ -78,7 +78,19 @@ namespace ZYSocket.RPC
                 System.Threading.Tasks.Task.Factory.StartNew(() =>
                 {
                     callback(asynRet);
-                });
+
+                }).ContinueWith(p =>
+                    {
+                        try
+                        {
+                            p.Wait();
+                        }
+                        catch (Exception er)
+                        {
+                            if (ErrMsgOut != null)
+                                ErrMsgOut(er.ToString());
+                        }
+                    });
             }
             else if (ReturnValueDiy.ContainsKey(val.Id))
             {                

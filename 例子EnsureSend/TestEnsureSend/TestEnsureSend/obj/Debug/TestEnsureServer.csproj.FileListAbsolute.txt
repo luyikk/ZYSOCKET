@@ -27,3 +27,4 @@ E:\ZYSocketFrame2\例子EnsureSend\TestEnsureSend\TestEnsureSend\bin\Debug\proto
 E:\ZYSocketFrame2\例子EnsureSend\TestEnsureSend\TestEnsureSend\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例子EnsureSend\TestEnsureSend\TestEnsureSend\obj\Debug\TestEnsureSend.exe
 E:\ZYSocketFrame2\例子EnsureSend\TestEnsureSend\TestEnsureSend\obj\Debug\TestEnsureSend.pdb
+E:\ZYSocketFrame2\例子EnsureSend\TestEnsureSend\TestEnsureSend\obj\Debug\TestEnsureServer.csprojResolveAssemblyReference.cache
