@@ -118,7 +118,8 @@ namespace RPCConsoleTest
 
         public Data Return(Data ins)
         {
-            ins.Name += "Ok";
+            //ins.Name += "Ok";
+            ins.Value++;
             return ins;
         }
 

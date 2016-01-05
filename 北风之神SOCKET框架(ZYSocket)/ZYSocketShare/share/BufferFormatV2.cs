@@ -152,75 +152,89 @@ namespace ZYSocket.share
         public static new  byte[] FormatFCA(object o, FDataExtraHandle dataExtra)
         {
             Type otype = o.GetType();
-            Attribute[] Attributes = Attribute.GetCustomAttributes(otype);
+            FormatClassAttibutes fca = null;
 
-            foreach (Attribute p in Attributes)
+            if (FormatClassAttibutesDiy.ContainsKey(otype))
             {
-                FormatClassAttibutes fca = p as FormatClassAttibutes;
+                fca = FormatClassAttibutesDiy[otype];
+            }
+            else
+            {
+                Attribute[] Attributes = Attribute.GetCustomAttributes(otype);
 
-                if (fca != null)
+                foreach (Attribute p in Attributes)
                 {
-                    using (MemoryStream stream = new MemoryStream())
+                    fca = p as FormatClassAttibutes;
+
+                    if (fca != null)
                     {
-                        BinaryWriter bufflist = new BinaryWriter(stream);
-
-                        bufflist.Write(GetBytes(fca.BufferCmdType));
-
-                        byte[] classdata = SerializeObject(o);
-                        bufflist.Write(GetBytes(classdata.Length));
-                        bufflist.Write(classdata);
-
-
-                        byte[] fdata = null;
-
-                        if (dataExtra != null)
-                        {
-                            fdata = dataExtra(stream.ToArray());
-                        }
-                        else
-                        {
-                            fdata = stream.ToArray();
-                        }
-
-                        stream.Position = 0;
-                        stream.SetLength(0);
-
-
-
-                        int x = fdata.Length;
-
-                        if ((fdata.Length + 1) < 128)
-                        {
-                            x += 1;
-                        }
-                        else if ((fdata.Length + 2) < 16384)
-                        {
-                            x += 2;
-                        }
-                        else if ((fdata.Length + 3) < 2097152)
-                        {
-                            x += 3;
-                        }
-                        else
-                        {
-                            x += 4;
-                        }
-
-                        byte[] tmp = GetBytes(x);
-
-                        int l = fdata.Length + tmp.Length;
-
-                        byte[] data = GetBytes(l);
-
-                        bufflist.Write((byte)0xFF);
-                        bufflist.Write(data);
-                        bufflist.Write(fdata);
-
-                        byte[] pdata = stream.ToArray();
-                        stream.Close();
-                        stream.Dispose();                       
-                        return pdata;
+                        FormatClassAttibutesDiy.Add(otype, fca);
+                        break;
                     }
+                }
+            }
+            if (fca != null)
+            {
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    BinaryWriter bufflist = new BinaryWriter(stream);
+
+                    bufflist.Write(GetBytes(fca.BufferCmdType));
+
+                    byte[] classdata = SerializeObject(o);
+                    bufflist.Write(GetBytes(classdata.Length));
+                    bufflist.Write(classdata);
+
+
+                    byte[] fdata = null;
+
+                    if (dataExtra != null)
+                    {
+                        fdata = dataExtra(stream.ToArray());
+                    }
+                    else
+                    {
+                        fdata = stream.ToArray();
+                    }
+
+                    stream.Position = 0;
+                    stream.SetLength(0);
+
+
+
+                    int x = fdata.Length;
+
+                    if ((fdata.Length + 1) < 128)
+                    {
+                        x += 1;
+                    }
+                    else if ((fdata.Length + 2) < 16384)
+                    {
+                        x += 2;
+                    }
+                    else if ((fdata.Length + 3) < 2097152)
+                    {
+                        x += 3;
+                    }
+                    else
+                    {
+                        x += 4;
+                    }
+
+                    byte[] tmp = GetBytes(x);
+
+                    int l = fdata.Length + tmp.Length;
+
+                    byte[] data = GetBytes(l);
+
+                    bufflist.Write((byte)0xFF);
+                    bufflist.Write(data);
+                    bufflist.Write(fdata);
+
+                    byte[] pdata = stream.ToArray();
+                    stream.Close();
+                    stream.Dispose();
+                    return pdata;
                 }
             }
 

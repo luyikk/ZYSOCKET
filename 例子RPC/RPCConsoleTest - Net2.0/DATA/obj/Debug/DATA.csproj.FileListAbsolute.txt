@@ -6,3 +6,4 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\DATA\bin\Debug\DATA.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\DATA\bin\Debug\DATA.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\DATA\obj\Debug\DATA.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\DATA\obj\Debug\DATA.pdb
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\DATA\obj\Debug\DATA.csprojResolveAssemblyReference.cache

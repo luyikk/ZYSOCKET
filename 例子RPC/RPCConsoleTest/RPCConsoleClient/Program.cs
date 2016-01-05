@@ -15,7 +15,7 @@ namespace RPCConsoleClient
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 9952))
             {
-                client.OutTime = 2000000;
+                client.OutTime = 2000;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
 
@@ -44,7 +44,8 @@ namespace RPCConsoleClient
 
                         Data x = new Data()
                         {
-                            Name = "II"
+                            Name = "II",
+                            Value = 0
                         };
 
                         var v = client.Call<ServerClass, Data>(p => p.Return(x));
@@ -55,9 +56,22 @@ namespace RPCConsoleClient
 
                         Console.WriteLine("Rec computer value:" + l);
 
-                        var server=  client.GetRPC<ServerClass>(); 
+                        var server = client.GetRPC<ServerClass>();
 
-                        var ary= server.array(new string[] { "123", "123" }); //Array + string
+                        var ary = server.array(new string[] { "123", "123" }); //Array + string
+
+
+                        System.Diagnostics.Stopwatch stop = new System.Diagnostics.Stopwatch();
+                        stop.Start();
+                        //int j = 0;
+                        for (int i = 0; i < 10000; i++)
+                        {
+                            x=server.Return(x);
+                        }
+                        stop.Stop();
+                        Console.WriteLine("Time:" + stop.ElapsedMilliseconds + " J:" + x.Value);
+
+
 
                     }
 

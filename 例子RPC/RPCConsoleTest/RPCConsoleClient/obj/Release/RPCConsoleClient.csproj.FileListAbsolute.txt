@@ -18,3 +18,4 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\protobuf
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Release\RPCConsoleClient.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Release\RPCConsoleClient.exe
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Release\RPCConsoleClient.pdb
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ParallelExtensionsExtras.dll

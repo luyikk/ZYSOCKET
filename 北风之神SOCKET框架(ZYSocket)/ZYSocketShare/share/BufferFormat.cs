@@ -47,10 +47,13 @@ namespace ZYSocket.share
         /// </summary>
         public static BuffFormatType ObjFormatType { get; set; }
 
+        public static Dictionary<Type, FormatClassAttibutes> FormatClassAttibutesDiy { get; set; }
+
         static BufferFormat()
         {       
 
             ObjFormatType = BuffFormatType.protobuf;
+            FormatClassAttibutesDiy = new Dictionary<Type, FormatClassAttibutes>();
 
         }
 
@@ -296,6 +299,9 @@ namespace ZYSocket.share
 
         #endregion
 
+
+       
+
         /// <summary>
         /// 直接格式化一个带FormatClassAttibutes 标签的类，返回BYTE[]数组，此数组可以直接发送不需要组合所数据包。所以也称为类抽象数据包
         /// </summary>
@@ -314,62 +320,81 @@ namespace ZYSocket.share
        /// <returns></returns>
         public  static byte[] FormatFCA(object o, FDataExtraHandle dataExtra)
         {
+
+
             Type otype = o.GetType();
-            Attribute[] Attributes = Attribute.GetCustomAttributes(otype);
 
-            foreach (Attribute p in Attributes)
+            FormatClassAttibutes fca = null;
+
+            if (FormatClassAttibutesDiy.ContainsKey(otype))
             {
-                FormatClassAttibutes fca = p as FormatClassAttibutes;
+                fca = FormatClassAttibutesDiy[otype];
+            }
+            else
+            {
 
-                if (fca != null)
+                Attribute[] Attributes = Attribute.GetCustomAttributes(otype);
+
+                foreach (Attribute p in Attributes)
                 {
-                    using (MemoryStream stream = new MemoryStream())
+                    fca = p as FormatClassAttibutes;
+
+                    if (fca != null)
+                    {
+                        FormatClassAttibutesDiy.Add(otype, fca);
+                        break;
+                    }
+                }
+            }
+
+            if (fca != null)
+            {
+                using (MemoryStream stream = new MemoryStream())
+                {
+
+                    BinaryWriter bufflist = new BinaryWriter(stream);
+
+
+                    if (dataExtra != null)
                     {
 
-                        BinaryWriter bufflist = new BinaryWriter(stream);
+                        bufflist.Write(fca.BufferCmdType);
+                        byte[] classdata = SerializeObject(o);
+                        bufflist.Write(classdata.Length);
+                        bufflist.Write(classdata);
 
-
-                        if (dataExtra != null)
-                        {
-
-                            bufflist.Write(fca.BufferCmdType);
-                            byte[] classdata = SerializeObject(o);
-                            bufflist.Write(classdata.Length);
-                            bufflist.Write(classdata);
-
-                            byte[] fdata = dataExtra(stream.ToArray());
-
-                            stream.Position = 0;
-                            stream.SetLength(0);
-                            bufflist.Write(0);
-                            bufflist.Write(fdata);
-                        }
-                        else
-                        {
-                            bufflist.Write(0);
-                            bufflist.Write(fca.BufferCmdType);
-                            byte[] classdata = SerializeObject(o);
-                            bufflist.Write(classdata.Length);
-                            bufflist.Write(classdata);
-
-                        }
-
-
-                        int l = (int)(stream.Length);
-
-                        byte[] data = GetSocketBytes(l);
+                        byte[] fdata = dataExtra(stream.ToArray());
 
                         stream.Position = 0;
-
-                        bufflist.Write(data);
-
-
-                        byte[] pdata = stream.ToArray();
-                        stream.Close();
-                        stream.Dispose();
-
-                        return pdata;
+                        stream.SetLength(0);
+                        bufflist.Write(0);
+                        bufflist.Write(fdata);
                     }
+                    else
+                    {
+                        bufflist.Write(0);
+                        bufflist.Write(fca.BufferCmdType);
+                        byte[] classdata = SerializeObject(o);
+                        bufflist.Write(classdata.Length);
+                        bufflist.Write(classdata);
+
+                    }
+
+
+                    int l = (int)(stream.Length);
+
+                    byte[] data = GetSocketBytes(l);
+
+                    stream.Position = 0;
+
+                    bufflist.Write(data);
+
+
+                    byte[] pdata = stream.ToArray();
+                    stream.Close();
+                    stream.Dispose();
+
+                    return pdata;
                 }
             }
 

@@ -1442,6 +1442,9 @@ namespace ProtoBuf.Meta
             return type.AssemblyQualifiedName;
         }
 
+
+        internal static System.Collections.Generic.Dictionary<string, Type> TypeDiy = new System.Collections.Generic.Dictionary<string, Type>();
+
         internal static System.Type DeserializeType(TypeModel model, string value)
         {
             
@@ -1455,7 +1458,19 @@ namespace ProtoBuf.Meta
                     if (args.Type != null) return args.Type;
                 }
             }
-            return System.Type.GetType(value);
+
+            if (TypeDiy.ContainsKey(value))
+            {
+                return TypeDiy[value];
+            }
+            else
+            {
+                Type type= System.Type.GetType(value);
+
+                TypeDiy.Add(value, type);
+
+                return type;
+            }
         }
 
         /// <summary>
