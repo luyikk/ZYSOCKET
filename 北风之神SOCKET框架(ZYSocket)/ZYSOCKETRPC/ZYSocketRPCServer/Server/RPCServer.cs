@@ -145,19 +145,27 @@ namespace ZYSocket.RPC.Server
 
         private void BinaryInputOffsetHandler(byte[] data, int offset, int count, SocketAsyncEventArgs socketAsync)
         {
-            RPCUserInfo userinfo = socketAsync.UserToken as RPCUserInfo;
-            if (userinfo == null)
+            try
             {
-                Server.Disconnect(socketAsync.AcceptSocket);
-                return;
+                RPCUserInfo userinfo = socketAsync.UserToken as RPCUserInfo;
+                if (userinfo == null)
+                {
+                    Server.Disconnect(socketAsync.AcceptSocket);
+                    return;
+                }
+
+                userinfo.Stream.Write(data, offset, count);
+
+                byte[] datax;
+                while (userinfo.Stream.Read(out datax))
+                {
+                    DataOn(datax, userinfo);
+                }
             }
-
-            userinfo.Stream.Write(data, offset, count);
-
-            byte[] datax;
-            while (userinfo.Stream.Read(out datax))
+            catch (Exception er)
             {
-                DataOn(datax, userinfo);
+                if (MsgOut != null)
+                    MsgOut(er.ToString());
             }
         }
 

@@ -20,6 +20,8 @@ namespace RPCConsoleClient
         void SendAll(string msg);
         int Add(int a, int b);
 
+        void TestOutAndRef(out int a, ref int b);
+
         string[] array(string[] z);
     }
 }

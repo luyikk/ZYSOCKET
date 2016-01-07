@@ -21,8 +21,10 @@ namespace RPCConsoleClient
 
                 Console.WriteLine("input userName:");
                 string user = Console.ReadLine();
+
                 if (client.Call<ServerClass, bool>(p => p.LogOn(user, "123123")))
                 {
+                    
                     Console.WriteLine("LogOn Is OK");
 
                     while (true)
@@ -47,7 +49,8 @@ namespace RPCConsoleClient
                             Name = "II",
                             Value = 0
                         };
-
+                       
+                        
                         var v = client.Call<ServerClass, Data>(p => p.Return(x));
 
                         Console.WriteLine("Data Name " + v.Name);
@@ -72,6 +75,22 @@ namespace RPCConsoleClient
                         Console.WriteLine("Time:" + stop.ElapsedMilliseconds + " J:" + x.Value);
 
 
+                        Console.ReadLine();
+
+                        int mm=0;
+                        int xx = 1;
+                        stop.Reset();
+                        stop.Start();
+                        //int j = 0;
+                        for (int i = 0; i < 10000; i++)
+                        {
+                            server.TestOutAndRef(out mm, ref xx);
+                        }
+                        stop.Stop();
+                        Console.WriteLine("Time:" + stop.ElapsedMilliseconds + " mm:" +mm+" xx:"+xx );
+
+
+                     
 
                     }
 

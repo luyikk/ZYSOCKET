@@ -139,7 +139,7 @@ namespace ZYSocket.RPC
             RPCCallPack call = new RPCCallPack()
             {
                 Id = MakeID.GetID(),
-                CallTime = DateTime.Now,
+                CallTime = MakeID.GetTick(),
                 CallModule = body.Object.Type.Name,
                 Method = body.Method.Name,
                 Arguments = argumentlist,
@@ -185,7 +185,7 @@ namespace ZYSocket.RPC
             RPCCallPack call = new RPCCallPack()
             {
                 Id = MakeID.GetID(),
-                CallTime = DateTime.Now,
+                CallTime = MakeID.GetTick(),
                 CallModule = body.Object.Type.Name,
                 Method = body.Method.Name,
                 Arguments = argumentlist,
@@ -229,7 +229,7 @@ namespace ZYSocket.RPC
             RPCCallPack call = new RPCCallPack()
             {
                 Id = MakeID.GetID(),
-                CallTime = DateTime.Now,
+                CallTime = MakeID.GetTick(),
                 CallModule = body.Object.Type.Name,
                 Method = body.Method.Name,
                 Arguments = argumentlist,
@@ -408,7 +408,7 @@ namespace ZYSocket.RPC
             RPCCallPack call = new RPCCallPack()
             {
                 Id = MakeID.GetID(),
-                CallTime = DateTime.Now,
+                CallTime = MakeID.GetTick(),
                 CallModule = module,
                 Method = MethodName,
                 Arguments = arglist,
@@ -461,7 +461,7 @@ namespace ZYSocket.RPC
             RPCCallPack call = new RPCCallPack()
             {
                 Id = MakeID.GetID(),
-                CallTime = DateTime.Now,
+                CallTime = MakeID.GetTick(),
                 CallModule = module,
                 Method = MethodName,
                 Arguments = arglist,

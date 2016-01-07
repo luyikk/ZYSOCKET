@@ -14,4 +14,3 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.pdb
-E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.csprojResolveAssemblyReference.cache

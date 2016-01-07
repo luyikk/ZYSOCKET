@@ -21,9 +21,12 @@ namespace RPCConsoleClient
                 Console.WriteLine("input userName:");
                 string user = Console.ReadLine();
 
-            
-                if (client.GetRPC<ServerClass>().LogOn(user, "123123"))
+                var server = client.GetRPC<ServerClass>();
+
+                if (server.LogOn(user, "123123"))
                 {
+
+
                     Console.WriteLine("LogOn Is OK");
 
                     while (true)

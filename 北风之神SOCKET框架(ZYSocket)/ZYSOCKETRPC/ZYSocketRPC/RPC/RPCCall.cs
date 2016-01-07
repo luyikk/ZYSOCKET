@@ -73,7 +73,7 @@ namespace ZYSocket.RPC
         public long Id { get; set; }
 
 
-        public DateTime CallTime { get; set; }
+        public long CallTime { get; set; }
 
 
         public string CallModule { get; set; }
@@ -85,8 +85,6 @@ namespace ZYSocket.RPC
 
 
         public bool IsNeedReturn { get; set; }
-
-
     
     }
 
@@ -97,7 +95,7 @@ namespace ZYSocket.RPC
         public long Id { get; set; }
 
 
-        public DateTime CallTime { get; set; }
+        public long CallTime { get; set; }
 
 
         public byte[] Return { get; set; }

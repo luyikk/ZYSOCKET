@@ -195,6 +195,12 @@ namespace RPCConsoleTest
             return z;
         }
 
+        public void TestOutAndRef(out int a, ref int b)
+        {
+            a = b;
+            b = b + 1;
+        }
+
         public override void ClientDisconnect(RPCUserInfo userInfo)
         {
             if (UserList.Contains(userInfo))

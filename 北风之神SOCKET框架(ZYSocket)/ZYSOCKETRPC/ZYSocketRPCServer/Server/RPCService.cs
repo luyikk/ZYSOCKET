@@ -68,7 +68,8 @@ namespace ZYSocket.RPC.Server
                                                  var.ReturnType = returnValue.GetType();
                                              }
 
-                                             e.EnsureSend(BufferFormat.FormatFCA(var));
+                                             e.BeginSendData(BufferFormat.FormatFCA(var));
+                                             //e.EnsureSend(BufferFormat.FormatFCA(var));
                                          }
 
                                      }

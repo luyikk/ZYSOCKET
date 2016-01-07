@@ -23,6 +23,42 @@ namespace ZYSocket.RPC.Server
 
 
         /// <summary>
+        /// 发送数据包
+        /// </summary>
+        /// <param name="sock"></param>
+        /// <param name="data"></param>
+        public virtual void BeginSendData(byte[] data)
+        {
+            try
+            {
+                base.Asyn.AcceptSocket.BeginSend(data, 0, data.Length, SocketFlags.None, AsynCallBack, base.Asyn.AcceptSocket);
+
+            }
+            catch (Exception)
+            {
+              
+            }
+        }
+
+        void AsynCallBack(IAsyncResult result)
+        {
+            try
+            {
+                Socket sock = result.AsyncState as Socket;
+
+                if (sock != null)
+                {
+                    sock.EndSend(result);
+                }
+            }
+            catch (Exception)
+            {
+               
+            }
+        }
+
+
+        /// <summary>
         /// 设置超时时间
         /// </summary>
         public int OutTime { get { return RPC_Call.OutTime; } set { RPC_Call.OutTime = value; } }
@@ -89,7 +125,8 @@ namespace ZYSocket.RPC.Server
 
         void RPC_OBJ_CallBufferOutSend(byte[] data)
         {
-            base.EnsureSend(data);
+            BeginSendData(data);
+            //base.EnsureSend(data);
         }
 
     }

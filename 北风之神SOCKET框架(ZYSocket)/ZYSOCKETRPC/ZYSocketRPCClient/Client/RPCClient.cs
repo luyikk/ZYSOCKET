@@ -97,11 +97,10 @@ namespace ZYSocket.RPC.Client
         {
             if (IsConnect)
             {
-                Task.Factory.StartNew((p) =>
-                     {
-                         Client.Send((byte[])p);
 
-                     },data, CancellationToken.None, TaskCreationOptions.None, OrderSchedulerRead);
+                Client.BeginSendData(data);
+
+
             }
             else
                 throw new System.Net.Sockets.SocketException((int)System.Net.Sockets.SocketError.NotConnected);
@@ -203,7 +202,7 @@ namespace ZYSocket.RPC.Client
                                                     var.ReturnType = returnValue.GetType();
                                                 }
 
-                                                Client.Send(BufferFormat.FormatFCA(var));
+                                                Client.BeginSendData(BufferFormat.FormatFCA(var));
                                             }
 
                                         }
