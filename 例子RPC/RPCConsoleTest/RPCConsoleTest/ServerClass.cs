@@ -29,13 +29,13 @@ namespace RPCConsoleTest
         public ServerClass()
         {
             UserList = new List<RPCUserInfo>();
-            //Timer time = new Timer(1000);
-            //time.Elapsed += Time_Elapsed;
-            //time.Start();
+            Timer time = new Timer(1000);
+            time.Elapsed += Time_Elapsed;
+            time.Start();
 
-            //Timer time2 = new Timer(5000);
-            //time2.Elapsed += Time2_Elapsed;
-            //time2.Start();
+            Timer time2 = new Timer(5000);
+            time2.Elapsed += Time2_Elapsed;
+            time2.Start();
         }
 
         private void Time2_Elapsed(object sender, ElapsedEventArgs e)

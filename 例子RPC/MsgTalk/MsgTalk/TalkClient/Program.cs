@@ -13,7 +13,6 @@ namespace TalkClient
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 3000))
             {
-                client.OutTime = 1000000;
                 client.Disconn += Client_Disconn;
                 client.MsgOut += Client_MsgOut;
                 client.RegModule(new Client());

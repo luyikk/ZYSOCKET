@@ -29,8 +29,3 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.pdb
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.dll
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.pdb
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.dll
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.pdb
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketClientA\obj\x86\Debug\ZYSocketClientA.csprojResolveAssemblyReference.cache

@@ -63,9 +63,8 @@ namespace ZYSocket.RPC.Server
 
                                          if (returnValue != null)
                                          {
-                                             var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
+                                             var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);                                            
                                          }
-
                                          e.EnsureSend(BufferFormat.FormatFCA(var));
                                      }
 

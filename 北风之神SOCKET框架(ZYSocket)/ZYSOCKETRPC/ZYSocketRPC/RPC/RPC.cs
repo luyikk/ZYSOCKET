@@ -568,10 +568,15 @@ namespace ZYSocket.RPC
 
                         returnValue = method.methodInfo.Invoke(module.Token, arguments);
 
-                        for (int i = 0; i < arguments.Length; i++)
+                        if (method.IsOut)
                         {
-                            tmp.Arguments[i] = Serialization.PackSingleObject(method.ArgsType[i], arguments[i]);
+                            for (int i = 0; i < arguments.Length; i++)
+                            {
+                                tmp.Arguments[i] = Serialization.PackSingleObject(method.ArgsType[i], arguments[i]);
+                            }
                         }
+                        else
+                            tmp.Arguments = null;
 
                         return true;
 

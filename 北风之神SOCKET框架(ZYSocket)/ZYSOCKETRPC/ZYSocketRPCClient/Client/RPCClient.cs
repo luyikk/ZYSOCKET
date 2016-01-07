@@ -195,9 +195,11 @@ namespace ZYSocket.RPC.Client
                                                 Arguments = tmp.Arguments
                                             };
 
+
                                             if (returnValue != null)
                                             {
                                                 var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
+                                               
                                             }
 
                                             Client.BeginSendData(BufferFormat.FormatFCA(var));

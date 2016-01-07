@@ -43,6 +43,8 @@ namespace ZYSocket.RPC
 
     public class MethodModuleDef
     {
+        public bool IsOut { get; set; }
+
         public MethodInfo methodInfo { get; set; }
 
         public Type[] ArgsType { get; set; }
@@ -58,7 +60,7 @@ namespace ZYSocket.RPC
             {
                 if (parameters[i].ParameterType.Name.LastIndexOf('&')>=0)
                 {
-                   
+                    IsOut = true;
                     string type = parameters[i].ParameterType.FullName.Trim(new char[] { '&' });
                     ArgsType[i] = parameters[i].ParameterType.Assembly.GetType(type);
                 }

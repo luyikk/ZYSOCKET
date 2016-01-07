@@ -2,7 +2,4 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\DATA\bin\Release\DATA.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\DATA\bin\Release\DATA.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\DATA\obj\Release\DATA.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\DATA\obj\Release\DATA.pdb
-J:\Github\ZYSOCKET\例子RPC\RPCConsoleTest\DATA\bin\Release\DATA.dll
-J:\Github\ZYSOCKET\例子RPC\RPCConsoleTest\DATA\bin\Release\DATA.pdb
-J:\Github\ZYSOCKET\例子RPC\RPCConsoleTest\DATA\obj\Release\DATA.dll
-J:\Github\ZYSOCKET\例子RPC\RPCConsoleTest\DATA\obj\Release\DATA.pdb
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\DATA\obj\Release\DATA.csprojResolveAssemblyReference.cache

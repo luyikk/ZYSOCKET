@@ -50,9 +50,3 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Debug\ZYSocketShare.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Debug\ZYSocketShare.pdb
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll.config
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.pdb
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Debug\ZYSocketShare.dll
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Debug\ZYSocketShare.pdb
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Debug\ZYSocketShare.csprojResolveAssemblyReference.cache

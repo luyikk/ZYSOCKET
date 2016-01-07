@@ -47,6 +47,10 @@ namespace ZYSocket.RPC
 
                 ReturnValue returnval = Call(ModuleName, MakeID.MakeMethodName(ctorMsg.MethodName, types), argsType, arglist, (ctorMsg.MethodBase as MethodInfo).ReturnType);
 
+                if (returnval.Args == null)
+                {
+                    returnval.Args = args;
+                }
 
                 return new ReturnMessage(returnval.returnVal, returnval.Args, returnval.Args == null ? 0 : returnval.Args.Length, null, ctorMsg);
 

@@ -35,12 +35,12 @@ namespace ZYSocket.RPC
 
         public void Format(Type ReturnType,List<Type> argTypelist)
         {
-            if (ReturnValue != null)
+            if (ReturnValue != null && ReturnValue.Return!=null)
             {              
                 Return = Serialization.UnpackSingleObject(ReturnType,ReturnValue.Return); 
             }
 
-            if (ReturnValue.Arguments.Count > 0)
+            if (ReturnValue.Arguments!=null&&ReturnValue.Arguments.Count > 0)
             {
                 ArgList = new List<Argument>();
 

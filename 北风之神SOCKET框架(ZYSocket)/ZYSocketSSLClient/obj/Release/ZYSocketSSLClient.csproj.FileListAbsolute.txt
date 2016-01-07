@@ -2,7 +2,3 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Release\ZYSocketSSLClient.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Release\ZYSocketSSLClient.pdb
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.dll
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketSSLClient.pdb
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Release\ZYSocketSSLClient.dll
-J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketSSLClient\obj\Release\ZYSocketSSLClient.pdb

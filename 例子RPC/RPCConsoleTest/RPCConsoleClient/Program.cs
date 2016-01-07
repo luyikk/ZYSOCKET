@@ -31,7 +31,7 @@ namespace RPCConsoleClient
                     {
                         string msg = Console.ReadLine();
 
-                        //client.Call<ServerClass>(p => p.SendAll(msg));
+                        client.Call<ServerClass>(p => p.SendAll(msg));
 
 
                         DateTime time = client.Call<ServerClass, DateTime>(p => p.GetServerTime());
@@ -63,10 +63,6 @@ namespace RPCConsoleClient
 
                         var ary = server.array(new string[] { "123", "123" }); //Array + string
 
-                        foreach (var item in ary)
-                        {
-                            Console.WriteLine(item);
-                        }
 
                         System.Diagnostics.Stopwatch stop = new System.Diagnostics.Stopwatch();
                         stop.Start();
