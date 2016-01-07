@@ -28,5 +28,18 @@ namespace ZYSocket.RPC
             long tick = nowTime.Ticks - startTime.Ticks;           
             return tick;
         }
+
+        public static string MakeMethodName(string method, Type[] typeArg)
+        {
+            if (typeArg == null)
+                return method;
+
+            foreach (var item in typeArg)
+            {
+                method += "_" + item.Name;
+            }
+
+            return method;
+        }
     }
 }

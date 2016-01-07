@@ -14,3 +14,8 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.pdb
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.dll.config
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.dll
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.pdb
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.dll
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.pdb

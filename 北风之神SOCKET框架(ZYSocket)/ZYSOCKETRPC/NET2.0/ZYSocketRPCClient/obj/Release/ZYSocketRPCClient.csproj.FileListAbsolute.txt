@@ -8,3 +8,8 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPC\NET2.0\ZYSocketRPCCl
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\NET2.0\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\NET2.0\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\NET2.0\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.pdb
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\RPC\NET2.0\ZYSocketRPCClient.dll
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\RPC\NET2.0\ZYSocketRPCClient.pdb
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\NET2.0\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\NET2.0\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.dll
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\NET2.0\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.pdb

@@ -8,14 +8,14 @@ namespace ZYSocket.RPC
     {
 
 
-
+    
 
         static Serialization()
         {
-
+           
         }
 
-
+      
 
 
         public static byte[] ProtoBufPackSingleObject(object obj)
@@ -58,12 +58,12 @@ namespace ZYSocket.RPC
 
                 Type memberType = type.GetMethod("Get").ReturnType;
 
-                var array = Array.CreateInstance(memberType, list.Count);
-
-
+                var array= Array.CreateInstance(memberType, list.Count);
+             
+                
                 for (int i = 0; i < list.Count; i++)
                 {
-                    array.SetValue(UnpackSingleObject(memberType, list[i]), i);
+                    array.SetValue(UnpackSingleObject(memberType, list[i]), i);                    
                 }
 
                 return array;
@@ -84,7 +84,7 @@ namespace ZYSocket.RPC
             else if (type == typeof(byte[]))
             {
                 return (byte[])obj;
-            }
+            }   
             else if (type.BaseType == typeof(Array))
             {
                 Array array = (Array)obj;
@@ -93,7 +93,7 @@ namespace ZYSocket.RPC
 
                 for (int i = 0; i < array.Length; i++)
                 {
-                    arlist.Add(PackSingleObject(array.GetValue(i).GetType(), array.GetValue(i)));
+                    arlist.Add(PackSingleObject(array.GetValue(i).GetType(),array.GetValue(i)));
                 }
 
                 return ProtoBufPackSingleObject(arlist);
@@ -113,7 +113,7 @@ namespace ZYSocket.RPC
         /// <returns></returns>
         public static short ReadInt16(byte[] Data)
         {
-            short values = BitConverter.ToInt16(Data, 0);
+            short values = BitConverter.ToInt16(Data, 0);          
             return values;
         }
 
@@ -124,7 +124,7 @@ namespace ZYSocket.RPC
         /// <returns></returns>
         public static ushort ReadUint16(byte[] Data)
         {
-            ushort values = BitConverter.ToUInt16(Data, 0);
+            ushort values = BitConverter.ToUInt16(Data, 0);         
             return values;
         }
 
@@ -137,7 +137,7 @@ namespace ZYSocket.RPC
         public static int ReadInt32(byte[] Data)
         {
 
-            int values = BitConverter.ToInt32(Data, 0);
+            int values = BitConverter.ToInt32(Data, 0);         
             return values;
 
         }
@@ -150,7 +150,7 @@ namespace ZYSocket.RPC
         public static uint ReadUInt32(byte[] Data)
         {
 
-            uint values = BitConverter.ToUInt32(Data, 0);
+            uint values = BitConverter.ToUInt32(Data, 0);        
             return values;
 
         }
@@ -164,7 +164,7 @@ namespace ZYSocket.RPC
         public static long ReadInt64(byte[] Data)
         {
 
-            long values = BitConverter.ToInt64(Data, 0);
+            long values = BitConverter.ToInt64(Data, 0);       
             return values;
 
         }
@@ -178,7 +178,7 @@ namespace ZYSocket.RPC
         public static ulong ReadUInt64(byte[] Data)
         {
 
-            ulong values = BitConverter.ToUInt64(Data, 0);
+            ulong values = BitConverter.ToUInt64(Data, 0);          
             return values;
 
         }
@@ -191,7 +191,7 @@ namespace ZYSocket.RPC
         public static byte ReadByte(byte[] Data)
         {
 
-            byte values = (byte)Data[0];
+            byte values = (byte)Data[0];         
             return values;
 
         }
@@ -207,7 +207,7 @@ namespace ZYSocket.RPC
         public static bool ReadBoolean(byte[] Data)
         {
 
-            bool values = BitConverter.ToBoolean(Data, 0);
+            bool values = BitConverter.ToBoolean(Data, 0);        
             return values;
 
         }
@@ -224,7 +224,7 @@ namespace ZYSocket.RPC
         /// <returns></returns>
         public static float ReadFloat(byte[] Data)
         {
-            float values = BitConverter.ToSingle(Data, 0);
+            float values = BitConverter.ToSingle(Data, 0);         
             return values;
         }
 
@@ -237,7 +237,7 @@ namespace ZYSocket.RPC
         public static double ReadDouble(byte[] Data)
         {
 
-            double values = BitConverter.ToDouble(Data, 0);
+            double values = BitConverter.ToDouble(Data, 0);      
             return values;
 
         }
@@ -252,9 +252,9 @@ namespace ZYSocket.RPC
         /// <param name="ms"></param>
         /// <returns></returns>
         public static string ReadString(byte[] Data)
-        {
+        {          
 
-            string values = Encoding.UTF8.GetString(Data);
+            string values = Encoding.UTF8.GetString(Data);          
 
             return values;
 

@@ -3,3 +3,8 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCServer.pd
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCServer\obj\Release\ZYSocketRPCServer.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCServer\obj\Release\ZYSocketRPCServer.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCServer\obj\Release\ZYSocketRPCServer.pdb
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCServer.dll
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCServer.pdb
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCServer\obj\Release\ZYSocketRPCServer.csprojResolveAssemblyReference.cache
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCServer\obj\Release\ZYSocketRPCServer.dll
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCServer\obj\Release\ZYSocketRPCServer.pdb

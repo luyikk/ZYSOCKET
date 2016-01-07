@@ -53,25 +53,20 @@ namespace ZYSocket.RPC.Server
 
                                      if (e.RPC_Call.RunModule(tmp, out returnValue))
                                      {
-                                         if (tmp.IsNeedReturn)
+
+                                         ZYClient_Result_Return var = new ZYClient_Result_Return()
                                          {
-                                             ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                             {
-                                                 Id = tmp.Id,
-                                                 CallTime = tmp.CallTime,
-                                                 Arguments = tmp.Arguments
-                                             };
+                                             Id = tmp.Id,
+                                             CallTime = tmp.CallTime,
+                                             Arguments = tmp.Arguments
+                                         };
 
-                                             if (returnValue != null)
-                                             {
-                                                 var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
-                                                 var.ReturnType = returnValue.GetType();
-                                             }
-
-                                             e.BeginSendData(BufferFormat.FormatFCA(var));
-                                             //e.EnsureSend(BufferFormat.FormatFCA(var));
+                                         if (returnValue != null)
+                                         {
+                                             var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
                                          }
 
+                                         e.EnsureSend(BufferFormat.FormatFCA(var));
                                      }
 
                                  }, CancellationToken.None, TaskCreationOptions.None, e.QueueScheduler).ContinueWith(p =>
@@ -119,11 +114,11 @@ namespace ZYSocket.RPC.Server
         {
             foreach (var item in e.RPC_Call.ModuleDiy.Values)
             {
-                Type type = item.GetType();
+                Type type = item.Token.GetType();
 
                 if (type.BaseType == typeof(RPCObject))
                 {
-                    type.GetMethod("ClientDisconnect").Invoke(item, new[] { e });
+                    type.GetMethod("ClientDisconnect").Invoke(item.Token, new[] { e });
 
                 }
 

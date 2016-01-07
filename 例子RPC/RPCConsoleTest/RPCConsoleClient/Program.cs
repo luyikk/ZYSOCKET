@@ -15,7 +15,7 @@ namespace RPCConsoleClient
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 9952))
             {
-                client.OutTime = 2000;
+                client.OutTime = 200000;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
 
@@ -31,7 +31,7 @@ namespace RPCConsoleClient
                     {
                         string msg = Console.ReadLine();
 
-                        client.Call<ServerClass>(p => p.SendAll(msg));
+                        //client.Call<ServerClass>(p => p.SendAll(msg));
 
 
                         DateTime time = client.Call<ServerClass, DateTime>(p => p.GetServerTime());
@@ -49,8 +49,8 @@ namespace RPCConsoleClient
                             Name = "II",
                             Value = 0
                         };
-                       
-                        
+
+
                         var v = client.Call<ServerClass, Data>(p => p.Return(x));
 
                         Console.WriteLine("Data Name " + v.Name);
@@ -63,13 +63,17 @@ namespace RPCConsoleClient
 
                         var ary = server.array(new string[] { "123", "123" }); //Array + string
 
+                        foreach (var item in ary)
+                        {
+                            Console.WriteLine(item);
+                        }
 
                         System.Diagnostics.Stopwatch stop = new System.Diagnostics.Stopwatch();
                         stop.Start();
                         //int j = 0;
                         for (int i = 0; i < 10000; i++)
                         {
-                            x=server.Return(x);
+                            x = server.Return(x);
                         }
                         stop.Stop();
                         Console.WriteLine("Time:" + stop.ElapsedMilliseconds + " J:" + x.Value);
@@ -77,7 +81,7 @@ namespace RPCConsoleClient
 
                         Console.ReadLine();
 
-                        int mm=0;
+                        int mm = 0;
                         int xx = 1;
                         stop.Reset();
                         stop.Start();
@@ -87,10 +91,10 @@ namespace RPCConsoleClient
                             server.TestOutAndRef(out mm, ref xx);
                         }
                         stop.Stop();
-                        Console.WriteLine("Time:" + stop.ElapsedMilliseconds + " mm:" +mm+" xx:"+xx );
+                        Console.WriteLine("Time:" + stop.ElapsedMilliseconds + " mm:" + mm + " xx:" + xx);
 
 
-                     
+
 
                     }
 

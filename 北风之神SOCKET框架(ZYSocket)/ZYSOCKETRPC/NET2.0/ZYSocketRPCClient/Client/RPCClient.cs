@@ -151,23 +151,20 @@ namespace ZYSocket.RPC.Client
 
                                         if (RPC_Call.RunModule(tmp, out returnValue))
                                         {
-                                            if (tmp.IsNeedReturn)
+
+                                            ZYClient_Result_Return var = new ZYClient_Result_Return()
                                             {
-                                                ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                                {
-                                                    Id = tmp.Id,
-                                                    CallTime = tmp.CallTime,
-                                                    Arguments = tmp.Arguments
-                                                };
+                                                Id = tmp.Id,
+                                                CallTime = tmp.CallTime,
+                                                Arguments = tmp.Arguments
+                                            };
 
-                                                if (returnValue != null)
-                                                {
-                                                    var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
-                                                    var.ReturnType = returnValue.GetType();
-                                                }
-
-                                                Client.Send(BufferFormat.FormatFCA(var));
+                                            if (returnValue != null)
+                                            {
+                                                var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
                                             }
+
+                                            Client.BeginSendData(BufferFormat.FormatFCA(var));
 
                                         }
                                     }

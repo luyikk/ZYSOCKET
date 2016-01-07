@@ -21,3 +21,8 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.pd
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.pdb
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.dll
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.pdb
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.dll
+J:\Github\ZYSOCKET\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPCClient\obj\Debug\ZYSocketRPCClient.pdb

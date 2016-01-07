@@ -45,7 +45,7 @@ namespace Server
                 foreach (var item in UserList)
                 {
                     item.GetRPC<Client>().UserTalk(GetCurrentRPCUser().UserToken.ToString(), msg);
-                    throw new Exception("dd");
+                  
                 }
             }
         }

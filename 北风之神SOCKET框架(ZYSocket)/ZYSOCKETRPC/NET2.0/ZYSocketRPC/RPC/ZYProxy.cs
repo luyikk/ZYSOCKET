@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Runtime.Remoting.Proxies;
 using System.Runtime.Remoting.Messaging;
 using System.Reflection;
 
 namespace ZYSocket.RPC
 {
-    public delegate ReturnValue CallHandler(string module, string MethodName, List<RPCArgument> arglist);
+    public delegate ReturnValue CallHandler(string module, string MethodName, List<Type> argTypelist, List<byte[]> arglist,Type returnType);
 
     public class ZYProxy : RealProxy
     {
@@ -29,21 +28,22 @@ namespace ZYSocket.RPC
 
             if (Call != null)
             {
-                List<RPCArgument> arglist = new List<RPCArgument>();
+                List<byte[]> arglist = new List<byte[]>();
 
                 Type[] types = ctorMsg.MethodSignature as Type[];
+
+                List<Type> argsType = new List<Type>(ctorMsg.ArgCount);
+              
                 object[] args = ctorMsg.Args;
 
                 for (int i = 0; i < ctorMsg.ArgCount; i++)
-                {
-                    RPCArgument tmp = new RPCArgument();
-                    tmp.RefType = types[i];
-                    tmp.type = args[i].GetType();
-                    tmp.Value = Serialization.PackSingleObject(tmp.type, args[i]);
-                    arglist.Add(tmp);
+                {                    
+                    argsType.Add(args[i].GetType());
+                    arglist.Add(Serialization.PackSingleObject(argsType[i], args[i]));
                 }
 
-                ReturnValue returnval = Call(ModuleName, ctorMsg.MethodName, arglist);
+
+                ReturnValue returnval = Call(ModuleName, MakeID.MakeMethodName(ctorMsg.MethodName, types), argsType, arglist, (ctorMsg.MethodBase as MethodInfo).ReturnType);
 
 
                 return new ReturnMessage(returnval.returnVal, returnval.Args, returnval.Args == null ? 0 : returnval.Args.Length, null, ctorMsg);

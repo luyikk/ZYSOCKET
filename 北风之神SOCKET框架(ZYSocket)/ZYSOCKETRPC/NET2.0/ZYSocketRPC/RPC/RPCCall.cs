@@ -6,39 +6,53 @@ using ZYSocket.share;
 namespace ZYSocket.RPC
 {
 
+    public class AsynRetrunModule
+    {
+        public Type ReturnType { get; set; }
+
+        public List<Type> ArgsType { get; set; }
+
+        public Action<AsynReturn> Call { get; set; }
+
+    }
+
+
 
     public class AsynReturn
     {
         public object Return { get; set; }
-        public Type ReturnType { get; set; }
-
-        public List<Argument> Arguments { get; set; }
+     
+        public List<byte[]> Arguments { get; set; }
         public ZYClient_Result_Return ReturnValue { get; set; }
+
+        public List<Argument> ArgList { get; set; }
 
         public AsynReturn()
         {
-            Arguments = new List<Argument>();
+            Arguments = new List<byte[]>();
         }
 
-        public void Format()
+        public void Format(Type ReturnType,List<Type> argTypelist)
         {
             if (ReturnValue != null)
+            {              
+                Return = Serialization.UnpackSingleObject(ReturnType,ReturnValue.Return); 
+            }
+
+            if (ReturnValue.Arguments.Count > 0)
             {
-                ReturnType = ReturnValue.ReturnType;
-                Return = Serialization.UnpackSingleObject(ReturnType,ReturnValue.Return);
+                ArgList = new List<Argument>();
 
-                if (ReturnValue.Arguments.Count > 0)
+                for (int i = 0; i < argTypelist.Count; i++)
                 {
-                    foreach (var item in ReturnValue.Arguments)
+                    Argument tmp = new Argument()
                     {
-                        Argument tmp = new Argument()
-                        {
-                            Type = item.type,
-                            value = Serialization.UnpackSingleObject(item.type,item.Value)
-                        };
-                    }
-                }
+                        Type = argTypelist[i],
+                        value = Serialization.UnpackSingleObject(argTypelist[i], ReturnValue.Arguments[i])
+                    };
 
+                    ArgList.Add(tmp);
+                }
             }
 
         }
@@ -51,19 +65,8 @@ namespace ZYSocket.RPC
         }
     }
 
-    public class RPCArgument
-    {
-        public Type type { get; set; }
-
-        public Type RefType
-        {
-            get; set;
-        }
-
-
-        public byte[] Value { get; set; }
-
-    }
+   
+ 
 
     [FormatClassAttibutes(1001000)]
     public class RPCCallPack
@@ -72,20 +75,17 @@ namespace ZYSocket.RPC
         public long Id { get; set; }
 
 
-        public DateTime CallTime { get; set; }
+        public long CallTime { get; set; }
 
 
         public string CallModule { get; set; }
 
+
         public string Method { get; set; }
 
 
-        public List<RPCArgument> Arguments { get; set; }
-
-
-        public bool IsNeedReturn { get; set; }
-
-
+        public List<byte[]> Arguments { get; set; }
+              
     
     }
 
@@ -96,15 +96,11 @@ namespace ZYSocket.RPC
         public long Id { get; set; }
 
 
-        public DateTime CallTime { get; set; }
+        public long CallTime { get; set; }
 
 
         public byte[] Return { get; set; }
 
-
-        public Type ReturnType { get; set; }
-
-
-        public List<RPCArgument> Arguments { get; set; }
+        public List<byte[]> Arguments { get; set; }
     }
 }

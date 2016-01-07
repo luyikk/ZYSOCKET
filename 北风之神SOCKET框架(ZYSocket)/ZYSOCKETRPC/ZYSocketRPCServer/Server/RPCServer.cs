@@ -101,6 +101,8 @@ namespace ZYSocket.RPC.Server
             socketAsync.UserToken = null;
             socketAsync.AcceptSocket.Close();
             socketAsync.AcceptSocket.Dispose();
+
+         
         }
 
         /// <summary>
