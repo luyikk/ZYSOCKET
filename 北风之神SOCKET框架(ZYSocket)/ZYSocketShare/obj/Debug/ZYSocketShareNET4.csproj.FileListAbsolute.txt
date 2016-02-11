@@ -13,3 +13,4 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShare.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShareNET4.csprojResolveAssemblyReference.cache

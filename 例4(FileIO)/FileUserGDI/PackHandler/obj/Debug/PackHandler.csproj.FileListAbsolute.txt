@@ -33,6 +33,5 @@ E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\protobuf-net.dl
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\ZYSocketShare.pdb
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\protobuf-net.pdb
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\bin\Debug\protobuf-net.xml
-E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\obj\Debug\PackHandler.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\obj\Debug\PackHandler.dll
 E:\ZYSocketFrame2\例4(FileIO)\FileUserGDI\PackHandler\obj\Debug\PackHandler.pdb

@@ -285,11 +285,7 @@ namespace ZYSocket.share
 
                 if (lengt > Length)
                 {
-#if DEBUG
-                    throw new Exception("没有那么多数据可读取");
-#else
-                  return null;
-#endif
+                    return null;
                 }
 
                 if (lengt < 0)

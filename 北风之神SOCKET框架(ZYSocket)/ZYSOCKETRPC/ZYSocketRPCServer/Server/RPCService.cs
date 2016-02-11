@@ -45,30 +45,31 @@ namespace ZYSocket.RPC.Server
                             if (read.ReadObject<RPCCallPack>(out tmp))
                             {
 
-                                System.Threading.Tasks.Task.Factory.StartNew(() =>
+                                System.Threading.Tasks.Task.Factory.StartNew((pack) =>
                                  {
                                      object returnValue;
+                                     RPCCallPack rpcPack = pack as RPCCallPack;
 
                                      CallContext.SetData("Current", e);
 
-                                     if (e.RPC_Call.RunModule(tmp, out returnValue))
+                                     if (e.RPC_Call.RunModule(rpcPack, out returnValue))
                                      {
 
                                          ZYClient_Result_Return var = new ZYClient_Result_Return()
                                          {
-                                             Id = tmp.Id,
-                                             CallTime = tmp.CallTime,
-                                             Arguments = tmp.Arguments
+                                             Id = rpcPack.Id,
+                                             CallTime = rpcPack.CallTime,
+                                             Arguments = rpcPack.Arguments
                                          };
 
                                          if (returnValue != null)
                                          {
                                              var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);                                            
                                          }
-                                         e.EnsureSend(BufferFormat.FormatFCA(var));
+                                         e.BeginSendData(BufferFormat.FormatFCA(var));
                                      }
 
-                                 }, CancellationToken.None, TaskCreationOptions.None, e.QueueScheduler).ContinueWith(p =>
+                                 },tmp, CancellationToken.None, TaskCreationOptions.None, e.QueueScheduler).ContinueWith(p =>
                                      {
                                          try
                                          {

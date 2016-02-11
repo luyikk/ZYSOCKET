@@ -114,7 +114,7 @@ namespace TestServer
                 //建立一个读取数据包的类 参数是数据包
                 //这个类的功能很强大,可以读取数据包的数据,并可以把你发送过来的对象数据,转换对象引用
                 ReadBytes read = new ReadBytesV2(data);
-
+                
                 int lengt; //数据包长度,用于验证数据包的完整性
                 int cmd; //数据包命令类型
 
@@ -134,7 +134,7 @@ namespace TestServer
                                 if (temp != null)
                                 {
                                     Console.WriteLine("Port:{4} Id:{0}\r\n Mn:{1} \r\n GuidCount:{2} \r\n DataLength:{3} \r\n\r\n", temp.Id, temp.Message, temp.guidList.Count, read.Length,((System.Net.IPEndPoint)e.AcceptSocket.RemoteEndPoint).Port);
-                                  
+                                    
                                 }
                             }
                             break;

@@ -32,11 +32,20 @@ namespace Server
         {
             if (UserList.Contains(GetCurrentRPCUser()))
             {
+                var my = GetCurrentRPCUser();
+                var api = my.GetRPC<Client>();
+              
+
                 foreach (var item in UserList)
                 {
-                    item.CallAsyn<Client>(p => p.UserTalk(GetCurrentRPCUser().UserToken.ToString(), msg));
+                    item.AsynCall(() => { api.UserTalk(my.UserToken.ToString(), msg); });
                 }
             }
+        }
+
+        public int value(int a,int b)
+        {
+            return a + b;
         }
 
 

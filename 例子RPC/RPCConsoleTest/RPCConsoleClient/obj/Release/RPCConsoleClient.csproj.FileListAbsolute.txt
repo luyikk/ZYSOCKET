@@ -4,14 +4,12 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\DATA.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ZYSocketClientB.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ZYSocketRPC.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ZYSocketRPCClient.dll
-E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\MsgPack.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ZYSocketShare.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\protobuf-net.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\DATA.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ZYSocketClientB.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ZYSocketRPC.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ZYSocketRPCClient.pdb
-E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\MsgPack.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ZYSocketShare.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\protobuf-net.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\protobuf-net.xml

@@ -45,11 +45,12 @@ namespace RPCConsoleTest
             foreach (var item in UserList)
             {
 
-                item.CallAsyn<ClientCall>(p => p.Add(r.Next(), r.Next()), new Action<ZYSocket.RPC.AsynReturn>((x) =>
-                    {
-                        Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + x.Return);
+                item.AsynCall<long>(() => item.GetRPC<ClientCall>().Add(r.Next(), r.Next())).ContinueWith(res =>
+                  {
 
-                    }));              
+                      Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + res.Result);
+
+                  });            
             }
         }
 
@@ -57,7 +58,7 @@ namespace RPCConsoleTest
         {
             foreach (var item in UserList)
             {
-                DateTime time= item.Call<ClientCall, DateTime>(p => p.GetClientDateTime());
+                DateTime time= item.GetRPC<ClientCall>().GetClientDateTime();
 
                 Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 的时间为" + time);
             }
@@ -135,7 +136,7 @@ namespace RPCConsoleTest
 
                 var rpc = GetCurrentRPCUser();
 
-                i = rpc.Call<ClientCall, int>(p => p.RecComputer(i));
+                i = rpc.GetRPC<ClientCall>().RecComputer(i);
 
                 return i;
 
@@ -179,7 +180,7 @@ namespace RPCConsoleTest
 
             foreach (var item in UserList)
             {
-                item.CallAsyn<ClientCall>(p => p.ShowMsg(msgx));
+                item.AsynCall(() => item.GetRPC<ClientCall>().ShowMsg(msgx));
             }
 
         }

@@ -39,6 +39,7 @@ namespace ZYSocket.RPC.Client
         public int OutTime { get { return RPC_Call.OutTime; } set { RPC_Call.OutTime = value; } }
 
         #region Reg Call
+        /*
         public void CallAsyn<Mode>(Expression<Action<Mode>> action)
         {
             RPC_Call.CallAsyn<Mode>(action);
@@ -55,14 +56,14 @@ namespace ZYSocket.RPC.Client
 
         public Result Call<Mode, Result>(Expression<Func<Mode, Result>> action)
         {
-            return RPC_Call.Call<Mode, Result>(action);
+            return  RPC_Call.Call<Mode, Result>(action);
         }
 
-        public void Call<Mode>(Expression<Action<Mode>> action)
+        public  void Call<Mode>(Expression<Action<Mode>> action)
         {
-            RPC_Call.Call<Mode>(action);
+              RPC_Call.Call<Mode>(action);
         }
-
+        */
         #endregion
 
         /// <summary>
@@ -83,6 +84,16 @@ namespace ZYSocket.RPC.Client
         {
             if (MsgOut != null)
                 MsgOut(msg);
+        }
+
+
+        public Task AsynCall(Action action)
+        {
+            return Task.Factory.StartNew(action);
+        }
+        public Task<Result> AsynCall<Result>(Func<Result> action)
+        {
+            return Task.Factory.StartNew<Result>(action);
         }
 
         public T GetRPC<T>()
@@ -112,7 +123,7 @@ namespace ZYSocket.RPC.Client
             if (!IsConnect)
             {
 
-                Stream = new ZYNetRingBufferPool(1024 * 1024); //1M
+                Stream = new ZYNetRingBufferPool(1024 * 1024*8); //8M
                 Client = new SocketClient();
                 Client.BinaryInput += Client_BinaryInput;
                 Client.MessageInput += Client_MessageInput;

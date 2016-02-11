@@ -68,6 +68,10 @@
     <Compile Include="share\ZYNetBufferReadStreamV2.cs" />
     <Compile Include="share\ZYNetRingBufferPool.cs" />
     <Compile Include="share\ZYNetRingBufferPoolV2.cs" />
+    <Compile Include="ZYCoroutinesin\Fiber.cs" />
+    <Compile Include="ZYCoroutinesin\FiberManager.cs" />
+    <Compile Include="ZYCoroutinesin\Miss.cs" />
+    <Compile Include="ZYCoroutinesin\ZYCoroutinesin.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

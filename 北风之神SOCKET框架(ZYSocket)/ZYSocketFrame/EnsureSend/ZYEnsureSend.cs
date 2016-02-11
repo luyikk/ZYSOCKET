@@ -75,6 +75,10 @@ namespace ZYSocket.EnsureSend
             }
             catch (Exception er)
             {
+                ActionRun<Socket> actionRun;
+                for (int i = 0; i < TaskQueuePool.ActionQueue.Count; i++)
+                    TaskQueuePool.ActionQueue.TryDequeue(out actionRun);
+
                 throw er;
             }
            

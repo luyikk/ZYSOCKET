@@ -93,6 +93,7 @@ namespace TestServer
 
         static void DataOn(byte[] data, SocketAsyncEventArgs e)
         {
+            Console.WriteLine("ThreadId:" + System.Threading.Thread.CurrentThread.ManagedThreadId);
             try
             {
                 //建立一个读取数据包的类 参数是数据包

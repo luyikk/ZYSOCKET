@@ -8,8 +8,8 @@ namespace ZYSocket.RPC
     public static class Serialization
     {
 
-
-    
+       static object lockobj = new object();
+       static object lockobj2 = new object();
 
         static Serialization()
         {
@@ -21,20 +21,26 @@ namespace ZYSocket.RPC
 
         public static byte[] ProtoBufPackSingleObject(object obj)
         {
-            using (System.IO.MemoryStream _memory = new System.IO.MemoryStream())
+            lock (lockobj2)
             {
-                ProtoBuf.Meta.RuntimeTypeModel.Default.Serialize(_memory, obj);
+                using (System.IO.MemoryStream _memory = new System.IO.MemoryStream())
+                {
+                    ProtoBuf.Meta.RuntimeTypeModel.Default.Serialize(_memory, obj);
 
-                return _memory.ToArray();
+                    return _memory.ToArray();
 
+                }
             }
         }
 
         public static object ProtoUnpackSingleObject(Type type, byte[] data)
         {
-            using (System.IO.MemoryStream stream = new System.IO.MemoryStream(data))
+            lock(lockobj)
             {
-                return ProtoBuf.Serializer.Deserialize(type, stream);
+                using (System.IO.MemoryStream stream = new System.IO.MemoryStream(data))
+                {
+                    return ProtoBuf.Serializer.Deserialize(type, stream);
+                }
             }
         }
 

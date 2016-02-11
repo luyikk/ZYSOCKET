@@ -28,7 +28,7 @@ namespace RPCConsoleClient
             i--;
 
             var rpc = GetCurrentRPObj();
-            i= rpc.Call<ServerClass, int>(p => p.RecComputer(i));
+            i= rpc.GetRPC<ServerClass>().RecComputer(i);
 
             return i;
 

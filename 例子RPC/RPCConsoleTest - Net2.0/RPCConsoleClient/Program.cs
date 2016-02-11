@@ -55,7 +55,7 @@ namespace RPCConsoleClient
 
                         Console.WriteLine("Data Name " + v.Name);
 
-                        var l = client.GetRPC<ServerClass>().RecComputer(10); //这叫递归吗？ 代价太大，深度最好别超过5层 实在没办法记得设置outtime
+                        var l = client.GetRPC<ServerClass>().RecComputer(2); //这叫递归吗？ 代价太大，深度最好别超过5层 实在没办法记得设置outtime
 
                         Console.WriteLine("Rec computer value:" + l);
 

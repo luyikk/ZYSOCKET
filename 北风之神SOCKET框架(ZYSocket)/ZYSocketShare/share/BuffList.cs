@@ -49,7 +49,7 @@ namespace ZYSocket.share
             lengt = -1;
             Vlent = 0;
             ByteList = new List<byte>();
-
+           
         }
 
         public void Reset()

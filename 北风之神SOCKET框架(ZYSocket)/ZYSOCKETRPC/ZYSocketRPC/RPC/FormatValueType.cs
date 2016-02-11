@@ -8,8 +8,10 @@ namespace ZYSocket.RPC
 {
     public class FormatValueType
     {
+        static Type objtype ;
         public FormatValueType()
         {
+            objtype = typeof(object);
             GetValueMethod = new Dictionary<Type, MethodInfo>();
             GetValueMethod.Add(typeof(object), this.GetType().GetMethod("GetObjectArg", new[] { typeof(object) }));
             GetValueMethod.Add(typeof(int), this.GetType().GetMethod("GetObjectArg", new[] { typeof(int) }));
@@ -25,7 +27,7 @@ namespace ZYSocket.RPC
             if(type.IsValueType)
                 return GetValueMethod[type];
             else
-                return GetValueMethod[typeof(object)];
+                return GetValueMethod[objtype];
         }
 
         public  Dictionary<Type, MethodInfo> GetValueMethod

@@ -22,7 +22,9 @@ namespace RPCConsoleClient
                 Console.WriteLine("input userName:");
                 string user = Console.ReadLine();
 
-                if (client.Call<ServerClass, bool>(p => p.LogOn(user, "123123")))
+                var server = client.GetRPC<ServerClass>();
+
+                if (server.LogOn(user, "123123"))
                 {
                     
                     Console.WriteLine("LogOn Is OK");
@@ -31,16 +33,16 @@ namespace RPCConsoleClient
                     {
                         string msg = Console.ReadLine();
 
-                        client.Call<ServerClass>(p => p.SendAll(msg));
+                        server.SendAll(msg);
 
 
-                        DateTime time = client.Call<ServerClass, DateTime>(p => p.GetServerTime());
+                        DateTime time = server.GetServerTime();
 
                         Console.WriteLine("Serve time is " + time);
 
                         int value = 0;
 
-                        client.Call<ServerClass>(p => p.OutRandom(out value));
+                        client.AsynCall(()=> server.OutRandom(out value)).Wait();
 
                         Console.WriteLine("Random value is " + value);
 
@@ -51,15 +53,15 @@ namespace RPCConsoleClient
                         };
 
 
-                        var v = client.Call<ServerClass, Data>(p => p.Return(x));
+                        var v = server.Return(x);
 
                         Console.WriteLine("Data Name " + v.Name);
 
-                        var l = client.Call<ServerClass, int>(p => p.RecComputer(10)); //这叫递归吗？ 代价太大，深度最好别超过5层 实在没办法记得设置outtime
+                        var l = server.RecComputer(10); //这叫递归吗？ 代价太大，深度最好别超过5层 实在没办法记得设置outtime
 
                         Console.WriteLine("Rec computer value:" + l);
 
-                        var server = client.GetRPC<ServerClass>();
+                    
 
                         var ary = server.array(new string[] { "123", "123" }); //Array + string
 

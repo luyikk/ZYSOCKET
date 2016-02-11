@@ -134,10 +134,7 @@ namespace ZYSocket.RPC
 
             return tmp;
         }
-
-
-
-
+                        
         public void CallMethod(string module, string MethodName, List<Type> argTypeList, List<byte[]> arglist, out object[] args)
         {
             args = null;
@@ -154,7 +151,7 @@ namespace ZYSocket.RPC
             WaitReturnValue var = new WaitReturnValue();
 
             using (var.waitHandle = new EventWaitHandle(false, EventResetMode.AutoReset))
-            {
+            {                
 
                 ReturnValueDiy.Add(call.Id, var);
 
@@ -162,7 +159,6 @@ namespace ZYSocket.RPC
 
                 if (CallBufferOutSend != null)
                     CallBufferOutSend(data);
-
 
                 if (var.waitHandle.WaitOne(OutTime))
                 {

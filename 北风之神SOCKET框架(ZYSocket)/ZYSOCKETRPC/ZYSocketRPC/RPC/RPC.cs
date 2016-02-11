@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Threading;
 using System.Collections.Concurrent;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace ZYSocket.RPC
 {
@@ -25,7 +26,7 @@ namespace ZYSocket.RPC
         public ConcurrentDictionary<Type, ZYProxy> ZYProxyDiy { get; set; }
 
 
-        public ConcurrentDictionary<long, WaitReturnValue> ReturnValueDiy { get; set; }
+        public ConcurrentDictionary<long, TaskCompletionSource<ZYClient_Result_Return>> ReturnValueDiy { get; set; }
 
         public ConcurrentDictionary<long, AsynRetrunModule> AsynRetrunDiy { get; set; }
 
@@ -54,11 +55,16 @@ namespace ZYSocket.RPC
 
             ModuleDiy = new ConcurrentDictionary<string, ModuleDef>();
             AsynRetrunDiy = new ConcurrentDictionary<long, AsynRetrunModule>();
-            ReturnValueDiy = new ConcurrentDictionary<long, WaitReturnValue>();
+            ReturnValueDiy = new ConcurrentDictionary<long, TaskCompletionSource<ZYClient_Result_Return>>();
             ZYProxyDiy = new ConcurrentDictionary<Type, ZYProxy>();
-        }
-            
 
+
+           
+
+
+        }
+
+      
         /// <summary>
         /// 设置返回值
         /// </summary>
@@ -70,14 +76,14 @@ namespace ZYSocket.RPC
             {
                 AsynReturn asynRet = new AsynReturn()
                 {
-                    ReturnValue=val
+                    ReturnValue = val
                 };
 
                 var callback = AsynRetrunDiy[val.Id];
 
                 asynRet.Format(callback.ReturnType, callback.ArgsType);
 
-                              
+
                 AsynRetrunDiy.TryRemove(val.Id, out callback);
 
                 System.Threading.Tasks.Task.Factory.StartNew(() =>
@@ -97,13 +103,17 @@ namespace ZYSocket.RPC
                         }
                     });
                 return true;
+
             }
             else if (ReturnValueDiy.ContainsKey(val.Id))
-            {                
-                WaitReturnValue x;
+            {
+                var x = ReturnValueDiy[val.Id];
+                //x.returnvalue = val;
+                //x.IsReturn = true;          
+                x.SetResult(val);
                 ReturnValueDiy.TryRemove(val.Id, out x);
-                x.returnvalue = val;
-                x.waitHandle.Set();
+               
+
                 return true;
             }
          
@@ -112,7 +122,11 @@ namespace ZYSocket.RPC
             return false;
         }
 
+        
         #region Expression Tree
+
+        /*
+
 
         /// <summary>
         /// 异步调用，返回值后调用 Callback
@@ -133,8 +147,8 @@ namespace ZYSocket.RPC
 
             for (int i = 0; i < parameters.Length; i++)
             {
-                dynamic p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
-                dynamic x = Expression.Lambda<Func<dynamic>>(p).Compile()();
+                var p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
+                object x = Expression.Lambda<Func<object>>(p).Compile()();
                 argTypelist.Add(body.Arguments[i].Type);
                 argumentlist.Add(Serialization.PackSingleObject(body.Arguments[i].Type, x));
                 argRefTypelist[i]=parameters[i].ParameterType;
@@ -183,8 +197,8 @@ namespace ZYSocket.RPC
 
             for (int i = 0; i < parameters.Length; i++)
             {
-                dynamic p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
-                dynamic x = Expression.Lambda<Func<dynamic>>(p).Compile()();
+                var p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
+                object x = Expression.Lambda<Func<object>>(p).Compile()();
                 argumentlist.Add(Serialization.PackSingleObject(body.Arguments[i].Type, x));
                 argRefTypelist[i] = parameters[i].ParameterType;
             }
@@ -223,8 +237,8 @@ namespace ZYSocket.RPC
             Type[] argRefTypelist = new Type[parameters.Length];
             for (int i = 0; i < parameters.Length; i++)
             {
-                dynamic p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
-                dynamic x = Expression.Lambda<Func<dynamic>>(p).Compile()();
+                var p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
+                object x = Expression.Lambda<Func<object>>(p).Compile()();
                 argTypelist.Add(body.Arguments[i].Type);
                 argumentlist.Add(Serialization.PackSingleObject(body.Arguments[i].Type, x));
                 argRefTypelist[i] = parameters[i].ParameterType;
@@ -273,17 +287,20 @@ namespace ZYSocket.RPC
             Type[] argRefTypelist = new Type[parameters.Length];
             for (int i = 0; i < parameters.Length; i++)
             {
-                dynamic p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
-                dynamic x = Expression.Lambda<Func<dynamic>>(p).Compile()();
+               
+                var p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
+                object x = Expression.Lambda<Func<object>>(p).Compile()();
 
                 argTypelist.Add(body.Arguments[i].Type);
                 argumentlist.Add(Serialization.PackSingleObject(body.Arguments[i].Type, x));
                 argRefTypelist[i] = parameters[i].ParameterType;
             }
 
+
+
             object[] args;
 
-            CallMethod(body.Object.Type.Name, MakeID.MakeMethodName(body.Method.Name, argRefTypelist),argTypelist, argumentlist, out args);
+            CallMethod(body.Object.Type.Name, MakeID.MakeMethodName(body.Method.Name, argRefTypelist), argTypelist, argumentlist, out args);
 
             if (args != null)
             {
@@ -297,14 +314,15 @@ namespace ZYSocket.RPC
 
                             Expression.Lambda<Action>(set).Compile()();
 
+
                         }
                     }
                 }
             }
+
+
+
         }
-
-
-     
 
 
         /// <summary>
@@ -319,8 +337,8 @@ namespace ZYSocket.RPC
 
 
             MethodCallExpression body = action.Body as MethodCallExpression;
-
             var parameters = body.Method.GetParameters();
+
 
             List<byte[]> argumentlist = new List<byte[]>(parameters.Length);
             List<Type> argTypelist = new List<Type>(parameters.Length);
@@ -328,12 +346,16 @@ namespace ZYSocket.RPC
 
             for (int i = 0; i < parameters.Length; i++)
             {
-                dynamic p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
-                dynamic x = Expression.Lambda<Func<dynamic>>(p).Compile()();
+
+                var p = Expression.Call(FormatValue.GetMethodInfo(body.Arguments[i].Type), body.Arguments[i]);
+                object x = Expression.Lambda<Func<object>>(p).Compile()();
+
                 argTypelist.Add(body.Arguments[i].Type);
-                argumentlist.Add( Serialization.PackSingleObject(body.Arguments[i].Type,x));
+                argumentlist.Add(Serialization.PackSingleObject(body.Arguments[i].Type, x));
                 argRefTypelist[i] = parameters[i].ParameterType;
             }
+
+
 
             object[] args;
 
@@ -357,14 +379,19 @@ namespace ZYSocket.RPC
             }
 
             return res;
+
+
         }
 
-        
+    */
 
 
         #endregion
 
 
+        #region proxy
+
+     
 
         public T GetRPC<T>()
         {
@@ -385,6 +412,9 @@ namespace ZYSocket.RPC
                 return (T)proxy.GetTransparentProxy();
             }
         }
+
+        #endregion
+
 
         ReturnValue proxy_Call(string module, string MethodName,List<Type> argTypelist, List<byte[]> arglist,Type returnType)
         {
@@ -413,46 +443,45 @@ namespace ZYSocket.RPC
                 CallTime = MakeID.GetTick(),
                 CallModule = module,
                 Method = MethodName,
-                Arguments = arglist               
+                Arguments = arglist
             };
 
-            WaitReturnValue var = new WaitReturnValue();
+            TaskCompletionSource<ZYClient_Result_Return> var = new TaskCompletionSource<ZYClient_Result_Return>();
 
-            using (var.waitHandle = new EventWaitHandle(false, EventResetMode.AutoReset))
+
+
+            ReturnValueDiy.AddOrUpdate(call.Id, var, (a, b) => var);
+
+            byte[] data = BufferFormat.FormatFCA(call);
+
+            if (CallBufferOutSend != null)
+                CallBufferOutSend(data);
+
+
+            if (var.Task.Wait(OutTime))
             {
+                ZYClient_Result_Return returnx = var.Task.Result;
 
-                ReturnValueDiy.AddOrUpdate(call.Id, var, (a, b) => var);
-
-                byte[] data = BufferFormat.FormatFCA(call);
-
-                if (CallBufferOutSend != null)
-                    CallBufferOutSend(data);
-
-
-                if (var.waitHandle.WaitOne(OutTime))
+                if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
                 {
-                    ZYClient_Result_Return returnx = var.returnvalue;
+                    args = new object[returnx.Arguments.Count];
 
-                    if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
+                    for (int i = 0; i < argTypeList.Count; i++)
                     {
-                        args = new object[returnx.Arguments.Count];
-
-                        for (int i = 0; i < argTypeList.Count; i++)
-                        {
-                            args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
-                        }
-
+                        args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
                     }
 
-                    return;
                 }
-                else
-                {
-                    ReturnValueDiy.TryRemove(call.Id, out var);
 
-                    throw new TimeoutException("out time,Please set the timeout time.");
-                }
+                return;
             }
+            else
+            {
+               // ReturnValueDiy.TryRemove(call.Id, out var);
+
+                throw new TimeoutException("out time,Please set the timeout time.");
+            }
+
 
         }
 
@@ -465,68 +494,68 @@ namespace ZYSocket.RPC
                 CallTime = MakeID.GetTick(),
                 CallModule = module,
                 Method = MethodName,
-                Arguments = arglist              
+                Arguments = arglist
             };
 
 
+            TaskCompletionSource<ZYClient_Result_Return> var = new TaskCompletionSource<ZYClient_Result_Return>();
 
-            WaitReturnValue var = new WaitReturnValue();
-            using (var.waitHandle = new EventWaitHandle(false, EventResetMode.AutoReset))
+            if (!ReturnValueDiy.TryAdd(call.Id, var))
+            {
+                SpinWait.SpinUntil(() => ReturnValueDiy.TryAdd(call.Id, var));
+            }
+
+            byte[] data = BufferFormat.FormatFCA(call);
+             if (CallBufferOutSend != null)
+                CallBufferOutSend(data);            
+
+            if (var.Task.Wait(OutTime))
             {
 
+                ZYClient_Result_Return returnx = var.Task.Result;
 
-                ReturnValueDiy.TryAdd(call.Id, var);
-
-                byte[] data = BufferFormat.FormatFCA(call);
-
-                if (CallBufferOutSend != null)
-                    CallBufferOutSend(data);
-
-                if (var.waitHandle.WaitOne(OutTime))
+                if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
                 {
-                    
-                    ZYClient_Result_Return returnx = var.returnvalue;
-                    
-                    if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
+                    args = new object[returnx.Arguments.Count];
+
+                    for (int i = 0; i < argTypeList.Count; i++)
                     {
-                        args = new object[returnx.Arguments.Count];
-
-                        for (int i = 0; i < argTypeList.Count; i++)
-                        {
-                            args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
-                        }
-
+                        args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
                     }
 
+                }
 
-                    if (returnx.Return != null)
+
+                if (returnx.Return != null)
+                {
+                    if (returnType != null)
                     {
-                        if (returnType != null)
-                        {
-                            object returnobj = Serialization.UnpackSingleObject(returnType, returnx.Return);
+                        object returnobj = Serialization.UnpackSingleObject(returnType, returnx.Return);
 
-                            return (Result)returnobj;
-                        }
-                        else
-                        {
-                            object returnobj = Serialization.UnpackSingleObject(typeof(Result), returnx.Return);
-
-                            return (Result)returnobj;
-                        }
+                        return (Result)returnobj;
                     }
                     else
-                        return default(Result);
+                    {
+                        object returnobj = Serialization.UnpackSingleObject(typeof(Result), returnx.Return);
 
+                        return (Result)returnobj;
+                    }
                 }
                 else
-                {
+                    return default(Result);
 
-                    ReturnValueDiy.TryRemove(call.Id, out var);
-
-                    throw new TimeoutException("out time,Please set the timeout time.");
-                  
-                }
             }
+            else
+            {
+                if (ReturnValueDiy.Count == 1)
+                {
+                    Console.WriteLine("1");
+                }        
+
+                throw new TimeoutException("out time,Please set the timeout time.");
+
+            }
+
 
         }
 
@@ -612,12 +641,13 @@ namespace ZYSocket.RPC
      
     }
 
-    public class WaitReturnValue
-    {
-        public  ZYClient_Result_Return returnvalue { get; set; }
+    //public class WaitReturnValue
+    //{
+    //    public ZYClient_Result_Return returnvalue { get; set; }
 
-        public EventWaitHandle waitHandle { get; set; }
+    //    //  public EventWaitHandle waitHandle { get; set; }
 
+    //    public bool IsReturn { get; set; }
 
-    }
+    //}
 }

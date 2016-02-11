@@ -42,10 +42,12 @@ namespace Server
         {
             if (UserList.Contains(GetCurrentRPCUser()))
             {
+                var my = GetCurrentRPCUser();
+                var api = my.GetRPC<Client>();
+
                 foreach (var item in UserList)
                 {
-                    item.GetRPC<Client>().UserTalk(GetCurrentRPCUser().UserToken.ToString(), msg);
-                    throw new Exception("dd");
+                    my.AsynCall(()=>api.UserTalk(my.UserToken.ToString(), msg));                   
                 }
             }
         }

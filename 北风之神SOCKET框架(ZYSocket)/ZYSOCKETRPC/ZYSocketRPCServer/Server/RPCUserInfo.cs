@@ -8,6 +8,7 @@ using System.Net.Sockets;
 using System.Linq.Expressions;
 using ZYSocket.share;
 using System.Threading.Tasks.Schedulers;
+using System.Threading.Tasks;
 
 namespace ZYSocket.RPC.Server
 {
@@ -70,6 +71,16 @@ namespace ZYSocket.RPC.Server
                 Asyn.AcceptSocket.Disconnect(false);
         }
 
+        public Task AsynCall(Action action)
+        {
+            return Task.Factory.StartNew(action);
+        }
+
+        public Task<Result> AsynCall<Result>(Func<Result> action)
+        {
+            return Task.Factory.StartNew<Result>(action);
+        }
+
         public T GetRPC<T>()
         {
             return RPC_Call.GetRPC<T>();
@@ -78,7 +89,7 @@ namespace ZYSocket.RPC.Server
         #region Reg Call
 
 
-
+        /*
         public void CallAsyn<Mode>(Expression<Action<Mode>> action)
         {
             RPC_Call.CallAsyn<Mode>(action);
@@ -102,7 +113,7 @@ namespace ZYSocket.RPC.Server
         {
             RPC_Call.Call<Mode>(action);
         }
-
+        */
         #endregion
 
 
@@ -111,7 +122,7 @@ namespace ZYSocket.RPC.Server
             QueueScheduler = new QueuedTaskScheduler();
             RPC_Call = new RPC();
             RPC_Call.CallBufferOutSend += RPC_OBJ_CallBufferOutSend;
-            Stream = new ZYNetRingBufferPool(1024 * 64);//64K
+            Stream = new ZYNetRingBufferPool(1024 * 1024*8);//8MB
 
         }
 
