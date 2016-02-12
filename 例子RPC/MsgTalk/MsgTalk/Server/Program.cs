@@ -12,6 +12,7 @@ namespace Server
             RPCServer server = new RPCServer("127.0.0.1", 3000, 4000, 1024 * 64);
             server.RegServiceModule(new TalkService());
             server.MsgOut += Server_MsgOut;
+            server.IsUseTaskQueue = false; //如果不搞 C1-->S--->C1 并且是同步访问的 就不要设置为TRUE
             server.Start();
             Console.ReadLine();
         }

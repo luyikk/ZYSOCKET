@@ -17,3 +17,5 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Release\RPCConso
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Release\RPCConsoleClient.exe
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Release\RPCConsoleClient.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\ParallelExtensionsExtras.dll
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\MsgPack.dll
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Release\MsgPack.pdb

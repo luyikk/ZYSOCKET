@@ -23,7 +23,7 @@ namespace ZYSocket.RPC.Server
         /// </summary>
         /// <param name="data"></param>
         /// <returns>true 属于次模块,false 不属于此模块数据</returns>
-        public bool CallModule(byte[] data, RPCUserInfo e,out ReadBytes read,out int cmd)
+        public bool CallModule(byte[] data, RPCUserInfo e,bool isTaskQueue,out ReadBytes read,out int cmd)
         {
            
 
@@ -44,48 +44,32 @@ namespace ZYSocket.RPC.Server
 
                             if (read.ReadObject<RPCCallPack>(out tmp))
                             {
+                                if (isTaskQueue)
+                                {
+                                    System.Threading.Tasks.Task.Factory.StartNew((pack) => Call(pack as RPCCallPack, e)
+                                    , tmp, CancellationToken.None, TaskCreationOptions.None, e.QueueScheduler).ContinueWith(p =>
+                                          {
+                                              try
+                                              {
+                                                  p.Wait();
+                                              }
+                                              catch (Exception er)
+                                              {
+                                                  if (MsgOut != null)
+                                                      MsgOut(er.ToString());
+                                              }
 
-                                System.Threading.Tasks.Task.Factory.StartNew((pack) =>
-                                 {
-                                     object returnValue;
-                                     RPCCallPack rpcPack = pack as RPCCallPack;
+                                          });
 
-                                     CallContext.SetData("Current", e);
 
-                                     if (e.RPC_Call.RunModule(rpcPack, out returnValue))
-                                     {
-
-                                         ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                         {
-                                             Id = rpcPack.Id,
-                                             CallTime = rpcPack.CallTime,
-                                             Arguments = rpcPack.Arguments
-                                         };
-
-                                         if (returnValue != null)
-                                         {
-                                             var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);                                            
-                                         }
-                                         e.BeginSendData(BufferFormat.FormatFCA(var));
-                                     }
-
-                                 },tmp, CancellationToken.None, TaskCreationOptions.None, e.QueueScheduler).ContinueWith(p =>
-                                     {
-                                         try
-                                         {
-                                             p.Wait();
-                                         }
-                                         catch (Exception er)
-                                         {
-                                             if (MsgOut != null)
-                                                 MsgOut(er.ToString());
-                                         }
-
-                                     });
-                             
-
-                                return true;
+                                    return true;
+                                }
+                                else
+                                {
+                                    Call(tmp, e);
+                                }
                             }
+
                         }
                         break;
                     case 1001001:
@@ -109,6 +93,33 @@ namespace ZYSocket.RPC.Server
         }
                 
 
+
+        private void Call(RPCCallPack rpcPack, RPCUserInfo e)
+        {
+         
+
+            object returnValue;
+
+            CallContext.SetData("Current", e);
+
+            if (e.RPC_Call.RunModule(rpcPack, out returnValue))
+            {
+
+                ZYClient_Result_Return var = new ZYClient_Result_Return()
+                {
+                    Id = rpcPack.Id,
+                    CallTime = rpcPack.CallTime,
+                    Arguments = rpcPack.Arguments
+                };
+
+                if (returnValue != null)
+                {
+                    var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
+                }
+
+                e.BeginSendData(BufferFormat.FormatFCA(var));
+            }
+        }
 
         public void Disconnect(RPCUserInfo e)
         {

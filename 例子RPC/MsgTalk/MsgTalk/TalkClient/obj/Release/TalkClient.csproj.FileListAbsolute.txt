@@ -13,6 +13,5 @@ E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Release\ZYSocketRPCCl
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Release\ZYSocketShare.pdb
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Release\protobuf-net.pdb
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Release\protobuf-net.xml
-E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\obj\Release\TalkClient.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\obj\Release\TalkClient.exe
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\obj\Release\TalkClient.pdb

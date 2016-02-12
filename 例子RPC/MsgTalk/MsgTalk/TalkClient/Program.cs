@@ -26,9 +26,10 @@ namespace TalkClient
                 if (client.AsynCall<bool>(() => service.IsLogIn(Console.ReadLine())).Result)
                 {
                     while (true)
-                    {                       
-                        string msg = Console.ReadLine();
+                    {
+                        //string msg = Console.ReadLine();
 
+                        System.Threading.SpinWait.SpinUntil(()=>false, 500);
 
                         Task<int>[] tasklist = new Task<int>[10000];
 

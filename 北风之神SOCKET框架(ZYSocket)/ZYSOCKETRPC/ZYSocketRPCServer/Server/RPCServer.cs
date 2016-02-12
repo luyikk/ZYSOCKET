@@ -41,7 +41,15 @@ namespace ZYSocket.RPC.Server
         /// </summary>
         public event BinaryInputOtherHandler BinaryInputOther;
 
+        /// <summary>
+        /// 日记输出
+        /// </summary>
         public event MsgOutHandler MsgOut;
+
+        /// <summary>
+        /// 是否使用TASK队列
+        /// </summary>
+        public bool IsUseTaskQueue { get; set; }
 
         public RPCServer()
         {
@@ -177,7 +185,7 @@ namespace ZYSocket.RPC.Server
             int cmd;
           
 
-            if (Service.CallModule(data, user, out read, out cmd))
+            if (Service.CallModule(data, user,IsUseTaskQueue, out read, out cmd))
             {
               
             }

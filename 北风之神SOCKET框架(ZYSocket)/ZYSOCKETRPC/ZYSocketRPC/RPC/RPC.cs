@@ -449,8 +449,11 @@ namespace ZYSocket.RPC
             TaskCompletionSource<ZYClient_Result_Return> var = new TaskCompletionSource<ZYClient_Result_Return>();
 
 
-
-            ReturnValueDiy.AddOrUpdate(call.Id, var, (a, b) => var);
+            if (!ReturnValueDiy.TryAdd(call.Id, var))
+            {
+                SpinWait.SpinUntil(() => ReturnValueDiy.TryAdd(call.Id, var));
+            }
+           
 
             byte[] data = BufferFormat.FormatFCA(call);
 
@@ -477,7 +480,7 @@ namespace ZYSocket.RPC
             }
             else
             {
-               // ReturnValueDiy.TryRemove(call.Id, out var);
+                ReturnValueDiy.TryRemove(call.Id, out var);
 
                 throw new TimeoutException("out time,Please set the timeout time.");
             }
@@ -547,10 +550,7 @@ namespace ZYSocket.RPC
             }
             else
             {
-                if (ReturnValueDiy.Count == 1)
-                {
-                    Console.WriteLine("1");
-                }        
+                ReturnValueDiy.TryRemove(call.Id, out var);
 
                 throw new TimeoutException("out time,Please set the timeout time.");
 

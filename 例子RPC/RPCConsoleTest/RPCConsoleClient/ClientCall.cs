@@ -47,7 +47,7 @@ namespace RPCConsoleClient
             return i;
 
         }
-        int m = 0;
+       
 
         public void ShowMsg(string msg)
         {

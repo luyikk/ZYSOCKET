@@ -34,6 +34,7 @@ namespace ZYSocket.RPC.Server
             {
                 base.Asyn.AcceptSocket.BeginSend(data, 0, data.Length, SocketFlags.None, AsynCallBack, base.Asyn.AcceptSocket);
 
+               
             }
             catch (Exception)
             {
@@ -119,7 +120,7 @@ namespace ZYSocket.RPC.Server
 
         public RPCUserInfo(SocketAsyncEventArgs asyn):base(asyn,1024*64)
         {
-            QueueScheduler = new QueuedTaskScheduler();
+            QueueScheduler = new QueuedTaskScheduler(4);
             RPC_Call = new RPC();
             RPC_Call.CallBufferOutSend += RPC_OBJ_CallBufferOutSend;
             Stream = new ZYNetRingBufferPool(1024 * 1024*8);//8MB

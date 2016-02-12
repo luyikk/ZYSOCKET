@@ -18,3 +18,5 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleTest\bin\Release\ZYSocketSh
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleTest\obj\Release\RPCConsoleTestServer.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleTest\obj\Release\RPCConsoleTestServer.exe
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleTest\obj\Release\RPCConsoleTestServer.pdb
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleTest\bin\Release\MsgPack.dll
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleTest\bin\Release\MsgPack.pdb
