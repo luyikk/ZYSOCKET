@@ -51,6 +51,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCServer.dll</HintPath>
     </Reference>
+    <Reference Include="ZYSocketShare, Version=0.4.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketShare.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />

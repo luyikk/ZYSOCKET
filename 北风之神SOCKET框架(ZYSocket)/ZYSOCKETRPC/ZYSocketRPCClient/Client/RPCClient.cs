@@ -186,38 +186,78 @@ namespace ZYSocket.RPC.Client
                         break;
                     case 1001000:
                         {
-                            System.Threading.Tasks.Task.Factory.StartNew(() =>
+                            RPCCallPack tmp;
+
+                            if (read.ReadObject<RPCCallPack>(out tmp))
+                            {
+                                System.Threading.Tasks.Task.Factory.StartNew((pack) =>
                                 {
-                                    RPCCallPack tmp;
-
-                                    if (read.ReadObject<RPCCallPack>(out tmp))
+                                    
+                                    CallContext.SetData("Current", this);
+                                    string msg;
+                                    object returnValue;
+                                    if (RPC_Call.RunModule(pack as RPCCallPack, out msg, out returnValue))
                                     {
-                                        object returnValue;
 
-                                        CallContext.SetData("Current", this);
-
-                                        if (RPC_Call.RunModule(tmp, out returnValue))
+                                        ZYClient_Result_Return var = new ZYClient_Result_Return()
                                         {
+                                            Id = tmp.Id,
+                                            CallTime = tmp.CallTime,
+                                            Arguments = tmp.Arguments,                                         
+                                            IsSuccess = true,
 
-                                            ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                            {
-                                                Id = tmp.Id,
-                                                CallTime = tmp.CallTime,
-                                                Arguments = tmp.Arguments
-                                            };
+                                        };
 
 
-                                            if (returnValue != null)
-                                            {
-                                                var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
-                                               
-                                            }
-
-                                            Client.BeginSendData(BufferFormat.FormatFCA(var));
+                                        if (returnValue != null)
+                                        {
+                                            var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
 
                                         }
+
+                                        Client.BeginSendData(BufferFormat.FormatFCA(var));
+
                                     }
-                                }, CancellationToken.None, TaskCreationOptions.None, OrderSchedulerRead);
+                                    else
+                                    {
+                                        ZYClient_Result_Return var = new ZYClient_Result_Return()
+                                        {
+                                            Id = tmp.Id,
+                                            CallTime = tmp.CallTime,
+                                            Message = msg,
+                                            IsSuccess = false,
+
+                                        };
+
+                                        Client.BeginSendData(BufferFormat.FormatFCA(var));
+                                    }
+
+                                },tmp, CancellationToken.None, TaskCreationOptions.None, OrderSchedulerRead).ContinueWith(task =>
+                                {
+
+                                    try
+                                    {
+                                        task.Wait();
+                                    }
+                                    catch (Exception er)
+                                    {
+                                        ZYClient_Result_Return var = new ZYClient_Result_Return()
+                                        {
+                                            Id = tmp.Id,
+                                            CallTime = tmp.CallTime,
+                                            Message = er.ToString(),
+                                            IsSuccess = false,
+
+                                        };
+
+                                        Client.BeginSendData(BufferFormat.FormatFCA(var));
+
+                                        if (MsgOut != null)
+                                            MsgOut(er.ToString());
+                                    }
+
+                                });
+                            }
                         }
                         break;
                     default:

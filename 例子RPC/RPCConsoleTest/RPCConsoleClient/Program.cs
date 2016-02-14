@@ -42,7 +42,7 @@ namespace RPCConsoleClient
 
                         int value = 0;
 
-                        client.AsynCall(()=> server.OutRandom(out value)).Wait();
+                        client.AsynCall(() => server.OutRandom(out value)).Wait();
 
                         Console.WriteLine("Random value is " + value);
 
@@ -58,10 +58,11 @@ namespace RPCConsoleClient
                         Console.WriteLine("Data Name " + v.Name);
 
                         var l = server.RecComputer(8); //这叫递归吗？ 代价太大，深度最好别超过5层 实在没办法记得设置outtime
-
                         Console.WriteLine("Rec computer value:" + l);
 
-                    
+
+
+
 
                         var ary = server.array(new string[] { "123", "123" }); //Array + string
 

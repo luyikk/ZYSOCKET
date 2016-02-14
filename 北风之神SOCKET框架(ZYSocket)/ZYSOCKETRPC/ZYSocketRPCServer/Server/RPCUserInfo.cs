@@ -14,7 +14,7 @@ namespace ZYSocket.RPC.Server
 {
     public class RPCUserInfo:ZYEnsureSend
     {
-        public QueuedTaskScheduler QueueScheduler { get; set; }
+        public QueuedTaskScheduler Scheduler { get; set; }
 
         public RPC RPC_Call { get; set; }
 
@@ -120,8 +120,8 @@ namespace ZYSocket.RPC.Server
 
         public RPCUserInfo(SocketAsyncEventArgs asyn):base(asyn,1024*64)
         {
-            QueueScheduler = new QueuedTaskScheduler(4);
-            RPC_Call = new RPC();
+            Scheduler = new QueuedTaskScheduler(4);
+            RPC_Call = new RPC();          
             RPC_Call.CallBufferOutSend += RPC_OBJ_CallBufferOutSend;
             Stream = new ZYNetRingBufferPool(1024 * 1024*8);//8MB
 

@@ -446,7 +446,7 @@ namespace ZYSocket.RPC
                 Arguments = arglist
             };
 
-            TaskCompletionSource<ZYClient_Result_Return> var = new TaskCompletionSource<ZYClient_Result_Return>();
+            TaskCompletionSource<ZYClient_Result_Return> var = new TaskCompletionSource<ZYClient_Result_Return>(TaskCreationOptions.AttachedToParent);
 
 
             if (!ReturnValueDiy.TryAdd(call.Id, var))
@@ -459,7 +459,7 @@ namespace ZYSocket.RPC
 
             if (CallBufferOutSend != null)
                 CallBufferOutSend(data);
-
+            
 
             if (var.Task.Wait(OutTime))
             {
@@ -501,7 +501,7 @@ namespace ZYSocket.RPC
             };
 
 
-            TaskCompletionSource<ZYClient_Result_Return> var = new TaskCompletionSource<ZYClient_Result_Return>();
+            TaskCompletionSource<ZYClient_Result_Return> var = new TaskCompletionSource<ZYClient_Result_Return>(TaskCreationOptions.AttachedToParent);
 
             if (!ReturnValueDiy.TryAdd(call.Id, var))
             {
@@ -517,35 +517,41 @@ namespace ZYSocket.RPC
 
                 ZYClient_Result_Return returnx = var.Task.Result;
 
-                if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
+                if (returnx.IsSuccess)
                 {
-                    args = new object[returnx.Arguments.Count];
 
-                    for (int i = 0; i < argTypeList.Count; i++)
+                    if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
                     {
-                        args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
+                        args = new object[returnx.Arguments.Count];
+
+                        for (int i = 0; i < argTypeList.Count; i++)
+                        {
+                            args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
+                        }
+
                     }
 
-                }
 
-
-                if (returnx.Return != null)
-                {
-                    if (returnType != null)
+                    if (returnx.Return != null)
                     {
-                        object returnobj = Serialization.UnpackSingleObject(returnType, returnx.Return);
+                        if (returnType != null)
+                        {
+                            object returnobj = Serialization.UnpackSingleObject(returnType, returnx.Return);
 
-                        return (Result)returnobj;
+                            return (Result)returnobj;
+                        }
+                        else
+                        {
+                            object returnobj = Serialization.UnpackSingleObject(typeof(Result), returnx.Return);
+
+                            return (Result)returnobj;
+                        }
                     }
                     else
-                    {
-                        object returnobj = Serialization.UnpackSingleObject(typeof(Result), returnx.Return);
-
-                        return (Result)returnobj;
-                    }
+                        return default(Result);
                 }
                 else
-                    return default(Result);
+                    throw new TargetException(returnx.Message);
 
             }
             else
@@ -569,11 +575,11 @@ namespace ZYSocket.RPC
         }
 
 
-        public bool RunModule(RPCCallPack tmp, out object returnValue)
+        public bool RunModule(RPCCallPack tmp,out string Message, out object returnValue)
         {
            
             returnValue = null;
-
+            Message = "finish";
             if (ModuleDiy.ContainsKey(tmp.CallModule))
             {
                 var module = ModuleDiy[tmp.CallModule];
@@ -618,20 +624,21 @@ namespace ZYSocket.RPC
                 }
                 else
                 {
-                    string msg = "Not find " + tmp.CallModule + "-> public " + tmp.Method;
+                    Message = "Not find " + tmp.CallModule + "-> public " + tmp.Method;
 
                     if (ErrMsgOut != null)
-                        ErrMsgOut(msg);
+                        ErrMsgOut(Message);
+                
 
                     return false;
                 }
             }
             else
             {
-                string msg = "Not find " + tmp.CallModule;
+                Message = "Not find " + tmp.CallModule;
 
                 if (ErrMsgOut != null)
-                    ErrMsgOut(msg);
+                    ErrMsgOut(Message);
             }
 
 

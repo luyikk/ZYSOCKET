@@ -47,9 +47,13 @@ namespace RPCConsoleTest
 
                 item.AsynCall<long>(() => item.GetRPC<ClientCall>().Add(r.Next(), r.Next())).ContinueWith(res =>
                   {
-
-                      Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + res.Result);
-
+                      try
+                      {
+                          Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + res.Result);
+                      }catch(Exception er)
+                      {
+                          Console.WriteLine(er.ToString());
+                      }
                   });            
             }
         }
@@ -69,11 +73,12 @@ namespace RPCConsoleTest
         private bool CheckUser()
         {
             var rpc = GetCurrentRPCUser();
-
+         
             if (rpc.UserToken != null&& UserList.Contains(rpc))
             {
                 return true;
             }
+          
 
             return false;
         }
@@ -193,7 +198,9 @@ namespace RPCConsoleTest
 
         public string[] array(string[] z)
         {
+          
             return z;
+
         }
 
         public void TestOutAndRef(out int a, ref int b)

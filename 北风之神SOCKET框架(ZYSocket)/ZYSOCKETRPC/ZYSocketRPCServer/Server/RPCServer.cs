@@ -122,6 +122,7 @@ namespace ZYSocket.RPC.Server
         {
             RPCUserInfo tmp = new RPCUserInfo(socketAsync);         
             tmp.RPC_Call.ErrMsgOut += RPC_Call_ErrMsgOut;
+            tmp.OutTime = this.ReadOutTime;
             foreach (var item in RegModule)
             {
                 tmp.RPC_Call.RegModule(item);

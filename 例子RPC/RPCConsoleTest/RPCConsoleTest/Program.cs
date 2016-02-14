@@ -12,7 +12,7 @@ namespace RPCConsoleTest
         {
             RPCServer server = new RPCServer();
             server.RegServiceModule(new ServerClass());
-            server.ReadOutTime = 2000; //设置超时时间
+            server.ReadOutTime = 200000; //设置超时时间
             server.MsgOut += Server_MsgOut;
             server.IsUseTaskQueue = true; //为了使用递归函数。 C1->S-->C1-->S 并且是同步访问
             server.Start();

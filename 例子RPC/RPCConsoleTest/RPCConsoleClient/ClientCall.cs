@@ -16,7 +16,7 @@ namespace RPCConsoleClient
         public long Add(long a, long b)
         {
             Console.WriteLine("服务器请求计算" + a + "+" + b + "=?");
-
+           
             return a + b;
         }
 
@@ -29,6 +29,7 @@ namespace RPCConsoleClient
 
             var rpc = GetCurrentRPObj();
             i= rpc.GetRPC<ServerClass>().RecComputer(i);
+           
 
             return i;
 
