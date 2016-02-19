@@ -42,22 +42,25 @@ namespace RPCConsoleTest
         {
             Random r = new Random();
 
+            var rpc = GetCurrentRPCUser();          
+
             foreach (var item in UserList)
             {
+                item.AsynCall(() => item.GetRPC<ClientCall>().Add(r.Next(), r.Next())).ContinueWith(p =>
+                       {
+                           Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + p.Result);
 
-                item.CallAsyn<ClientCall>(p => p.Add(r.Next(), r.Next()), new Action<ZYSocket.RPC.AsynReturn>((x) =>
-                    {
-                        Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + x.Return);
-
-                    }));              
+                       });              
             }
         }
 
         private void Time_Elapsed(object sender, ElapsedEventArgs e) //每个1秒获取客户端的计算机名称
         {
+            var rpc = GetCurrentRPCUser();
+        
             foreach (var item in UserList)
             {
-                DateTime time= item.Call<ClientCall, DateTime>(p => p.GetClientDateTime());
+                DateTime time= item.GetRPC<ClientCall>().GetClientDateTime();
 
                 Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 的时间为" + time);
             }
@@ -134,7 +137,7 @@ namespace RPCConsoleTest
 
                 var rpc = GetCurrentRPCUser();
 
-                i = rpc.Call<ClientCall, int>(p => p.RecComputer(i));
+                i = rpc.GetRPC<ClientCall>().RecComputer(i);
 
                 return i;
 
@@ -178,7 +181,7 @@ namespace RPCConsoleTest
 
             foreach (var item in UserList)
             {
-                item.CallAsyn<ClientCall>(p => p.ShowMsg(msgx));
+                rpc.AsynCall(()=>item.GetRPC<ClientCall>().ShowMsg(msgx));
             }
 
         }

@@ -18,7 +18,6 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPC.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPC\obj\Debug\ZYSocketRPC.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPC\obj\Debug\ZYSocketRPC.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\ZYSocketRPC\obj\Debug\ZYSocketRPC.csprojResolveAssemblyReference.cache
-E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\NET2.0\ZYSocketRPC\obj\Debug\ZYSocketRPC.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSOCKETRPC\NET2.0\ZYSocketRPC\obj\Debug\ZYSocketRPC.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\北风之神SOCKET框架(ZYSocket)DLL\RPC\NET2.0\ZYSocketRPC.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\北风之神SOCKET框架(ZYSocket)DLL\RPC\NET2.0\ZYSocketRPC.pdb

@@ -149,25 +149,46 @@ namespace ZYSocket.RPC.Client
 
                                         CallContext.SetData("Current", this);
 
-                                        if (RPC_Call.RunModule(tmp, out returnValue))
+                                        try
                                         {
 
+                                            if (RPC_Call.RunModule(tmp, out returnValue))
+                                            {
+
+                                                ZYClient_Result_Return var = new ZYClient_Result_Return()
+                                                {
+                                                    Id = tmp.Id,
+                                                    CallTime = tmp.CallTime,
+                                                    Arguments = tmp.Arguments,
+                                                    IsSuccess = true
+                                                };
+
+                                                if (returnValue != null)
+                                                {
+                                                    var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
+                                                }
+
+                                                Client.BeginSendData(BufferFormat.FormatFCA(var));
+
+                                            }
+                                        }
+                                        catch (Exception er)
+                                        {
                                             ZYClient_Result_Return var = new ZYClient_Result_Return()
                                             {
                                                 Id = tmp.Id,
                                                 CallTime = tmp.CallTime,
-                                                Arguments = tmp.Arguments
+                                                Arguments = tmp.Arguments,
+                                                IsSuccess = false,
+                                                Message=er.ToString()
                                             };
-
-                                            if (returnValue != null)
-                                            {
-                                                var.Return = Serialization.PackSingleObject(returnValue.GetType(), returnValue);
-                                            }
 
                                             Client.BeginSendData(BufferFormat.FormatFCA(var));
 
+                                            RPC_Call_ErrMsgOut(er.ToString());
                                         }
                                     }
+
                                 }, read);
                         }
                         break;

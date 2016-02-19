@@ -99,6 +99,11 @@ namespace ZYSocket.RPC
         public long CallTime { get; set; }
 
 
+        public bool IsSuccess { get; set; }
+
+        public string Message { get; set; }
+
+
         public byte[] Return { get; set; }
 
         public List<byte[]> Arguments { get; set; }

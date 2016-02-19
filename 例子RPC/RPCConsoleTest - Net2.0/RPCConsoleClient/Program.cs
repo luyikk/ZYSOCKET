@@ -40,7 +40,7 @@ namespace RPCConsoleClient
 
                         Console.WriteLine("Serve time is " + time);
 
-                        int value = 0;
+                        int value;
 
                         client.GetRPC<ServerClass>().OutRandom(out value);
 
@@ -68,6 +68,18 @@ namespace RPCConsoleClient
                         var arry3 = client.GetRPC<ServerClass>().array(new int[] { 123, 321 }); //int array
 
                         var arry4 = client.GetRPC<ServerClass>().array(new float[] { 123.0f, 321.0f }); //int array
+
+                        System.Diagnostics.Stopwatch wa = new System.Diagnostics.Stopwatch();
+                        wa.Start();
+
+                        for (int i = 0; i < 10000; i++)
+                        {
+                            client.GetRPC<ServerClass>().OutRandom(out value);
+                        }
+
+                        wa.Stop();
+
+                        Console.WriteLine("10000 is " + wa.ElapsedMilliseconds + "Ms");
                     }
 
                 }

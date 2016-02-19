@@ -203,9 +203,7 @@ namespace ZYSocket.RPC
 
             WaitReturnValue var = new WaitReturnValue();
             using (var.waitHandle = new EventWaitHandle(false, EventResetMode.AutoReset))
-            {
-
-
+            {                
                 ReturnValueDiy.Add(call.Id, var);
 
                 byte[] data = BufferFormat.FormatFCA(call);

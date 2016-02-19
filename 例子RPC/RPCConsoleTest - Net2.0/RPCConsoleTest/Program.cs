@@ -12,7 +12,8 @@ namespace RPCConsoleTest
         {
             RPCServer server = new RPCServer();
             server.RegServiceModule(new ServerClass());
-            server.ReadOutTime = 2000; //设置超时时间
+            server.ReadOutTime = 2000000; //设置超时时间
+            server.IsUseTaskQueue = true;
             server.Start();
             Console.ReadLine();
         }
