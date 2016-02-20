@@ -459,30 +459,38 @@ namespace ZYSocket.RPC
 
             if (CallBufferOutSend != null)
                 CallBufferOutSend(data);
-            
+
 
             if (var.Task.Wait(OutTime))
             {
                 ZYClient_Result_Return returnx = var.Task.Result;
-
-                if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
+                if (returnx.IsSuccess)
                 {
-                    args = new object[returnx.Arguments.Count];
-
-                    for (int i = 0; i < argTypeList.Count; i++)
+                    if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
                     {
-                        args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
+                        args = new object[returnx.Arguments.Count];
+
+                        for (int i = 0; i < argTypeList.Count; i++)
+                        {
+                            args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
+                        }
+
                     }
 
                 }
+                else
+                  if (ErrMsgOut != null)
+                        ErrMsgOut(returnx.Message);
 
-                return;
             }
             else
             {
                 ReturnValueDiy.TryRemove(call.Id, out var);
 
-                throw new TimeoutException("out time,Please set the timeout time.");
+                if (ErrMsgOut != null)
+                    ErrMsgOut("out time,Please set the timeout time.");
+
+
             }
 
 

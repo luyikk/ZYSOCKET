@@ -11,7 +11,7 @@ namespace ZYSocket.RPC.Server
 {
     public delegate bool IsCanConnHandler(IPEndPoint ipaddress);
     public delegate void BinaryInputOtherHandler(ReadBytes read, int cmd);
-    public delegate void MsgOutHandler(string msg);
+    public delegate void MsgOutHandler(string msg, MsgOutType logType);
 
     public class RPCServer
     {
@@ -67,6 +67,13 @@ namespace ZYSocket.RPC.Server
         public void Start()
         {
             Server.Start();
+            ServiceLogOut("Server is Start", MsgOutType.Log);
+        }
+
+        public void Pause()
+        {
+            Server.Stop();
+            ServiceLogOut("Server is Pause", MsgOutType.Log);
         }
 
 
@@ -85,7 +92,7 @@ namespace ZYSocket.RPC.Server
         {
             RegModule = new List<object>();
             Service = new RPCService();
-            Service.MsgOut += Service_MsgOut;
+            Service.MsgOut += ServiceLogOut;
             Server.BinaryOffsetInput = new BinaryInputOffsetHandler(BinaryInputOffsetHandler);
             Server.Connetions = new ConnectionFilter(ConnectionFilter);
             Server.MessageInput = new MessageInputHandler(MessageInputHandler);
@@ -93,10 +100,10 @@ namespace ZYSocket.RPC.Server
            
         }
 
-        void Service_MsgOut(string msg)
+        void ServiceLogOut(string msg, MsgOutType logType)
         {
             if (MsgOut != null)
-                MsgOut(msg);
+                MsgOut(msg, logType);
         }
 
         private void MessageInputHandler(string message, SocketAsyncEventArgs socketAsync, int erorr)
@@ -110,7 +117,7 @@ namespace ZYSocket.RPC.Server
             socketAsync.AcceptSocket.Close();
             socketAsync.AcceptSocket.Dispose();
 
-         
+            ServiceLogOut(message,MsgOutType.Log);
         }
 
         /// <summary>
@@ -134,11 +141,14 @@ namespace ZYSocket.RPC.Server
         void RPC_Call_ErrMsgOut(string msg)
         {
             if (MsgOut != null)
-                MsgOut(msg);
+                MsgOut(msg, MsgOutType.Err);
         }
 
         private bool ConnectionFilter(SocketAsyncEventArgs socketAsync)
         {
+
+            ServiceLogOut(socketAsync.AcceptSocket.RemoteEndPoint.ToString() + " Connect",MsgOutType.Log);
+
             if (IsCanConn != null)
             {
                 if (IsCanConn((IPEndPoint)socketAsync.AcceptSocket.RemoteEndPoint))
@@ -150,7 +160,8 @@ namespace ZYSocket.RPC.Server
                     return false;
             }
 
-            socketAsync.UserToken = NewRPCUserInfo(socketAsync);
+            socketAsync.UserToken = NewRPCUserInfo(socketAsync);            
+
             return true;
         }
 
@@ -175,8 +186,7 @@ namespace ZYSocket.RPC.Server
             }
             catch (Exception er)
             {
-                if (MsgOut != null)
-                    MsgOut(er.ToString());
+                RPC_Call_ErrMsgOut(er.ToString());
             }
         }
 

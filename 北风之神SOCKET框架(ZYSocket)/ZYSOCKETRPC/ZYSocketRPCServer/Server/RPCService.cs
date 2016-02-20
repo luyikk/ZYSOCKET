@@ -56,7 +56,7 @@ namespace ZYSocket.RPC.Server
                                               catch (Exception er)
                                               {
                                                   if (MsgOut != null)
-                                                      MsgOut(er.ToString());
+                                                      MsgOut(er.ToString(),MsgOutType.Err);
                                               }
 
                                           });
@@ -151,7 +151,7 @@ namespace ZYSocket.RPC.Server
                 e.BeginSendData(BufferFormat.FormatFCA(var));
 
                 if (MsgOut != null)
-                    MsgOut(er.ToString());
+                    MsgOut(er.ToString(),MsgOutType.Err);
             }
         }
 

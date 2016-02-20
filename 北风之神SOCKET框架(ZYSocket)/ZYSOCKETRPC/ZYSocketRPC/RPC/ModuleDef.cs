@@ -25,19 +25,22 @@ namespace ZYSocket.RPC
 
             foreach (var item in methos)
             {
-                string methodName = item.Name;
-                var args=item.GetParameters();
-
-                Type[] typeArg = new Type[args.Length];
-
-                for (int i = 0; i < args.Length; i++)
+                if (item.IsPublic)
                 {
-                    typeArg[i] = args[i].ParameterType;
+                    string methodName = item.Name;
+                    var args = item.GetParameters();
+
+                    Type[] typeArg = new Type[args.Length];
+
+                    for (int i = 0; i < args.Length; i++)
+                    {
+                        typeArg[i] = args[i].ParameterType;
+                    }
+
+                    methodName = MakeID.MakeMethodName(methodName, typeArg);
+                    if (!MethodInfoDiy.ContainsKey(methodName))
+                        MethodInfoDiy.Add(methodName, new MethodModuleDef(item));
                 }
-
-                methodName = MakeID.MakeMethodName(methodName, typeArg);
-
-                MethodInfoDiy.Add(methodName, new MethodModuleDef(item));
             }
         }
     }
