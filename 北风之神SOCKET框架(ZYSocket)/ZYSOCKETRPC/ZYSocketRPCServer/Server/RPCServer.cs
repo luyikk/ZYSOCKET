@@ -97,7 +97,7 @@ namespace ZYSocket.RPC.Server
             Server.Connetions = new ConnectionFilter(ConnectionFilter);
             Server.MessageInput = new MessageInputHandler(MessageInputHandler);
             Server.IsOffsetInput = true;
-           
+            ReadOutTime = 2000;
         }
 
         void ServiceLogOut(string msg, MsgOutType logType)
@@ -196,15 +196,12 @@ namespace ZYSocket.RPC.Server
             int cmd;
           
 
-            if (Service.CallModule(data, user,IsUseTaskQueue, out read, out cmd))
-            {
-              
-            }
-            else
+            if (!Service.CallModule(data, user,IsUseTaskQueue, out read, out cmd))
             {
                 if (BinaryInputOther != null)
                     BinaryInputOther(read, cmd);
             }
+          
         }
 
 

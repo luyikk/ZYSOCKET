@@ -15,5 +15,3 @@ E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Release\protobuf-net.
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Release\protobuf-net.xml
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\obj\Release\TalkClient.exe
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\obj\Release\TalkClient.pdb
-E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Release\MsgPack.dll
-E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Release\MsgPack.pdb

@@ -123,7 +123,7 @@ namespace ZYSocket.RPC.Client
             if (!IsConnect)
             {
 
-                Stream = new ZYNetRingBufferPool(1024 * 1024*8); //8M
+                Stream = new ZYNetRingBufferPool(1024 * 1024*2); //2M
                 Client = new SocketClient();
                 Client.BinaryInput += Client_BinaryInput;
                 Client.MessageInput += Client_MessageInput;
@@ -203,9 +203,7 @@ namespace ZYSocket.RPC.Client
                                         {
                                             Id = tmp.Id,
                                             CallTime = tmp.CallTime,
-                                            Arguments = tmp.Arguments,                                         
-                                            IsSuccess = true,
-
+                                            Arguments = tmp.Arguments
                                         };
 
 
@@ -220,16 +218,8 @@ namespace ZYSocket.RPC.Client
                                     }
                                     else
                                     {
-                                        ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                        {
-                                            Id = tmp.Id,
-                                            CallTime = tmp.CallTime,
-                                            Message = msg,
-                                            IsSuccess = false,
-
-                                        };
-
-                                        Client.BeginSendData(BufferFormat.FormatFCA(var));
+                                        if (MsgOut != null)
+                                            MsgOut(tmp.CallModule + "->" + tmp.Method + " Call Failure");
                                     }
 
                                 },tmp, CancellationToken.None, TaskCreationOptions.None, OrderSchedulerRead).ContinueWith(task =>
@@ -240,18 +230,7 @@ namespace ZYSocket.RPC.Client
                                         task.Wait();
                                     }
                                     catch (Exception er)
-                                    {
-                                        ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                        {
-                                            Id = tmp.Id,
-                                            CallTime = tmp.CallTime,
-                                            Message = er.ToString(),
-                                            IsSuccess = false,
-
-                                        };
-
-                                        Client.BeginSendData(BufferFormat.FormatFCA(var));
-
+                                    {                                       
                                         if (MsgOut != null)
                                             MsgOut(er.ToString());
                                     }

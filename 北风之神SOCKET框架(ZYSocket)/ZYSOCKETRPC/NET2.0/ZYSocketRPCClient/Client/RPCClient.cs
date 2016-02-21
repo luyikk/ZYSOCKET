@@ -159,8 +159,7 @@ namespace ZYSocket.RPC.Client
                                                 {
                                                     Id = tmp.Id,
                                                     CallTime = tmp.CallTime,
-                                                    Arguments = tmp.Arguments,
-                                                    IsSuccess = true
+                                                    Arguments = tmp.Arguments                                                 
                                                 };
 
                                                 if (returnValue != null)
@@ -170,21 +169,10 @@ namespace ZYSocket.RPC.Client
 
                                                 Client.BeginSendData(BufferFormat.FormatFCA(var));
 
-                                            }
+                                            }                                           
                                         }
                                         catch (Exception er)
-                                        {
-                                            ZYClient_Result_Return var = new ZYClient_Result_Return()
-                                            {
-                                                Id = tmp.Id,
-                                                CallTime = tmp.CallTime,
-                                                Arguments = tmp.Arguments,
-                                                IsSuccess = false,
-                                                Message=er.ToString()
-                                            };
-
-                                            Client.BeginSendData(BufferFormat.FormatFCA(var));
-
+                                        {                                            
                                             RPC_Call_ErrMsgOut(er.ToString());
                                         }
                                     }

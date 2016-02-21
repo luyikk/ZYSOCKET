@@ -56,7 +56,12 @@ namespace ZYSocket.RPC.Server
                                               catch (Exception er)
                                               {
                                                   if (MsgOut != null)
-                                                      MsgOut(er.ToString(),MsgOutType.Err);
+                                                  {
+                                                      if (e.Asyn.RemoteEndPoint != null)
+                                                          MsgOut(e.Asyn.RemoteEndPoint.ToString() + "::" + tmp.CallModule + "->" + tmp.Method + "\r\n" + er.ToString(), MsgOutType.Err);
+                                                      else
+                                                          MsgOut(tmp.CallModule + "->" + tmp.Method + "\r\n" + er.ToString(), MsgOutType.Err);
+                                                  }
                                               }
 
                                           });
@@ -110,8 +115,7 @@ namespace ZYSocket.RPC.Server
                     {
                         Id = rpcPack.Id,
                         CallTime = rpcPack.CallTime,
-                        Arguments = rpcPack.Arguments,
-                        IsSuccess = true                       
+                        Arguments = rpcPack.Arguments                                          
                     };
 
                     if (returnValue != null)
@@ -120,38 +124,17 @@ namespace ZYSocket.RPC.Server
                     }
 
                     e.BeginSendData(BufferFormat.FormatFCA(var));
-                }
-                else
-                {
-
-                    ZYClient_Result_Return var = new ZYClient_Result_Return()
-                    {
-                        Id = rpcPack.Id,
-                        CallTime = rpcPack.CallTime,
-                        IsSuccess = false,
-                        Message = msg
-                    };
-
-
-
-                    e.BeginSendData(BufferFormat.FormatFCA(var));
-                }
+                }              
             }
             catch (Exception er)
-            {               
-
-                ZYClient_Result_Return var = new ZYClient_Result_Return()
-                {
-                    Id = rpcPack.Id,
-                    CallTime = rpcPack.CallTime,
-                    IsSuccess = false,
-                    Message = er.InnerException!=null?er.InnerException.Message:er.Message
-                };
-
-                e.BeginSendData(BufferFormat.FormatFCA(var));
-
+            {
                 if (MsgOut != null)
-                    MsgOut(er.ToString(),MsgOutType.Err);
+                {
+                    if(e.Asyn.RemoteEndPoint!=null)
+                        MsgOut(e.Asyn.RemoteEndPoint.ToString() + "::" + rpcPack.CallModule + "->" + rpcPack.Method + "\r\n" + er.ToString(), MsgOutType.Err);
+                    else
+                        MsgOut(rpcPack.CallModule + "->" + rpcPack.Method + "\r\n" + er.ToString(), MsgOutType.Err);
+                }
             }
         }
 

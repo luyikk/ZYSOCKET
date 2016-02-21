@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Net.Sockets;
 using System.Runtime.Remoting.Messaging;
+using System.Threading.Tasks;
 
 namespace ZYSocket.RPC.Server
 {
@@ -18,6 +19,16 @@ namespace ZYSocket.RPC.Server
         public virtual void ClientDisconnect(RPCUserInfo userInfo)
         {
             return;
+        }
+
+        public Task AsynCall(Action action)
+        {
+            return Task.Factory.StartNew(action);
+        }
+
+        public Task<Result> AsynCall<Result>(Func<Result> action)
+        {
+            return Task.Factory.StartNew<Result>(action);
         }
 
     }

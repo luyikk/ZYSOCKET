@@ -12,10 +12,10 @@ using System.Threading.Tasks;
 
 namespace ZYSocket.RPC.Server
 {
-    public class RPCUserInfo:ZYEnsureSend
+    public class RPCUserInfo
     {
         public QueuedTaskScheduler Scheduler { get; set; }
-
+        public SocketAsyncEventArgs Asyn { get; private set; }
         public RPC RPC_Call { get; set; }
 
         public ZYNetRingBufferPool  Stream { get; set; }
@@ -32,7 +32,7 @@ namespace ZYSocket.RPC.Server
         {
             try
             {
-                base.Asyn.AcceptSocket.BeginSend(data, 0, data.Length, SocketFlags.None, AsynCallBack, base.Asyn.AcceptSocket);
+                Asyn.AcceptSocket.BeginSend(data, 0, data.Length, SocketFlags.None, AsynCallBack, Asyn.AcceptSocket);
 
                
             }
@@ -71,17 +71,7 @@ namespace ZYSocket.RPC.Server
             if (Asyn != null && Asyn.AcceptSocket != null)
                 Asyn.AcceptSocket.Disconnect(false);
         }
-
-        public Task AsynCall(Action action)
-        {
-            return Task.Factory.StartNew(action);
-        }
-
-        public Task<Result> AsynCall<Result>(Func<Result> action)
-        {
-            return Task.Factory.StartNew<Result>(action);
-        }
-
+           
         public T GetRPC<T>()
         {
             return RPC_Call.GetRPC<T>();
@@ -118,21 +108,22 @@ namespace ZYSocket.RPC.Server
         #endregion
 
 
-        public RPCUserInfo(SocketAsyncEventArgs asyn):base(asyn,1024*64)
+        public RPCUserInfo(SocketAsyncEventArgs asyn)
         {
             Scheduler = new QueuedTaskScheduler(4);
             RPC_Call = new RPC();          
             RPC_Call.CallBufferOutSend += RPC_OBJ_CallBufferOutSend;
-            Stream = new ZYNetRingBufferPool(1024 * 1024*8);//8MB
+            this.Asyn = asyn;
+            Stream = new ZYNetRingBufferPool(1024 * 1024*2);//2MB
 
         }
 
-        public RPCUserInfo(SocketAsyncEventArgs asyn,int maxSize)
-            : base(asyn, maxSize)
+        public RPCUserInfo(SocketAsyncEventArgs asyn,int maxSize)           
         {
             RPC_Call = new RPC();
             RPC_Call.CallBufferOutSend += RPC_OBJ_CallBufferOutSend;
             Stream = new ZYNetRingBufferPool(maxSize);
+            this.Asyn = asyn;
         }
 
         void RPC_OBJ_CallBufferOutSend(byte[] data)

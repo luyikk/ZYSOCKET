@@ -46,10 +46,12 @@
     <Reference Include="ZYSocketFrame">
       <HintPath>..\..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketFrame.dll</HintPath>
     </Reference>
-    <Reference Include="ZYSocketRPC">
+    <Reference Include="ZYSocketRPC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPC.dll</HintPath>
     </Reference>
-    <Reference Include="ZYSocketRPCServer">
+    <Reference Include="ZYSocketRPCServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCServer.dll</HintPath>
     </Reference>
     <Reference Include="ZYSocketShare">

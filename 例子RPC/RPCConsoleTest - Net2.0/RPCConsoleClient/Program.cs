@@ -14,7 +14,7 @@ namespace RPCConsoleClient
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 9952))
             {
-                client.OutTime = 2000000;
+                client.OutTime = 800;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
 

@@ -38,7 +38,7 @@ namespace Server
 
                 foreach (var item in UserList)
                 {
-                    item.AsynCall(() => { api.UserTalk(my.UserToken.ToString(), msg); });
+                    AsynCall(() => { api.UserTalk(my.UserToken.ToString(), msg); });
                 }
             }
         }

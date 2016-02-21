@@ -52,7 +52,6 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\ZYS
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\ZYSocketShare.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\ParallelExtensionsExtras.dll
-E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\MsgPack.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\DATA.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\ZYSocketFrame.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\ZYSocketRPC.pdb
@@ -60,4 +59,3 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\ZYS
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\protobuf-net.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例子RPC\RPCConsoleTest - Net2.0\RPCConsoleTest\bin\Debug\MsgPack.pdb

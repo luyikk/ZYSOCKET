@@ -46,7 +46,7 @@ namespace RPCConsoleTest
 
             foreach (var item in UserList)
             {
-                item.AsynCall(() => item.GetRPC<ClientCall>().Add(r.Next(), r.Next())).ContinueWith(p =>
+                AsynCall(() => item.GetRPC<ClientCall>().Add(r.Next(), r.Next())).ContinueWith(p =>
                        {
                            Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + p.Result);
 
@@ -95,7 +95,7 @@ namespace RPCConsoleTest
             UserList.Add(rpc);
 
             Console.WriteLine(username + " 登入成功");
-
+          
             return true;
 
         }
@@ -175,13 +175,11 @@ namespace RPCConsoleTest
 
         public void SendAll(string msg)
         {
-            var rpc = GetCurrentRPCUser();
-
-            string msgx = (rpc.UserToken as UserInfo).UserName + " :" + msg;
+            string msgx = (GetCurrentRPCUser().UserToken as UserInfo).UserName + " :" + msg;
 
             foreach (var item in UserList)
             {
-                rpc.AsynCall(()=>item.GetRPC<ClientCall>().ShowMsg(msgx));
+                AsynCall(()=>item.GetRPC<ClientCall>().ShowMsg(msgx));
             }
 
         }

@@ -16,6 +16,9 @@ namespace ZYSocket.RPC
 
     public delegate void ErrMsgOutHanlder(string msg);
 
+    public delegate object GetDefalutValueHanlder(Type type);
+
+
     public class RPC
     {
                
@@ -43,15 +46,13 @@ namespace ZYSocket.RPC
         /// </summary>
         public int OutTime { get; set; }
 
-
-
-
+   
 
 
         public RPC()
         {
             FormatValue = new FormatValueType();
-            OutTime = 800;
+            OutTime = 2000;
 
             ModuleDiy = new ConcurrentDictionary<string, ModuleDef>();
             AsynRetrunDiy = new ConcurrentDictionary<long, AsynRetrunModule>();
@@ -464,23 +465,17 @@ namespace ZYSocket.RPC
             if (var.Task.Wait(OutTime))
             {
                 ZYClient_Result_Return returnx = var.Task.Result;
-                if (returnx.IsSuccess)
+
+                if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
                 {
-                    if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
+                    args = new object[returnx.Arguments.Count];
+
+                    for (int i = 0; i < argTypeList.Count; i++)
                     {
-                        args = new object[returnx.Arguments.Count];
-
-                        for (int i = 0; i < argTypeList.Count; i++)
-                        {
-                            args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
-                        }
-
+                        args[i] = Serialization.UnpackSingleObject(argTypeList[i], returnx.Arguments[i]);
                     }
 
-                }
-                else
-                  if (ErrMsgOut != null)
-                        ErrMsgOut(returnx.Message);
+                }                
 
             }
             else
@@ -488,7 +483,7 @@ namespace ZYSocket.RPC
                 ReturnValueDiy.TryRemove(call.Id, out var);
 
                 if (ErrMsgOut != null)
-                    ErrMsgOut("out time,Please set the timeout time.");
+                    ErrMsgOut(module + "->" + MethodName + " out time,Please set the timeout time.");
 
 
             }
@@ -525,9 +520,7 @@ namespace ZYSocket.RPC
 
                 ZYClient_Result_Return returnx = var.Task.Result;
 
-                if (returnx.IsSuccess)
-                {
-
+              
                     if (returnx.Arguments != null && returnx.Arguments.Count > 0 && arglist.Count == returnx.Arguments.Count)
                     {
                         args = new object[returnx.Arguments.Count];
@@ -556,17 +549,18 @@ namespace ZYSocket.RPC
                         }
                     }
                     else
-                        return default(Result);
-                }
-                else
-                    throw new TargetException(returnx.Message);
+                        return default(Result);               
 
             }
             else
             {
                 ReturnValueDiy.TryRemove(call.Id, out var);
 
-                throw new TimeoutException("out time,Please set the timeout time.");
+
+                if (ErrMsgOut != null)
+                    ErrMsgOut(module+"->"+MethodName + " out time,Please set the timeout time.");
+
+                return default(Result);
 
             }
 

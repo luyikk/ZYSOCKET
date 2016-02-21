@@ -15,7 +15,8 @@ namespace RPCConsoleClient
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 9952))
             {
-                client.OutTime = 200000;
+                client.OutTime = 8000;
+                client.MsgOut += Client_MsgOut;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
 
@@ -97,10 +98,19 @@ namespace RPCConsoleClient
 
                     }
 
+                }else
+                {
+                    Console.WriteLine("password error");
+                    Console.ReadLine();
                 }
 
             }
 
+        }
+
+        private static void Client_MsgOut(string msg)
+        {
+            Console.WriteLine(msg);
         }
 
         private static void Client_Disconn(string message)

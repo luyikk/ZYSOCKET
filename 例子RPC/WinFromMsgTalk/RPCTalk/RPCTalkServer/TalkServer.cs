@@ -89,7 +89,7 @@ namespace RPCTalkServer
         {
             foreach (var item in UserList.Values) //通知其他人更新用户列表
             {
-                item.RPCSession.AsynCall(() =>
+                AsynCall(() =>
                 {
                     item.RPCSession.GetRPC<WinClient>().UpdateUserList();
                 });
@@ -124,7 +124,7 @@ namespace RPCTalkServer
 
             foreach (var item in UserList.Values)
             {
-                item.RPCSession.AsynCall(() =>
+                AsynCall(() =>
                 {
                     item.RPCSession.GetRPC<WinClient>().MessageShow(user.UserName + ":" + msg);
                 });
@@ -138,7 +138,7 @@ namespace RPCTalkServer
             var userinfo= UserList.Values.FirstOrDefault(p => p.UserName == username);
 
             if (userinfo != null)
-                userinfo.RPCSession.AsynCall(() => userinfo.RPCSession.GetRPC<WinClient>().MessageShow(user.UserName + " 对你说:" + msg));
+               AsynCall(() => userinfo.RPCSession.GetRPC<WinClient>().MessageShow(user.UserName + " 对你说:" + msg));
         }
 
         public List<string> GetAllUser()

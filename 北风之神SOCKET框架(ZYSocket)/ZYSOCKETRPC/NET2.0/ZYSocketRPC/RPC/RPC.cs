@@ -181,7 +181,11 @@ namespace ZYSocket.RPC
                 {
                     ReturnValueDiy.Remove(call.Id);
 
-                    throw new TimeoutException("out time,Please set the timeout time.");
+
+                    if (ErrMsgOut != null)
+                        ErrMsgOut(module + "->" + MethodName + " out time,Please set the timeout time.");
+
+                    return;
                 }
             }
 
@@ -252,8 +256,10 @@ namespace ZYSocket.RPC
 
                     ReturnValueDiy.Remove(call.Id);
 
-                    throw new TimeoutException("out time,Please set the timeout time.");
-                  
+                    if (ErrMsgOut != null)
+                        ErrMsgOut(module + "->" + MethodName + " out time,Please set the timeout time.");
+
+                    return default(Result);
                 }
             }
 

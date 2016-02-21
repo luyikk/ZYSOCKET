@@ -28,7 +28,7 @@ namespace RPCTalkClientWin
             }
 
             TalkService.Client.RegModule(this);
-
+            TalkService.Client.MsgOut += Client_MsgOut;
             LogOn tmp = new LogOn();
             tmp.ShowDialog();
 
@@ -40,7 +40,10 @@ namespace RPCTalkClientWin
                        
         }
 
-
+        private void Client_MsgOut(string msg)
+        {
+            this.richTextBox1.AppendText(msg+"\r\n");
+        }
 
         public void UpdateUserList()
         {

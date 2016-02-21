@@ -25,7 +25,7 @@ namespace RPCTalkServer
             Server = new RPCServer();
             Server.MsgOut += Server_MsgOut1;
             Server.IsCanConn += Server_IsCanConn;
-            Server.ReadOutTime = 5000;
+            //Server.ReadOutTime = 5000;
             Service.UpdateUserList += Service_UpdateUserList;
           
             Server.RegServiceModule(Service);

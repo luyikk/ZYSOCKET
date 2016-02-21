@@ -44,13 +44,15 @@ namespace ZYSocket.RPC
                     arglist.Add(Serialization.PackSingleObject(argsType[i], args[i]));
                 }
 
+                Type returnType = (ctorMsg.MethodBase as MethodInfo).ReturnType;
 
-                ReturnValue returnval = Call(ModuleName, MakeID.MakeMethodName(ctorMsg.MethodName, types), argsType, arglist, (ctorMsg.MethodBase as MethodInfo).ReturnType);
+                ReturnValue returnval = Call(ModuleName, MakeID.MakeMethodName(ctorMsg.MethodName, types), argsType, arglist, returnType);
 
                 if (returnval.Args == null)
                 {
                     returnval.Args = args;
                 }
+                              
 
                 return new ReturnMessage(returnval.returnVal, returnval.Args, returnval.Args == null ? 0 : returnval.Args.Length, null, ctorMsg);
 

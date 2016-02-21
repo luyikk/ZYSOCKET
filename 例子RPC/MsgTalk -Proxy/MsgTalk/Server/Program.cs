@@ -13,14 +13,16 @@ namespace Server
            
             RPCServer server = new RPCServer("127.0.0.1", 3000, 4000, 1024 * 64);        
             server.RegServiceModule(new TalkService());
-            server.MsgOut += Server_MsgOut;
+            server.MsgOut += Server_MsgOut1;
             server.Start();
             Console.ReadLine();
         }
 
-        private static void Server_MsgOut(string msg)
+        private static void Server_MsgOut1(string msg, MsgOutType logType)
         {
             Console.WriteLine(msg);
         }
+
+      
     }
 }

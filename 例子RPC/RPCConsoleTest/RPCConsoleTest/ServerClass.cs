@@ -45,7 +45,7 @@ namespace RPCConsoleTest
             foreach (var item in UserList)
             {
 
-                item.AsynCall<long>(() => item.GetRPC<ClientCall>().Add(r.Next(), r.Next())).ContinueWith(res =>
+                AsynCall<long>(() => item.GetRPC<ClientCall>().Add(r.Next(), r.Next())).ContinueWith(res =>
                   {
                       try
                       {
@@ -99,6 +99,8 @@ namespace RPCConsoleTest
 
             Console.WriteLine(username + " 登入成功");
 
+       
+
             return true;
 
         }
@@ -142,7 +144,7 @@ namespace RPCConsoleTest
                 var rpc = GetCurrentRPCUser();
 
                 i = rpc.GetRPC<ClientCall>().RecComputer(i);
-
+            
                 return i;
 
             }
@@ -167,6 +169,7 @@ namespace RPCConsoleTest
 
                 i = rpc.RPC_Call.GetRPC<ClientCall>().RecComputer2(i);
 
+            
                 return i;
 
             }
@@ -185,7 +188,7 @@ namespace RPCConsoleTest
 
             foreach (var item in UserList)
             {
-                item.AsynCall(() => item.GetRPC<ClientCall>().ShowMsg(msgx));
+                AsynCall(() => item.GetRPC<ClientCall>().ShowMsg(msgx));
             }
 
         }
