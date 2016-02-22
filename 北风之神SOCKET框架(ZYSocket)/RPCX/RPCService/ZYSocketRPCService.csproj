@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80F56F65-973B-4C8E-AA0B-40D68B3215F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZYSocket.RPCX.Service</RootNamespace>
+    <AssemblyName>RPCService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\北风之神SOCKET框架%28ZYSocket%29DLL\RPCX\Server\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ParallelExtensionsExtras">
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\ParallelExtensionsExtras.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogAction.cs" />
+    <Compile Include="Make.cs" />
+    <Compile Include="ModuleDef.cs" />
+    <Compile Include="RPC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPCCallObject.cs" />
+    <Compile Include="RPCCallPacker.cs" />
+    <Compile Include="RPCServer.cs" />
+    <Compile Include="RPCService.cs" />
+    <Compile Include="RPCUserInfo.cs" />
+    <Compile Include="Serialization.cs" />
+    <Compile Include="ZYProxy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZYSocketFrame\ZYSocketFrame.csproj">
+      <Project>{69fdf1fc-9018-4a1d-a739-39a7230c25d2}</Project>
+      <Name>ZYSocketFrame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZYSocketShare\ZYSocketShareNET4.csproj">
+      <Project>{00c91f5c-5298-4191-b816-3ed473721e88}</Project>
+      <Name>ZYSocketShareNET4</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

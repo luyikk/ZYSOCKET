@@ -2,27 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ZYSocket.RPC.Server;
+using ZYSocket.RPCX.Service;
 using System.Timers;
 
 namespace RPCConsoleTest
 {
 
-    public interface ClientCall
-    {
-        DateTime GetClientDateTime();
-        long Add(long a, long b);
-        int RecComputer(int i);
-        float RecComputer2(float i);
-
-        void ShowMsg(string msg);
-    }
 
 
 
 
 
-    public class ServerClass:RPCObject
+
+    public class ServerClass:RPCCallObject
     {
         public List<RPCUserInfo> UserList { get; set; }
 
@@ -45,15 +37,9 @@ namespace RPCConsoleTest
             foreach (var item in UserList)
             {
 
-                AsynCall<long>(() => item.GetRPC<ClientCall>().Add(r.Next(), r.Next())).ContinueWith(res =>
-                  {
-                      try
-                      {
-                          Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + res.Result);
-                      }catch(Exception er)
-                      {
-                          Console.WriteLine(er.ToString());
-                      }
+                AsynCall<long>(() => item.GetRPC<IClientCall>().Add(r.Next(), r.Next())).ContinueWith(res =>
+                  {                      
+                          Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 计算结果为:" + res.Result);                     
                   });            
             }
         }
@@ -62,7 +48,7 @@ namespace RPCConsoleTest
         {
             foreach (var item in UserList)
             {
-                DateTime time= item.GetRPC<ClientCall>().GetClientDateTime();
+                DateTime time= item.GetRPC<IClientCall>().GetClientDateTime();
 
                 Console.WriteLine(item.Asyn.AcceptSocket.RemoteEndPoint.ToString() + "\t " + (item.UserToken as UserInfo).UserName + " 的时间为" + time);
             }
@@ -112,8 +98,8 @@ namespace RPCConsoleTest
             {
                 return DateTime.Now;
             }
-            var rpc = GetCurrentRPCUser(); //没登入断开连接
-            rpc.Disconn(); 
+
+            GetCurrentRPCUser().Disconnect(); //没登入断开连接           
 
             return DateTime.MinValue;
         }
@@ -126,59 +112,11 @@ namespace RPCConsoleTest
 
         public Data Return(Data ins)
         {
-            //ins.Name += "Ok";
+            ins.Name = "OK";            
             ins.Value++;
             return ins;
         }
 
-
-        public int RecComputer(int i)
-        {
-            if (CheckUser())
-            {
-                if (i < 2)
-                    return i;
-
-                i--;
-
-                var rpc = GetCurrentRPCUser();
-
-                i = rpc.GetRPC<ClientCall>().RecComputer(i);
-            
-                return i;
-
-            }
-
-            var x = GetCurrentRPCUser(); //没登入断开连接
-            x.Disconn();
-            return 0;
-
-        }
-
-
-        public float RecComputer2(float i)
-        {
-            if (CheckUser())
-            {
-                if (i < 2)
-                    return i;
-
-                i--;
-
-                var rpc = GetCurrentRPCUser();
-
-                i = rpc.RPC_Call.GetRPC<ClientCall>().RecComputer2(i);
-
-            
-                return i;
-
-            }
-
-            var x = GetCurrentRPCUser(); //没登入断开连接
-            x.Disconn();
-            return 0;
-
-        }
 
         public void SendAll(string msg)
         {
@@ -188,7 +126,7 @@ namespace RPCConsoleTest
 
             foreach (var item in UserList)
             {
-                AsynCall(() => item.GetRPC<ClientCall>().ShowMsg(msgx));
+                AsynCall(() => item.GetRPC<IClientCall>().ShowMsg(msgx));
             }
 
         }
@@ -206,10 +144,12 @@ namespace RPCConsoleTest
 
         }
 
-        public void TestOutAndRef(out int a, ref int b)
+        public int TestOutAndRef(out int a, ref int b)
         {
             a = b;
             b = b + 1;
+
+            return a + b;
         }
 
         public override void ClientDisconnect(RPCUserInfo userInfo)

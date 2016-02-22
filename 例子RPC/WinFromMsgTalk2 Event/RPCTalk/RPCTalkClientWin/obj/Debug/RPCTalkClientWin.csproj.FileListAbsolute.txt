@@ -1,0 +1,37 @@
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\RPCTalkClientWin.exe.config
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\RPCTalkClientWin.exe
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\RPCTalkClientWin.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketClientB.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketClientB.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.LogOn.resources
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.WinClient.resources
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.Properties.Resources.resources
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.csproj.GenerateResource.Cache
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.exe
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\RPCTalkClientWin.exe.config
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.exe
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.LogOn.resources
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.WinClient.resources
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.Properties.Resources.resources
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.csproj.GenerateResource.Cache
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\RPCTalkClientWin.exe
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\RPCTalkClientWin.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketClientB.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketClientB.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk2 Event\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketShare.pdb

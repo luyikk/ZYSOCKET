@@ -5,8 +5,9 @@ using System.Text;
 
 namespace Server
 {
-    public interface Client
+    public interface IClient
     {
         void UserTalk(string name, string msg);
+
     }
 }

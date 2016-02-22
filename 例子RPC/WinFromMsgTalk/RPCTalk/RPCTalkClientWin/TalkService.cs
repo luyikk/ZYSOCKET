@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZYSocket.RPC.Client;
+using ZYSocket.RPCX.Client;
 using System.Windows.Forms;
 
 namespace RPCTalkClientWin

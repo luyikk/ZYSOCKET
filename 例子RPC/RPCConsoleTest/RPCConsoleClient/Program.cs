@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using ZYSocket.RPC.Client;
+using ZYSocket.RPCX.Client;
 
 namespace RPCConsoleClient
 {
@@ -11,12 +10,11 @@ namespace RPCConsoleClient
         static void Main(string[] args)
         {
 
-
+            LogAction.LogOut += LogAction_LogOut;
             RPCClient client = new RPCClient();
             if (client.Connection("127.0.0.1", 9952))
             {
                 client.OutTime = 8000;
-                client.MsgOut += Client_MsgOut;
                 client.Disconn += Client_Disconn;
                 client.RegModule(new ClientCall());
 
@@ -43,7 +41,7 @@ namespace RPCConsoleClient
 
                         int value = 0;
 
-                        client.AsynCall(() => server.OutRandom(out value)).Wait();
+                        server.OutRandom(out value);
 
                         Console.WriteLine("Random value is " + value);
 
@@ -56,14 +54,7 @@ namespace RPCConsoleClient
 
                         var v = server.Return(x);
 
-                        Console.WriteLine("Data Name " + v.Name);
-
-                        var l = server.RecComputer(8); //这叫递归吗？ 代价太大，深度最好别超过5层 实在没办法记得设置outtime
-                        Console.WriteLine("Rec computer value:" + l);
-
-
-
-
+                        Console.WriteLine("Data Name " + v.Name);                        
 
                         var ary = server.array(new string[] { "123", "123" }); //Array + string
 
@@ -108,14 +99,16 @@ namespace RPCConsoleClient
 
         }
 
-        private static void Client_MsgOut(string msg)
-        {
-            Console.WriteLine(msg);
-        }
-
         private static void Client_Disconn(string message)
         {
             Console.WriteLine(message);
         }
+
+        private static void LogAction_LogOut(string msg, LogType type)
+        {
+            Console.WriteLine(msg);
+        }
+
+       
     }
 }

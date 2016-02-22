@@ -21,12 +21,10 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\RPCConsole
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketClientB.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketRPCClient.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketRPC.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketClientB.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketRPCClient.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketShare.pdb
-E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ZYSocketRPC.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\protobuf-net.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Debug\RPCConsoleClient.exe
@@ -34,4 +32,4 @@ E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Debug\RPCConsole
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\DATA.dll
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\DATA.pdb
 E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\obj\Debug\RPCConsoleClient.csprojResolveAssemblyReference.cache
-E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\ParallelExtensionsExtras.dll
+E:\ZYSocketFrame2\例子RPC\RPCConsoleTest\RPCConsoleClient\bin\Debug\RPCConsoleClient.exe.config

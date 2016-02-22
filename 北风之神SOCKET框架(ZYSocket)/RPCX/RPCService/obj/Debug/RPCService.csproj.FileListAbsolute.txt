@@ -1,0 +1,12 @@
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\RPCService.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\RPCService.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\obj\Debug\RPCService.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\obj\Debug\RPCService.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\obj\Debug\RPCService.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\ZYSocketFrame.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\ZYSocketFrame.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\ZYRPCX\RPCService\bin\Debug\ZYSocketShare.pdb

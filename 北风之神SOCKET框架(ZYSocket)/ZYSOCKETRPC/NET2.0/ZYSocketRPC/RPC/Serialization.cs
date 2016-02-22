@@ -51,9 +51,7 @@ namespace ZYSocket.RPC
                 return data;
             }
             else if (type.BaseType == typeof(Array))
-            {
-
-
+            {                
                 List<byte[]> list = (List<byte[]>)ProtoUnpackSingleObject(typeof(List<byte[]>), data);
 
                 Type memberType = type.GetMethod("Get").ReturnType;

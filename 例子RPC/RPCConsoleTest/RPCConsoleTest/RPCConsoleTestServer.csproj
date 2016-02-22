@@ -32,6 +32,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MsgPack">
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\MsgPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ParallelExtensionsExtras, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\ParallelExtensionsExtras.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="RPCService">
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\RPCService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,22 +55,15 @@
     <Reference Include="System.Xml" />
     <Reference Include="ZYSocketFrame, Version=0.4.2.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketFrame.dll</HintPath>
-    </Reference>
-    <Reference Include="ZYSocketRPC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPC.dll</HintPath>
-    </Reference>
-    <Reference Include="ZYSocketRPCServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCServer.dll</HintPath>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\ZYSocketFrame.dll</HintPath>
     </Reference>
     <Reference Include="ZYSocketShare, Version=0.4.2.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketShare.dll</HintPath>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\ZYSocketShare.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IClientCall.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServerClass.cs" />

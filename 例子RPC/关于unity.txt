@@ -1,0 +1,1 @@
+ RPCClient采用.NET 2框架编写，所以完全适用于mono unity

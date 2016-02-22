@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCTalkServer", "RPCTalkServer\RPCTalkServer.csproj", "{3CC5F3D1-7ABB-4C11-A2B2-CDCE817CFEEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCTalkClientWin", "RPCTalkClientWin\RPCTalkClientWin.csproj", "{8A2556ED-49BD-4E43-9618-F7954C433F3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CC5F3D1-7ABB-4C11-A2B2-CDCE817CFEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC5F3D1-7ABB-4C11-A2B2-CDCE817CFEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC5F3D1-7ABB-4C11-A2B2-CDCE817CFEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC5F3D1-7ABB-4C11-A2B2-CDCE817CFEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A2556ED-49BD-4E43-9618-F7954C433F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2556ED-49BD-4E43-9618-F7954C433F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2556ED-49BD-4E43-9618-F7954C433F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2556ED-49BD-4E43-9618-F7954C433F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+G:\ZYRPCX\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\protobuf-net.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\ZYSocketClientB.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\ZYSocketClientB.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\ZYSocketShare.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\protobuf-net.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\bin\Release\protobuf-net.xml
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPCX\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPCX\ZYSocketRPCClient.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Client\ZYSocketRPCClient.dll
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Client\ZYSocketRPCClient.pdb

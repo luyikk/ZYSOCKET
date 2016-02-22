@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ZYSocket.RPC.Server;
+using ZYSocket.RPCX.Service;
 namespace Server
 {
-    public class TalkService:RPCObject
+    public class TalkService:RPCCallObject
     {
         List<RPCUserInfo> UserList
         {
@@ -22,7 +22,7 @@ namespace Server
             var rpc= GetCurrentRPCUser();
             rpc.UserToken = name;
 
-            UserList.Add(rpc);
+            UserList.Add(rpc);                 
 
             return true;
         }
@@ -33,12 +33,11 @@ namespace Server
             if (UserList.Contains(GetCurrentRPCUser()))
             {
                 var my = GetCurrentRPCUser();
-                var api = my.GetRPC<Client>();
-              
+                            
 
                 foreach (var item in UserList)
                 {
-                    AsynCall(() => { api.UserTalk(my.UserToken.ToString(), msg); });
+                    item.GetRPC<IClient>().UserTalk(my.UserToken.ToString(), msg);
                 }
             }
         }
@@ -48,6 +47,11 @@ namespace Server
             return a + b;
         }
 
+
+        public void notReturn(int a)
+        {
+
+        }
 
 
 

@@ -5,7 +5,6 @@ E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZY
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketRPCClient.dll
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketShare.dll
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\protobuf-net.dll
-E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ParallelExtensionsExtras.dll
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketClientB.pdb
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketRPCClient.pdb
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketShare.pdb
@@ -17,7 +16,4 @@ E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RP
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.csproj.GenerateResource.Cache
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.exe
 E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.pdb
-E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketRPC.dll
-E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\ZYSocketRPC.pdb
-E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\MsgPack.dll
-E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\bin\Debug\MsgPack.pdb
+E:\ZYSocketFrame2\例子RPC\WinFromMsgTalk\RPCTalk\RPCTalkClientWin\obj\Debug\RPCTalkClientWin.csprojResolveAssemblyReference.cache

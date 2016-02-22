@@ -8,9 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZYSocket.share;
+using ZYSocket.RPCX.Client;
 
 namespace RPCTalkClientWin
 {
+    [RPCTAG("IClient")]
     public partial class WinClient : Form
     {
         public WinClient()
@@ -28,7 +30,7 @@ namespace RPCTalkClientWin
             }
 
             TalkService.Client.RegModule(this);
-            TalkService.Client.MsgOut += Client_MsgOut;
+            LogAction.LogOut += LogAction_LogOut;
             LogOn tmp = new LogOn();
             tmp.ShowDialog();
 
@@ -40,11 +42,16 @@ namespace RPCTalkClientWin
                        
         }
 
-        private void Client_MsgOut(string msg)
+        private void LogAction_LogOut(string msg, LogType type)
         {
-            this.richTextBox1.AppendText(msg+"\r\n");
+            this.BeginInvoke(new EventHandler((a, b) =>
+            {
+                this.richTextBox1.AppendText(msg + "\r\n");
+
+            }));
         }
 
+        [RPCMethod]
         public void UpdateUserList()
         {
             this.BeginInvoke(new EventHandler((a, b) =>
@@ -65,6 +72,7 @@ namespace RPCTalkClientWin
             }));
         }
 
+        [RPCMethod]
         public void MessageShow(string msg)
         {
             this.BeginInvoke(new EventHandler((a, b) =>

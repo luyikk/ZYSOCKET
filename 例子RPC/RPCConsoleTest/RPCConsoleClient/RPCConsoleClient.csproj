@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RPCConsoleClient</RootNamespace>
     <AssemblyName>RPCConsoleClient</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,21 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Client\protobuf-net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ZYSocketClientB">
-      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketClientB.dll</HintPath>
+    <Reference Include="ZYSocketClientB, Version=0.4.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Client\ZYSocketClientB.dll</HintPath>
     </Reference>
-    <Reference Include="ZYSocketRPC">
-      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPC.dll</HintPath>
+    <Reference Include="ZYSocketRPCClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Client\ZYSocketRPCClient.dll</HintPath>
     </Reference>
-    <Reference Include="ZYSocketRPCClient">
-      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPC\ZYSocketRPCClient.dll</HintPath>
+    <Reference Include="ZYSocketShare, Version=0.4.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Client\ZYSocketShare.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +64,9 @@
       <Project>{4abeb5e1-61f0-4342-9a61-6c4ac0e3cfbb}</Project>
       <Name>DATA</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
