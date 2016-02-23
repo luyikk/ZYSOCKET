@@ -35,9 +35,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MsgPack">
-      <HintPath>..\..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\MsgPack.dll</HintPath>
-    </Reference>
     <Reference Include="ParallelExtensionsExtras, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\ParallelExtensionsExtras.dll</HintPath>

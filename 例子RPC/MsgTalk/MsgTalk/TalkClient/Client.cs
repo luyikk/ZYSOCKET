@@ -16,9 +16,9 @@ namespace TalkClient
 
       
         [RPCMethod]
-        public int test()
+        public void test(int a)
         {
-            return 1;
+            
         }
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ZYSocket.RPCX.Service;
+using System.Threading.Tasks;
+
 namespace Server
 {
     public class TalkService:RPCCallObject
@@ -22,7 +24,24 @@ namespace Server
             var rpc= GetCurrentRPCUser();
             rpc.UserToken = name;
 
-            UserList.Add(rpc);                 
+            UserList.Add(rpc);
+
+            var client = rpc.GetRPC<IClient>();
+
+            client.test(0);
+
+
+            System.Diagnostics.Stopwatch stop = new System.Diagnostics.Stopwatch();
+            stop.Start();
+
+            Parallel.For(0, 10000, i =>
+            {
+                client.test(i);
+            });
+
+            stop.Stop();
+
+            Console.WriteLine("test call ms:" + stop.ElapsedMilliseconds);
 
             return true;
         }

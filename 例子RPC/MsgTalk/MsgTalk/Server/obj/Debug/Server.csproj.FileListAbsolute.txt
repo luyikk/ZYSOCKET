@@ -15,4 +15,3 @@ E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\bin\Debug\MsgPack.dll
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\bin\Debug\RPCService.dll
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\bin\Debug\MsgPack.pdb
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\bin\Debug\RPCService.pdb
-E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache

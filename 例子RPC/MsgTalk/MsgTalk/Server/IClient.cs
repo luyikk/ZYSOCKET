@@ -8,6 +8,6 @@ namespace Server
     public interface IClient
     {
         void UserTalk(string name, string msg);
-
+        void test(int a);
     }
 }

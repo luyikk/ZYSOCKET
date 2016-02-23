@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNet.CSharp", "MyNet.CSharp.csproj", "{72807032-8E2B-D9CB-3DE7-6ADD1DC68AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNetServer", "..\MyNetServer\MyNetServer.csproj", "{A7D8B30F-BFB7-455D-9C77-507440BEA807}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72807032-8E2B-D9CB-3DE7-6ADD1DC68AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72807032-8E2B-D9CB-3DE7-6ADD1DC68AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72807032-8E2B-D9CB-3DE7-6ADD1DC68AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72807032-8E2B-D9CB-3DE7-6ADD1DC68AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D8B30F-BFB7-455D-9C77-507440BEA807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D8B30F-BFB7-455D-9C77-507440BEA807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D8B30F-BFB7-455D-9C77-507440BEA807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D8B30F-BFB7-455D-9C77-507440BEA807}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

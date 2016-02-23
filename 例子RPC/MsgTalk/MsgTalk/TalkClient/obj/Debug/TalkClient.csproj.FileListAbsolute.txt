@@ -12,4 +12,3 @@ E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\obj\Debug\TalkClient.pdb
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Debug\ZYSocketRPCClient.dll
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Debug\ZYSocketRPCClient.pdb
 E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\bin\Debug\TalkClient.exe.config
-E:\ZYSocketFrame2\例子RPC\MsgTalk\MsgTalk\TalkClient\obj\Debug\TalkClient.csprojResolveAssemblyReference.cache
