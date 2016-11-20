@@ -56,7 +56,6 @@
     <Compile Include="EnsureSend\TaskQueue.cs" />
     <Compile Include="EnsureSend\ZYEnsureSend.cs" />
     <Compile Include="Server\ZYSocketSuper.cs" />
-    <Compile Include="Server\ZYSocketSuperForWin8.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

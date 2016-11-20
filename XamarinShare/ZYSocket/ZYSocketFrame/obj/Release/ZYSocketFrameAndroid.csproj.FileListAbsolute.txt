@@ -1,0 +1,9 @@
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\Server\ZYSocketFrame.dll
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\Server\ZYSocketFrame.pdb
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\Server\ZYSocketFrame.ZYSocketFrame.apk
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\Server\ZYSocketFrame.ZYSocketFrame-Signed.apk
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\ZYSocketFrame.dll
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\ZYSocketFrame.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\android\bin\ZYSocketFrame.ZYSocketFrame.apk
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\R.cs.flag
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\uploadflags.txt

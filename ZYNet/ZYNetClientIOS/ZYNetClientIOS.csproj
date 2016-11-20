@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82734AED-130C-4D13-A878-2DFB6D903FDE}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ZYNetClientIOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ZYNetClientIOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DLL\Debug\ZYNetClientIOS\</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DLL\Release\ZYNetClientIOS\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\XamarinShare\DLL\IOS\Release\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ZYNetClient/Buffer/BufferFormat.cs" />
+    <Compile Include="..\ZYNetClient/Buffer/BufferFormatV2.cs" />
+    <Compile Include="..\ZYNetClient/Buffer/FormatClassAttibutes.cs" />
+    <Compile Include="..\ZYNetClient/Buffer/ReadBytes.cs" />
+    <Compile Include="..\ZYNetClient/Buffer/ReadBytesV2.cs" />
+    <Compile Include="..\ZYNetClient/Buffer/ZYNetBufferReadStream.cs" />
+    <Compile Include="..\ZYNetClient/Buffer/ZYNetBufferReadStreamV2.cs" />
+    <Compile Include="..\ZYNetClient/Buffer/ZYNetRingBufferPool.cs" />
+    <Compile Include="..\ZYNetClient/Buffer/ZYNetRingBufferPoolV2.cs" />
+    <Compile Include="..\ZYNetClient/PACK/PACK.cs" />
+    <Compile Include="..\ZYNetClient/ConClient.cs" />
+    <Compile Include="..\ZYNetClient/LogOut.cs" />
+    <Compile Include="..\ZYNetClient/SessionObj.cs" />
+    <Compile Include="..\ZYNetClient/SocketClient.cs" />
+    <Compile Include="..\ZYNetClient/ZYNetClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

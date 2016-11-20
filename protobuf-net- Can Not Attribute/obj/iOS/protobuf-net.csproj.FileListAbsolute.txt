@@ -1,0 +1,6 @@
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\iOS\protobuf-net.dll
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\iOS\protobuf-net.pdb
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\iOS\protobuf-net.xml
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\iOS\protobuf-net.dll
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\iOS\protobuf-net.pdb
+E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\iOS\protobuf-net.csprojResolveAssemblyReference.cache

@@ -341,7 +341,7 @@ namespace ZYSocket.share
 
                     if (fca != null)
                     {
-                        FormatClassAttibutesDiy.Add(otype, fca);
+                        FormatClassAttibutesDiy[otype]=fca;
                         break;
                     }
                 }

@@ -1,0 +1,11 @@
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\RPCX\RPCClient\ZYSocketRPCClientAndroid.dll
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\RPCX\RPCClient\ZYSocketRPCClientAndroid.pdb
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\RPCX\RPCClient\ZYSocketRPCClientAndroid.ZYSocketRPCClientAndroid.apk
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\RPCX\RPCClient\ZYSocketRPCClientAndroid.ZYSocketRPCClientAndroid-Signed.apk
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\ZYSocketRPCClientAndroid.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\ZYSocketRPCClientAndroid.dll
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\ZYSocketRPCClientAndroid.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\android\bin\ZYSocketRPCClientAndroid.ZYSocketRPCClientAndroid.apk
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\res\values\strings.xml
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\R.cs.flag
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\uploadflags.txt

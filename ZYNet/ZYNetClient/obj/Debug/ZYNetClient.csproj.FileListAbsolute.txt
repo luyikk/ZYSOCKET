@@ -1,0 +1,6 @@
+E:\ZYSocketFrame2\DLL\Debug\ZYNetClient\ZYNetClient.dll
+E:\ZYSocketFrame2\DLL\Debug\ZYNetClient\ZYNetClient.pdb
+E:\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetClient\ZYNetClient.dll
+E:\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetClient\ZYNetClient.pdb
+E:\ZYSocketFrame2\ZYNet\ZYNetClient\obj\Debug\ZYNetClient.dll
+E:\ZYSocketFrame2\ZYNet\ZYNetClient\obj\Debug\ZYNetClient.pdb

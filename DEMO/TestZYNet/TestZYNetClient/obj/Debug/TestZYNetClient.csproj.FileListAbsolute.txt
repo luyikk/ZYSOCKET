@@ -1,0 +1,13 @@
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\TestZYNetClient.exe.config
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\TestZYNetClient.exe
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\TestZYNetClient.pdb
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\ZYNetClient.dll
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\ZYNetClient.pdb
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\obj\Debug\TestZYNetClient.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\obj\Debug\TestZYNetClient.exe
+E:\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetClient\obj\Debug\TestZYNetClient.pdb

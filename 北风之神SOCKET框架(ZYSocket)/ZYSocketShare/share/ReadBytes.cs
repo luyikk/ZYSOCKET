@@ -700,23 +700,6 @@ namespace ZYSocket.share
         public virtual T DeserializeObject<T>(byte[] pBytes)
         {
 
-            //string xml = Encoding.UTF8.GetString(pBytes);
-
-
-            //Object result = new object();
-            //XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
-            //using (Stream stream = new MemoryStream(Encoding.Unicode.GetBytes(xml)))
-            //{
-            //    XmlReader xmlReader = XmlReader.Create(stream);
-
-            //    result = (T)xmlSerializer.Deserialize(xmlReader);
-
-            //    xmlReader.Close();
-
-            //}
-            //return (T)result;
-
-
             switch (ObjFormatType)
             {
                 case BuffFormatType.Binary:
@@ -819,6 +802,7 @@ namespace ZYSocket.share
             byte[] data = this.ReadByteArray();
             T obj = DeserializeObject<T>(data);
             return obj;
+
 
         }
 

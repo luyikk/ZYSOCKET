@@ -21,11 +21,10 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\P
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\protobuf-net.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\ZYSocketFrame.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\ZYSocketShare.dll
-E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\MsgPack.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\ZYSocketFrame.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\ZYSocketShare.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\protobuf-net.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\protobuf-net.xml
-E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\bin\Debug\MsgPack.pdb
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Debug\RPCService.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Debug\RPCService.pdb
+E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Debug\ZYSocketRPCService.csprojResolveAssemblyReference.cache

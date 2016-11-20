@@ -1,0 +1,11 @@
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Release\ZYSocketRPCServiceAndroid.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\RPCX\RPCService\ZYSocketRPCServiceAndroid.dll
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\RPCX\RPCService\ZYSocketRPCServiceAndroid.pdb
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\RPCX\RPCService\ZYSocketRPCServiceAndroid.ZYSocketRPCServiceAndroid.apk
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\Release\RPCX\RPCService\ZYSocketRPCServiceAndroid.ZYSocketRPCServiceAndroid-Signed.apk
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Release\ZYSocketRPCServiceAndroid.dll
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Release\ZYSocketRPCServiceAndroid.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Release\android\bin\ZYSocketRPCServiceAndroid.ZYSocketRPCServiceAndroid.apk
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Release\res\values\strings.xml
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Release\R.cs.flag
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Release\uploadflags.txt

@@ -121,25 +121,6 @@
         <member name="T:ProtoBuf.ProtoAfterDeserializationAttribute">
             <summary>Specifies a method on the root-contract in an hierarchy to be invoked after deserialization.</summary>
         </member>
-        <member name="M:ProtoBuf.Compiler.CompilerContext.LoadNullRef">
-            <summary>
-            Pushes a null reference onto the stack. Note that this should only
-            be used to return a null (or set a variable to null); for null-tests
-            use BranchIfTrue / BranchIfFalse.
-            </summary>
-        </member>
-        <member name="M:ProtoBuf.Compiler.CompilerContext.UsingBlock.#ctor(ProtoBuf.Compiler.CompilerContext,ProtoBuf.Compiler.Local)">
-            <summary>
-            Creates a new "using" block (equivalent) around a variable;
-            the variable must exist, and note that (unlike in C#) it is
-            the variables *final* value that gets disposed. If you need
-            *original* disposal, copy your variable first.
-            
-            It is the callers responsibility to ensure that the variable's
-            scope fully-encapsulates the "using"; if not, the variable
-            may be re-used (and thus re-assigned) unexpectedly.
-            </summary>
-        </member>
         <member name="T:ProtoBuf.ProtoConverterAttribute">
             <summary>
             Indicates that a static member should be considered the same as though
@@ -706,14 +687,6 @@
             Returns the SubType instances associated with this type
             </summary>
         </member>
-        <member name="M:ProtoBuf.Meta.MetaType.CompileInPlace">
-            <summary>
-            Compiles the serializer for this type; this is *not* a full
-            standalone compile, but can significantly boost performance
-            while allowing additional types to be added.
-            </summary>
-            <remarks>An in-place compile can access non-public types / members</remarks>
-        </member>
         <member name="P:ProtoBuf.Meta.MetaType.EnumPassthru">
             <summary>
             Gets or sets a value indicating that an enum should be treated directly as an int/short/etc, rather
@@ -831,12 +804,6 @@
             <returns>The MetaType representing this type, allowing
             further configuration.</returns>
         </member>
-        <member name="P:ProtoBuf.Meta.RuntimeTypeModel.AutoCompile">
-            <summary>
-            Should serializers be compiled on demand? It may be useful
-            to disable this for debugging purposes.
-            </summary>
-        </member>
         <member name="P:ProtoBuf.Meta.RuntimeTypeModel.AutoAddMissingTypes">
             <summary>
             Should support for unexpected types be added automatically?
@@ -877,100 +844,6 @@
             <returns>The updated instance; this may be different to the instance argument if
             either the original instance was null, or the stream defines a known sub-type of the
             original instance.</returns>
-        </member>
-        <member name="M:ProtoBuf.Meta.RuntimeTypeModel.CompileInPlace">
-            <summary>
-            Compiles the serializers individually; this is *not* a full
-            standalone compile, but can significantly boost performance
-            while allowing additional types to be added.
-            </summary>
-            <remarks>An in-place compile can access non-public types / members</remarks>
-        </member>
-        <member name="M:ProtoBuf.Meta.RuntimeTypeModel.Compile">
-            <summary>
-            Fully compiles the current model into a static-compiled model instance
-            </summary>
-            <remarks>A full compilation is restricted to accessing public types / members</remarks>
-            <returns>An instance of the newly created compiled type-model</returns>
-        </member>
-        <member name="T:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions">
-            <summary>
-            Represents configuration options for compiling a model to 
-            a standalone assembly.
-            </summary>
-        </member>
-        <member name="M:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions.SetFrameworkOptions(ProtoBuf.Meta.MetaType)">
-            <summary>
-            Import framework options from an existing type
-            </summary>
-        </member>
-        <member name="P:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions.TargetFrameworkName">
-            <summary>
-            The TargetFrameworkAttribute FrameworkName value to burn into the generated assembly
-            </summary>
-        </member>
-        <member name="P:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions.TargetFrameworkDisplayName">
-            <summary>
-            The TargetFrameworkAttribute FrameworkDisplayName value to burn into the generated assembly
-            </summary>
-        </member>
-        <member name="P:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions.TypeName">
-            <summary>
-            The name of the TypeModel class to create
-            </summary>
-        </member>
-        <member name="P:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions.OutputPath">
-            <summary>
-            The path for the new dll
-            </summary>
-        </member>
-        <member name="P:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions.ImageRuntimeVersion">
-            <summary>
-            The runtime version for the generated assembly
-            </summary>
-        </member>
-        <member name="P:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions.MetaDataVersion">
-            <summary>
-            The runtime version for the generated assembly
-            </summary>
-        </member>
-        <member name="P:ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions.Accessibility">
-            <summary>
-            The acecssibility of the generated serializer
-            </summary>
-        </member>
-        <member name="T:ProtoBuf.Meta.RuntimeTypeModel.Accessibility">
-            <summary>
-            Type accessibility
-            </summary>
-        </member>
-        <member name="F:ProtoBuf.Meta.RuntimeTypeModel.Accessibility.Public">
-            <summary>
-            Available to all callers
-            </summary>
-        </member>
-        <member name="F:ProtoBuf.Meta.RuntimeTypeModel.Accessibility.Internal">
-            <summary>
-            Available to all callers in the same assembly, or assemblies specified via [InternalsVisibleTo(...)]
-            </summary>
-        </member>
-        <member name="M:ProtoBuf.Meta.RuntimeTypeModel.Compile(System.String,System.String)">
-            <summary>
-            Fully compiles the current model into a static-compiled serialization dll
-            (the serialization dll still requires protobuf-net for support services).
-            </summary>
-            <remarks>A full compilation is restricted to accessing public types / members</remarks>
-            <param name="name">The name of the TypeModel class to create</param>
-            <param name="path">The path for the new dll</param>
-            <returns>An instance of the newly created compiled type-model</returns>
-        </member>
-        <member name="M:ProtoBuf.Meta.RuntimeTypeModel.Compile(ProtoBuf.Meta.RuntimeTypeModel.CompilerOptions)">
-            <summary>
-            Fully compiles the current model into a static-compiled serialization dll
-            (the serialization dll still requires protobuf-net for support services).
-            </summary>
-            <remarks>A full compilation is restricted to accessing public types / members</remarks>
-            <returns>An instance of the newly created compiled type-model</returns>
         </member>
         <member name="P:ProtoBuf.Meta.RuntimeTypeModel.MetadataTimeoutMilliseconds">
             <summary>
@@ -2728,26 +2601,6 @@
             Now all Read operations return a value (although most do); if false no
             value should be expected.
             </summary>
-        </member>
-        <member name="M:ProtoBuf.Serializers.IProtoSerializer.EmitWrite(ProtoBuf.Compiler.CompilerContext,ProtoBuf.Compiler.Local)">
-            <summary>Emit the IL necessary to perform the given actions
-            to serialize this data.
-            </summary>
-            <param name="ctx">Details and utilities for the method being generated.</param>
-            <param name="valueFrom">The source of the data to work against;
-            If the value is only needed once, then LoadValue is sufficient. If
-            the value is needed multiple times, then note that a "null"
-            means "the top of the stack", in which case you should create your
-            own copy - GetLocalWithValue.</param>
-        </member>
-        <member name="M:ProtoBuf.Serializers.IProtoSerializer.EmitRead(ProtoBuf.Compiler.CompilerContext,ProtoBuf.Compiler.Local)">
-            <summary>
-            Emit the IL necessary to perform the given actions to deserialize this data.
-            </summary>
-            <param name="ctx">Details and utilities for the method being generated.</param>
-            <param name="entity">For nested values, the instance holding the values; note
-            that this is not always provided - a null means not supplied. Since this is always
-            a variable or argument, it is not necessary to consume this value.</param>
         </member>
         <member name="T:ProtoBuf.SubItemToken">
             <summary>

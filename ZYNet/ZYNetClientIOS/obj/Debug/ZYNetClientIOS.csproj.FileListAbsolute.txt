@@ -1,0 +1,8 @@
+E:\ZYSocketFrame2\ZYNet\ZYNetClientIOS\obj\Debug\optimized\
+E:\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetClientIOS\ZYNetClientIOS.dll
+E:\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetClientIOS\ZYNetClientIOS.pdb
+E:\ZYSocketFrame2\ZYNet\ZYNetClientIOS\obj\Debug\ZYNetClientIOS.dll
+E:\ZYSocketFrame2\ZYNet\ZYNetClientIOS\obj\Debug\ZYNetClientIOS.pdb
+E:\ZYSocketFrame2\ZYNet\ZYNetClientIOS\obj\Debug\ZYNetClientIOS.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\ZYNet\ZYNetClientIOS\obj\Debug\ZYNetClientIOS.dll.mdb
+E:\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetClientIOS\ZYNetClientIOS.dll.mdb

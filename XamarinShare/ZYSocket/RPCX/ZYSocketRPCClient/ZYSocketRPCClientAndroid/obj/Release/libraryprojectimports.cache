@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\__library_projects__\ZYSocketClient\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\__library_projects__\ZYSocketShare\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\ZYSocketClient\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\ZYSocketShare\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\__library_projects__\ZYSocketClient.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Release\__library_projects__\ZYSocketShare.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

@@ -1,4 +1,0 @@
-L:\ZYSocketFrame2\Android\phone-Test\PLTS\bin\Debug\PLTS.dll
-L:\ZYSocketFrame2\Android\P2PCLIENT\bin\Debug\P2PCLIENT.dll
-L:\ZYSocketFrame2\Android\P2PCLIENT\bin\Debug\ZYSocketClientB.dll
-L:\ZYSocketFrame2\Android\P2PCLIENT\bin\Debug\ZYSocketShare.dll

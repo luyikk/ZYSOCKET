@@ -1,0 +1,10 @@
+E:\DLL\IOS\DEBUG\ZYSocketShare.dll
+E:\DLL\IOS\DEBUG\ZYSocketShare.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Debug\optimized\
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketShare.pdb
+E:\DLL\IOS\DEBUG\ZYSocketShare.dll.mdb
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\DEBUG\ZYSocketShare.dll
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\DEBUG\ZYSocketShare.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketShare.dll.mdb
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\DEBUG\ZYSocketShare.dll.mdb

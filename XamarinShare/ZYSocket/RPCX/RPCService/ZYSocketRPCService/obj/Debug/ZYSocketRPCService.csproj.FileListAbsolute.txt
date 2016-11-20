@@ -1,0 +1,11 @@
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\DEBUG\RPCX\RPCService\ZYSocketRPCService.dll
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\DEBUG\RPCX\RPCService\ZYSocketRPCService.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Debug\optimized\
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Debug\ZYSocketRPCService.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Debug\ZYSocketRPCService.dll
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Debug\ZYSocketRPCService.pdb
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\DEBUG\RPCX\RPCService\ZYSocketRPCService.dll.mdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\DLL\IOS\DEBUG\RPCX\RPCService\ZYSocketRPCService.dll
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\DLL\IOS\DEBUG\RPCX\RPCService\ZYSocketRPCService.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Debug\ZYSocketRPCService.dll.mdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\DLL\IOS\DEBUG\RPCX\RPCService\ZYSocketRPCService.dll.mdb

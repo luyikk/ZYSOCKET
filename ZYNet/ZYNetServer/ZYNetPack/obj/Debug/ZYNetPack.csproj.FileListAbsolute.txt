@@ -1,0 +1,10 @@
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\bin\Debug\ZYNetPack.dll
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\bin\Debug\ZYNetPack.pdb
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\bin\Debug\ZYSocketShare.dll
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\bin\Debug\protobuf-net.dll
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\bin\Debug\ZYSocketShare.pdb
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\bin\Debug\protobuf-net.pdb
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\bin\Debug\protobuf-net.xml
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\obj\Debug\ZYNetPack.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\obj\Debug\ZYNetPack.dll
+E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetPack\obj\Debug\ZYNetPack.pdb

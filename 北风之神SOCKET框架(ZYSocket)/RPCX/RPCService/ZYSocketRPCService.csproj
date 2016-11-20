@@ -63,9 +63,9 @@
       <Project>{69fdf1fc-9018-4a1d-a739-39a7230c25d2}</Project>
       <Name>ZYSocketFrame</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\ZYSocketShare\ZYSocketShareNET4.csproj">
-      <Project>{00c91f5c-5298-4191-b816-3ed473721e88}</Project>
-      <Name>ZYSocketShareNET4</Name>
+    <ProjectReference Include="..\..\ZYSocketShare\ZYSocketShare.csproj">
+      <Project>{462cc05c-ae20-448c-8522-d724b858b685}</Project>
+      <Name>ZYSocketShare</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

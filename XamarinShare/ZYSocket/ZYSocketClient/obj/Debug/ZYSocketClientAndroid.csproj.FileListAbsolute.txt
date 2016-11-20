@@ -1,0 +1,10 @@
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\DEBUG\Client\ZYSocketClient.dll
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\DEBUG\Client\ZYSocketClient.pdb
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\DEBUG\Client\ZYSocketClient.ZYSocketClient.apk
+E:\ZYSocketFrame2\XamarinShare\DLL\Android\DEBUG\Client\ZYSocketClient.ZYSocketClient-Signed.apk
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Debug\ZYSocketClientAndroid.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Debug\ZYSocketClient.dll
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Debug\ZYSocketClient.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Debug\android\bin\ZYSocketClient.ZYSocketClient.apk
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Debug\R.cs.flag
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Debug\uploadflags.txt
