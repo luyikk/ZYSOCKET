@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buffer\AutoBuffer.cs" />
     <Compile Include="Buffer\BufferFormat.cs" />
     <Compile Include="Buffer\BufferFormatV2.cs" />
     <Compile Include="Buffer\FormatClassAttibutes.cs" />

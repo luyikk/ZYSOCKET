@@ -17,3 +17,8 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\RPCService.p
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Release\ZYSocketRPCService.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Release\RPCService.dll
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Release\RPCService.pdb
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\RPCService.dll
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Server\RPCService.pdb
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Release\ZYSocketRPCService.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Release\RPCService.dll
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\RPCService\obj\Release\RPCService.pdb

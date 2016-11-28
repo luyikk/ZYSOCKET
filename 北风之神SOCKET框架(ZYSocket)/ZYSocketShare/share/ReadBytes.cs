@@ -395,8 +395,7 @@ namespace ZYSocket.share
         }
 
         #endregion
-
-
+        
         #region return 浮点数
 
 
@@ -519,8 +518,7 @@ namespace ZYSocket.share
         }
 
         #endregion
-
-
+        
         #region  return 字符串
         /// <summary>
         /// 读取内存流中一段字符串

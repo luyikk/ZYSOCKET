@@ -6,3 +6,9 @@ E:\ZYSocketFrame2\ZYNet\DLL\DeBug\ZYNetServer\ZYNetServer.dll
 E:\ZYSocketFrame2\ZYNet\DLL\DeBug\ZYNetServer\ZYNetServer.pdb
 E:\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetServer\ZYNetServer.dll.config
 E:\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetServer\obj\Debug\ZYNetServer.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetServer\ZYNetServer.dll.config
+D:\MyProjects\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetServer\ZYNetServer.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetServer\ZYNetServer.pdb
+D:\MyProjects\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetServer\obj\Debug\ZYNetServer.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetServer\obj\Debug\ZYNetServer.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet\ZYNetServer\ZYNetServer\obj\Debug\ZYNetServer.pdb

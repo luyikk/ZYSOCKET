@@ -131,3 +131,6 @@ E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\ZYSocketShare.
 E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\protobuf-net.pdb
 E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\protobuf-net.xml
 E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\obj\x86\Debug\TestServer.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\TestServer.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\obj\x86\Debug\TestServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\obj\x86\Debug\TestServer.pdb

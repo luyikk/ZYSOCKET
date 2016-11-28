@@ -1,0 +1,12 @@
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\AutoBufferClient.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\AutoBufferClient.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\AutoBufferClient.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\ZYSocketClientB.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\ZYSocketClientB.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\protobuf-net.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\bin\Debug\protobuf-net.xml
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\obj\Debug\AutoBufferClient.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferClient\obj\Debug\AutoBufferClient.pdb

@@ -18,3 +18,8 @@ E:\ZYSocketFrame2\例5-winfrom-server\PACK\bin\Debug\PACK.pdb
 E:\ZYSocketFrame2\例5-winfrom-server\PACK\obj\Debug\PACK.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\例5-winfrom-server\PACK\obj\Debug\PACK.dll
 E:\ZYSocketFrame2\例5-winfrom-server\PACK\obj\Debug\PACK.pdb
+E:\ZYSocketFrame2\DEMO\例5-winfrom-server\PACK\bin\Debug\PACK.dll
+E:\ZYSocketFrame2\DEMO\例5-winfrom-server\PACK\bin\Debug\PACK.pdb
+E:\ZYSocketFrame2\DEMO\例5-winfrom-server\PACK\obj\Debug\PACK.csprojResolveAssemblyReference.cache
+E:\ZYSocketFrame2\DEMO\例5-winfrom-server\PACK\obj\Debug\PACK.dll
+E:\ZYSocketFrame2\DEMO\例5-winfrom-server\PACK\obj\Debug\PACK.pdb

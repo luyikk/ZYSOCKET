@@ -1,0 +1,16 @@
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\AutoBufferServer.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\AutoBufferServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\AutoBufferServer.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\ZYSocketFrame.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\ZYSocketFrame.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\protobuf-net.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\protobuf-net.xml
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\obj\Debug\AutoBufferServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\obj\Debug\AutoBufferServer.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\AutoBufferDemo\AutoBufferServer\AutoBufferServer\obj\Debug\AutoBufferServer.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 -AutoBufferDemo\AutoBufferServer\AutoBufferServer\bin\Debug\AutoBufferServer.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 -AutoBufferDemo\AutoBufferServer\AutoBufferServer\obj\Debug\AutoBufferServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 -AutoBufferDemo\AutoBufferServer\AutoBufferServer\obj\Debug\AutoBufferServer.pdb

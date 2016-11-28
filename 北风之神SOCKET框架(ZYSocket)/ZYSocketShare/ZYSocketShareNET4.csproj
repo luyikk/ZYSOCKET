@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\AES.cs" />
     <Compile Include="Security\DES.cs" />
+    <Compile Include="share\AutoBuffer.cs" />
     <Compile Include="share\BufferFormat.cs" />
     <Compile Include="share\BufferFormatV2.cs" />
     <Compile Include="share\BuffList.cs" />
