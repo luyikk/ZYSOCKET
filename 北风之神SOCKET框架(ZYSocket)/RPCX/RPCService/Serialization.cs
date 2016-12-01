@@ -6,7 +6,7 @@ using System.Text;
 namespace ZYSocket.RPCX.Service
 {
 
-    public static class Serialization
+    internal static class Serialization
     {
 
 

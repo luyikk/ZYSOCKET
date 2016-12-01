@@ -11,9 +11,9 @@ namespace ZYSocket.RPCX.Service
     public delegate void BinaryInputOtherHandler(ReadBytes read, int cmd);
     public class RPCServer
     {
-        public ZYSocketSuper Server { get; set; }
+        public ZYSocketSuper Server { get; private set; }
 
-        public RPCService Service { get; set; }
+        public RPCService Service { get; private set; }
 
         /// <summary>
         /// 设置超时时间
@@ -48,7 +48,15 @@ namespace ZYSocket.RPCX.Service
         /// <summary>
         /// 注册表
         /// </summary>
-        public List<RPCCallObject> RegModule { get; set; }
+        private List<RPCCallObject> RegModule { get; set; }
+
+        public RPCCallObject[] GetRegModule()
+        {
+            if (RegModule != null)
+                return RegModule.ToArray();
+            else
+                return null;
+        }
 
         public RPCServer()
         {

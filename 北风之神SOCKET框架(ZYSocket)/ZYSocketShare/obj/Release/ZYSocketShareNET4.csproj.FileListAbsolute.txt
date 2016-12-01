@@ -13,6 +13,6 @@ E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Release\Z
 E:\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Release\ZYSocketShareNET4.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.dll
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.pdb
-D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Release\ZYSocketShareNET4.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Release\ZYSocketShare.dll
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Release\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Release\ZYSocketShareNET4.csprojResolveAssemblyReference.cache

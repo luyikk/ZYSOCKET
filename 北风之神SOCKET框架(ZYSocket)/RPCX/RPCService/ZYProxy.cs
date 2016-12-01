@@ -13,7 +13,7 @@ namespace ZYSocket.RPCX.Service
 
 
 
-    public class ZYProxy : RealProxy
+    internal class ZYProxy : RealProxy
     {
         public string Tag { get; private set; }
 

@@ -15,7 +15,7 @@ namespace ZYSocket.RPCX.Service
         /// <summary>
         /// 接口表
         /// </summary>
-        public ConcurrentDictionary<Type, ZYProxy> ZYProxyDiy { get; set; }
+        internal ConcurrentDictionary<Type, ZYProxy> ZYProxyDiy { get; set; }
 
         /// <summary>
         /// 返回值表
@@ -35,7 +35,7 @@ namespace ZYSocket.RPCX.Service
 
         private bool IsCallReturn { get; set; }
 
-        public RPC(bool isCallReturn)
+        internal RPC(bool isCallReturn)
         {
             OutTime = 2000;
             IsCallReturn = isCallReturn;

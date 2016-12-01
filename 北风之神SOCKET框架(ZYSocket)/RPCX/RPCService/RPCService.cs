@@ -9,6 +9,12 @@ namespace ZYSocket.RPCX.Service
 {
     public class RPCService
     {
+
+        internal RPCService()
+        {
+
+        }
+
         /// <summary>
         /// 调用模块
         /// </summary>
