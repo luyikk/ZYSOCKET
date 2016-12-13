@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ZYSocketShare</RootNamespace>
     <AssemblyName>ZYSocketShare</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,7 @@
     <DefineConstants>TRACE;DEBUG;Net4</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,14 +31,12 @@
     <DefineConstants>TRACE;Net4</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MsgPack, Version=0.5.0.0, Culture=neutral, PublicKeyToken=a2625990d5dc0167, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\msgpack-cli-master\src\MsgPack.Net40\bin\Debug\MsgPack.dll</HintPath>
-    </Reference>
-    <Reference Include="Polenter.SharpSerializer">
-      <HintPath>..\..\sharpSerializerSolution\SharpSerializer.Library\bin\Debug\Polenter.SharpSerializer.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -53,6 +53,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Compression\Deflate.cs" />
+    <Compile Include="MicroThreadScriptSystem\AsyncSignal.cs" />
+    <Compile Include="MicroThreadScriptSystem\Channel.cs" />
+    <Compile Include="MicroThreadScriptSystem\ChannelMicroThreadAwaiter.cs" />
+    <Compile Include="MicroThreadScriptSystem\ChannelPreference.cs" />
+    <Compile Include="MicroThreadScriptSystem\IMicroThreadSynchronizationContext.cs" />
+    <Compile Include="MicroThreadScriptSystem\MicroThread.cs" />
+    <Compile Include="MicroThreadScriptSystem\MicroThreadEvent.cs" />
+    <Compile Include="MicroThreadScriptSystem\MicroThreadFlags.cs" />
+    <Compile Include="MicroThreadScriptSystem\MicroThreadLocal.cs" />
+    <Compile Include="MicroThreadScriptSystem\MicrothreadProxySynchronizationContext.cs" />
+    <Compile Include="MicroThreadScriptSystem\MicroThreadState.cs" />
+    <Compile Include="MicroThreadScriptSystem\MicroThreadSynchronizationContext.cs" />
+    <Compile Include="MicroThreadScriptSystem\MicroThreadYieldAwaiter.cs" />
+    <Compile Include="MicroThreadScriptSystem\PriorityNodeQueue.cs" />
+    <Compile Include="MicroThreadScriptSystem\PriorityQueueNode.cs" />
+    <Compile Include="MicroThreadScriptSystem\ScheduleMode.cs" />
+    <Compile Include="MicroThreadScriptSystem\Scheduler.cs" />
+    <Compile Include="MicroThreadScriptSystem\SchedulerEntry.cs" />
+    <Compile Include="MicroThreadScriptSystem\SchedulerEventArgs.cs" />
+    <Compile Include="MicroThreadScriptSystem\ScriptBase.cs" />
+    <Compile Include="MicroThreadScriptSystem\ScriptSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\AES.cs" />
     <Compile Include="Security\DES.cs" />
@@ -70,9 +91,8 @@
     <Compile Include="share\ZYNetRingBufferPool.cs" />
     <Compile Include="share\ZYNetRingBufferPoolV2.cs" />
     <Compile Include="ZYCoroutinesin\Fiber.cs" />
-    <Compile Include="ZYCoroutinesin\FiberManager.cs" />
-    <Compile Include="ZYCoroutinesin\Miss.cs" />
-    <Compile Include="ZYCoroutinesin\ZYCoroutinesin.cs" />
+    <Compile Include="ZYCoroutinesin\FiberSynchronizationContext.cs" />
+    <Compile Include="ZYCoroutinesin\FiberThreadAwaiter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

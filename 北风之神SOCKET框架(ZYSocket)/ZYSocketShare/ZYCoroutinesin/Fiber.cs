@@ -1,210 +1,305 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Concurrent;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
-
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ZYSocket.ZYCoroutinesin
 {
-
-    public enum FiberFlag
+    public class Fiber
     {
-        Runing,
-        Complete,
-    }
+        ConcurrentDictionary<Type, ConcurrentQueue<FiberThreadAwaiterBase>> receivers = new ConcurrentDictionary<Type, ConcurrentQueue<FiberThreadAwaiterBase>>();
+        ConcurrentDictionary<Type, ConcurrentQueue<FiberThreadAwaiterBase>> senders = new ConcurrentDictionary<Type, ConcurrentQueue<FiberThreadAwaiterBase>>();
+
+        private Func<Task> Action { get; set; }
+
+        private CancellationTokenSource cancellationTokenSource;
+        public CancellationToken CancellationToken => cancellationTokenSource.Token;
+        
+        private SynchronizationContext previousSyncContext { get; set; }
+
+        private FiberSynchronizationContext _SynchronizationContext { get; set; }
+
+        public bool IsOver { get; set; }
 
 
+        public bool IsError { get; private set; }
 
-    public class Fiber<SET, RES> : Coroutinesin<SET, RES>
-    {
+        public Exception  Error { get; set; }
 
-        static object lockObj = new object();
-
-        public FiberFlag State { get; private set; }
-
-        public Guid GID { get; private set; }       
-
-        private Queue<ResCallbackModel> SetQueue { get;set; }
-
-        public Action<Fiber<SET, RES>, SET> Target { get; private set; }
-
-
-        public static SET defset { get; set; }
-        public static RES defres { get; set; }
-
-
-
-        public static Fiber<SET, RES> CreateFiber(Action<Fiber<SET, RES>, SET> action)
-        {
-            var fiber= FiberManager<Fiber<SET, RES>, SET, RES>.GetInstance().CreateFiber();
-            fiber.Invoke(action);
-            return fiber;
-        }
-
-        public static Fiber<SET, RES> CreateFiber()
-        {
-            return FiberManager<Fiber<SET, RES>, SET, RES>.GetInstance().CreateFiber();
-        }
-
-
-        public static void CloseAllFiber()
-        {
-            FiberManager<Fiber<SET, RES>, SET, RES>.GetInstance().Close();
-        }
-
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="setDefault">默认值设置SET</param>
-        /// <param name="resDefault">默认值设置RES</param>
         public Fiber()
-            : base(defset, defres)
         {
-            GID = Guid.NewGuid();
-            State = FiberFlag.Runing;
-            SetQueue = new Queue<ResCallbackModel>();
+            _SynchronizationContext = new FiberSynchronizationContext(this);
+            cancellationTokenSource = new CancellationTokenSource();
         }
 
 
-        public void Invoke(Action<Fiber<SET, RES>, SET> target)
+        public static Fiber Current => (SynchronizationContext.Current as FiberSynchronizationContext)?.fiber;
+
+        public void SetAction(Func<Task> action)
         {
-            this.Target = target;
+            Action = action;
         }
 
-        public override void Dispose()
+        public void Start()
         {
+            IsOver = false;
 
-            State = FiberFlag.Complete;
-            lock (lockObj)
+            Action wrappedGhostThreadFunction = async () =>
             {
-                SetQueue.Clear();
-            }
-            base.Dispose();
-        }
-
-
-        public override void Run(SET arg)
-        {
-            if (Target != null)
-                Target(this, arg);
-        }
-
-
-
-        public SET Give(RES obj)
-        {
-            return base.yield(obj);
-
-        }
-
-        public SET Give()
-        {
-            return base.yield(defres);
-        }
-
-
-        public bool Set()
-        {           
-            return Set(SetDefautValue, null);
-        }
-
-
-        public bool Set(SET value)
-        {          
-            return Set(value, null);
-        }
-        /// <summary>
-        /// 设置值
-        /// </summary>
-        /// <param name="value">值</param>
-        /// <param name="callback">返回回调</param>
-        /// <returns>true设置成功， false 此对象已经停止工作了</returns>
-        public bool Set(SET value, Action<RES> callback)
-        {
-            lock (lockObj)
-            {
-                if (Target == null)
-                    return false;
-
-                if (State == FiberFlag.Complete)
-                    return false;
-
-                ResCallbackModel tmp = new ResCallbackModel()
+                try
                 {
-                    ResCallBack = callback,
-                    value = value
-                };
+                    await Action();
 
 
+                }
+                catch (Exception er)
+                {
+                    
+                    IsError = true;
+                    Error = er;
+                }
+                finally
+                {
+                    IsOver = true;
+                }
+            };
 
-                SetQueue.Enqueue(tmp);
+            var previousSyncContext = SynchronizationContext.Current;
 
+            SynchronizationContext.SetSynchronizationContext(_SynchronizationContext);          
 
-                return true;
-            }
+            wrappedGhostThreadFunction();
+
+            SynchronizationContext.SetSynchronizationContext(previousSyncContext);
+        }
+
+        public void Close()
+        {
+            cancellationTokenSource.Cancel();
         }
 
 
-        ResCallbackModel model;
-
-
-        public bool ThreadRun()
+        public FiberThreadAwaiter<T> Set<T>(T data)
         {
 
-            lock (lockObj)
+            Type key = typeof(T);
+
+            if (!receivers.ContainsKey(key) || receivers[key].Count == 0)
             {
+                // Nobody receiving, let's wait until something comes up
+                var GhostThread = Fiber.Current;
 
-                model = null;
+                if (GhostThread == null)
+                    GhostThread = this;
 
-                if (SetQueue.Count > 0)
+
+                var waitingGhostThread = FiberThreadAwaiter<T>.New(GhostThread);
+                waitingGhostThread.Result = data;
+
+                if (senders.ContainsKey(key))
                 {
-                    model = SetQueue.Peek();
-
+                    senders[key].Enqueue(waitingGhostThread);
+                    return waitingGhostThread;
                 }
                 else
-                    return false;
-
-
-
-                if (model != null)
                 {
-                    Console.WriteLine("Id:"+System.Threading.Thread.CurrentThread.ManagedThreadId);
+                    ConcurrentQueue<FiberThreadAwaiterBase> table = new ConcurrentQueue<FiberThreadAwaiterBase>();
+                    senders.AddOrUpdate(key, table, (a, b) => table);
 
-                    RES res = Resume(model.value);
-
-                    if (model.ResCallBack != null)
-                    {
-                        model.ResCallBack(res);
-                    }
-
-
-                    if (state == FiberStateEnum.FiberStopped)
-                    {
-
-                        SetQueue.Clear();
-                        State = FiberFlag.Complete;
-                    }
-
-                    SetQueue.Dequeue();
-
-                    return true;
+                    senders[key].Enqueue(waitingGhostThread);
+                    return waitingGhostThread;
                 }
-                SetQueue.Dequeue();
-                return false;
             }
+
+
+
+            FiberThreadAwaiterBase tmp;
+
+            if (receivers[key].TryDequeue(out tmp))
+            {
+                var receiver = tmp as FiberThreadAwaiter<T>;
+
+                receiver.Result = data;
+                receiver.IsCompleted = true;
+
+                var previousSyncContext = SynchronizationContext.Current;
+                SynchronizationContext.SetSynchronizationContext(_SynchronizationContext);
+                receiver.Continuation();
+                SynchronizationContext.SetSynchronizationContext(previousSyncContext);
+
+                return receiver;
+            }
+            else
+                return null;
 
         }
 
-                
-            
-    
 
-
-        class ResCallbackModel
+        public FiberThreadAwaiter<T> Get<T>()
         {
-            public Action<RES> ResCallBack { get; set; }
+            Type key = typeof(T);
 
-            public SET value { get; set; }
+            if (!senders.ContainsKey(key) || senders[key].Count == 0)
+            {
+                var GhostThread = Fiber.Current;
+
+
+
+                if (GhostThread == null)
+                    GhostThread = this;
+
+                var waitingGhostThread = FiberThreadAwaiter<T>.New(GhostThread);
+
+                if (receivers.ContainsKey(key))
+                {
+                    receivers[key].Enqueue(waitingGhostThread);
+                    return waitingGhostThread;
+                }
+                else
+                {
+                    ConcurrentQueue<FiberThreadAwaiterBase> table = new ConcurrentQueue<FiberThreadAwaiterBase>();
+                    receivers.AddOrUpdate(key, table, (a, b) => table);
+                    receivers[key].Enqueue(waitingGhostThread);
+                    return waitingGhostThread;
+                }
+            }
+
+            FiberThreadAwaiterBase sender;
+
+            if (senders[key].TryDequeue(out sender))
+            {
+                sender.IsCompleted = true;
+                var senderl= sender as FiberThreadAwaiter<T>;
+                return senderl;
+            }
+            else
+                return null;
+        }
+
+     
+
+        public FiberThreadAwaiter<T> Read<T>()
+        {
+            Type key = typeof(T);
+
+            if (!senders.ContainsKey(key) || senders[key].Count == 0)
+            {
+                var GhostThread = Fiber.Current;
+
+
+
+                if (GhostThread == null)
+                    GhostThread = this;
+
+                var waitingGhostThread = FiberThreadAwaiter<T>.New(GhostThread);
+
+                if (receivers.ContainsKey(key))
+                {
+                    receivers[key].Enqueue(waitingGhostThread);
+                    return waitingGhostThread;
+                }
+                else
+                {
+                    ConcurrentQueue<FiberThreadAwaiterBase> table = new ConcurrentQueue<FiberThreadAwaiterBase>();
+                    receivers.AddOrUpdate(key, table, (a, b) => table);
+                    receivers[key].Enqueue(waitingGhostThread);
+                    return waitingGhostThread;
+                }
+            }
+
+            FiberThreadAwaiterBase sender;
+
+            if (senders[key].TryPeek(out sender))
+            {
+                sender.IsCompleted = true;
+                var senderl = sender as FiberThreadAwaiter<T>;
+                return senderl;
+            }
+            else
+                return null;
+        }
+
+        public FiberThreadAwaiter<T> Back<T>()
+        {
+            Type key = typeof(T);
+
+            if (!senders.ContainsKey(key) || senders[key].Count == 0)
+            {
+                var GhostThread = Fiber.Current;
+
+
+
+                if (GhostThread == null)
+                    GhostThread = this;
+
+                var waitingGhostThread = FiberThreadAwaiter<T>.New(GhostThread);
+
+                if (receivers.ContainsKey(key))
+                {
+                    receivers[key].Enqueue(waitingGhostThread);
+                    
+                }
+                else
+                {
+                    ConcurrentQueue<FiberThreadAwaiterBase> table = new ConcurrentQueue<FiberThreadAwaiterBase>();
+                    receivers.AddOrUpdate(key, table, (a, b) => table);
+                    receivers[key].Enqueue(waitingGhostThread);
+                   
+                }
+            }
+
+            FiberThreadAwaiterBase sender;
+
+            if (senders[key].TryDequeue(out sender))
+            {
+                sender.IsCompleted = true;
+
+                var previousSyncContext = SynchronizationContext.Current;
+                SynchronizationContext.SetSynchronizationContext(_SynchronizationContext);
+                sender.Continuation();
+                SynchronizationContext.SetSynchronizationContext(previousSyncContext);
+               
+                var senderl = sender as FiberThreadAwaiter<T>;
+                return senderl;
+            }
+            else
+                return null;
+        }
+
+        public FiberThreadAwaiter<T> Send<T>(T data)
+        {
+            Type key = typeof(T);
+
+
+            // Nobody receiving, let's wait until something comes up
+            var GhostThread = Fiber.Current;
+
+            if (GhostThread == null)
+                GhostThread = this;
+
+
+            var waitingGhostThread = FiberThreadAwaiter<T>.New(GhostThread);
+            waitingGhostThread.Result = data;
+
+            if (senders.ContainsKey(key))
+            {
+                senders[key].Enqueue(waitingGhostThread);
+            }
+            else
+            {
+                ConcurrentQueue<FiberThreadAwaiterBase> table = new ConcurrentQueue<FiberThreadAwaiterBase>();
+                senders.AddOrUpdate(key, table, (a, b) => table);
+                senders[key].Enqueue(waitingGhostThread);
+            }
+
+
+            return waitingGhostThread;
+
+
         }
 
     }

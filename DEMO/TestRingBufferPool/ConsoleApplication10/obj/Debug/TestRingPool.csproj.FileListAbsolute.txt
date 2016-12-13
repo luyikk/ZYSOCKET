@@ -8,3 +8,5 @@ E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Debug\ZYSocketShar
 E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Debug\Polenter.SharpSerializer.pdb
 E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\bin\Debug\Polenter.SharpSerializer.xml
 E:\ZYSocketFrame2\TestRingBufferPool\ConsoleApplication10\obj\Debug\TestRingPool.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\DEMO\TestRingBufferPool\ConsoleApplication10\obj\Debug\ConsoleApplication10.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\TestRingBufferPool\ConsoleApplication10\obj\Debug\ConsoleApplication10.pdb
