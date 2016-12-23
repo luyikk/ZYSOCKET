@@ -1,6 +1,0 @@
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Net20\protobuf-net.xml
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Net20\protobuf-net.dll
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Net20\protobuf-net.pdb
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Net20\protobuf-net.csprojResolveAssemblyReference.cache
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Net20\protobuf-net.dll
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Net20\protobuf-net.pdb

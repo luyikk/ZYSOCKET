@@ -1,5 +1,0 @@
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.xml
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.dll
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.pdb
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.dll
-D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.pdb
