@@ -23,12 +23,12 @@ namespace ZYSocket.ZYCoroutinesin
 
         private FiberSynchronizationContext _SynchronizationContext { get; set; }
 
-        public bool IsOver { get; set; }
+        public bool IsOver { get; private set; }
 
 
         public bool IsError { get; private set; }
 
-        public Exception  Error { get; set; }
+        public Exception  Error { get; private set; }
 
         public Fiber()
         {
@@ -128,7 +128,8 @@ namespace ZYSocket.ZYCoroutinesin
 
                 var previousSyncContext = SynchronizationContext.Current;
                 SynchronizationContext.SetSynchronizationContext(_SynchronizationContext);
-                receiver.Continuation();
+                if(receiver.Continuation!=null)
+                    receiver.Continuation();
                 SynchronizationContext.SetSynchronizationContext(previousSyncContext);
 
                 return receiver;
@@ -260,7 +261,8 @@ namespace ZYSocket.ZYCoroutinesin
 
                 var previousSyncContext = SynchronizationContext.Current;
                 SynchronizationContext.SetSynchronizationContext(_SynchronizationContext);
-                sender.Continuation();
+                if(sender.Continuation!=null)
+                    sender.Continuation();
                 SynchronizationContext.SetSynchronizationContext(previousSyncContext);
                
                 var senderl = sender as FiberThreadAwaiter<T>;
