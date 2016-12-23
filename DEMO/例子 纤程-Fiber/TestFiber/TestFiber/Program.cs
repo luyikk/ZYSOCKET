@@ -9,11 +9,21 @@ namespace TestFiber
 {
     class Program
     {
+
+        static async  Task test2()
+        {
+            await Task.Delay(1000);
+            Console.WriteLine("AA");
+        }
+
+
         static Fiber tmp = new Fiber();
         static void Main(string[] args)
         {
             tmp.SetAction(async () =>
             {
+
+              ;
 
                 int a = await Fiber.Current.Get<int>();
                 string b = await Fiber.Current.Get<string>();
@@ -21,6 +31,8 @@ namespace TestFiber
                 double d = await Fiber.Current.Get<double>();
                 Console.WriteLine("{0}-{1}-{2}-{3}", a, b, c, d);
                 await Fiber.Current.Send<string>("处理完成");
+
+                await test2();
 
                 //===============第2章====================
                 Console.WriteLine("我又回来了");

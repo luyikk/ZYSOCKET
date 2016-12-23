@@ -20,9 +20,9 @@ namespace ScriptDEMO
         {
             while (true)
             {
-                //await System.NextFrame();
+                await System.NextFrame();
 
-                await Task.Delay(1000);
+                //await Task.Delay(1000);
 
                 Console.WriteLine(GetThreadId()+DateTime.Now);
 

@@ -11,3 +11,15 @@ D:\MyProjects\ZYSocketFrame2\TestFiber\TestFiber\bin\Debug\MsgPack.pdb
 D:\MyProjects\ZYSocketFrame2\TestFiber\TestFiber\obj\Debug\TestFiber.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\TestFiber\TestFiber\obj\Debug\TestFiber.exe
 D:\MyProjects\ZYSocketFrame2\TestFiber\TestFiber\obj\Debug\TestFiber.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\TestFiber.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\obj\Debug\TestFiber.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\obj\Debug\TestFiber.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\TestFiber.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\TestFiber.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\MsgPack.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\protobuf-net.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\protobuf-net.xml
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\bin\Debug\MsgPack.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 纤程-Fiber\TestFiber\TestFiber\obj\Debug\TestFiber.csprojResolveAssemblyReference.cache

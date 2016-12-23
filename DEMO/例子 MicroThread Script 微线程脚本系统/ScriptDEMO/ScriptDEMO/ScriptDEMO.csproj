@@ -41,19 +41,23 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="ZYSocketShare">
-      <HintPath>..\..\..\..\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsynScript1.cs" />
     <Compile Include="AsynScript2.cs" />
     <Compile Include="AsynScript3.cs" />
+    <Compile Include="AsynScript4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\北风之神SOCKET框架%28ZYSocket%29\ZYSocketShare\ZYSocketShareNET4.csproj">
+      <Project>{00c91f5c-5298-4191-b816-3ed473721e88}</Project>
+      <Name>ZYSocketShareNET4</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

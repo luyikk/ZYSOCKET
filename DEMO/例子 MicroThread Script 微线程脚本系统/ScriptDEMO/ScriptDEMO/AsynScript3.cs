@@ -62,7 +62,7 @@ namespace ScriptDEMO
 
                 Console.WriteLine(GetThreadId()+"Id:{0}", a);
 
-                await Task.Delay(2000);
+                //await Task.Delay(2000);
             }
         }
     }

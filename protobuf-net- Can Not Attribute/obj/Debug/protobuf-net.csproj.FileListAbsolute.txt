@@ -1,18 +1,5 @@
-J:\Github\protobuf-net-master\protobuf-net\bin\Debug\Licence.txt
-J:\Github\protobuf-net-master\protobuf-net\bin\Debug\protobuf-net.xml
-J:\Github\protobuf-net-master\protobuf-net\bin\Debug\protobuf-net.dll
-J:\Github\protobuf-net-master\protobuf-net\bin\Debug\protobuf-net.pdb
-J:\Github\protobuf-net-master\protobuf-net\obj\Debug\protobuf-net.csprojResolveAssemblyReference.cache
-J:\Github\protobuf-net-master\protobuf-net\obj\Debug\protobuf-net.dll
-J:\Github\protobuf-net-master\protobuf-net\obj\Debug\protobuf-net.pdb
-J:\Github\protobuf-net\bin\Debug\protobuf-net.xml
-J:\Github\protobuf-net\obj\Debug\protobuf-net.dll
-J:\Github\protobuf-net\obj\Debug\protobuf-net.pdb
-J:\Github\protobuf-net\bin\Debug\protobuf-net.dll
-J:\Github\protobuf-net\bin\Debug\protobuf-net.pdb
-E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.dll
-E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.pdb
-E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.xml
-E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.dll
-E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.pdb
-E:\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.xml
+D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\bin\Debug\protobuf-net.pdb
+D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\protobuf-net- Can Not Attribute\obj\Debug\protobuf-net.pdb

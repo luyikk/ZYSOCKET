@@ -11,16 +11,3 @@ D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Scritp 微线程脚本系�
 D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\obj\Debug\TestMicroThread.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\obj\Debug\TestMicroThread.exe
 D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\obj\Debug\TestMicroThread.pdb
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\TestMicroThread.exe.config
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\TestMicroThread.exe
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\TestMicroThread.pdb
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\ZYSocketShare.dll
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\protobuf-net.dll
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\MsgPack.dll
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\ZYSocketShare.pdb
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\protobuf-net.pdb
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\protobuf-net.xml
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\bin\Debug\MsgPack.pdb
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\obj\Debug\TestMicroThread.csprojResolveAssemblyReference.cache
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\obj\Debug\TestMicroThread.exe
-D:\MyProjects\ZYSOCKET\DEMO\例子 MicroThread Scritp 微线程脚本系统\TestMicroThread\TestMicroThread\obj\Debug\TestMicroThread.pdb

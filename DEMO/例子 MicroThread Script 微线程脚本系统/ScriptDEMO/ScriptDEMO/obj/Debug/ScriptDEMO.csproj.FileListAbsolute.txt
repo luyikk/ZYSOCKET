@@ -10,3 +10,4 @@ D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Script 微线程脚本系�
 D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Script 微线程脚本系统\ScriptDEMO\ScriptDEMO\bin\Debug\MsgPack.pdb
 D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Script 微线程脚本系统\ScriptDEMO\ScriptDEMO\obj\Debug\ScriptDEMO.exe
 D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Script 微线程脚本系统\ScriptDEMO\ScriptDEMO\obj\Debug\ScriptDEMO.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子 MicroThread Script 微线程脚本系统\ScriptDEMO\ScriptDEMO\obj\Debug\ScriptDEMO.csprojResolveAssemblyReference.cache

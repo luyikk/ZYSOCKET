@@ -51,6 +51,8 @@ namespace ScriptDEMO
         {
             while (true)
             {
+                await System.NextFrame();
+
                 Console.WriteLine(GetThreadId() + "Start Down");
 
                 Fiber fiber = new Fiber();
@@ -69,7 +71,7 @@ namespace ScriptDEMO
 
                 Console.WriteLine(GetThreadId() + "Down Close");
 
-                await Task.Delay(10000);                
+                //await Task.Delay(10000);                
               
 
             }
