@@ -1,0 +1,15 @@
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\ZYSocketShare.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\optimized\
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.dll
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.pdb
+E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.dll.mdb
+E:\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\ZYSocketShare.dll.mdb
+D:\MyProjects\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\optimized\
+D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.dll.mdb
+D:\MyProjects\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\ZYSocketShare.dll.mdb

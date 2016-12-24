@@ -144,7 +144,7 @@ namespace TestMicroThread
 
             while (true)
             {
-                await System.NextFrame();
+                await SystemCore.NextFrame();
 
                 testcab.SetSync<string>(Name);
 

@@ -1,0 +1,3 @@
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\Debug\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\bin\ZYSocketShare.pdb

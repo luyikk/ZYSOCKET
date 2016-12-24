@@ -56,13 +56,13 @@ namespace ScriptDEMO
         {
             while(true)
             {
-                await System.NextFrame();
+                await SystemCore.NextFrame();
 
                 string a = await GetArgs();              
 
                 Console.WriteLine(GetThreadId()+"Id:{0}", a);
 
-                //await Task.Delay(2000);
+                await Task.Delay(2000);
             }
         }
     }

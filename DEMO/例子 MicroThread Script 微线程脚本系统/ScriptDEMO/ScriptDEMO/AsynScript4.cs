@@ -14,7 +14,7 @@ namespace ScriptDEMO
         {
             while (true)
             {
-                await System.NextFrame();
+                await SystemCore.NextFrame();
 
 
                 WebClient client = new WebClient();

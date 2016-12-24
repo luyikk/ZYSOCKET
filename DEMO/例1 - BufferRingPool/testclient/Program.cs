@@ -78,7 +78,7 @@ namespace testclient
 
         static void client_DataOn(byte[] Data)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(Data.Length);
         }
     }
 }

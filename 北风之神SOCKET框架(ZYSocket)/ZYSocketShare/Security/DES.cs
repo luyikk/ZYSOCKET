@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if !COREFX
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
@@ -9,7 +10,7 @@ namespace ZYSocket.Security
     public static class DES
     {
 
-        #region DES加密解密
+#region DES加密解密
 
 
         /// DES加密
@@ -62,6 +63,7 @@ namespace ZYSocket.Security
         }
 
 
-        #endregion
+#endregion
     }
 }
+#endif

@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FDD553EC-31A1-4BD9-AD4B-D938B83BF152}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C19E9EB5-9298-454D-8CA6-1163F55B1BEC}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ZYSocketShare", "ZYSocketShare\ZYSocketShare.xproj", "{92D02175-2BEF-4347-B80F-B52DFDD2AA5E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ZYSocketFrame", "ZYSocketFrame\ZYSocketFrame.xproj", "{5DE0511A-D542-47DB-87D5-99837C5E7C3F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ZYSocketClientA", "ZYSocketClientA\ZYSocketClientA.xproj", "{D31D716E-7E25-4C96-8734-517D00A17A99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92D02175-2BEF-4347-B80F-B52DFDD2AA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D02175-2BEF-4347-B80F-B52DFDD2AA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D02175-2BEF-4347-B80F-B52DFDD2AA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D02175-2BEF-4347-B80F-B52DFDD2AA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE0511A-D542-47DB-87D5-99837C5E7C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE0511A-D542-47DB-87D5-99837C5E7C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE0511A-D542-47DB-87D5-99837C5E7C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE0511A-D542-47DB-87D5-99837C5E7C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31D716E-7E25-4C96-8734-517D00A17A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31D716E-7E25-4C96-8734-517D00A17A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31D716E-7E25-4C96-8734-517D00A17A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31D716E-7E25-4C96-8734-517D00A17A99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92D02175-2BEF-4347-B80F-B52DFDD2AA5E} = {FDD553EC-31A1-4BD9-AD4B-D938B83BF152}
+		{5DE0511A-D542-47DB-87D5-99837C5E7C3F} = {FDD553EC-31A1-4BD9-AD4B-D938B83BF152}
+		{D31D716E-7E25-4C96-8734-517D00A17A99} = {FDD553EC-31A1-4BD9-AD4B-D938B83BF152}
+	EndGlobalSection
+EndGlobal

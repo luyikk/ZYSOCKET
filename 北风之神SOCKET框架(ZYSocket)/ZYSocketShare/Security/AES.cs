@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if !COREFX
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
@@ -65,3 +66,4 @@ namespace ZYSocket.Security
 
     }
 }
+#endif

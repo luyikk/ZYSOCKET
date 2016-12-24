@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>ZYSocketFrame-dnx</id>
+        <version>4.3.7</version>
+        <title>ZYSocketDnx</title>
+        <authors>luyikk</authors>
+        <owners>luyikk</owners>
+        <licenseUrl>https://github.com/luyikk/ZYSOCKET</licenseUrl>
+        <projectUrl>https://github.com/luyikk/ZYSOCKET</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <developmentDependency>true</developmentDependency>
+        <description>ZYSocketFrame  NETCORE</description>
+        <summary>ZYSocketFrame  NETCORE</summary>
+        <copyright>luyikk</copyright>
+        <language>en-AU</language>
+        <tags>ZYSocket</tags>
+    </metadata>
+    <files>
+        <file src="ZYSocketFrame\bin\Release\netstandard1.3\ZYSocketFrame.deps.json" target="lib\netstandard1.3\ZYSocketFrame.deps.json" />
+        <file src="ZYSocketFrame\bin\Release\netstandard1.3\ZYSocketFrame.dll" target="lib\netstandard1.3\ZYSocketFrame.dll" />
+        <file src="ZYSocketFrame\bin\Release\netstandard1.3\ZYSocketFrame.pdb" target="lib\netstandard1.3\ZYSocketFrame.pdb" />
+        <file src="ZYSocketFrame\bin\Release\netstandard1.5\ZYSocketFrame.deps.json" target="lib\netstandard1.5\ZYSocketFrame.deps.json" />
+        <file src="ZYSocketFrame\bin\Release\netstandard1.5\ZYSocketFrame.dll" target="lib\netstandard1.5\ZYSocketFrame.dll" />
+        <file src="ZYSocketFrame\bin\Release\netstandard1.5\ZYSocketFrame.pdb" target="lib\netstandard1.5\ZYSocketFrame.pdb" />
+        <file src="ZYSocketFrame\bin\Release\netstandard1.6\ZYSocketFrame.deps.json" target="lib\netstandard1.6\ZYSocketFrame.deps.json" />
+        <file src="ZYSocketFrame\bin\Release\netstandard1.6\ZYSocketFrame.dll" target="lib\netstandard1.6\ZYSocketFrame.dll" />
+        <file src="ZYSocketFrame\bin\Release\netstandard1.6\ZYSocketFrame.pdb" target="lib\netstandard1.6\ZYSocketFrame.pdb" />
+    </files>
+</package>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ZYSocketClient-dnx</id>
+        <version>4.3.7.1</version>
+        <title>ZYSocketClientdnx</title>
+        <authors>luyikk</authors>
+        <owners>luyikk</owners>
+        <licenseUrl>https://github.com/luyikk/ZYSOCKET</licenseUrl>
+        <projectUrl>https://github.com/luyikk/ZYSOCKET</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>ZYSocketClientA  NETCORE</description>
+        <summary>ZYSocketClientA  NETCORE</summary>
+        <releaseNotes />
+        <language>en-US</language>
+    </metadata>
+    <files>
+        <file src="ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.deps.json" target="lib\netstandard1.3\ZYSocketClientA.deps.json" />
+        <file src="ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.dll" target="lib\netstandard1.3\ZYSocketClientA.dll" />
+        <file src="ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.pdb" target="lib\netstandard1.3\ZYSocketClientA.pdb" />
+        <file src="ZYSocketClientA\bin\Release\netstandard1.5\ZYSocketClientA.deps.json" target="lib\netstandard1.5\ZYSocketClientA.deps.json" />
+        <file src="ZYSocketClientA\bin\Release\netstandard1.5\ZYSocketClientA.dll" target="lib\netstandard1.5\ZYSocketClientA.dll" />
+        <file src="ZYSocketClientA\bin\Release\netstandard1.5\ZYSocketClientA.pdb" target="lib\netstandard1.5\ZYSocketClientA.pdb" />
+        <file src="ZYSocketClientA\bin\Release\netstandard1.6\ZYSocketClientA.deps.json" target="lib\netstandard1.6\ZYSocketClientA.deps.json" />
+        <file src="ZYSocketClientA\bin\Release\netstandard1.6\ZYSocketClientA.dll" target="lib\netstandard1.6\ZYSocketClientA.dll" />
+        <file src="ZYSocketClientA\bin\Release\netstandard1.6\ZYSocketClientA.pdb" target="lib\netstandard1.6\ZYSocketClientA.pdb" />
+    </files>
+</package>

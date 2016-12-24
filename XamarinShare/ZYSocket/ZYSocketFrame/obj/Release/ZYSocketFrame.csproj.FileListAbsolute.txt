@@ -1,9 +1,0 @@
-E:\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\Server\ZYSocketFrame.dll
-E:\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\Server\ZYSocketFrame.pdb
-E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\optimized\
-E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\ZYSocketFrame.dll
-E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\ZYSocketFrame.pdb
-E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\ZYSocketFrame.dll.mdb
-E:\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\Server\ZYSocketFrame.dll.mdb
-E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketFrame\obj\Release\ZYSocketFrame.dll.mdb
-E:\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\Server\ZYSocketFrame.dll.mdb
