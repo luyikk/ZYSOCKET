@@ -8,3 +8,8 @@ D:\MyProjects\ZYSocketFrame2\ZYNet\ZYNetClient\obj\Debug\ZYNetClient.dll
 D:\MyProjects\ZYSocketFrame2\ZYNet\ZYNetClient\obj\Debug\ZYNetClient.pdb
 D:\MyProjects\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetClient\ZYNetClient.dll
 D:\MyProjects\ZYSocketFrame2\ZYNet\DLL\Debug\ZYNetClient\ZYNetClient.pdb
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Debug\ZYNetClient\ZYNetClient.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Debug\ZYNetClient\ZYNetClient.pdb
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClient\obj\Debug\ZYNetClient.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClient\obj\Debug\ZYNetClient.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClient\obj\Debug\ZYNetClient.pdb

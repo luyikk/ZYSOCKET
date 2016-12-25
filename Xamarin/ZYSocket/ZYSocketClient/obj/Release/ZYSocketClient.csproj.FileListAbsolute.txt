@@ -13,3 +13,10 @@ D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Release\ZY
 D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.dll.mdb
 D:\MyProjects\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\Client\ZYSocketClient.dll.mdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\IOS\Release\Client\ZYSocketClient.dll
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\IOS\Release\Client\ZYSocketClient.pdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\optimized\
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.dll
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.pdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.dll.mdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\IOS\Release\Client\ZYSocketClient.dll.mdb

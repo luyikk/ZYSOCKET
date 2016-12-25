@@ -57,7 +57,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ZYNet\ZYNetClient\ZYNetClient.csproj">
+    <ProjectReference Include="..\..\..\ZYNet-P2P\ZYNetClient\ZYNetClient.csproj">
       <Project>{c93b63d8-ce62-4d0e-b61b-9f818f30b114}</Project>
       <Name>ZYNetClient</Name>
     </ProjectReference>

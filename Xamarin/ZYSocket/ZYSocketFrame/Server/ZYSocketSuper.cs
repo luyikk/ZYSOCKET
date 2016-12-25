@@ -557,9 +557,9 @@ namespace ZYSocket.Server
         }
 
 
-        public virtual void Send(IEnsureSend player, byte[] data)
+        public virtual void Send(ISend player, byte[] data)
         {
-            player.EnsureSend(data);
+            player.Send(data);
         }
 
 

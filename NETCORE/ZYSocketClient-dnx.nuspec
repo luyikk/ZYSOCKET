@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ZYSocketClient-dnx</id>
-        <version>4.3.7.1</version>
+        <version>4.3.7.2</version>
         <title>ZYSocketClientdnx</title>
         <authors>luyikk</authors>
         <owners>luyikk</owners>

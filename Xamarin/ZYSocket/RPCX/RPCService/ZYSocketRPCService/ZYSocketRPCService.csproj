@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\ZYSocketFrame\ZYSocketFrame.csproj">
-      <Project>{2234a06f-26c5-49a2-b017-7b4de64d39ae}</Project>
+      <Project>{2234A06F-26C5-49A2-B017-7B4DE64D39AE}</Project>
       <Name>ZYSocketFrame</Name>
       <IsAppExtension>false</IsAppExtension>
       <IsWatchApp>false</IsWatchApp>

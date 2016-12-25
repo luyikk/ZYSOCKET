@@ -24,7 +24,7 @@ namespace ZYSocket.ClientA
         /// <summary>
         /// SOCKET对象
         /// </summary>
-        private Socket sock;
+        public Socket sock { get; private set; }
 
         /// <summary>
         /// 连接成功事件
@@ -50,6 +50,8 @@ namespace ZYSocket.ClientA
 
         private bool IsConn;
 
+        public SocketAsyncEventArgs AsynEvent { get; private set; }
+
         /// <summary>
         /// 异步连接到指定的服务器
         /// </summary>
@@ -66,7 +68,11 @@ namespace ZYSocket.ClientA
             }
             catch (FormatException)
             {
+#if !COREFX
+                IPHostEntry p = Dns.GetHostEntry(Dns.GetHostName());
+#else
                 IPHostEntry p = Dns.GetHostEntryAsync(Dns.GetHostName()).Result;
+#endif
 
                 foreach (IPAddress s in p.AddressList)
                 {
@@ -78,8 +84,11 @@ namespace ZYSocket.ClientA
             #endregion
 
             SocketAsyncEventArgs e = new SocketAsyncEventArgs();
+
             e.RemoteEndPoint = myEnd;
             e.Completed += new EventHandler<SocketAsyncEventArgs>(e_Completed);
+
+           
             if (!sock.ConnectAsync(e))
             {
                 eCompleted(e);
@@ -97,7 +106,11 @@ namespace ZYSocket.ClientA
             }
             catch (FormatException)
             {
+#if !COREFX
+                IPHostEntry p = Dns.GetHostEntry(Dns.GetHostName());
+#else
                 IPHostEntry p = Dns.GetHostEntryAsync(Dns.GetHostName()).Result;
+#endif
 
                 foreach (IPAddress s in p.AddressList)
                 {
@@ -106,7 +119,7 @@ namespace ZYSocket.ClientA
                 }
             }
 
-            #endregion
+#endregion
 
             SocketAsyncEventArgs e = new SocketAsyncEventArgs();
             e.RemoteEndPoint = myEnd;
@@ -145,7 +158,7 @@ namespace ZYSocket.ClientA
                         if (Connection != null)
                             Connection("连接成功", true);
 
-                        byte[] data = new byte[4098];
+                        byte[] data = new byte[4096];
                         e.SetBuffer(data, 0, data.Length);  //设置数据包
                      
                         if (!sock.ReceiveAsync(e)) //开始读取数据包
@@ -167,14 +180,15 @@ namespace ZYSocket.ClientA
                         byte[] data = new byte[e.BytesTransferred];
                         Buffer.BlockCopy(e.Buffer, 0, data, 0, data.Length);
 
-                        byte[] dataLast = new byte[4098];
-                        e.SetBuffer(dataLast, 0, dataLast.Length);   
-                        
-                        if (!sock.ReceiveAsync(e))
-                            eCompleted(e);
+
+                        //byte[] dataLast = new byte[4098];
+                        //e.SetBuffer(dataLast, 0, dataLast.Length);
 
                         if (DataOn != null)
                             DataOn(data);
+
+                        if (!sock.ReceiveAsync(e))
+                            eCompleted(e);
 
                     }
                     else
@@ -200,6 +214,41 @@ namespace ZYSocket.ClientA
             sock.SendAsync(e);
         }
 
+        public virtual void Send(byte[] data)
+        {
+            try
+            {
+                sock.Send(data);
+            }
+            catch (ObjectDisposedException)
+            {
+                if (Disconnection != null)
+                    Disconnection("与服务器断开连接");
+            }
+            catch (SocketException)
+            {
+                try
+                {
+#if !COREFX
+                    sock.Close();
+#else
+                    sock.Dispose();
+#endif
+                }
+                catch { }
+
+                if (Disconnection != null)
+                    Disconnection("与服务器断开连接");
+            }          
+
+            
+        }
+
+        public virtual bool SendTo(ISend player,byte[] data)
+        {
+            return player.Send(data);
+        }
+
         public virtual void BeginSend(byte[] data)
         {
             SocketAsyncEventArgs e = new SocketAsyncEventArgs();
@@ -211,8 +260,15 @@ namespace ZYSocket.ClientA
         {
             try
             {
-                sock.Shutdown(SocketShutdown.Both);               
-              
+                sock.Shutdown(SocketShutdown.Both);
+
+#if !COREFX
+                sock.Disconnect(false);
+                sock.Close();
+                wait.Close();
+#endif
+                sock.Dispose();
+                wait.Dispose();
             }
             catch (ObjectDisposedException)
             {
@@ -221,10 +277,12 @@ namespace ZYSocket.ClientA
             {
 
             }
-            finally
-            {
-                sock.Dispose();
-            }
         }
+    }
+
+
+    public interface ISend
+    {
+        bool Send(byte[] data);
     }
 }

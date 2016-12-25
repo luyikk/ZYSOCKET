@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ZYSocket.Server
 {
-    public interface IEnsureSend
+    public interface ISend
     {
-        bool EnsureSend(byte[] data);
+        bool Send(byte[] data);
     }
 }

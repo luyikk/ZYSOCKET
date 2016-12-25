@@ -44,7 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ZYNet\ZYNetServer\ZYNetServer\ZYNetServer.csproj">
+    <ProjectReference Include="..\..\..\ZYNet-P2P\ZYNetServer\ZYNetServer\ZYNetServer.csproj">
       <Project>{093029da-df94-40f5-9cb3-092fab6d6b5a}</Project>
       <Name>ZYNetServer</Name>
     </ProjectReference>

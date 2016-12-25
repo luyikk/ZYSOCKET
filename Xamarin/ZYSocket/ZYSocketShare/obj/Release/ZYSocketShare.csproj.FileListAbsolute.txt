@@ -13,3 +13,10 @@ D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYS
 D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.pdb
 D:\MyProjects\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.dll.mdb
 D:\MyProjects\ZYSocketFrame2\XamarinShare\DLL\IOS\Release\ZYSocketShare.dll.mdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\IOS\Release\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\IOS\Release\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Release\optimized\
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Release\ZYSocketShare.dll.mdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\IOS\Release\ZYSocketShare.dll.mdb

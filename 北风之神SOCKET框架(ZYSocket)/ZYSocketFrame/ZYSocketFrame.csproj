@@ -47,14 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnsureSend\RingBuffer.cs" />
+    <Compile Include="AsyncSend\AsyncSend.cs" />
     <Compile Include="Server\BufferManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Server\IEnsureSend.cs" />
     <Compile Include="Server\RConfig.cs" />
     <Compile Include="Server\SocketAsyncEventArgsPool.cs" />
-    <Compile Include="EnsureSend\TaskQueue.cs" />
-    <Compile Include="EnsureSend\ZYEnsureSend.cs" />
     <Compile Include="Server\ZYSocketSuper.cs" />
   </ItemGroup>
   <ItemGroup>

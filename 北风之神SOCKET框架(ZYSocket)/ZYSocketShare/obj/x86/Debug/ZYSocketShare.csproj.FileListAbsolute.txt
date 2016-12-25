@@ -55,4 +55,3 @@ D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.pdb
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Debug\ZYSocketShare.dll
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Debug\ZYSocketShare.pdb
-D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketShare\obj\x86\Debug\ZYSocketShare.csprojResolveAssemblyReference.cache

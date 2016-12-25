@@ -584,9 +584,9 @@ namespace ZYSocket.Server
         }
 
 
-        public virtual void Send(IEnsureSend player, byte[] data)
+        public virtual void Send(ISend player, byte[] data)
         {
-            player.EnsureSend(data);
+            player.Send(data);
         }
 
 
@@ -708,9 +708,13 @@ namespace ZYSocket.Server
         public virtual void SendData(Socket sock, byte[] data)
         {
             SocketAsyncEventArgs send = new SocketAsyncEventArgs();
-            send.SetBuffer(data, 0, data.Length);
+            send.SetBuffer(data, 0, data.Length);            
             sock.SendAsync(send);
         }
+
+        
+
+
 
         /// <summary>
         /// 断开此SOCKET

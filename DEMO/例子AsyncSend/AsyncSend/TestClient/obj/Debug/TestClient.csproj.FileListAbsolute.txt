@@ -1,0 +1,13 @@
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\TestClient.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\TestClient.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\TestClient.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\ZYSocketClientA.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\ZYSocketClientA.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\protobuf-net.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\bin\Debug\protobuf-net.xml
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\obj\Debug\TestClient.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\obj\Debug\TestClient.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例子AsyncSend\AsyncSend\TestClient\obj\Debug\TestClient.pdb
