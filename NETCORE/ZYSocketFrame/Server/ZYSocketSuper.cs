@@ -700,17 +700,6 @@ namespace ZYSocket.Server
         }
 #else
 
-        /// <summary>
-        /// 异步发送数据包
-        /// </summary>
-        /// <param name="sock"></param>
-        /// <param name="data"></param>
-        public virtual void SendData(Socket sock, byte[] data)
-        {
-            SocketAsyncEventArgs send = new SocketAsyncEventArgs();
-            send.SetBuffer(data, 0, data.Length);            
-            sock.SendAsync(send);
-        }
 
         
 
