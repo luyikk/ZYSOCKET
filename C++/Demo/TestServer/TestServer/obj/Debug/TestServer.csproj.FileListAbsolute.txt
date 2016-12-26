@@ -1,0 +1,13 @@
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\TestServer.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\TestServer.exe
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\TestServer.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\ZYSocketFrame.dll
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\ZYSocketShare.dll
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\protobuf-net.dll
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\ZYSocketFrame.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\ZYSocketShare.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\protobuf-net.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\bin\Debug\protobuf-net.xml
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\obj\Debug\TestServer.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\obj\Debug\TestServer.exe
+c:\users\administrator\documents\visual studio 2015\Projects\TestServer\TestServer\obj\Debug\TestServer.pdb
