@@ -5,7 +5,7 @@ using System.Text;
 using ZYSocket.Server;
 using System.Net.Sockets;
 using ZYSocket.share;
-
+using ZYSocket.AsyncSend;
 namespace TestServer
 {
     class Program
@@ -18,6 +18,7 @@ namespace TestServer
         //程序入口
         static void Main(string[] args)
         {
+            System.Threading.ExecutionContext.SuppressFlow();
             server.BinaryInput = new BinaryInputHandler(BinaryInputHandler); //设置输入代理
             server.Connetions=new ConnectionFilter(ConnectionFilter); //设置连接代理
             server.MessageInput=new MessageInputHandler(MessageInputHandler); //设置 客户端断开
@@ -49,7 +50,7 @@ namespace TestServer
         static bool ConnectionFilter(SocketAsyncEventArgs socketAsync)
         {
             Console.WriteLine("UserConn {0}", socketAsync.AcceptSocket.RemoteEndPoint.ToString());
-            socketAsync.UserToken = null;
+            socketAsync.UserToken = new AsyncSend(socketAsync.AcceptSocket);
 
             
             return true;
@@ -67,9 +68,17 @@ namespace TestServer
             try
             {
                 // server.SendData(socketAsync.AcceptSocket, data);
-                server.Send(socketAsync.AcceptSocket, data);
+                 server.Send(socketAsync.AcceptSocket, data);
 
-               // socketAsync.AcceptSocket.Send(data);
+                // socketAsync.AcceptSocket.Send(data);
+
+                //AsyncSend tmp = socketAsync.UserToken as AsyncSend;
+
+                //if (tmp != null)
+                //{
+                //    tmp.Send(data);
+                //}
+
             }
             catch
             {

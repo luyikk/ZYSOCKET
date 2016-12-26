@@ -11,3 +11,16 @@ E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\protob
 E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\Release\TestServer.exe
 E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\Release\TestServer.pdb
 E:\ZYSocketFrame2\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\Release\TestServer.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\TestServer.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\Release\TestServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\Release\TestServer.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\TestServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\TestServer.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\ZYSocketFrame.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\ZYSocketFrame.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\protobuf-net.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\bin\Release\protobuf-net.xml
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - 测试 TCP&UDPTest2.0 用\TestServer\obj\Release\TestServer.csprojResolveAssemblyReference.cache
