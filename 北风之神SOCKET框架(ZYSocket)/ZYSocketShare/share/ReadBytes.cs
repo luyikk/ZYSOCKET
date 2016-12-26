@@ -62,6 +62,9 @@ namespace ZYSocket.share
         /// </summary>
         public int Length { get; set; }
 
+
+        public static Encoding Encode { get; set; } = Encoding.UTF8;
+
         /// <summary>
         /// 当前其位置
         /// </summary>
@@ -536,7 +539,7 @@ namespace ZYSocket.share
 
             Buffer.BlockCopy(Data, current, buf, 0, buf.Length);
 
-            string values = Encoding.Unicode.GetString(buf, 0, buf.Length);
+            string values = Encode.GetString(buf, 0, buf.Length);
 
             current = Interlocked.Add(ref current, lengt);
 
@@ -563,7 +566,7 @@ namespace ZYSocket.share
 
                     Buffer.BlockCopy(Data, current, buf, 0, buf.Length);
                    
-                    values = Encoding.Unicode.GetString(buf, 0, buf.Length);
+                    values = Encode.GetString(buf, 0, buf.Length);
 
                     current = Interlocked.Add(ref current, lengt);
 

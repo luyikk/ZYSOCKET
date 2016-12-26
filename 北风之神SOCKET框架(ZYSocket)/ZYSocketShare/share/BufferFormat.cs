@@ -69,7 +69,7 @@ namespace ZYSocket.share
         /// <summary>
         /// 字符串格式化字符编码
         /// </summary>
-        public Encoding Encode { get; set; }
+        public static Encoding Encode { get; set; } =  Encoding.UTF8;
 
         protected FDataExtraHandle dataextra;
 
@@ -86,7 +86,7 @@ namespace ZYSocket.share
 
             buffList.Write(0);
             buffList.Write(GetSocketBytes(buffType));
-            Encode = Encoding.Unicode;
+           
             finish = false;
             this.dataextra=dataExtra;
         }
@@ -102,7 +102,7 @@ namespace ZYSocket.share
             buffList = new BinaryWriter(stream);
             buffList.Write(0);
             buffList.Write(GetSocketBytes(buffType));
-            Encode = Encoding.Unicode;
+         
             finish = false;
         }
 
