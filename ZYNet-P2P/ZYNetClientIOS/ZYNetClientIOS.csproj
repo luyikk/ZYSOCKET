@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="protobuf-net">
-      <HintPath>..\..\XamarinShare\DLL\IOS\Release\protobuf-net.dll</HintPath>
+      <HintPath>..\..\ZYSocket-protobuf-net-dll\net20\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

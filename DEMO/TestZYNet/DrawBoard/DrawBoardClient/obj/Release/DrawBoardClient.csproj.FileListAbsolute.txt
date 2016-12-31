@@ -1,0 +1,17 @@
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\DrawBoardClient.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\DrawBoardClient.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\DrawBoardClient.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\ZYNetClient.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\ZYNetClient.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\protobuf-net.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\bin\Release\protobuf-net.xml
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\obj\Release\DrawBoardClient.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\obj\Release\DrawBoardClient.Form1.resources
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\obj\Release\DrawBoardClient.LogOn.resources
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\obj\Release\DrawBoardClient.Properties.Resources.resources
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\obj\Release\DrawBoardClient.csproj.GenerateResource.Cache
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\obj\Release\DrawBoardClient.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\DrawBoard\DrawBoardClient\obj\Release\DrawBoardClient.pdb

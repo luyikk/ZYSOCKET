@@ -1,0 +1,5 @@
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Release\ZYNetServer\ZYNetServer.dll.config
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Release\ZYNetServer\ZYNetServer.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Release\ZYNetServer\ZYNetServer.pdb
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetServer\ZYNetServer\obj\Release\ZYNetServer.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetServer\ZYNetServer\obj\Release\ZYNetServer.pdb

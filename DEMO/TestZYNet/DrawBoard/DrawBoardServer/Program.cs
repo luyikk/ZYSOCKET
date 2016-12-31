@@ -8,6 +8,7 @@ using ZYSocket.ZYNet.Server;
 using ZYSocket.share;
 using DrawBoardPACK;
 using System.Drawing;
+using ZYSocket.ZYNet.Client;
 
 namespace DrawBoardServer
 {

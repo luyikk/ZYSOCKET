@@ -1,0 +1,15 @@
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\TestZYNetServer.exe.config
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\TestZYNetServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\TestZYNetServer.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\ZYNetServer.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\ZYSocketFrame.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\protobuf-net.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\ZYNetServer.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\ZYSocketFrame.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\protobuf-net.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\bin\Release\protobuf-net.xml
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\obj\Release\TestZYNetServer.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\obj\Release\TestZYNetServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\TestZYNet\TestZYNetServer\obj\Release\TestZYNetServer.pdb

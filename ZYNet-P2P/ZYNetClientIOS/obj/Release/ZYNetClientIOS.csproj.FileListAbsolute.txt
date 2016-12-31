@@ -1,0 +1,8 @@
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Release\ZYNetClientIOS\ZYNetClientIOS.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Release\ZYNetClientIOS\ZYNetClientIOS.pdb
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClientIOS\obj\Release\optimized\
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClientIOS\obj\Release\ZYNetClientIOS.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClientIOS\obj\Release\ZYNetClientIOS.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClientIOS\obj\Release\ZYNetClientIOS.pdb
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClientIOS\obj\Release\ZYNetClientIOS.dll.mdb
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Release\ZYNetClientIOS\ZYNetClientIOS.dll.mdb

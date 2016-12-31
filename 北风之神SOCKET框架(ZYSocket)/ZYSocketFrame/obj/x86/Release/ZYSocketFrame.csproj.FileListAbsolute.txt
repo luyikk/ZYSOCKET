@@ -20,3 +20,4 @@ D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketFrame.pdb
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.dll
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.pdb
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketFrame\obj\x86\Release\ZYSocketFrame.csprojResolveAssemblyReference.cache

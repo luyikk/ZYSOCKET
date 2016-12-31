@@ -1,0 +1,4 @@
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Release\ZYNetClient\ZYNetClient.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\DLL\Release\ZYNetClient\ZYNetClient.pdb
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClient\obj\Release\ZYNetClient.dll
+D:\MyProjects\ZYSocketFrame2\ZYNet-P2P\ZYNetClient\obj\Release\ZYNetClient.pdb

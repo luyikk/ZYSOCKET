@@ -56,6 +56,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ZYNet-P2P\ZYNetClient\ZYNetClient.csproj">
+      <Project>{C93B63D8-CE62-4D0E-B61B-9F818F30B114}</Project>
+      <Name>ZYNetClient</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\ZYNet-P2P\ZYNetServer\ZYNetServer\ZYNetServer.csproj">
       <Project>{093029da-df94-40f5-9cb3-092fab6d6b5a}</Project>
       <Name>ZYNetServer</Name>
