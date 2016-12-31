@@ -36,7 +36,7 @@
       <HintPath>..\..\..\..\..\北风之神SOCKET框架(ZYSocket)DLL\RPCX\ParallelExtensionsExtras.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net">
-      <HintPath>..\..\..\..\..\protobuf-net- Can Not Attribute\bin\iOS\protobuf-net.dll</HintPath>
+      <HintPath>..\..\..\..\..\ZYSocket-protobuf-net-dll\net20\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
