@@ -27,7 +27,7 @@ namespace testclient
             {
                 while (true)
                 {
-                    Console.ReadLine();
+                    //Console.ReadLine();
 
 
 
@@ -36,7 +36,7 @@ namespace testclient
                     temp.Message = "通过对象通讯";
                     temp.guid = new List<Guid>();
 
-                    for (int i = 0; i < 100; i++)
+                    for (int i = 0; i < 3000; i++)
                     {
                         temp.guid.Add(Guid.NewGuid());
                     }

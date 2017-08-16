@@ -67,8 +67,10 @@ namespace TestServer
         {
             try
             {
+                server.Send(socketAsync.UserToken as AsyncSend, data);
+
                 // server.SendData(socketAsync.AcceptSocket, data);
-                 server.Send(socketAsync.AcceptSocket, data);
+                 // server.Send(socketAsync.AcceptSocket, data);
 
                 // socketAsync.AcceptSocket.Send(data);
 

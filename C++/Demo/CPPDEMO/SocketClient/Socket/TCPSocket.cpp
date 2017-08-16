@@ -497,7 +497,7 @@ void TCPSocketManager::socket_thread(void *pThread){
 #else
 void *TCPSocketManager::socket_thread(void *mgr){
     while(true){
-        sleep(20);
+        Sleep(20);
         ((TCPSocketManager*)mSingleton)->update();
     }
     return (void*)0;

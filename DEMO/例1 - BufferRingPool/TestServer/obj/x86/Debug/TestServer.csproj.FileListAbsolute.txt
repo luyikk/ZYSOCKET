@@ -134,3 +134,8 @@ E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\obj\x86\Debug\TestServer
 D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\TestServer.exe.config
 D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\obj\x86\Debug\TestServer.exe
 D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\obj\x86\Debug\TestServer.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\TestServer.exe
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\TestServer.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\testClass.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\bin\Debug\testClass.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\TestServer\obj\x86\Debug\TestServer.csprojResolveAssemblyReference.cache

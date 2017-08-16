@@ -1,0 +1,1 @@
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\obj\x86\Release\testClass.csprojResolveAssemblyReference.cache

@@ -15,3 +15,4 @@ D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClien
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientB\obj\Release\ZYSocketClientB.dll
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientB\obj\Release\ZYSocketClientB.pdb
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientB\obj\Release\ZYSocketClientB.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\ZYSocketClientB\obj\Release\ZYSocketClientB.csproj.CoreCompileInputs.cache

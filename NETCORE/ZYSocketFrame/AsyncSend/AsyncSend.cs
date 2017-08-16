@@ -135,7 +135,10 @@ namespace ZYSocket.AsyncSend
                 if (InitData())
                 {
                     SendIng = true;
-                    sock.SendAsync(_send);
+                    if(!sock.SendAsync(_send))
+                    {
+                        BeginSend(_send);
+                    }
                     return true;
                 }               
                    

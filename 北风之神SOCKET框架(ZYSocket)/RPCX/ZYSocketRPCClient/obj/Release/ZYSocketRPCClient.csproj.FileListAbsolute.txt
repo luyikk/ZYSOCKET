@@ -20,3 +20,4 @@ D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)DLL\RPCX\Client\Z
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.dll
 D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.pdb
+D:\MyProjects\ZYSocketFrame2\北风之神SOCKET框架(ZYSocket)\RPCX\ZYSocketRPCClient\obj\Release\ZYSocketRPCClient.csproj.CoreCompileInputs.cache

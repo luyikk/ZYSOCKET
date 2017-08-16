@@ -84,3 +84,7 @@ E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\bin\Debug\protobuf-net.xm
 E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.csprojResolveAssemblyReference.cache
 E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.dll
 E:\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\bin\Debug\testClass.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\bin\Debug\testClass.pdb
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.dll
+D:\MyProjects\ZYSocketFrame2\DEMO\例1 - BufferRingPool\testClass\obj\x86\Debug\testClass.pdb
