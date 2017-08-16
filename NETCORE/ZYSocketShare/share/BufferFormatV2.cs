@@ -166,7 +166,7 @@ namespace ZYSocket.share
 #if !COREFX
                 Attribute[] Attributes = Attribute.GetCustomAttributes(otype);
 #else
-                Attribute[] Attributes = System.Linq.Enumerable.ToArray(otype.GetTypeInfo().GetCustomAttributes(false));
+                Attribute[] Attributes = (Attribute[])System.Linq.Enumerable.ToArray(otype.GetTypeInfo().GetCustomAttributes(false));
 #endif
                 foreach (Attribute p in Attributes)
                 {

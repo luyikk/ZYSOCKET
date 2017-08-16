@@ -1,0 +1,17 @@
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\bin\Debug\netstandard2.0\ZYSocketFrame.deps.json
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\bin\Debug\netstandard2.0\ZYSocketFrame.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\bin\Debug\netstandard2.0\ZYSocketFrame.pdb
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.csproj.CoreCompileInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.AssemblyInfoInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.AssemblyInfo.cs
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.pdb
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\bin\Debug\netstandard2.0\ZYSocketFrame.deps.json
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\bin\Debug\netstandard2.0\ZYSocketFrame.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\bin\Debug\netstandard2.0\ZYSocketFrame.pdb
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.csproj.CoreCompileInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.AssemblyInfoInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.AssemblyInfo.cs
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Debug\netstandard2.0\ZYSocketFrame.pdb

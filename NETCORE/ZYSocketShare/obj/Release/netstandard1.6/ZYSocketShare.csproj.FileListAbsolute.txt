@@ -1,0 +1,8 @@
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketShare\obj\Release\netstandard1.6\ZYSocketShare.csproj.CoreCompileInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketShare\obj\Release\netstandard1.6\ZYSocketShare.AssemblyInfoInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketShare\obj\Release\netstandard1.6\ZYSocketShare.AssemblyInfo.cs
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketShare\bin\Release\netstandard1.6\ZYSocketShare.deps.json
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketShare\bin\Release\netstandard1.6\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketShare\bin\Release\netstandard1.6\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketShare\obj\Release\netstandard1.6\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketShare\obj\Release\netstandard1.6\ZYSocketShare.pdb

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ZYSocketClient-dnx</id>
-        <version>4.3.7.3</version>
+        <version>4.3.7.4</version>
         <title>ZYSocketClientdnx</title>
         <authors>luyikk</authors>
         <owners>luyikk</owners>
@@ -15,6 +15,10 @@
         <language>en-US</language>
     </metadata>
     <files>
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientB.dll" target="lib\net20\ZYSocketClientB.dll" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientB.pdb" target="lib\net20\ZYSocketClientB.pdb" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.dll" target="lib\net40\ZYSocketClientA.dll" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketClientA.pdb" target="lib\net40\ZYSocketClientA.pdb" />
         <file src="ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.deps.json" target="lib\netstandard1.3\ZYSocketClientA.deps.json" />
         <file src="ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.dll" target="lib\netstandard1.3\ZYSocketClientA.dll" />
         <file src="ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.pdb" target="lib\netstandard1.3\ZYSocketClientA.pdb" />
@@ -24,5 +28,8 @@
         <file src="ZYSocketClientA\bin\Release\netstandard1.6\ZYSocketClientA.deps.json" target="lib\netstandard1.6\ZYSocketClientA.deps.json" />
         <file src="ZYSocketClientA\bin\Release\netstandard1.6\ZYSocketClientA.dll" target="lib\netstandard1.6\ZYSocketClientA.dll" />
         <file src="ZYSocketClientA\bin\Release\netstandard1.6\ZYSocketClientA.pdb" target="lib\netstandard1.6\ZYSocketClientA.pdb" />
+        <file src="ZYSocketClientA\bin\Release\netstandard2.0\ZYSocketClientA.deps.json" target="lib\netstandard2.0\ZYSocketClientA.deps.json" />
+        <file src="ZYSocketClientA\bin\Release\netstandard2.0\ZYSocketClientA.dll" target="lib\netstandard2.0\ZYSocketClientA.dll" />
+        <file src="ZYSocketClientA\bin\Release\netstandard2.0\ZYSocketClientA.pdb" target="lib\netstandard2.0\ZYSocketClientA.pdb" />
     </files>
 </package>

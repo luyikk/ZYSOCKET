@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>ZYSocketShare-dnx</id>
-        <version>4.3.7.3</version>
+        <version>4.3.7.4</version>
         <title>ZYSocketSharednx</title>
         <authors>luyikk</authors>
         <owners>luyikk</owners>
@@ -16,6 +16,19 @@
         <tags>ZYSocket</tags>
     </metadata>
     <files>
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\protobuf-net.dll" target="lib\net20\protobuf-net.dll" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\protobuf-net.pdb" target="lib\net20\protobuf-net.pdb" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\protobuf-net.xml" target="lib\net20\protobuf-net.xml" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll" target="lib\net20\ZYSocketShare.dll" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.dll.config" target="lib\net20\ZYSocketShare.dll.config" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\ZYSocketShare.pdb" target="lib\net20\ZYSocketShare.pdb" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\MsgPack.dll" target="lib\net40\MsgPack.dll" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\MsgPack.pdb" target="lib\net40\MsgPack.pdb" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\protobuf-net.dll" target="lib\net40\protobuf-net.dll" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\protobuf-net.pdb" target="lib\net40\protobuf-net.pdb" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\protobuf-net.xml" target="lib\net40\protobuf-net.xml" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.dll" target="lib\net40\ZYSocketShare.dll" />
+        <file src="..\北风之神SOCKET框架(ZYSocket)DLL\NET4-Share\ZYSocketShare.pdb" target="lib\net40\ZYSocketShare.pdb" />
         <file src="ZYSocketShare\bin\Release\netstandard1.3\ZYSocketShare.deps.json" target="lib\netstandard1.3\ZYSocketShare.deps.json" />
         <file src="ZYSocketShare\bin\Release\netstandard1.3\ZYSocketShare.dll" target="lib\netstandard1.3\ZYSocketShare.dll" />
         <file src="ZYSocketShare\bin\Release\netstandard1.3\ZYSocketShare.pdb" target="lib\netstandard1.3\ZYSocketShare.pdb" />
@@ -25,5 +38,8 @@
         <file src="ZYSocketShare\bin\Release\netstandard1.6\ZYSocketShare.deps.json" target="lib\netstandard1.6\ZYSocketShare.deps.json" />
         <file src="ZYSocketShare\bin\Release\netstandard1.6\ZYSocketShare.dll" target="lib\netstandard1.6\ZYSocketShare.dll" />
         <file src="ZYSocketShare\bin\Release\netstandard1.6\ZYSocketShare.pdb" target="lib\netstandard1.6\ZYSocketShare.pdb" />
+        <file src="ZYSocketShare\bin\Release\netstandard2.0\ZYSocketShare.deps.json" target="lib\netstandard2.0\ZYSocketShare.deps.json" />
+        <file src="ZYSocketShare\bin\Release\netstandard2.0\ZYSocketShare.dll" target="lib\netstandard2.0\ZYSocketShare.dll" />
+        <file src="ZYSocketShare\bin\Release\netstandard2.0\ZYSocketShare.pdb" target="lib\netstandard2.0\ZYSocketShare.pdb" />
     </files>
 </package>
