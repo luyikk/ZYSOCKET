@@ -1,0 +1,9 @@
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\bin\Release\netstandard1.4\ZYSocketClientA.deps.json
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\bin\Release\netstandard1.4\ZYSocketClientA.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\bin\Release\netstandard1.4\ZYSocketClientA.pdb
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.4\ZYSocketClientA.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.4\ZYSocketClientA.csproj.CoreCompileInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.4\ZYSocketClientA.AssemblyInfoInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.4\ZYSocketClientA.AssemblyInfo.cs
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.4\ZYSocketClientA.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.4\ZYSocketClientA.pdb

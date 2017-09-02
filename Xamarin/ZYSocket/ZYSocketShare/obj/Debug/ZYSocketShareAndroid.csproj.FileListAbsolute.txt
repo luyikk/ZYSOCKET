@@ -8,3 +8,13 @@ E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketShare.pd
 E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Debug\android\bin\ZYSocketShare.ZYSocketShare.apk
 E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Debug\R.cs.flag
 E:\ZYSocketFrame2\XamarinShare\ZYSocket\ZYSocketShare\obj\Debug\uploadflags.txt
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\Android\DEBUG\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\Android\DEBUG\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\Android\DEBUG\ZYSocketShare.ZYSocketShare.apk
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\Android\DEBUG\ZYSocketShare.ZYSocketShare-Signed.apk
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketShareAndroid.csproj.CoreCompileInputs.cache
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketShare.dll
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketShare.pdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\android\bin\ZYSocketShare.ZYSocketShare.apk
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\R.cs.flag
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\uploadflags.txt

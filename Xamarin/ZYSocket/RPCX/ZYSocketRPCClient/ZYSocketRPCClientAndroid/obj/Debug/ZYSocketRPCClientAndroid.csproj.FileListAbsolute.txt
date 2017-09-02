@@ -9,3 +9,15 @@ E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClient
 E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\res\values\strings.xml
 E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\R.cs.flag
 E:\ZYSocketFrame2\XamarinShare\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\uploadflags.txt
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\ZYSocketRPCClientAndroid.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\ZYSocketRPCClientAndroid.csproj.CoreCompileInputs.cache
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\ZYSocketRPCClientAndroid.dll
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\ZYSocketRPCClientAndroid.pdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\Android\DEBUG\RPCX\RPCClient\ZYSocketRPCClientAndroid.dll
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\Android\DEBUG\RPCX\RPCClient\ZYSocketRPCClientAndroid.pdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\Android\DEBUG\RPCX\RPCClient\ZYSocketRPCClientAndroid.ZYSocketRPCClientAndroid.apk
+D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\Android\DEBUG\RPCX\RPCClient\ZYSocketRPCClientAndroid.ZYSocketRPCClientAndroid-Signed.apk
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\android\bin\ZYSocketRPCClientAndroid.ZYSocketRPCClientAndroid.apk
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\res\values\strings.xml
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\R.cs.flag
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\ZYSocketRPCClient\ZYSocketRPCClientAndroid\obj\Debug\uploadflags.txt

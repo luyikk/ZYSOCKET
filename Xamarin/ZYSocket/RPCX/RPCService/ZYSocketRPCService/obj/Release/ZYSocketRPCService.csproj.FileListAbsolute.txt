@@ -4,5 +4,4 @@ D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCService
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Release\ZYSocketRPCService.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Release\ZYSocketRPCService.dll
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Release\ZYSocketRPCService.pdb
-D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Release\ZYSocketRPCService.dll.mdb
-D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\IOS\Release\RPCX\RPCService\ZYSocketRPCService.dll.mdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCService\obj\Release\ZYSocketRPCService.csproj.CoreCompileInputs.cache

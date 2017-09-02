@@ -4,5 +4,4 @@ D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\optimiz
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.dll
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.pdb
-D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.dll.mdb
-D:\MyProjects\ZYSocketFrame2\Xamarin\DLL\IOS\Release\Client\ZYSocketClient.dll.mdb
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketClient\obj\Release\ZYSocketClient.csproj.CoreCompileInputs.cache

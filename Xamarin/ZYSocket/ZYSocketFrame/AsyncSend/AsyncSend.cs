@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using ZYSocket.Server;
 using System.Net.Sockets;
+using System.Threading;
 
 namespace ZYSocket.AsyncSend
 {
@@ -12,19 +13,18 @@ namespace ZYSocket.AsyncSend
     {
         private SocketAsyncEventArgs _send { get; set; }
 
-        private bool SendIng { get; set; }
-
         private ConcurrentQueue<byte[]> BufferQueue { get; set; }
 
-        private Socket sock { get; set; }
+        private Socket _sock { get; set; }
 
         protected int BufferLenght { get; set; } = -1;
 
+        private int SendIng;
 
         public AsyncSend(Socket sock)
         {
-            this.sock = sock;
-            SendIng = false;
+            this._sock = sock;
+            SendIng = 0;
             BufferQueue = new ConcurrentQueue<byte[]>();
             _send = new SocketAsyncEventArgs();
             _send.Completed += Completed;
@@ -65,23 +65,56 @@ namespace ZYSocket.AsyncSend
                         length = e.Buffer.Length - offset;
 
                     e.SetBuffer(offset, length);
-                    sock.SendAsync(_send);
+                    try
+                    {
+                        if (!_sock.SendAsync(_send))
+                        {
+                            BeginSend(_send);
+                        }
+                    }
+                    catch (ObjectDisposedException)
+                    {
+                        Free();
+                        _sock = null;
+                    }
                 }
                 else
                 {
                     e.SetBuffer(offset, e.Count - e.Offset - e.BytesTransferred);
-                    sock.SendAsync(_send);
+                    try
+                    {
+                        if (!_sock.SendAsync(_send))
+                        {
+                            BeginSend(_send);
+                        }
+                    }
+                    catch (ObjectDisposedException)
+                    {
+                        Free();
+                        _sock = null;
+                    }
                 }
             }
             else
             {
                 if (InitData())
                 {
-                    sock.SendAsync(_send);
+                    try
+                    {
+                        if (!_sock.SendAsync(_send))
+                        {
+                            BeginSend(_send);
+                        }
+                    }
+                    catch (ObjectDisposedException)
+                    {
+                        Free();
+                        _sock = null;
+                    }
                 }
                 else
                 {
-                    SendIng = false;
+                    Interlocked.Exchange(ref SendIng, 0);
                 }
             }
 
@@ -91,15 +124,13 @@ namespace ZYSocket.AsyncSend
         {
             _send.SetBuffer(null, 0, 0);
 
-            byte[] tmp;
             for (int i = 0; i < BufferQueue.Count; i++)
-                BufferQueue.TryDequeue(out tmp);
+                BufferQueue.TryDequeue(out byte[] tmp);
         }
 
         private bool InitData()
         {
-            byte[] data;
-            if (BufferQueue.TryDequeue(out data))
+            if (BufferQueue.TryDequeue(out byte[] data))
             {
 
                 if (BufferLenght <= 0)
@@ -128,23 +159,40 @@ namespace ZYSocket.AsyncSend
 
         public bool Send(byte[] data)
         {
+            if (_sock == null)
+                return false;
+
             BufferQueue.Enqueue(data);
 
-            if(!SendIng)
+            if (Interlocked.CompareExchange(ref SendIng, 1, 0) == 0)
             {
                 if (InitData())
                 {
-                    SendIng = true;
-                    sock.SendAsync(_send);
+                    try
+                    {
+                        if (!_sock.SendAsync(_send))
+                        {
+                            BeginSend(_send);
+                        }
+                    }
+                    catch (ObjectDisposedException)
+                    {
+                        Free();
+                        _sock = null;
+                    }
                     return true;
-                }               
-                   
+                }
+                else
+                {
+                    Interlocked.Exchange(ref SendIng, 0);
+                }
+
             }
 
             return false;
         }
 
 
-        
+
     }
 }

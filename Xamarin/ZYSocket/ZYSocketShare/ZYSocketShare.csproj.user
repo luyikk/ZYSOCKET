@@ -20,5 +20,6 @@
 &lt;/dict&gt;
 &lt;/plist&gt;
 </TargetiOSDevice>
+    <SelectedDevice>设备</SelectedDevice>
   </PropertyGroup>
 </Project>

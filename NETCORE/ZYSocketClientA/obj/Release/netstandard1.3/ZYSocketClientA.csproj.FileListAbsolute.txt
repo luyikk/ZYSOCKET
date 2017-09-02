@@ -7,3 +7,12 @@ D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketClientA\obj\Release\ne
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.AssemblyInfo.cs
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.dll
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.pdb
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.deps.json
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\bin\Release\netstandard1.3\ZYSocketClientA.pdb
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.csprojResolveAssemblyReference.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.csproj.CoreCompileInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.AssemblyInfoInputs.cache
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.AssemblyInfo.cs
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.dll
+D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketClientA\obj\Release\netstandard1.3\ZYSocketClientA.pdb

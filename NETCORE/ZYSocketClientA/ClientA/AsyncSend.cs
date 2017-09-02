@@ -4,6 +4,7 @@ using System.Collections.Concurrent;
 using System.Linq;
 using System.Text;
 using System.Net.Sockets;
+using System.Threading;
 
 namespace ZYSocket.ClientA
 {
@@ -11,19 +12,18 @@ namespace ZYSocket.ClientA
     {
         private SocketAsyncEventArgs _send { get; set; }
 
-        private bool SendIng { get; set; }
-
         private ConcurrentQueue<byte[]> BufferQueue { get; set; }
 
-        private Socket sock { get; set; }
+        private Socket _sock { get; set; }
 
         protected int BufferLenght { get; set; } = -1;
 
+        private int SendIng;
 
         public AsyncSend(Socket sock)
         {
-            this.sock = sock;
-            SendIng = false;
+            this._sock = sock;
+            SendIng = 0;
             BufferQueue = new ConcurrentQueue<byte[]>();
             _send = new SocketAsyncEventArgs();
             _send.Completed += Completed;
@@ -66,7 +66,7 @@ namespace ZYSocket.ClientA
                     e.SetBuffer(offset, length);
                     try
                     {
-                        if (!sock.SendAsync(_send))
+                        if (!_sock.SendAsync(_send))
                         {
                             BeginSend(_send);
                         }
@@ -74,7 +74,7 @@ namespace ZYSocket.ClientA
                     catch (ObjectDisposedException)
                     {
                         Free();
-                        sock = null;
+                        _sock = null;
                     }
                 }
                 else
@@ -82,7 +82,7 @@ namespace ZYSocket.ClientA
                     e.SetBuffer(offset, e.Count - e.Offset - e.BytesTransferred);
                     try
                     {
-                        if (!sock.SendAsync(_send))
+                        if (!_sock.SendAsync(_send))
                         {
                             BeginSend(_send);
                         }
@@ -90,7 +90,7 @@ namespace ZYSocket.ClientA
                     catch (ObjectDisposedException)
                     {
                         Free();
-                        sock = null;
+                        _sock = null;
                     }
                 }
             }
@@ -100,7 +100,7 @@ namespace ZYSocket.ClientA
                 {
                     try
                     {
-                        if (!sock.SendAsync(_send))
+                        if (!_sock.SendAsync(_send))
                         {
                             BeginSend(_send);
                         }
@@ -108,12 +108,12 @@ namespace ZYSocket.ClientA
                     catch (ObjectDisposedException)
                     {
                         Free();
-                        sock = null;
+                        _sock = null;
                     }
                 }
                 else
                 {
-                    SendIng = false;
+                    Interlocked.Exchange(ref SendIng, 0);
                 }
             }
 
@@ -123,15 +123,13 @@ namespace ZYSocket.ClientA
         {
             _send.SetBuffer(null, 0, 0);
 
-            byte[] tmp;
             for (int i = 0; i < BufferQueue.Count; i++)
-                BufferQueue.TryDequeue(out tmp);
+                BufferQueue.TryDequeue(out byte[] tmp);
         }
 
         private bool InitData()
         {
-            byte[] data;
-            if (BufferQueue.TryDequeue(out data))
+            if (BufferQueue.TryDequeue(out byte[] data))
             {
 
                 if (BufferLenght <= 0)
@@ -160,19 +158,18 @@ namespace ZYSocket.ClientA
 
         public bool Send(byte[] data)
         {
-            if (sock == null)
+            if (_sock == null)
                 return false;
 
             BufferQueue.Enqueue(data);
 
-            if (!SendIng)
+            if (Interlocked.CompareExchange(ref SendIng, 1, 0) == 0)
             {
                 if (InitData())
                 {
-                    SendIng = true;
                     try
                     {
-                        if (!sock.SendAsync(_send))
+                        if (!_sock.SendAsync(_send))
                         {
                             BeginSend(_send);
                         }
@@ -180,9 +177,13 @@ namespace ZYSocket.ClientA
                     catch (ObjectDisposedException)
                     {
                         Free();
-                        sock = null;
+                        _sock = null;
                     }
                     return true;
+                }
+                else
+                {
+                    Interlocked.Exchange(ref SendIng, 0);
                 }
 
             }

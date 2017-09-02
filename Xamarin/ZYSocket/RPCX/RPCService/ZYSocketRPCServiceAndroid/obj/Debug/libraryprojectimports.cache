@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Debug\__library_projects__\ZYSocketFrame\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Debug\__library_projects__\ZYSocketShare\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\ZYSocketFrame\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\ZYSocketShare\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Debug\__library_projects__\ZYSocketFrame.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\RPCX\RPCService\ZYSocketRPCServiceAndroid\obj\Debug\__library_projects__\ZYSocketShare.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>
