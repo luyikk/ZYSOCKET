@@ -63,59 +63,22 @@ namespace ZYSocket.AsyncSend
 
                     if (offset + length > e.Buffer.Length)
                         length = e.Buffer.Length - offset;
-
                     e.SetBuffer(offset, length);
-                    try
-                    {
-                        if (!_sock.SendAsync(_send))
-                        {
-                            BeginSend(_send);
-                        }
-                    }
-                    catch (ObjectDisposedException)
-                    {
-                        Free();
-                        _sock = null;
-                    }
+                    SendAsync();
                 }
                 else
                 {
                     e.SetBuffer(offset, e.Count - e.Offset - e.BytesTransferred);
-                    try
-                    {
-                        if (!_sock.SendAsync(_send))
-                        {
-                            BeginSend(_send);
-                        }
-                    }
-                    catch (ObjectDisposedException)
-                    {
-                        Free();
-                        _sock = null;
-                    }
+                    SendAsync();
                 }
             }
             else
             {
-                if (InitData())
-                {
-                    try
-                    {
-                        if (!_sock.SendAsync(_send))
-                        {
-                            BeginSend(_send);
-                        }
-                    }
-                    catch (ObjectDisposedException)
-                    {
-                        Free();
-                        _sock = null;
-                    }
-                }
-                else
-                {
-                    Interlocked.Exchange(ref SendIng, 0);
-                }
+                Interlocked.Exchange(ref SendIng, 0);
+
+                if (BufferQueue.Count > 0)
+                    SendComputer();
+
             }
 
         }
@@ -123,7 +86,6 @@ namespace ZYSocket.AsyncSend
         private void Free()
         {
             _send.SetBuffer(null, 0, 0);
-
             for (int i = 0; i < BufferQueue.Count; i++)
                 BufferQueue.TryDequeue(out byte[] tmp);
         }
@@ -132,22 +94,17 @@ namespace ZYSocket.AsyncSend
         {
             if (BufferQueue.TryDequeue(out byte[] data))
             {
-
                 if (BufferLenght <= 0)
                 {
                     _send.SetBuffer(data, 0, data.Length);
-
                     return true;
                 }
                 else
                 {
                     int length = BufferLenght;
-
                     if (length > data.Length)
                         length = data.Length;
-
                     _send.SetBuffer(data, 0, length);
-
                     return true;
                 }
 
@@ -161,25 +118,23 @@ namespace ZYSocket.AsyncSend
         {
             if (_sock == null)
                 return false;
+            if (data == null)
+                return false;
 
             BufferQueue.Enqueue(data);
 
+            return SendComputer();
+        }
+
+
+
+        private bool SendComputer()
+        {
             if (Interlocked.CompareExchange(ref SendIng, 1, 0) == 0)
             {
                 if (InitData())
                 {
-                    try
-                    {
-                        if (!_sock.SendAsync(_send))
-                        {
-                            BeginSend(_send);
-                        }
-                    }
-                    catch (ObjectDisposedException)
-                    {
-                        Free();
-                        _sock = null;
-                    }
+                    SendAsync();
                     return true;
                 }
                 else
@@ -192,7 +147,21 @@ namespace ZYSocket.AsyncSend
             return false;
         }
 
-
+        private void SendAsync()
+        {
+            try
+            {
+                if (!_sock.SendAsync(_send))
+                {
+                    BeginSend(_send);
+                }
+            }
+            catch (ObjectDisposedException)
+            {
+                Free();
+                _sock = null;
+            }
+        }
 
     }
 }

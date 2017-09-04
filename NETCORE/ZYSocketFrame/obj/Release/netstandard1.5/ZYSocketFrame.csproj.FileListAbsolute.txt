@@ -10,7 +10,6 @@ D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocket_dnx\ZYSocketFrame\obj\Release\nets
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\bin\Release\netstandard1.5\ZYSocketFrame.deps.json
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\bin\Release\netstandard1.5\ZYSocketFrame.dll
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\bin\Release\netstandard1.5\ZYSocketFrame.pdb
-D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Release\netstandard1.5\ZYSocketFrame.csprojResolveAssemblyReference.cache
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Release\netstandard1.5\ZYSocketFrame.csproj.CoreCompileInputs.cache
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Release\netstandard1.5\ZYSocketFrame.AssemblyInfoInputs.cache
 D:\MyProjects\ZYSocketFrame2\NETCORE\ZYSocketFrame\obj\Release\netstandard1.5\ZYSocketFrame.AssemblyInfo.cs

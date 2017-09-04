@@ -18,3 +18,4 @@ D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketSh
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\android\bin\ZYSocketShare.ZYSocketShare.apk
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\R.cs.flag
 D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\uploadflags.txt
+D:\MyProjects\ZYSocketFrame2\Xamarin\ZYSocket\ZYSocketShare\obj\Debug\ZYSocketShareAndroid.csprojResolveAssemblyReference.cache
